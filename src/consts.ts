@@ -8,6 +8,8 @@ export const SITE = {
 	phone: '(801) 231-2360',
 	phoneHref: '+18012312360',
 	email: 'info@utahstemcells.com',
+	// Sistema di prenotazione online (scheduler esterno)
+	bookingUrl: 'https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_60294',
 	address: {
 		street: '10121 S 1300 E',
 		city: 'Sandy',

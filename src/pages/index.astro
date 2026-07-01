@@ -46,7 +46,12 @@ const stats = [
 					hair, wellness and more.
 				</p>
 				<div class="hero-cta">
-					<a href="/contact/" class="btn btn-primary">Book a free consultation</a>
+					<a
+						href={SITE.bookingUrl}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn-primary">Book a free consultation</a
+					>
 					<a href="/treatments/" class="btn btn-ghost">Explore treatments</a>
 				</div>
 			</div>
@@ -150,7 +155,12 @@ const stats = [
 		<div class="container cta-inner">
 			<h2>Ready to take the first step?</h2>
 			<p>Book a free, no-pressure consultation with our team.</p>
-			<a href="/contact/" class="btn btn-accent">Book your consultation</a>
+			<a
+				href={SITE.bookingUrl}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="btn btn-accent">Book your consultation</a
+			>
 		</div>
 	</section>
 </BaseLayout>
