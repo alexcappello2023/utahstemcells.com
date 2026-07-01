@@ -1,6 +1,8 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE, TREATMENT_CATEGORIES } from '../consts';
+import drPhoto from '../assets/dr-cimikoski.jpeg';
 
 const categories = [
 	{ key: 'regenerative', desc: 'Stem cell therapy, PRP, joint & hair restoration.' },
@@ -116,7 +118,13 @@ const stats = [
 	<!-- DOCTOR / E-E-A-T -->
 	<section class="section">
 		<div class="container doctor">
-			<div class="doctor-photo" aria-hidden="true">Photo</div>
+			<Image
+				src={drPhoto}
+				alt={`${SITE.doctor}, regenerative medicine physician`}
+				width={600}
+				height={750}
+				class="doctor-photo"
+			/>
 			<div>
 				<p class="eyebrow">Meet your physician</p>
 				<h2>Care led by {SITE.doctor}</h2>
@@ -275,14 +283,12 @@ const stats = [
 		}
 	}
 	.doctor-photo {
+		width: 100%;
+		height: auto;
 		aspect-ratio: 4 / 5;
-		background: var(--brand-100);
+		object-fit: cover;
 		border-radius: var(--radius-lg);
-		display: grid;
-		place-items: center;
-		color: var(--brand-600);
-		font-family: var(--font-display);
-		font-weight: 600;
+		box-shadow: var(--shadow);
 	}
 
 	.cta-band {
