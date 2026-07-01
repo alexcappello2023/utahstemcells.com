@@ -1,0 +1,73 @@
+---
+import { Font } from 'astro:assets';
+import Seo from '../components/Seo.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE } from '../consts';
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description: string;
+	canonicalPath?: string;
+	image?: string;
+	type?: 'website' | 'article';
+	noindex?: boolean;
+}
+
+const props = Astro.props;
+
+// Site-wide medical clinic schema (LocalBusiness / MedicalClinic + Physician)
+const orgSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'MedicalClinic',
+	'@id': `${SITE.url}/#clinic`,
+	name: SITE.name,
+	url: SITE.url,
+	telephone: SITE.phone,
+	email: SITE.email,
+	address: {
+		'@type': 'PostalAddress',
+		streetAddress: SITE.address.street,
+		addressLocality: SITE.address.city,
+		addressRegion: SITE.address.region,
+		postalCode: SITE.address.postal,
+		addressCountry: SITE.address.country,
+	},
+	geo: {
+		'@type': 'GeoCoordinates',
+		latitude: SITE.geo.lat,
+		longitude: SITE.geo.lng,
+	},
+	medicalSpecialty: 'Regenerative medicine',
+	physician: {
+		'@type': 'Physician',
+		name: SITE.doctor,
+	},
+};
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<meta name="generator" content={Astro.generator} />
+		<Font cssVariable="--font-sans" preload />
+		<Font cssVariable="--font-display" preload />
+		<Seo {...props} />
+		<script
+			type="application/ld+json"
+			set:html={JSON.stringify(orgSchema)}
+		/>
+	</head>
+	<body>
+		<a href="#main" class="sr-only">Skip to content</a>
+		<Header />
+		<main id="main">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
