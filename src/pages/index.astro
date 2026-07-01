@@ -5,6 +5,17 @@ import { SITE, TREATMENT_CATEGORIES } from '../consts';
 import VisitClinic from '../components/VisitClinic.astro';
 import drPhoto from '../assets/dr-cimikoski.jpeg';
 import barbaraPhoto from '../assets/barbara-lorenzin.jpeg';
+import heroCouple from '../assets/hero/hero-couple.webp';
+import heroFamily from '../assets/hero/hero-family.webp';
+import heroAthlete from '../assets/hero/hero-athlete.webp';
+import heroWoman from '../assets/hero/hero-woman.webp';
+
+const heroSlides = [
+	{ img: heroCouple, alt: 'Active mature couple hiking in Utah' },
+	{ img: heroFamily, alt: 'Happy family outdoors in Utah' },
+	{ img: heroAthlete, alt: 'Fit woman running on a Utah trail' },
+	{ img: heroWoman, alt: 'Radiant woman enjoying anti-aging care' },
+];
 
 const categories = [
 	{ key: 'regenerative', desc: 'Stem cell therapy, PRP, joint & hair restoration.' },
@@ -40,6 +51,20 @@ const stats = [
 >
 	<!-- HERO -->
 	<section class="hero">
+		<div class="hero-slides" aria-hidden="true">
+			{
+				heroSlides.map((s, i) => (
+					<Image
+						class="hero-slide"
+						src={s.img}
+						alt={s.alt}
+						width={1600}
+						height={900}
+						loading={i === 0 ? 'eager' : 'lazy'}
+					/>
+				))
+			}
+		</div>
 		<div class="container hero-inner">
 			<div class="hero-copy">
 				<p class="eyebrow">Regenerative medicine · Sandy, Utah</p>
@@ -54,22 +79,20 @@ const stats = [
 						href={SITE.bookingUrl}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="btn btn-primary">Book a free consultation</a
+						class="btn btn-accent">Book a free consultation</a
 					>
 					<a href="/treatments/" class="btn btn-ghost">Explore treatments</a>
 				</div>
-			</div>
-			<div class="hero-panel" aria-hidden="true">
-				<div class="hero-stats">
+				<ul class="hero-stats">
 					{
 						stats.map((s) => (
-							<div>
+							<li>
 								<span class="stat-n">{s.n}</span>
 								<span class="stat-l">{s.label}</span>
-							</div>
+							</li>
 						))
 					}
-				</div>
+				</ul>
 			</div>
 		</div>
 	</section>
@@ -187,21 +210,90 @@ const stats = [
 
 <style>
 	.hero {
-		background: linear-gradient(180deg, var(--brand-50), #fff);
-		padding-block: clamp(var(--space-16), 9vw, var(--space-24));
-	}
-	.hero-inner {
-		display: grid;
-		gap: var(--space-12);
+		position: relative;
+		isolation: isolate;
+		overflow: hidden;
+		display: flex;
 		align-items: center;
+		min-height: min(90vh, 780px);
+		padding-block: var(--space-24);
+		color: #fff;
 	}
-	@media (min-width: 900px) {
-		.hero-inner {
-			grid-template-columns: 1.15fr 0.85fr;
+	.hero-slides {
+		position: absolute;
+		inset: 0;
+		z-index: -2;
+		background: var(--brand-900);
+	}
+	.hero-slide {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0;
+		animation: heroFade 32s infinite;
+	}
+	.hero-slide:nth-child(2) {
+		animation-delay: 8s;
+	}
+	.hero-slide:nth-child(3) {
+		animation-delay: 16s;
+	}
+	.hero-slide:nth-child(4) {
+		animation-delay: 24s;
+	}
+	@keyframes heroFade {
+		0% {
+			opacity: 0;
+		}
+		4% {
+			opacity: 1;
+		}
+		21% {
+			opacity: 1;
+		}
+		29% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
 		}
 	}
-	.hero-copy h1 {
+	.hero::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background: linear-gradient(
+			95deg,
+			rgba(8, 42, 66, 0.94) 0%,
+			rgba(8, 42, 66, 0.82) 32%,
+			rgba(8, 42, 66, 0.5) 62%,
+			rgba(8, 42, 66, 0.2) 100%
+		);
+	}
+	@media (max-width: 760px) {
+		.hero::before {
+			background: linear-gradient(
+				175deg,
+				rgba(8, 42, 66, 0.72) 0%,
+				rgba(8, 42, 66, 0.88) 100%
+			);
+		}
+	}
+	.hero-copy {
+		max-width: 640px;
+	}
+	.hero .eyebrow {
+		color: var(--brand-200);
+	}
+	.hero h1 {
+		color: #fff;
 		margin-top: var(--space-2);
+	}
+	.hero .lead {
+		color: rgba(255, 255, 255, 0.9);
 	}
 	.hero-cta {
 		display: flex;
@@ -209,35 +301,45 @@ const stats = [
 		gap: var(--space-3);
 		margin-top: var(--space-8);
 	}
-	.hero-panel {
-		background: var(--brand-600);
-		border-radius: var(--radius-lg);
-		padding: var(--space-8);
-		box-shadow: var(--shadow-lg);
+	.hero :global(.btn-ghost) {
+		color: #fff;
+		border-color: rgba(255, 255, 255, 0.55);
+		background: transparent;
+	}
+	.hero :global(.btn-ghost:hover) {
+		background: rgba(255, 255, 255, 0.14);
+		border-color: #fff;
 	}
 	.hero-stats {
-		display: grid;
-		gap: var(--space-6);
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-8);
+		list-style: none;
+		margin: var(--space-12) 0 0;
+		padding: var(--space-6) 0 0;
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
 	}
-	.hero-stats > div {
+	.hero-stats li {
 		display: flex;
 		flex-direction: column;
-		padding-bottom: var(--space-4);
-		border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-	}
-	.hero-stats > div:last-child {
-		border-bottom: 0;
-		padding-bottom: 0;
 	}
 	.stat-n {
 		font-family: var(--font-display);
 		font-weight: 700;
-		font-size: var(--text-2xl);
+		font-size: var(--text-xl);
 		color: #fff;
 	}
 	.stat-l {
-		color: var(--brand-100);
+		color: rgba(255, 255, 255, 0.75);
 		font-size: var(--text-sm);
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.hero-slide {
+			animation: none;
+		}
+		.hero-slide:first-child {
+			opacity: 1;
+		}
 	}
 
 	.cat-card {
