@@ -140,7 +140,7 @@ img {
 }
 .btn-ghost:hover {
 	border-color: var(--color-primary);
-	background: var(--teal-50);
+	background: var(--brand-50);
 }
 
 /* Cards grid */
@@ -176,7 +176,7 @@ img {
 .card:hover {
 	box-shadow: var(--shadow);
 	transform: translateY(-2px);
-	border-color: var(--teal-200);
+	border-color: var(--brand-200);
 }
 
 .sr-only {

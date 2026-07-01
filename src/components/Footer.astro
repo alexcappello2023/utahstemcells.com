@@ -1,13 +1,19 @@
 ---
 import { NAV, SITE } from '../consts';
+import logo from '../assets/logo.svg';
 const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
 	<div class="container footer-grid">
 		<div class="footer-brand">
-			<span class="brand-mark" aria-hidden="true">USC</span>
-			<p class="footer-name">{SITE.brandLine}</p>
+			<img
+				src={logo.src}
+				width={logo.width}
+				height={logo.height}
+				alt="Utah Stem Cells"
+				class="footer-logo"
+			/>
 			<p class="footer-tag">{SITE.tagline}</p>
 		</div>
 
@@ -41,7 +47,7 @@ const year = new Date().getFullYear();
 
 <style>
 	.site-footer {
-		background: var(--teal-900);
+		background: var(--brand-900);
 		color: var(--slate-200);
 		padding-block: var(--space-16) var(--space-8);
 		margin-top: var(--space-24);
@@ -55,17 +61,11 @@ const year = new Date().getFullYear();
 			grid-template-columns: 1.4fr 1fr 1fr;
 		}
 	}
-	.brand-mark {
-		display: grid;
-		place-items: center;
-		width: 44px;
-		height: 44px;
-		border-radius: 10px;
-		background: var(--teal-600);
-		color: #fff;
-		font-family: var(--font-display);
-		font-weight: 700;
-		margin-bottom: var(--space-3);
+	.footer-logo {
+		height: 66px;
+		width: auto;
+		margin-bottom: var(--space-4);
+		filter: brightness(0) invert(1);
 	}
 	.footer-name {
 		font-family: var(--font-display);
@@ -74,7 +74,7 @@ const year = new Date().getFullYear();
 		margin: 0 0 var(--space-1);
 	}
 	.footer-tag {
-		color: var(--teal-200);
+		color: var(--brand-200);
 		font-size: var(--text-sm);
 		max-width: 34ch;
 	}
@@ -83,7 +83,7 @@ const year = new Date().getFullYear();
 		font-size: var(--text-sm);
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
-		color: var(--teal-200);
+		color: var(--brand-200);
 		margin: 0 0 var(--space-4);
 	}
 	.footer-col ul {
@@ -118,7 +118,7 @@ const year = new Date().getFullYear();
 		padding-top: var(--space-6);
 		border-top: 1px solid rgba(255, 255, 255, 0.12);
 		font-size: var(--text-sm);
-		color: var(--teal-200);
+		color: var(--brand-200);
 	}
 	.footer-bottom ul {
 		display: flex;
