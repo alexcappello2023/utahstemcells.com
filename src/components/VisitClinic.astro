@@ -1,0 +1,109 @@
+---
+import { Image } from 'astro:assets';
+import { SITE } from '../consts';
+import exterior from '../assets/clinic-exterior.webp';
+import reception from '../assets/clinic-reception.webp';
+
+const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
+	`Utah Stem Cells, ${SITE.address.street}, ${SITE.address.city}, ${SITE.address.region} ${SITE.address.postal}`
+)}`;
+---
+
+<section class="section">
+	<div class="container">
+		<div class="visit-head">
+			<div>
+				<p class="eyebrow">Visit us</p>
+				<h2>Come see our Sandy clinic</h2>
+				<p class="lead">
+					Based in the Sandy&nbsp;100 building, we welcome patients from
+					across the Salt Lake Valley — Salt Lake City, South Jordan,
+					Draper, Kaysville and beyond.
+				</p>
+			</div>
+			<div class="visit-cta">
+				<a
+					href={mapsUrl}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="btn btn-primary">Get directions</a
+				>
+				<a href="/locations/" class="btn btn-ghost">See all locations</a>
+			</div>
+		</div>
+
+		<div class="visit-photos">
+			<figure>
+				<Image
+					src={exterior}
+					alt="The Sandy 100 building, home of Utah Stem Cells"
+					width={900}
+					height={675}
+				/>
+				<figcaption>Our building — Sandy&nbsp;100</figcaption>
+			</figure>
+			<figure>
+				<Image
+					src={reception}
+					alt="Utah Stem Cells reception and front desk"
+					width={900}
+					height={675}
+				/>
+				<figcaption>Welcome to our front desk</figcaption>
+			</figure>
+		</div>
+	</div>
+</section>
+
+<style>
+	.visit-head {
+		display: grid;
+		gap: var(--space-6);
+		align-items: end;
+		margin-bottom: var(--space-8);
+	}
+	@media (min-width: 820px) {
+		.visit-head {
+			grid-template-columns: 1.5fr 1fr;
+		}
+		.visit-cta {
+			justify-self: end;
+			text-align: right;
+		}
+	}
+	.visit-head .lead {
+		max-width: 52ch;
+		margin-bottom: 0;
+	}
+	.visit-cta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-3);
+	}
+
+	.visit-photos {
+		display: grid;
+		gap: var(--space-6);
+	}
+	@media (min-width: 720px) {
+		.visit-photos {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	.visit-photos figure {
+		margin: 0;
+	}
+	.visit-photos img {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+	}
+	.visit-photos figcaption {
+		margin-top: var(--space-3);
+		font-size: var(--text-sm);
+		color: var(--color-text-muted);
+	}
+</style>

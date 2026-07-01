@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE, TREATMENT_CATEGORIES } from '../consts';
+import VisitClinic from '../components/VisitClinic.astro';
 import drPhoto from '../assets/dr-cimikoski.jpeg';
 import barbaraPhoto from '../assets/barbara-lorenzin.jpeg';
 
@@ -166,22 +167,8 @@ const stats = [
 		</div>
 	</section>
 
-	<!-- LOCATIONS -->
-	<section class="section">
-		<div class="container">
-			<p class="eyebrow">Serving the Salt Lake Valley</p>
-			<h2>Regenerative medicine near you</h2>
-			<p class="lead" style="max-width:60ch">
-				Based in Sandy, we welcome patients from across the Wasatch Front —
-				Salt Lake City, South Jordan, Draper, Kaysville and beyond.
-			</p>
-			<a
-				href="/locations/"
-				class="btn btn-primary"
-				style="margin-top:var(--space-4)">See all locations</a
-			>
-		</div>
-	</section>
+	<!-- VISIT / LOCATIONS -->
+	<VisitClinic />
 
 	<!-- FINAL CTA -->
 	<section class="cta-band">
