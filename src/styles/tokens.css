@@ -1,19 +1,15 @@
 :root {
-	/* Brand — blue (from Utah Stem Cells logo #1c7cc1 / #259bd6) */
-	--brand-50: #eaf4fb;
-	--brand-100: #cfe6f6;
-	--brand-200: #a6d1ee;
-	--brand-400: #4fa3da;
-	--brand-600: #1c7cc1;
-	--brand-700: #17669f;
-	--brand-800: #124f7c;
-	--brand-900: #0e3a5c;
-
-	/* Accent — warm amber (CTA, sparingly) */
-	--amber-100: #fbead0;
-	--amber-400: #e6a34a;
-	--amber-500: #d98a2b;
-	--amber-600: #b8701d;
+	/* Brand — blue (Utah Stem Cells: #1779BC primary, #1F9EDA light) */
+	--brand-50: #e9f4fb;
+	--brand-100: #c9e6f6;
+	--brand-200: #9ed4ef;
+	--brand-300: #63bce6;
+	--brand-400: #1f9eda; /* light brand blue */
+	--brand-500: #1b8ccb;
+	--brand-600: #1779bc; /* primary brand blue */
+	--brand-700: #12639b;
+	--brand-800: #0e4d78;
+	--brand-900: #0a3959;
 
 	/* Neutrals — slate */
 	--slate-50: #f5f8fa;
@@ -34,7 +30,7 @@
 	--color-text-invert: var(--white);
 	--color-primary: var(--brand-600);
 	--color-primary-dark: var(--brand-700);
-	--color-accent: var(--amber-500);
+	--color-accent: var(--brand-400);
 	--color-border: var(--slate-200);
 
 	/* Typography */
