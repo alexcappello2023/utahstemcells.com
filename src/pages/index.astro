@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE, TREATMENT_CATEGORIES } from '../consts';
 import drPhoto from '../assets/dr-cimikoski.jpeg';
+import barbaraPhoto from '../assets/barbara-lorenzin.jpeg';
 
 const categories = [
 	{ key: 'regenerative', desc: 'Stem cell therapy, PRP, joint & hair restoration.' },
@@ -141,8 +142,32 @@ const stats = [
 		</div>
 	</section>
 
-	<!-- LOCATIONS -->
+	<!-- INTERNATIONAL CONSULTANT / E-E-A-T -->
 	<section class="section section-soft">
+		<div class="container doctor reverse">
+			<Image
+				src={barbaraPhoto}
+				alt="Dr. Barbara Lorenzin, international consultant"
+				width={600}
+				height={750}
+				class="doctor-photo"
+			/>
+			<div>
+				<p class="eyebrow">International consultant</p>
+				<h2>Barbara Lorenzin, MD</h2>
+				<p>
+					An Italian physician with over 25 years in aesthetic and
+					regenerative medicine, Dr. Lorenzin serves as International
+					Consultant to Utah Stem Cells — bringing a European perspective
+					that blends innovation, artistry and evidence-based care.
+				</p>
+				<a href="/about/" class="btn btn-ghost">Read her full bio</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- LOCATIONS -->
+	<section class="section">
 		<div class="container">
 			<p class="eyebrow">Serving the Salt Lake Valley</p>
 			<h2>Regenerative medicine near you</h2>
@@ -280,6 +305,12 @@ const stats = [
 	@media (min-width: 760px) {
 		.doctor {
 			grid-template-columns: 300px 1fr;
+		}
+		.doctor.reverse {
+			grid-template-columns: 1fr 300px;
+		}
+		.doctor.reverse .doctor-photo {
+			order: 2;
 		}
 	}
 	.doctor-photo {
