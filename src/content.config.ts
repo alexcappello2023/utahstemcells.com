@@ -18,11 +18,14 @@ const treatments = defineCollection({
 		...seo,
 		category: z.enum([
 			'regenerative',
-			'sexual-health',
-			'hormones-wellness',
-			'iv-therapy',
-			'weight-loss',
+			'hair-restoration',
+			'sexual-wellness',
+			'hormones',
 			'aesthetics',
+			'body-contouring',
+			'weight-loss',
+			'iv-therapy',
+			'ketamine',
 		]),
 		summary: z.string(), // frase breve per card e hub
 		// interlink del cluster

@@ -11,13 +11,13 @@ export const SITE = {
 	// Sistema di prenotazione online (scheduler esterno)
 	bookingUrl: 'https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_60294',
 	address: {
-		street: '10121 S 1300 E',
+		street: '9980 S 300 W, Suite 150',
 		city: 'Sandy',
 		region: 'UT',
-		postal: '84094',
+		postal: '84070',
 		country: 'US',
 	},
-	geo: { lat: 40.5726, lng: -111.855 },
+	geo: { lat: 40.5651, lng: -111.9016 },
 	doctor: 'Dr. William Cimikoski',
 	social: {} as Record<string, string>,
 };
@@ -33,9 +33,12 @@ export const NAV = [
 
 export const TREATMENT_CATEGORIES: Record<string, string> = {
 	regenerative: 'Regenerative medicine',
-	'sexual-health': 'Sexual health',
-	'hormones-wellness': 'Hormones & wellness',
-	'iv-therapy': 'IV therapy',
-	'weight-loss': 'Weight loss',
-	aesthetics: 'Aesthetics & MedSpa',
+	'hair-restoration': 'Hair restoration',
+	'sexual-wellness': 'Sexual wellness',
+	hormones: 'Hormone optimization',
+	aesthetics: 'Medical aesthetics',
+	'body-contouring': 'Body contouring & skin tightening',
+	'weight-loss': 'Medical weight loss',
+	'iv-therapy': 'IV therapy & wellness',
+	ketamine: 'Ketamine therapy',
 };

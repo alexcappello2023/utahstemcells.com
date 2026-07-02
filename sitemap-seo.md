@@ -1,17 +1,19 @@
 # Utah Stem Cells — Sitemap & Architettura SEO (data-driven)
 
-> Basato su: Google Search Console (16 mesi, 240 URL, 1.000 query) + Ubersuggest rank tracking.
+> Basato su: Google Search Console (16 mesi, 240 URL, 1.000 query) + Ubersuggest rank tracking
+> + **documento ufficiale servizi della clinica** ("USC Services Overview", 2026-07-02).
 > Data analisi: 2026-07-01. Sito attuale: WordPress + WooCommerce + Elementor. Rebuild previsto: Astro (statico).
+> Le categorie e i servizi in §3 riflettono il documento ufficiale della clinica.
 
 ---
 
 ## 1. Cos'è davvero il sito (dai dati)
 
 Non è "una clinica di staminali". È **due brand sotto lo stesso tetto**:
-- **Utah Stem Cells** → medicina rigenerativa (staminali, IV, ormoni, patologie)
-- **USC MedSpa** → estetica (lip filler, votiva, morpheus8, vampire facial, cellulite, skincare)
+- **Utah Stem Cells** → medicina rigenerativa (staminali/PRP articolari, IV, ormoni)
+- **USC MedSpa** → estetica (botox, filler, Morpheus8, vampire facial, body contouring), + sexual wellness, weight loss, IV, ketamine
 
-- **Sede:** Sandy, UT (serve la Greater Salt Lake area)
+- **Sede (NAP ufficiale):** 9980 S 300 W, Suite 150, Sandy, UT 84070 — serve la Greater Salt Lake area
 - **Medico / volto E-E-A-T:** Dr. William "Bill" Cimikoski (cercato per nome)
 - **Traffico attuale:** ~420 clic/mese, **85% concentrato sulla home** (fragilità n°1)
 - **Mobile-first obbligatorio:** 4.474 clic mobile vs 2.169 desktop
@@ -72,52 +74,64 @@ Regole:
 
 /treatments/                             HUB servizi (indice di tutte le categorie)
 
-  # — Medicina rigenerativa
-/treatments/stem-cell-therapy/            ← PAGINA CORE
-/treatments/stem-cell-hair-restoration/
-/treatments/joint-regeneration/
-/treatments/prp-therapy/
-/treatments/stem-cell-iv-therapy/
+  # — Regenerative medicine (Regenerative Medicine & Joint Restoration)
+/treatments/stem-cell-joint-regeneration/  ← PAGINA CORE
+/treatments/prp-joint-treatment/
+/treatments/iv-stem-cell-therapy/
 
-  # — Salute sessuale
-/treatments/p-shot/                       (erectile dysfunction / priapus shot)
-/treatments/penile-enhancement/
+  # — Hair restoration
+/treatments/hair-restoration/             (PRP ± stem cell, men & women)
+
+  # — Sexual wellness
+/treatments/p-shot/                       (erectile dysfunction)
 /treatments/o-shot/
-/treatments/sexual-wellness/
+/treatments/gainswave/                    (acoustic wave, ED maschile)
+/treatments/votiva-femtite/
+/treatments/penile-enhancement/
 
-  # — Ormoni & Wellness
-/treatments/bioidentical-hormones/        (BHRT — men & women in un'unica pagina forte)
-/treatments/peptide-therapy/
+  # — Hormone optimization
+/treatments/hormone-pellet-therapy/       (men & women)
 
-  # — IV Therapy
+  # — Medical aesthetics (injectables + facials)
+/treatments/botox/                        (Botox, Jeuveau)
+/treatments/dermal-fillers/               (Juvéderm, Restylane, Radiesse, Versa, Bellafill…)
+/treatments/sculptra/                     (collagen-stimulating)
+/treatments/kybella/                      (double-chin / deoxycholic acid)
+/treatments/morpheus8/                    (microneedling + RF)
+/treatments/microneedling/
+/treatments/vampire-facial/               (microneedling + PRP)
+/treatments/ipl-photofacial/
+
+  # — Body contouring & skin tightening
+/treatments/facetite-bodytite/            (RF skin tightening viso/corpo)
+/treatments/rf-body-contouring/
+/treatments/liposuction/
+/treatments/fat-transfer/
+
+  # — Medical weight loss
+/treatments/medical-weight-loss/          (physician-supervised + nutrition)
+
+  # — IV therapy & wellness
 /treatments/iv-therapy/                   HUB IV
 /treatments/iv-therapy/nad/
-/treatments/iv-therapy/vitamin-drips/
-/treatments/iv-therapy/ketamine/
+/treatments/iv-therapy/vitamin-infusions/
+/treatments/iv-therapy/vitamin-c/
+/treatments/wellness-injections/
 
-  # — Weight Loss
-/treatments/weight-loss/                  (semaglutide/GLP-1, phentermine)
+  # — Ketamine therapy
+/treatments/ketamine-therapy/             (il vecchio sito rankava già su ketamine)
 
-  # — Estetica / MedSpa
-/treatments/lip-filler/                   (era /product/mini-lip-plump — 33k impression!)
-/treatments/votiva/
-/treatments/vampire-facial/
-/treatments/morpheus8/
-/treatments/cellulite-treatment/
-/treatments/under-eye-treatment/
-/treatments/botox-fillers/
-/treatments/skin-tightening/              (bodytite/facetite/forma)
-
-/conditions/                             HUB patologie
-/conditions/autism/
-/conditions/cerebral-palsy/
-/conditions/multiple-sclerosis/
-/conditions/spinal-cord-injury/
-/conditions/rheumatoid-arthritis/
+/conditions/                             HUB patologie  (⚠️ da validare col cliente, vedi §5.1)
 /conditions/knee-osteoarthritis/
+/conditions/shoulder-pain/
+/conditions/hip-pain/
+/conditions/back-pain/
+/conditions/joint-pain/
 /conditions/erectile-dysfunction/
-/conditions/peyronies-disease/
 /conditions/hair-loss/
+  # — Neuro (SOLO se il cliente conferma di offrirle ancora): autism, MS,
+  #   cerebral-palsy, spinal-cord-injury. Erano sul vecchio sito, NON nel
+  #   documento servizi ufficiale. Non pubblicare senza conferma.
 
 /locations/                              HUB sedi/città
 /locations/sandy/                         (sede principale)
@@ -163,6 +177,12 @@ Pagine città per i servizi core. GSC mostra ranking già presenti (pos 19-70) c
 ---
 
 ## 5. Mappa redirect 301 (preservare l'equity)
+
+### 5.1 ⚠️ Caveat Conditions neurologiche — DA VALIDARE
+Il vecchio sito ha pagine attive e con traffico per **autism** (75 clic), **multiple sclerosis**, **cerebral palsy**, **spinal cord injury** (fonte: GSC). Ma il **documento servizi ufficiale della clinica NON le elenca**.
+Prima di costruire/redirezionare queste pagine, confermare con i titolari se offrono ancora staminali per queste patologie. Motivo: la FDA è severa sulle claim staminali per condizioni neurologiche → rischio legale se pubblicate senza offerta reale.
+- Se **confermate** → mantieni le condition page + 301 dai vecchi URL.
+- Se **dismesse** → 301 verso `/conditions/` o `/treatments/stem-cell-joint-regeneration/`, e rimuovi le claim.
 
 **Vincitori da redirezionare con precisione (hanno clic/impression reali):**
 
