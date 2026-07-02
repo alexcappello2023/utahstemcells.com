@@ -69,6 +69,21 @@ const schema = {
 			</div>
 		</header>
 
+		{
+			data.hero && (
+				<div class="container container-narrow post-hero-wrap">
+					<img
+						src={data.hero}
+						alt={data.title}
+						class="post-hero"
+						width="820"
+						height="440"
+						loading="eager"
+					/>
+				</div>
+			)
+		}
+
 		<div class="section">
 			<div class="container prose">
 				<Content />
@@ -92,5 +107,20 @@ const schema = {
 		color: var(--color-text-muted);
 		font-size: var(--text-sm);
 		margin-top: var(--space-3);
+	}
+	.post-hero-wrap {
+		margin-top: var(--space-8);
+	}
+	.post-hero {
+		width: 100%;
+		height: auto;
+		max-height: 460px;
+		object-fit: cover;
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow);
+	}
+	.prose :global(img) {
+		border-radius: var(--radius);
+		margin-block: var(--space-6);
 	}
 </style>
