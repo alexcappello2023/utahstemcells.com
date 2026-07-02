@@ -124,17 +124,23 @@ Regole:
 /conditions/                             HUB patologie
   # — Ortopedico / articolare (Stem Cell Joint Regeneration + PRP)
 /conditions/knee-osteoarthritis/
+/conditions/osteoarthritis/              (generale — pagina esistente)
+/conditions/rheumatoid-arthritis/        (pagina esistente)
 /conditions/shoulder-pain/
 /conditions/hip-pain/
 /conditions/back-pain/
 /conditions/neck-pain/
 /conditions/joint-pain/
+/conditions/sacroiliac-joint-dysfunction/ (c'è già un articolo)
   # — Neurologiche (CONFERMATO offerto dalla clinica, 2026-07-02)
 /conditions/autism/
 /conditions/multiple-sclerosis/
 /conditions/cerebral-palsy/
 /conditions/spinal-cord-injury/
-  # — Altre
+/conditions/neuropathy/                  (c'è già un case study)
+  # — Sistemiche / altre (pagine esistenti sul sito attuale)
+/conditions/heart-failure/               (⚠️ molto sensibile FDA, testo prudentissimo)
+/conditions/autoimmune-conditions/
 /conditions/erectile-dysfunction/
 /conditions/hair-loss/
 
@@ -186,6 +192,18 @@ Pagine città per i servizi core. GSC mostra ranking già presenti (pos 19-70) c
 ### 5.1 Conditions neurologiche — CONFERMATE (2026-07-02)
 I titolari confermano che la clinica **offre ancora** trattamenti con staminali per **autism, multiple sclerosis, cerebral palsy, spinal cord injury**. → si **mantengono** le condition page e si fanno i **301** dai vecchi URL (`/autism/` → `/conditions/autism/`, ecc.).
 ⚠️ Trattandosi di YMYL su patologie neurologiche (area sotto scrutinio FDA), i testi vanno scritti in modo prudente ed evidence-based: descrivere l'approccio, niente promesse di guarigione, disclaimer medico, firma del Dr. Cimikoski.
+
+### 5.2 Contenuti da PRESERVARE (post-sitemap.xml + page-sitemap.xml, 2026-07-02)
+Il cliente vuole **tenere pagine e articoli**. Inventario: 32 articoli, 38 pagine.
+
+**Articoli blog (32) — migrare TUTTI** in `/blog/[slug]/` (301 dai vecchi URL a root). Mantieni gli slug dei top performer (equity SEO):
+- `stem-cell-therapy-hair-what-works…-2026` (38k imp), `half-syringe-lip-injections…` (18k imp), `hyperhidrosis-and-stress…` (12.9k imp), `5-benefits-of-stem-cell-therapy` (6.8k imp), `can-stem-cells-really-increase-penis-size…`.
+- Ogni articolo → link "verso l'alto" alla Service/Condition pertinente (interlink cluster).
+- Temi presenti (riferimento per l'auto-blog): ketamine (chronic pain, depression, +NAD), staminali educativi (benefici, 10 condizioni, scegliere il medico), articolare (ginocchio, artrosi, sacroiliaca, proloterapia), capelli, estetica/pelle (lip filler, vampire facial, PRP skin aging), sessuale (o-shot/p-shot), Votiva/incontinenza, neuropatia, iperidrosi/ansia.
+
+**Pagine da tenere:** `/about-us` (→ /about/), `/contact-us` (→ /contact/), `/faq`, `/disclaimer` (→ /medical-disclaimer/), `/privacy-policy`, `/terms-of-service`, `/testimonials-and-reviews` (→ /reviews/), `/resources`, `/video`, `/out-of-town-patients`, `/self-assessment`, le condition page (osteoarthritis, rheumatoid-arthritis, heart-failure, cerebral-palsy, autism, autoimmune-conditions, multiple-sclerosis, spinal-cord-injury), `/services-4/joint-regeneration-procedures`, `/services-4/iv-therapy-for-energy-recovery-wellness`, `/service/armtite`.
+
+**Pagine spazzatura → 410 (NON migrare):** `thank-you, testform, faq-test, about-us-test, home-old, shop-old, store-2, services-3, privacy-policy-2, gift-cards, give-a-gift-card, tell-a-friend, shop, shop-products`.
 
 **Vincitori da redirezionare con precisione (hanno clic/impression reali):**
 
