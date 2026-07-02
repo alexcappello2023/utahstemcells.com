@@ -1,0 +1,25 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+interface Props {
+	frontmatter: { title: string; description: string; updated?: string };
+}
+const { frontmatter } = Astro.props;
+const path = Astro.url.pathname;
+---
+
+<BaseLayout title={frontmatter.title} description={frontmatter.description} canonicalPath={path}>
+	<header class="page-hero">
+		<div class="container container-narrow">
+			<Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: frontmatter.title }]} />
+			<h1>{frontmatter.title}</h1>
+			{frontmatter.updated && <p class="lead">Last updated: {frontmatter.updated}</p>}
+		</div>
+	</header>
+	<div class="section">
+		<div class="container container-narrow prose">
+			<slot />
+		</div>
+	</div>
+</BaseLayout>
