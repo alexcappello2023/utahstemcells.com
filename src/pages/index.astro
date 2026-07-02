@@ -230,7 +230,8 @@ const stats = [
 		inset: 0;
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
+		object-fit: contain;
+		object-position: center;
 		opacity: 0;
 		animation: heroFade 28s infinite;
 	}
@@ -280,6 +281,12 @@ const stats = [
 				rgba(8, 42, 66, 0.72) 0%,
 				rgba(8, 42, 66, 0.88) 100%
 			);
+		}
+		/* On mobile (portrait) cover crops the sides, so heads and feet
+		   (top/bottom) stay fully visible while the photo still fills. */
+		.hero-slide {
+			object-fit: cover;
+			object-position: center;
 		}
 	}
 	.hero-copy {
