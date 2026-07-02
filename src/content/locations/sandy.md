@@ -1,12 +1,11 @@
 ---
-title: Regenerative Medicine & MedSpa in Sandy, UT
-metaTitle: Regenerative Medicine in Sandy, UT | Utah Stem Cells
-description: Utah Stem Cells & USC MedSpa is located in Sandy, UT — regenerative medicine, aesthetics and wellness led by Dr. William Cimikoski.
-summary: Our home clinic in Sandy, serving the greater Salt Lake Valley.
-city: Sandy
-region: Utah
-driveTime: You'll find us at our main clinic in Sandy
-direction: Salt Lake Valley
+title: "Regenerative Medicine & MedSpa in Sandy, UT"
+metaTitle: "Regenerative Medicine in Sandy, UT | Utah Stem Cells"
+description: "Utah Stem Cells & USC MedSpa is located in Sandy, UT — regenerative medicine, aesthetics and wellness led by Dr. William Cimikoski."
+summary: "Our home clinic in Sandy, serving the greater Salt Lake Valley."
+city: "Sandy"
+driveTime: "You'll find us at our main clinic in Sandy"
+direction: "Salt Lake Valley"
 isPrimary: true
 featuredTreatments:
   - stem-cell-joint-regeneration
@@ -21,4 +20,4 @@ Utah Stem Cells & USC MedSpa is based in Sandy, Utah, serving patients from acro
 
 ## Easy to reach
 
-We're conveniently located for patients across Sandy and the surrounding Wasatch Front communities. Free parking is available on-site.
+We're conveniently located at 9980 S 300 W, Suite 150, with free on-site parking, and easy access for patients across Sandy and the surrounding Wasatch Front communities.
