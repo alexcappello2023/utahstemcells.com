@@ -33,11 +33,25 @@ const fmt = (d: Date) =>
 			<div class="grid grid-3">
 				{
 					items.map((p) => (
-						<a href={`/blog/${p.id}/`} class="card link-card">
-							<p class="post-date">{fmt(p.data.pubDate)}</p>
-							<h3>{p.data.title}</h3>
-							<p>{p.data.description}</p>
-							<span class="card-link">Read article →</span>
+						<a href={`/blog/${p.id}/`} class="card link-card blog-card">
+							{
+								p.data.hero && (
+									<img
+										src={p.data.hero}
+										alt={p.data.title}
+										class="blog-card-img"
+										width="400"
+										height="225"
+										loading="lazy"
+									/>
+								)
+							}
+							<div class="blog-card-body">
+								<p class="post-date">{fmt(p.data.pubDate)}</p>
+								<h3>{p.data.title}</h3>
+								<p>{p.data.description}</p>
+								<span class="card-link">Read article →</span>
+							</div>
 						</a>
 					))
 				}
@@ -49,6 +63,24 @@ const fmt = (d: Date) =>
 </BaseLayout>
 
 <style>
+	.blog-card {
+		padding: 0;
+		overflow: hidden;
+	}
+	.blog-card-img {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
+		display: block;
+		background: var(--color-bg-soft);
+	}
+	.blog-card-body {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		padding: var(--space-6);
+	}
 	.post-date {
 		color: var(--color-text-muted);
 		font-size: var(--text-sm);
