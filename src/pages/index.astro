@@ -7,11 +7,13 @@ import drPhoto from '../assets/dr-cimikoski.jpeg';
 import barbaraPhoto from '../assets/barbara-lorenzin.jpeg';
 import heroFamily from '../assets/hero/hero-family.webp';
 import heroRunning from '../assets/hero/hero-running.webp';
+import heroSoccer from '../assets/hero/hero-soccer.webp';
 import heroWoman from '../assets/hero/hero-woman.webp';
 
 const heroSlides = [
 	{ img: heroFamily, alt: 'Happy family outdoors in Utah' },
 	{ img: heroRunning, alt: 'Young couple running on a Utah trail' },
+	{ img: heroSoccer, alt: 'Competitive soccer athlete on the field' },
 	{ img: heroWoman, alt: 'Radiant woman enjoying anti-aging care' },
 ];
 
@@ -230,7 +232,7 @@ const stats = [
 		height: 100%;
 		object-fit: cover;
 		opacity: 0;
-		animation: heroFade 21s infinite;
+		animation: heroFade 28s infinite;
 	}
 	.hero-slide:nth-child(2) {
 		animation-delay: 7s;
@@ -238,17 +240,20 @@ const stats = [
 	.hero-slide:nth-child(3) {
 		animation-delay: 14s;
 	}
+	.hero-slide:nth-child(4) {
+		animation-delay: 21s;
+	}
 	@keyframes heroFade {
 		0% {
 			opacity: 0;
 		}
-		5% {
+		4% {
 			opacity: 1;
 		}
-		28% {
+		21% {
 			opacity: 1;
 		}
-		33% {
+		25% {
 			opacity: 0;
 		}
 		100% {
