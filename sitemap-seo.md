@@ -189,6 +189,16 @@ Pagine città per i servizi core. GSC mostra ranking già presenti (pos 19-70) c
 
 ## 5. Mappa redirect 301 (preservare l'equity)
 
+### 5.0 ✅ STATO: mappa completa generata in `public/.htaccess` (2026-07-02)
+Mappa 301 completa costruita dall'inventario GSC di tutti i vecchi URL:
+- **126 redirect 301** (blog root → `/blog/`, `/services/*` → `/treatments/*`, product estetici → treatment, condition page root → `/conditions/*`, `/about-us/`→`/about/`, `/contact-us/`→`/contact/`, `/testimonials-and-reviews/`→`/reviews/`, ecc.)
+- **101 regole 410** (Gone) per la spazzatura dismessa: `/product-category/`, `/category/`, `/tag/`, `/project-category/` (pattern), + skincare/integratori/gift-card e pagine test/old/duplicate.
+- **Canonical**: forza HTTPS e dominio senza www in cima.
+- **Verificato**: tutte le 66 destinazioni 301 puntano a pagine esistenti nel build (nessun redirect→404).
+
+⚠️ **Assunzione hosting Apache** (`.htaccess`). Se il server è nginx, convertire le regole.
+⚠️ **Pagine legali da creare** (link nel footer, ancora 404): `/privacy-policy/`, `/terms-of-service/`, `/medical-disclaimer/`.
+
 ### 5.1 Conditions neurologiche — CONFERMATE (2026-07-02)
 I titolari confermano che la clinica **offre ancora** trattamenti con staminali per **autism, multiple sclerosis, cerebral palsy, spinal cord injury**. → si **mantengono** le condition page e si fanno i **301** dai vecchi URL (`/autism/` → `/conditions/autism/`, ecc.).
 ⚠️ Trattandosi di YMYL su patologie neurologiche (area sotto scrutinio FDA), i testi vanno scritti in modo prudente ed evidence-based: descrivere l'approccio, niente promesse di guarigione, disclaimer medico, firma del Dr. Cimikoski.
