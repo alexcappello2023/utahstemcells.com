@@ -4,6 +4,8 @@ description: "Using Stem Cells And BH to Heal - Dr.Cimikoski started doing stem 
 pubDate: 2019-12-10
 author: "Dr. William Cimikoski"
 hero: "/blog-images/regenerative-medicine-using-stem-cells-and-bioidentical-hormones-to-heal-with-william-cimikoski-md-hero.webp"
+relatedTreatments:
+  - hormone-pellet-therapy
 ---
 
 ## How Stem Cells Function and Ethical Concerns About Them

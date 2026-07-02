@@ -4,6 +4,10 @@ description: "A Stem Cell Journal Heart - Check Utah Stem Cell Joint Treatment a
 pubDate: 2019-10-28
 author: "Dr. William Cimikoski"
 hero: "/blog-images/a-stem-cell-journal-heart-hero.webp"
+relatedTreatments:
+  - stem-cell-joint-regeneration
+relatedConditions:
+  - neuropathy
 ---
 
 **Journal Owner: Noel Zuniga**

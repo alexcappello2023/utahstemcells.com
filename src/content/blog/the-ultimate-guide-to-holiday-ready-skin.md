@@ -4,6 +4,9 @@ description: "We have provided the ultimate guide to give you a noticeable holid
 pubDate: 2017-11-07
 author: "Dr. William Cimikoski"
 hero: "/blog-images/the-ultimate-guide-to-holiday-ready-skin-hero.webp"
+relatedTreatments:
+  - morpheus8
+  - medical-weight-loss
 ---
 
 The holidays are quickly approaching and that means time with family, parties, and LOTS of photos! Why not look your best?

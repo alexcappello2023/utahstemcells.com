@@ -4,6 +4,8 @@ description: "Injection of platelet objective was to systematically assess evide
 pubDate: 2019-10-29
 author: "Dr. William Cimikoski"
 hero: "/blog-images/a-systematic-review-of-the-safety-and-effectiveness-of-platelet-rich-plasma-prp-for-skin-aging-hero.webp"
+relatedTreatments:
+  - facetite-bodytite
 ---
 
 ## Abstract

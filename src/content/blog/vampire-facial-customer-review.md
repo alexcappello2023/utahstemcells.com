@@ -4,6 +4,8 @@ description: "Just have a glance at our Vampire Facial Customer Review. If you h
 pubDate: 2018-05-22
 author: "Dr. William Cimikoski"
 hero: "/blog-images/vampire-facial-customer-review-hero.webp"
+relatedTreatments:
+  - vampire-facial
 ---
 
 A few weeks ago I had the opportunity to get the highly talked about Vampire facial at ** Utah Stem Cells.** I heard nothing, but incredible things about the facial so I was really excited to try it for myself. Let me tell you. IT DID NOT DISAPPOINT. If you don’t like needles or blood, I suggest closing your eyes and inhale deeply because the benefits of this procedure sure as hell outweigh any fear. The Vampire facial is where they draw your blood and then spin it to separate the red and white blood cells from the Platelet Rich Plasma (PRP). Then a micro needle is used to create multiple invisible injuries into your skin that cause your body to naturally produce collagen and elastin to be sent to heal the damaged area. The PRP contains platelets and growth factors that provide faster healing, enhanced rejuvenation and dramatic results.

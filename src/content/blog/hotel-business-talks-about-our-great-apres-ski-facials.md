@@ -4,6 +4,10 @@ description: "Westgate Park City Resort & Spa is offering medical-grade facial s
 pubDate: 2017-12-05
 author: "Dr. William Cimikoski"
 hero: "/blog-images/hotel-business-talks-about-our-great-apres-ski-facials-hero.webp"
+relatedTreatments:
+  - stem-cell-joint-regeneration
+  - hormone-pellet-therapy
+  - vampire-facial
 ---
 
 Catering to its affluent clientele here, the **Westgate Park City Resort & Spa** is offering medical-grade services in its private sanctuary, Serenity Spa by Westgate, through a partnership with local medical center **Utah Stem Cells Clinic.**

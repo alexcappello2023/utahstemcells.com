@@ -4,6 +4,10 @@ description: "Treat conditions such as ED, Osteoarthritis,Sports Injury, Spinal 
 pubDate: 2017-09-14
 author: "Dr. William Cimikoski"
 hero: "/blog-images/10-conditions-that-can-be-treated-with-regenerative-medicine-hero.webp"
+relatedTreatments:
+  - stem-cell-joint-regeneration
+relatedConditions:
+  - osteoarthritis
 ---
 
 Regenerative medicine involves using your own body’s tissue to help heal disease and injury. Before we list some conditions that can be treated by regenerative medicine, it may be helpful to know a little bit more about each treatment we offer.

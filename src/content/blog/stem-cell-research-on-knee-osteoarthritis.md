@@ -4,6 +4,12 @@ description: "Do you suffer from knee osteoarthritis? Utah Stem Cells may have a
 pubDate: 2017-09-19
 author: "Dr. William Cimikoski"
 hero: "/blog-images/stem-cell-research-on-knee-osteoarthritis-hero.webp"
+relatedTreatments:
+  - stem-cell-joint-regeneration
+  - prp-joint-treatment
+relatedConditions:
+  - osteoarthritis
+  - knee-osteoarthritis
 ---
 
 ### What is Osteoarthritis?

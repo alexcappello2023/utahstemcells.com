@@ -4,6 +4,10 @@ description: "You might be wondering about the support of stem cell therapy to a
 pubDate: 2020-11-21
 author: "Dr. William Cimikoski"
 hero: "/blog-images/how-stem-cell-therapy-has-changed-hero.webp"
+relatedTreatments:
+  - stem-cell-joint-regeneration
+relatedConditions:
+  - autoimmune-conditions
 ---
 
 In the rennet years, there has been a significant advancement in [stem cell therapy](/treatments/iv-stem-cell-therapy/). The usefulness, promising results, and minimal invasiveness have enhanced the expectations of this treatment method. You might be wondering about the support of stem cell therapy to aid your loved ones with an alarming disease. Therefore, you need to be aware of stem cells, their use in medicine for various diseases and injuries.

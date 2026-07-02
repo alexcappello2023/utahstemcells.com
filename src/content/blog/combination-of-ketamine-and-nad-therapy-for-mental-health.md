@@ -4,6 +4,9 @@ description: "Mental health is a complex and often challenging aspect of our ove
 pubDate: 2023-11-02
 author: "Dr. William Cimikoski"
 hero: "/blog-images/combination-of-ketamine-and-nad-therapy-for-mental-health-hero.webp"
+relatedTreatments:
+  - ketamine-therapy
+  - iv-therapy/nad
 ---
 
 Mental health is a complex and often challenging aspect of our overall well-being. For individuals struggling with conditions like depression, anxiety, or PTSD, finding effective treatment options is essential. In recent years, there has been a growing interest in novel therapies, and one powerful combination that has gained attention is Ketamine and NAD (Nicotinamide Adenine Dinucleotide) therapy. This innovative approach is offering new hope to those in need of relief from their mental health symptoms.

@@ -4,6 +4,12 @@ description: "Check out the 5 Most Important Things to Look For In A Stem Cell D
 pubDate: 2019-10-11
 author: "Dr. William Cimikoski"
 hero: "/blog-images/the-5-most-important-things-to-look-for-in-a-stem-cell-doctor-hero.webp"
+relatedTreatments:
+  - penile-enhancement
+  - hair-restoration
+  - stem-cell-joint-regeneration
+relatedConditions:
+  - hair-loss
 ---
 
 Choosing the right stem cell physician makes all the difference. Here are the five most important things to look for.

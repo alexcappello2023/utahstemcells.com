@@ -4,6 +4,10 @@ description: "Benefits Of Stem Cell Therapy that can help to reduce the amount o
 pubDate: 2019-12-02
 author: "Dr. William Cimikoski"
 hero: "/blog-images/benefits-of-stem-cell-therapy-for-knees-hero.webp"
+relatedTreatments:
+  - stem-cell-joint-regeneration
+relatedConditions:
+  - knee-osteoarthritis
 ---
 
 Most patients seek out knee treatments in order to reduce the amount of pain they experience from ligament or nerve damage they experienced, and ideally, want to avoid surgical procedures if at all possible. Stem cell therapy for knees is a bit more complex than some other parts of the body as the blood supply is more constrained within this region, but if it’s done in just the right way, then the results can be very positive.

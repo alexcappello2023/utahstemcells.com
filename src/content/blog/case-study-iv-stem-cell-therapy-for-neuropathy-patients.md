@@ -4,6 +4,10 @@ description: "Case Study IV Stem Cell Therapy has been done for Neuropathy Patie
 pubDate: 2019-02-22
 author: "Dr. William Cimikoski"
 hero: "/blog-images/case-study-iv-stem-cell-therapy-for-neuropathy-patients-hero.webp"
+relatedTreatments:
+  - iv-stem-cell-therapy
+relatedConditions:
+  - neuropathy
 ---
 
 **Brief History:**

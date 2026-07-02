@@ -4,6 +4,10 @@ description: "IV Ketamine is often used to treat patients with chronic pain. Sti
 pubDate: 2023-04-21
 author: "Dr. William Cimikoski"
 hero: "/blog-images/iv-ketamine-for-chronic-pain-how-this-treatment-can-help-hero.webp"
+relatedTreatments:
+  - ketamine-therapy
+relatedConditions:
+  - neuropathy
 ---
 
 IV Ketamine is often used to treat patients with chronic pain. Still, no studies have determined the long-term impact of ketamine infusions. However, the therapy is a new approach to managing chronic pain, and the early results are very promising. Still, there is much more studying and testing before it can be effectively considered a long-term therapy.

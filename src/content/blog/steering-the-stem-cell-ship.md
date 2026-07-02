@@ -4,6 +4,13 @@ description: "Steering the Stem Cell Ship - Dr. Cimikoski says stem cell therapy
 pubDate: 2018-03-09
 author: "Dr. William Cimikoski"
 hero: "/blog-images/steering-the-stem-cell-ship-hero.webp"
+relatedTreatments:
+  - stem-cell-joint-regeneration
+  - medical-weight-loss
+  - hair-restoration
+relatedConditions:
+  - joint-pain
+  - hair-loss
 ---
 
 ### How we use stems cells to fix what ails and ages you.

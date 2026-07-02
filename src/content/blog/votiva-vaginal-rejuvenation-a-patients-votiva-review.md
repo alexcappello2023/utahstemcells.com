@@ -4,6 +4,8 @@ description: "Just have a glance at our Patient’s Votiva Vaginal Rejuvenation 
 pubDate: 2018-05-01
 author: "Dr. William Cimikoski"
 hero: "/blog-images/votiva-vaginal-rejuvenation-a-patients-votiva-review-hero.webp"
+relatedTreatments:
+  - votiva-femtite
 ---
 
 ## A Patient’s Votiva Review:

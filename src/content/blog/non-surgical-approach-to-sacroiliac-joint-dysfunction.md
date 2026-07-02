@@ -4,6 +4,12 @@ description: "Non-Surgical Approach to Sacroiliac Joint Dysfunction - we provide
 pubDate: 2017-09-19
 author: "Dr. William Cimikoski"
 hero: "/blog-images/non-surgical-approach-to-sacroiliac-joint-dysfunction-hero.webp"
+relatedTreatments:
+  - prp-joint-treatment
+  - stem-cell-joint-regeneration
+relatedConditions:
+  - sacroiliac-joint-dysfunction
+  - back-pain
 ---
 
 ### First off, let’s discuss where and what exactly is the Sacroiliac Joint and the Approach to Sacroiliac Joint Dysfunction

@@ -4,6 +4,10 @@ description: "Prolotherapy is a form of therapy that makes use of the body’s n
 pubDate: 2017-09-14
 author: "Dr. William Cimikoski"
 hero: "/blog-images/understanding-prolotherapy-and-how-it-works-hero.webp"
+relatedTreatments:
+  - prp-joint-treatment
+relatedConditions:
+  - back-pain
 ---
 
 **What Is Prolotherapy?**

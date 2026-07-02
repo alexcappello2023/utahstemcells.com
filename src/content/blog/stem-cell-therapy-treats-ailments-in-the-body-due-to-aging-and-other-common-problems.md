@@ -4,6 +4,11 @@ description: "Dr. Cimikoski says Stem Cell Therapy can be used to treats differe
 pubDate: 2018-01-23
 author: "Dr. William Cimikoski"
 hero: "/blog-images/stem-cell-therapy-treats-ailments-in-the-body-due-to-aging-and-other-common-problems-hero.webp"
+relatedTreatments:
+  - stem-cell-joint-regeneration
+  - hair-restoration
+relatedConditions:
+  - knee-osteoarthritis
 ---
 
 Aging and life experience can present a variety of problems within your body. William Cimikoski, MD, the Medical Director of Utah Stem Cells Joint Treatment and Wellness Center, joined Good Things Utah to talk about how he is helping patients get their lives and bodies back.

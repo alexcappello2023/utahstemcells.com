@@ -4,6 +4,10 @@ description: "Benefits Of Stem Cell Therapy - Utilizes biologic material harvest
 pubDate: 2017-09-14
 author: "Dr. William Cimikoski"
 hero: "/blog-images/5-benefits-of-stem-cell-therapy-hero.webp"
+relatedTreatments:
+  - stem-cell-joint-regeneration
+relatedConditions:
+  - joint-pain
 ---
 
 Stem cell therapy uses a patient’s own stem cells to help repair damaged tissues and repair injuries. This therapy is a part of the regenerative medicine field that is rapidly growing. A Benefits Of [Stem Cell Therapy](/treatments/stem-cell-joint-regeneration/) is used for include reducing joint pain, increasing motion and flexibility, and treating tendon and ligament tears.
