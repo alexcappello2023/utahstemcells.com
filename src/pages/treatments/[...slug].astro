@@ -16,9 +16,12 @@ const { data } = item;
 const { Content } = await render(item);
 const path = `/treatments/${item.id}/`;
 
-const conditions = (
-	await Promise.all((data.conditions ?? []).map((ref) => getEntry(ref)))
-).filter(Boolean);
+// Reverse lookup: conditions whose `treatments` list includes this treatment.
+// Single source of truth = the condition frontmatter.
+const allConditions = await getCollection('conditions', ({ data }) => !data.draft);
+const conditions = allConditions.filter((c) =>
+	(c.data.treatments ?? []).some((ref) => ref.id === item.id)
+);
 const related = (
 	await Promise.all((data.relatedTreatments ?? []).map((ref) => getEntry(ref)))
 ).filter(Boolean);
@@ -72,9 +75,9 @@ const schema = {
 		eyebrow="Conditions we treat"
 		heading="Conditions this treatment helps with"
 		items={conditions.map((c) => ({
-			title: c!.data.title,
-			href: `/conditions/${c!.id}/`,
-			summary: c!.data.summary,
+			title: c.data.title,
+			href: `/conditions/${c.id}/`,
+			summary: c.data.summary,
 		}))}
 	/>
 

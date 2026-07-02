@@ -1,8 +1,8 @@
 ---
-title: Knee Osteoarthritis
-metaTitle: Knee Osteoarthritis Treatment in Utah | Utah Stem Cells
-description: Non-surgical treatment options for knee osteoarthritis in Sandy, UT — regenerative medicine to reduce knee pain and improve mobility without surgery.
-summary: Non-surgical, regenerative options to reduce knee pain and improve mobility.
+title: "Knee Osteoarthritis"
+metaTitle: "Knee Osteoarthritis Treatment in Utah | Utah Stem Cells"
+description: "Non-surgical treatment for knee osteoarthritis in Sandy, UT — regenerative medicine to reduce knee pain and improve mobility without surgery."
+summary: "Non-surgical, regenerative options to reduce knee pain and improve mobility."
 treatments:
   - stem-cell-joint-regeneration
   - prp-joint-treatment
@@ -15,4 +15,6 @@ Knee osteoarthritis develops as the protective cartilage in the knee wears down 
 
 ## How we can help
 
-Rather than jumping straight to surgery, our physician-led regenerative approach aims to support the knee's natural repair and reduce pain. During your evaluation we'll review your history and imaging to recommend the right option.
+Rather than jumping straight to surgery, our physician-led regenerative approach aims to support the knee's natural repair and reduce pain. During your evaluation we review your history and imaging to recommend the right option.
+
+> This page is for general education and does not replace medical advice. Treatment suitability is determined by the physician based on individual evaluation.
