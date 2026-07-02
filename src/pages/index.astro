@@ -215,10 +215,9 @@ const stats = [
 		overflow: hidden;
 		display: flex;
 		align-items: center;
-		/* Tall enough that the 16:9 slides fill without cropping heads/feet.
-		   On most screens the container is now taller than the image ratio,
-		   so cover trims the sides instead of the top/bottom. */
-		min-height: min(94vh, 1120px);
+		/* Full-screen hero. dvh keeps it correct with mobile browser chrome. */
+		min-height: 100vh;
+		min-height: 100dvh;
 		padding-block: var(--space-24);
 		color: #fff;
 	}
