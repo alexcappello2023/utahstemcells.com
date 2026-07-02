@@ -5,13 +5,11 @@ import { SITE, TREATMENT_CATEGORIES } from '../consts';
 import VisitClinic from '../components/VisitClinic.astro';
 import drPhoto from '../assets/dr-cimikoski.jpeg';
 import barbaraPhoto from '../assets/barbara-lorenzin.jpeg';
-import heroCouple from '../assets/hero/hero-couple.webp';
 import heroFamily from '../assets/hero/hero-family.webp';
 import heroAthlete from '../assets/hero/hero-athlete.webp';
 import heroWoman from '../assets/hero/hero-woman.webp';
 
 const heroSlides = [
-	{ img: heroCouple, alt: 'Active mature couple hiking in Utah' },
 	{ img: heroFamily, alt: 'Happy family outdoors in Utah' },
 	{ img: heroAthlete, alt: 'Fit woman running on a Utah trail' },
 	{ img: heroWoman, alt: 'Radiant woman enjoying anti-aging care' },
@@ -232,28 +230,25 @@ const stats = [
 		height: 100%;
 		object-fit: cover;
 		opacity: 0;
-		animation: heroFade 32s infinite;
+		animation: heroFade 21s infinite;
 	}
 	.hero-slide:nth-child(2) {
-		animation-delay: 8s;
+		animation-delay: 7s;
 	}
 	.hero-slide:nth-child(3) {
-		animation-delay: 16s;
-	}
-	.hero-slide:nth-child(4) {
-		animation-delay: 24s;
+		animation-delay: 14s;
 	}
 	@keyframes heroFade {
 		0% {
 			opacity: 0;
 		}
-		4% {
+		5% {
 			opacity: 1;
 		}
-		21% {
+		28% {
 			opacity: 1;
 		}
-		29% {
+		33% {
 			opacity: 0;
 		}
 		100% {

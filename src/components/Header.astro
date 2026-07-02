@@ -100,8 +100,15 @@ const isActive = (href: string) => href !== '/' && path.startsWith(href);
 	.site-nav a.active {
 		color: var(--color-primary);
 	}
-	.nav-cta {
+	.site-nav a.nav-cta {
 		white-space: nowrap;
+		background: #fff;
+		color: var(--color-primary-dark);
+		border-color: var(--color-primary);
+	}
+	.site-nav a.nav-cta:hover {
+		background: var(--brand-50);
+		color: var(--color-primary-dark);
 	}
 
 	.nav-toggle,
