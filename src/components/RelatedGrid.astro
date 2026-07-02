@@ -1,0 +1,34 @@
+---
+interface Item {
+	title: string;
+	href: string;
+	summary?: string;
+}
+interface Props {
+	heading: string;
+	items: Item[];
+	eyebrow?: string;
+	soft?: boolean;
+}
+const { heading, items, eyebrow, soft = false } = Astro.props;
+---
+
+{
+	items.length > 0 && (
+		<section class:list={['section', { 'section-soft': soft }]}>
+			<div class="container">
+				{eyebrow && <p class="eyebrow">{eyebrow}</p>}
+				<h2>{heading}</h2>
+				<div class="grid grid-3" style="margin-top:var(--space-8)">
+					{items.map((it) => (
+						<a href={it.href} class="card link-card">
+							<h3>{it.title}</h3>
+							{it.summary && <p>{it.summary}</p>}
+							<span class="card-link">Learn more →</span>
+						</a>
+					))}
+				</div>
+			</div>
+		</section>
+	)
+}

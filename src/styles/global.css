@@ -210,3 +210,42 @@ img {
 .prose li {
 	margin-bottom: var(--space-2);
 }
+.prose a {
+	text-decoration: underline;
+}
+
+/* Interior page hero (treatments, conditions, locations, blog) */
+.page-hero {
+	background: linear-gradient(180deg, var(--brand-50), #fff);
+	padding-block: var(--space-12) var(--space-8);
+	border-bottom: 1px solid var(--color-border);
+}
+.page-hero h1 {
+	margin-top: var(--space-2);
+}
+.page-hero .lead {
+	max-width: 65ch;
+}
+.page-hero .btn {
+	margin-top: var(--space-6);
+}
+
+.card-link {
+	font-family: var(--font-display);
+	font-weight: 600;
+	color: var(--color-primary);
+	font-size: var(--text-sm);
+}
+.link-card {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	color: var(--color-text);
+}
+.link-card:hover {
+	text-decoration: none;
+}
+.link-card p {
+	color: var(--color-text-muted);
+	flex: 1;
+}

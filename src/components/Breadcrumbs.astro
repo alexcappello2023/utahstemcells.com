@@ -1,0 +1,73 @@
+---
+import { SITE } from '../consts';
+
+interface Crumb {
+	label: string;
+	href?: string;
+}
+interface Props {
+	items: Crumb[];
+}
+const { items } = Astro.props;
+
+// BreadcrumbList schema for SEO
+const schema = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: items.map((c, i) => ({
+		'@type': 'ListItem',
+		position: i + 1,
+		name: c.label,
+		...(c.href ? { item: new URL(c.href, SITE.url).href } : {}),
+	})),
+};
+---
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+	<ol>
+		{
+			items.map((c, i) => (
+				<li>
+					{c.href ? <a href={c.href}>{c.label}</a> : <span aria-current="page">{c.label}</span>}
+					{i < items.length - 1 && <span class="sep" aria-hidden="true">/</span>}
+				</li>
+			))
+		}
+	</ol>
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+<style>
+	.breadcrumbs {
+		margin-bottom: var(--space-4);
+	}
+	.breadcrumbs ol {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: var(--space-2);
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		font-size: var(--text-sm);
+		color: var(--color-text-muted);
+	}
+	.breadcrumbs li {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--space-2);
+	}
+	.breadcrumbs a {
+		color: var(--color-text-muted);
+		text-decoration: none;
+	}
+	.breadcrumbs a:hover {
+		color: var(--color-primary);
+	}
+	.breadcrumbs [aria-current='page'] {
+		color: var(--color-text);
+	}
+	.sep {
+		color: var(--color-border);
+	}
+</style>

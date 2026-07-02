@@ -1,0 +1,43 @@
+---
+import { SITE } from '../consts';
+
+interface Props {
+	title?: string;
+	text?: string;
+}
+const {
+	title = 'Ready to take the first step?',
+	text = 'Book a free, no-pressure consultation with our team.',
+} = Astro.props;
+---
+
+<section class="cta-band">
+	<div class="container cta-inner">
+		<h2>{title}</h2>
+		<p>{text}</p>
+		<a
+			href={SITE.bookingUrl}
+			target="_blank"
+			rel="noopener noreferrer"
+			class="btn btn-accent">Book a visit</a
+		>
+	</div>
+</section>
+
+<style>
+	.cta-band {
+		background: var(--brand-700);
+		color: #fff;
+		padding-block: var(--space-16);
+	}
+	.cta-inner {
+		text-align: center;
+	}
+	.cta-inner h2 {
+		color: #fff;
+	}
+	.cta-inner p {
+		color: var(--brand-100);
+		margin-bottom: var(--space-8);
+	}
+</style>

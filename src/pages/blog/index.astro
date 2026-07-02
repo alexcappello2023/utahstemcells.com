@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const items = await getCollection('blog', ({ data }) => !data.draft);
+items.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const fmt = (d: Date) =>
+	d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+
+<BaseLayout
+	title="Blog | Utah Stem Cells"
+	description="Insights on regenerative medicine, stem cell therapy, aesthetics and wellness from the physicians at Utah Stem Cells in Sandy, UT."
+	canonicalPath="/blog/"
+>
+	<header class="page-hero">
+		<div class="container">
+			<Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Blog' }]} />
+			<p class="eyebrow">Insights & education</p>
+			<h1>The Utah Stem Cells blog</h1>
+			<p class="lead">
+				Evidence-informed articles on regenerative medicine, aesthetics and
+				wellness.
+			</p>
+		</div>
+	</header>
+
+	<div class="section">
+		<div class="container">
+			<div class="grid grid-3">
+				{
+					items.map((p) => (
+						<a href={`/blog/${p.id}/`} class="card link-card">
+							<p class="post-date">{fmt(p.data.pubDate)}</p>
+							<h3>{p.data.title}</h3>
+							<p>{p.data.description}</p>
+							<span class="card-link">Read article →</span>
+						</a>
+					))
+				}
+			</div>
+		</div>
+	</div>
+
+	<CtaBand />
+</BaseLayout>
+
+<style>
+	.post-date {
+		color: var(--color-text-muted);
+		font-size: var(--text-sm);
+		margin-bottom: var(--space-2);
+	}
+</style>

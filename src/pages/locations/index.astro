@@ -1,0 +1,63 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const items = await getCollection('locations', ({ data }) => !data.draft);
+items.sort((a, b) => Number(b.data.isPrimary) - Number(a.data.isPrimary) || a.data.order - b.data.order);
+---
+
+<BaseLayout
+	title="Locations — Serving the Salt Lake Valley | Utah Stem Cells"
+	description="Utah Stem Cells is based in Sandy, UT and welcomes patients from across the Salt Lake Valley — Salt Lake City, South Jordan, Draper, Kaysville and beyond."
+	canonicalPath="/locations/"
+>
+	<header class="page-hero">
+		<div class="container">
+			<Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Locations' }]} />
+			<p class="eyebrow">Serving the Salt Lake Valley</p>
+			<h1>Regenerative medicine near you</h1>
+			<p class="lead">
+				Based in Sandy, we welcome patients from across the Wasatch Front. Find
+				your city below.
+			</p>
+		</div>
+	</header>
+
+	<div class="section">
+		<div class="container">
+			<div class="grid grid-3">
+				{
+					items.map((l) => (
+						<a href={`/locations/${l.id}/`} class="card link-card">
+							<h3>
+								{l.data.city}
+								{l.data.isPrimary && <span class="badge">Main clinic</span>}
+							</h3>
+							<p>{l.data.summary}</p>
+							<span class="card-link">Learn more →</span>
+						</a>
+					))
+				}
+			</div>
+		</div>
+	</div>
+
+	<CtaBand />
+</BaseLayout>
+
+<style>
+	.badge {
+		display: inline-block;
+		margin-left: var(--space-2);
+		padding: 0.15em 0.6em;
+		border-radius: 999px;
+		background: var(--brand-100);
+		color: var(--brand-800);
+		font-family: var(--font-sans);
+		font-size: 0.7rem;
+		font-weight: 500;
+		vertical-align: middle;
+	}
+</style>

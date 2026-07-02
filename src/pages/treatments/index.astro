@@ -1,0 +1,74 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { SITE, TREATMENT_CATEGORIES } from '../../consts';
+
+const items = await getCollection('treatments', ({ data }) => !data.draft);
+items.sort((a, b) => a.data.order - b.data.order);
+
+// group by category, in the canonical category order
+const grouped = Object.keys(TREATMENT_CATEGORIES).map((key) => ({
+	key,
+	label: TREATMENT_CATEGORIES[key],
+	items: items.filter((i) => i.data.category === key),
+}));
+---
+
+<BaseLayout
+	title="Treatments & Services | Utah Stem Cells"
+	description="Explore all treatments at Utah Stem Cells & USC MedSpa — regenerative medicine, hair restoration, sexual wellness, hormones, aesthetics, body contouring, weight loss, IV therapy and ketamine."
+	canonicalPath="/treatments/"
+>
+	<header class="page-hero">
+		<div class="container">
+			<Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Treatments' }]} />
+			<p class="eyebrow">What we offer</p>
+			<h1>Treatments &amp; services</h1>
+			<p class="lead">
+				Physician-led regenerative medicine, aesthetics and wellness care in
+				Sandy, Utah — led by {SITE.doctor}.
+			</p>
+		</div>
+	</header>
+
+	<div class="section">
+		<div class="container">
+			{
+				grouped.map(
+					(g) =>
+						g.items.length > 0 && (
+							<section class="cat-group">
+								<h2>{g.label}</h2>
+								<div class="grid grid-3">
+									{g.items.map((t) => (
+										<a href={`/treatments/${t.id}/`} class="card link-card">
+											<h3>{t.data.title}</h3>
+											<p>{t.data.summary}</p>
+											<span class="card-link">Learn more →</span>
+										</a>
+									))}
+								</div>
+							</section>
+						)
+				)
+			}
+		</div>
+	</div>
+
+	<CtaBand />
+</BaseLayout>
+
+<style>
+	.cat-group {
+		margin-bottom: var(--space-16);
+	}
+	.cat-group:last-child {
+		margin-bottom: 0;
+	}
+	.cat-group h2 {
+		font-size: var(--text-2xl);
+		margin-bottom: var(--space-6);
+	}
+</style>

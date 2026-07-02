@@ -1,0 +1,96 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import RelatedGrid from '../../components/RelatedGrid.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { SITE } from '../../consts';
+
+export async function getStaticPaths() {
+	const items = await getCollection('blog', ({ data }) => !data.draft);
+	return items.map((item) => ({ params: { slug: item.id }, props: { item } }));
+}
+
+const { item } = Astro.props;
+const { data } = item;
+const { Content } = await render(item);
+const path = `/blog/${item.id}/`;
+
+const dateStr = data.pubDate.toLocaleDateString('en-US', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+});
+
+const rt = (
+	await Promise.all((data.relatedTreatments ?? []).map((ref) => getEntry(ref)))
+).filter(Boolean);
+const rc = (
+	await Promise.all((data.relatedConditions ?? []).map((ref) => getEntry(ref)))
+).filter(Boolean);
+const related = [
+	...rt.map((t) => ({ title: t!.data.title, href: `/treatments/${t!.id}/`, summary: t!.data.summary })),
+	...rc.map((c) => ({ title: c!.data.title, href: `/conditions/${c!.id}/`, summary: c!.data.summary })),
+];
+
+const schema = {
+	'@context': 'https://schema.org',
+	'@type': 'MedicalWebPage',
+	headline: data.title,
+	description: data.description,
+	datePublished: data.pubDate.toISOString(),
+	...(data.updated ? { dateModified: data.updated.toISOString() } : {}),
+	author: { '@type': 'Person', name: data.author },
+	publisher: { '@type': 'MedicalClinic', name: SITE.name, url: SITE.url },
+	url: new URL(path, SITE.url).href,
+};
+---
+
+<BaseLayout
+	title={data.metaTitle ?? data.title}
+	description={data.description}
+	canonicalPath={path}
+	type="article"
+>
+	<article>
+		<header class="page-hero">
+			<div class="container container-narrow">
+				<Breadcrumbs
+					items={[
+						{ label: 'Home', href: '/' },
+						{ label: 'Blog', href: '/blog/' },
+						{ label: data.title },
+					]}
+				/>
+				<h1>{data.title}</h1>
+				<p class="post-meta">
+					By {data.author} · <time datetime={data.pubDate.toISOString()}>{dateStr}</time>
+				</p>
+			</div>
+		</header>
+
+		<div class="section">
+			<div class="container prose">
+				<Content />
+			</div>
+		</div>
+	</article>
+
+	<RelatedGrid
+		soft
+		eyebrow="Related"
+		heading="Learn more"
+		items={related}
+	/>
+
+	<CtaBand />
+	<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+</BaseLayout>
+
+<style>
+	.post-meta {
+		color: var(--color-text-muted);
+		font-size: var(--text-sm);
+		margin-top: var(--space-3);
+	}
+</style>

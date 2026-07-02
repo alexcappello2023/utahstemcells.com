@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const items = await getCollection('conditions', ({ data }) => !data.draft);
+items.sort((a, b) => a.data.order - b.data.order || a.data.title.localeCompare(b.data.title));
+---
+
+<BaseLayout
+	title="Conditions We Treat | Utah Stem Cells"
+	description="Find regenerative and wellness care by condition — joint pain, arthritis, hair loss, erectile dysfunction and more, at Utah Stem Cells in Sandy, UT."
+	canonicalPath="/conditions/"
+>
+	<header class="page-hero">
+		<div class="container">
+			<Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Conditions' }]} />
+			<p class="eyebrow">Start with your condition</p>
+			<h1>Conditions we help with</h1>
+			<p class="lead">
+				Not sure which treatment is right for you? Find your condition and see
+				how we can help.
+			</p>
+		</div>
+	</header>
+
+	<div class="section">
+		<div class="container">
+			<div class="grid grid-3">
+				{
+					items.map((c) => (
+						<a href={`/conditions/${c.id}/`} class="card link-card">
+							<h3>{c.data.title}</h3>
+							<p>{c.data.summary}</p>
+							<span class="card-link">Learn more →</span>
+						</a>
+					))
+				}
+			</div>
+		</div>
+	</div>
+
+	<CtaBand />
+</BaseLayout>

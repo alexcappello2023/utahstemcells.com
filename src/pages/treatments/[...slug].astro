@@ -1,0 +1,93 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import RelatedGrid from '../../components/RelatedGrid.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { SITE, TREATMENT_CATEGORIES } from '../../consts';
+
+export async function getStaticPaths() {
+	const items = await getCollection('treatments', ({ data }) => !data.draft);
+	return items.map((item) => ({ params: { slug: item.id }, props: { item } }));
+}
+
+const { item } = Astro.props;
+const { data } = item;
+const { Content } = await render(item);
+const path = `/treatments/${item.id}/`;
+
+const conditions = (
+	await Promise.all((data.conditions ?? []).map((ref) => getEntry(ref)))
+).filter(Boolean);
+const related = (
+	await Promise.all((data.relatedTreatments ?? []).map((ref) => getEntry(ref)))
+).filter(Boolean);
+
+const schema = {
+	'@context': 'https://schema.org',
+	'@type': 'MedicalProcedure',
+	name: data.title,
+	description: data.description,
+	url: new URL(path, SITE.url).href,
+	provider: { '@type': 'MedicalClinic', name: SITE.name, url: SITE.url },
+};
+---
+
+<BaseLayout
+	title={data.metaTitle ?? data.title}
+	description={data.description}
+	canonicalPath={path}
+>
+	<article>
+		<header class="page-hero">
+			<div class="container">
+				<Breadcrumbs
+					items={[
+						{ label: 'Home', href: '/' },
+						{ label: 'Treatments', href: '/treatments/' },
+						{ label: data.title },
+					]}
+				/>
+				<p class="eyebrow">{TREATMENT_CATEGORIES[data.category]}</p>
+				<h1>{data.title}</h1>
+				<p class="lead">{data.summary}</p>
+				<a
+					href={SITE.bookingUrl}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="btn btn-primary">Book a visit</a
+				>
+			</div>
+		</header>
+
+		<div class="section">
+			<div class="container prose">
+				<Content />
+			</div>
+		</div>
+	</article>
+
+	<RelatedGrid
+		soft
+		eyebrow="Conditions we treat"
+		heading="Conditions this treatment helps with"
+		items={conditions.map((c) => ({
+			title: c!.data.title,
+			href: `/conditions/${c!.id}/`,
+			summary: c!.data.summary,
+		}))}
+	/>
+
+	<RelatedGrid
+		eyebrow="Explore more"
+		heading="Related treatments"
+		items={related.map((t) => ({
+			title: t!.data.title,
+			href: `/treatments/${t!.id}/`,
+			summary: t!.data.summary,
+		}))}
+	/>
+
+	<CtaBand />
+	<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+</BaseLayout>

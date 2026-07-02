@@ -1,0 +1,79 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import RelatedGrid from '../../components/RelatedGrid.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { SITE } from '../../consts';
+
+export async function getStaticPaths() {
+	const items = await getCollection('conditions', ({ data }) => !data.draft);
+	return items.map((item) => ({ params: { slug: item.id }, props: { item } }));
+}
+
+const { item } = Astro.props;
+const { data } = item;
+const { Content } = await render(item);
+const path = `/conditions/${item.id}/`;
+
+const treatments = (
+	await Promise.all((data.treatments ?? []).map((ref) => getEntry(ref)))
+).filter(Boolean);
+
+const schema = {
+	'@context': 'https://schema.org',
+	'@type': 'MedicalCondition',
+	name: data.title,
+	description: data.description,
+	url: new URL(path, SITE.url).href,
+};
+---
+
+<BaseLayout
+	title={data.metaTitle ?? data.title}
+	description={data.description}
+	canonicalPath={path}
+>
+	<article>
+		<header class="page-hero">
+			<div class="container">
+				<Breadcrumbs
+					items={[
+						{ label: 'Home', href: '/' },
+						{ label: 'Conditions', href: '/conditions/' },
+						{ label: data.title },
+					]}
+				/>
+				<p class="eyebrow">Condition</p>
+				<h1>{data.title}</h1>
+				<p class="lead">{data.summary}</p>
+				<a
+					href={SITE.bookingUrl}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="btn btn-primary">Book a consultation</a
+				>
+			</div>
+		</header>
+
+		<div class="section">
+			<div class="container prose">
+				<Content />
+			</div>
+		</div>
+	</article>
+
+	<RelatedGrid
+		soft
+		eyebrow="How we can help"
+		heading="Treatments for this condition"
+		items={treatments.map((t) => ({
+			title: t!.data.title,
+			href: `/treatments/${t!.id}/`,
+			summary: t!.data.summary,
+		}))}
+	/>
+
+	<CtaBand />
+	<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+</BaseLayout>
