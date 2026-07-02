@@ -1,0 +1,211 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { SITE } from '../../consts';
+import drPhoto from '../../assets/dr-cimikoski.jpeg';
+import barbaraPhoto from '../../assets/barbara-lorenzin.jpeg';
+
+const mediaMentions = ['ABC', 'CBS', 'FOX', 'KSL Studio 5', 'HealthLine TV', 'Good Things Utah'];
+
+const physicianSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Physician',
+	name: 'William Cimikoski, MD',
+	jobTitle: 'Medical Director',
+	worksFor: { '@type': 'MedicalClinic', name: SITE.name, url: SITE.url },
+	url: new URL('/about/', SITE.url).href,
+	medicalSpecialty: 'Regenerative medicine',
+};
+---
+
+<BaseLayout
+	title="About Us | Utah Stem Cells & USC MedSpa"
+	description="Meet the physician-led team behind Utah Stem Cells in Sandy, UT — Medical Director Dr. William Cimikoski and International Consultant Dr. Barbara Lorenzin."
+	canonicalPath="/about/"
+>
+	<header class="page-hero">
+		<div class="container">
+			<Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'About' }]} />
+			<p class="eyebrow">About us</p>
+			<h1>Physician-led regenerative medicine &amp; aesthetics</h1>
+			<p class="lead mission">
+				“We specialize in advanced techniques with Biological Therapies to
+				invigorate the lives of our patients.”
+			</p>
+		</div>
+	</header>
+
+	<!-- Clinic intro -->
+	<section class="section">
+		<div class="container container-narrow prose">
+			<p>
+				Utah Stem Cells &amp; USC MedSpa is a physician-led clinic in Sandy,
+				Utah, offering regenerative medicine, hormone optimization, medical
+				aesthetics, sexual wellness, weight management and IV wellness — all
+				under one roof. Our approach is honest and evidence-informed: we help
+				patients restore function, improve mobility and look and feel their
+				best, without overpromising.
+			</p>
+		</div>
+	</section>
+
+	<!-- Dr. Cimikoski -->
+	<section id="dr-cimikoski" class="section section-soft">
+		<div class="container team">
+			<Image
+				src={drPhoto}
+				alt="Dr. William Cimikoski, Medical Director"
+				width={600}
+				height={750}
+				class="team-photo"
+			/>
+			<div class="team-bio">
+				<p class="eyebrow">Medical Director</p>
+				<h2>William “Bill” Cimikoski, MD</h2>
+				<p>
+					Dr. Cimikoski is the Medical Director of Utah Stem Cells and a Medical
+					Toxicologist who completed seven years of residency and fellowship
+					training in Emergency Medicine and Medical Toxicology. He specializes
+					in stem cell joint regeneration, bioidentical hormone replacement
+					therapy, medical aesthetics and medical weight loss.
+				</p>
+				<p>
+					He trained at Brown University, completed his Emergency Medicine
+					residency at Georgia Health Sciences University and Albany Medical
+					Center, and a Critical Care fellowship in Medical Toxicology at Penn
+					State University.
+				</p>
+				<p>
+					Having personally experienced multiple orthopedic injuries and
+					surgeries as a competitive athlete, Dr. Cimikoski understands
+					first-hand the profound impact joint pain can have on quality of
+					life. Today he combines that experience with advanced regenerative
+					protocols to help patients return to the activities they love.
+				</p>
+				<div class="media">
+					<span class="media-label">As featured on</span>
+					<ul>
+						{mediaMentions.map((m) => <li>{m}</li>)}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Dr. Lorenzin -->
+	<section id="dr-lorenzin" class="section">
+		<div class="container team reverse">
+			<Image
+				src={barbaraPhoto}
+				alt="Dr. Barbara Lorenzin, International Consultant"
+				width={600}
+				height={750}
+				class="team-photo"
+			/>
+			<div class="team-bio">
+				<p class="eyebrow">International Consultant</p>
+				<h2>Barbara Lorenzin, MD</h2>
+				<p>
+					Dr. Lorenzin is an Italian physician with more than 25 years of
+					experience in aesthetic and regenerative medicine. Internationally
+					recognized for her expertise, she has served as a speaker, trainer and
+					educator in advanced aesthetic procedures and regenerative therapies
+					throughout Europe.
+				</p>
+				<p>
+					As International Consultant to Utah Stem Cells, she brings a uniquely
+					European perspective — combining innovation, artistry and
+					evidence-based medicine — contributing to clinical education,
+					strategic development and international collaboration. She is currently
+					pursuing U.S. medical licensure.
+				</p>
+				<p class="disclaimer">
+					Dr. Lorenzin currently serves in an international consulting capacity
+					and does not independently provide medical treatment or direct patient
+					care in the United States pending completion of applicable U.S.
+					licensure requirements.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<CtaBand
+		title="Meet our team in person"
+		text="Book a free consultation and see how we can help."
+	/>
+	<script type="application/ld+json" set:html={JSON.stringify(physicianSchema)} />
+</BaseLayout>
+
+<style>
+	.mission {
+		font-family: var(--font-voice, Georgia, serif);
+		font-style: italic;
+		color: var(--color-text);
+		font-size: var(--text-xl);
+		max-width: 40ch;
+	}
+	.team {
+		display: grid;
+		gap: var(--space-8);
+		align-items: start;
+	}
+	@media (min-width: 820px) {
+		.team {
+			grid-template-columns: 320px 1fr;
+		}
+		.team.reverse {
+			grid-template-columns: 1fr 320px;
+		}
+		.team.reverse .team-photo {
+			order: 2;
+		}
+	}
+	.team-photo {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 4 / 5;
+		object-fit: cover;
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow);
+	}
+	.team-bio h2 {
+		margin-top: var(--space-2);
+	}
+	.media {
+		margin-top: var(--space-6);
+		padding-top: var(--space-4);
+		border-top: 1px solid var(--color-border);
+	}
+	.media-label {
+		display: block;
+		font-family: var(--font-display);
+		font-size: var(--text-sm);
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: var(--color-text-muted);
+		margin-bottom: var(--space-3);
+	}
+	.media ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-2) var(--space-4);
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.media li {
+		font-family: var(--font-display);
+		font-weight: 600;
+		color: var(--color-primary-dark);
+	}
+	.disclaimer {
+		font-size: var(--text-sm);
+		color: var(--color-text-muted);
+		border-left: 3px solid var(--color-border);
+		padding-left: var(--space-4);
+		border-radius: 0;
+	}
+</style>
