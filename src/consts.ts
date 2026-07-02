@@ -5,8 +5,9 @@ export const SITE = {
 	brandLine: 'Utah Stem Cells & USC MedSpa',
 	url: 'https://utahstemcells.com',
 	tagline: 'Regenerative medicine & aesthetics in Sandy, Utah',
-	phone: '(801) 231-2360',
-	phoneHref: '+18012312360',
+	phone: '(801) 999-4860',
+	phoneHref: '+18019994860',
+	fax: '(801) 948-4120',
 	email: 'info@utahstemcells.com',
 	// Sistema di prenotazione online (scheduler esterno)
 	bookingUrl: 'https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_60294',
@@ -18,8 +19,17 @@ export const SITE = {
 		country: 'US',
 	},
 	geo: { lat: 40.5651, lng: -111.9016 },
+	hours: {
+		display: 'Monday – Friday: 10:00 AM – 6:00 PM',
+		closed: 'Saturday & Sunday: Closed',
+		schema: ['Mo-Fr 10:00-18:00'],
+	},
 	doctor: 'Dr. William Cimikoski',
-	social: {} as Record<string, string>,
+	social: {
+		facebook: 'https://www.facebook.com/UTAHSTEMCELLS/',
+		instagram: 'https://www.instagram.com/utahstemcells/',
+		youtube: 'https://www.youtube.com/channel/UCC5KEPKF3aCg563rMpEngzQ',
+	} as Record<string, string>,
 };
 
 export const NAV = [

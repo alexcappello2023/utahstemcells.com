@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { SITE } from '../../consts';
+
+const googleReviews = `https://www.google.com/search?q=${encodeURIComponent(
+	`${SITE.name} ${SITE.address.city} UT reviews`
+)}`;
+
+// TODO: sostituire con recensioni reali (o widget Google) prima del go-live.
+// Testo segnaposto, neutro — NON pubblicare come reale.
+const testimonials = [
+	{ quote: 'Placeholder review — replace with a real patient testimonial about joint regeneration.', name: 'Verified patient', context: 'Stem cell joint regeneration' },
+	{ quote: 'Placeholder review — replace with a real patient testimonial about hair restoration.', name: 'Verified patient', context: 'Hair restoration' },
+	{ quote: 'Placeholder review — replace with a real patient testimonial about the team and care.', name: 'Verified patient', context: 'Regenerative medicine' },
+	{ quote: 'Placeholder review — replace with a real patient testimonial about aesthetics.', name: 'Verified patient', context: 'Medical aesthetics' },
+	{ quote: 'Placeholder review — replace with a real patient testimonial about IV therapy.', name: 'Verified patient', context: 'IV therapy' },
+	{ quote: 'Placeholder review — replace with a real patient testimonial about the consultation.', name: 'Verified patient', context: 'Consultation' },
+];
+---
+
+<BaseLayout
+	title="Patient Reviews & Testimonials | Utah Stem Cells"
+	description="Read what patients say about Utah Stem Cells in Sandy, UT — regenerative medicine, aesthetics and wellness care led by Dr. William Cimikoski."
+	canonicalPath="/reviews/"
+>
+	<header class="page-hero">
+		<div class="container">
+			<Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Reviews' }]} />
+			<p class="eyebrow">What patients say</p>
+			<h1>Patient reviews &amp; testimonials</h1>
+			<p class="lead">
+				We're grateful for the trust our patients place in us. Here's what they
+				have to say.
+			</p>
+			<a href={googleReviews} target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+				>Read our Google reviews</a
+			>
+		</div>
+	</header>
+
+	<section class="section">
+		<div class="container">
+			<div class="grid grid-3">
+				{
+					testimonials.map((t) => (
+						<figure class="card review-card">
+							<blockquote>“{t.quote}”</blockquote>
+							<figcaption>
+								<span class="review-name">{t.name}</span>
+								<span class="review-context">{t.context}</span>
+							</figcaption>
+						</figure>
+					))
+				}
+			</div>
+		</div>
+	</section>
+
+	<CtaBand
+		title="Have you visited us?"
+		text="We'd love to hear about your experience — leave us a review on Google."
+	/>
+</BaseLayout>
+
+<style>
+	.review-card {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-4);
+	}
+	.review-card blockquote {
+		margin: 0;
+		font-family: var(--font-voice, Georgia, serif);
+		font-size: var(--text-lg);
+		line-height: 1.5;
+		color: var(--color-text);
+		flex: 1;
+	}
+	.review-card figcaption {
+		display: flex;
+		flex-direction: column;
+		border-top: 1px solid var(--color-border);
+		padding-top: var(--space-4);
+	}
+	.review-name {
+		font-family: var(--font-display);
+		font-weight: 600;
+	}
+	.review-context {
+		font-size: var(--text-sm);
+		color: var(--color-primary);
+	}
+</style>

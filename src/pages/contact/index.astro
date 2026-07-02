@@ -1,0 +1,263 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { SITE } from '../../consts';
+
+const fullAddress = `${SITE.address.street}, ${SITE.address.city}, ${SITE.address.region} ${SITE.address.postal}`;
+const mapEmbed = `https://www.google.com/maps?q=${encodeURIComponent(
+	`${SITE.name}, ${fullAddress}`
+)}&output=embed`;
+const mapsLink = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(fullAddress)}`;
+---
+
+<BaseLayout
+	title="Contact Us | Utah Stem Cells"
+	description="Contact Utah Stem Cells in Sandy, UT. Call (801) 999-4860, visit us at 9980 S 300 W Suite 150, or book a free consultation online."
+	canonicalPath="/contact/"
+>
+	<header class="page-hero">
+		<div class="container">
+			<Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Contact' }]} />
+			<p class="eyebrow">Get in touch</p>
+			<h1>Contact us</h1>
+			<p class="lead">
+				Questions or ready to get started? Call us, send a message, or book a
+				free consultation online.
+			</p>
+			<a
+				href={SITE.bookingUrl}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="btn btn-primary">Book a visit</a
+			>
+		</div>
+	</header>
+
+	<section class="section">
+		<div class="container contact-layout">
+			<!-- Info + hours -->
+			<div class="contact-info">
+				<div class="info-block">
+					<h2>Contact info</h2>
+					<ul class="info-list">
+						<li>
+							<span class="info-label">Call</span>
+							<a href={`tel:${SITE.phoneHref}`}>{SITE.phone}</a>
+						</li>
+						<li>
+							<span class="info-label">Fax</span>
+							<span>{SITE.fax}</span>
+						</li>
+						<li>
+							<span class="info-label">Email</span>
+							<a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+						</li>
+						<li>
+							<span class="info-label">Location</span>
+							<address>
+								{SITE.name}<br />
+								{SITE.address.street}<br />
+								{SITE.address.city}, {SITE.address.region} {SITE.address.postal}
+							</address>
+							<a href={mapsLink} target="_blank" rel="noopener noreferrer" class="card-link"
+								>Get directions →</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<div class="info-block">
+					<h2>Business hours</h2>
+					<p>{SITE.hours.display}</p>
+					<p class="muted">{SITE.hours.closed}</p>
+				</div>
+
+				<div class="info-block">
+					<h2>Follow us</h2>
+					<ul class="social">
+						<li><a href={SITE.social.facebook} target="_blank" rel="noopener noreferrer">Facebook</a></li>
+						<li><a href={SITE.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a></li>
+						<li><a href={SITE.social.youtube} target="_blank" rel="noopener noreferrer">YouTube</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Form + map -->
+			<div class="contact-main">
+				<div class="form-card">
+					<h2>Send us a message</h2>
+					<!-- TODO: collegare l'action a un form handler (Formspree / Netlify Forms) prima del go-live -->
+					<form
+						class="contact-form"
+						action="https://formspree.io/f/YOUR_FORM_ID"
+						method="POST"
+					>
+						<div class="field-row">
+							<label>
+								Name
+								<input type="text" name="name" required />
+							</label>
+							<label>
+								Email
+								<input type="email" name="email" required />
+							</label>
+						</div>
+						<label>
+							Phone
+							<input type="tel" name="phone" />
+						</label>
+						<label>
+							Subject
+							<input type="text" name="subject" />
+						</label>
+						<label>
+							Message
+							<textarea name="message" rows="5" required></textarea>
+						</label>
+						<button type="submit" class="btn btn-primary">Send message</button>
+					</form>
+					<p class="form-note">
+						Note: for questions about a treatment or procedure already performed,
+						please call our office directly at
+						<a href={`tel:${SITE.phoneHref}`}>{SITE.phone}</a>.
+					</p>
+				</div>
+
+				<div class="map-card">
+					<iframe
+						title={`Map to ${SITE.name}`}
+						src={mapEmbed}
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+						allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.contact-layout {
+		display: grid;
+		gap: var(--space-12);
+	}
+	@media (min-width: 900px) {
+		.contact-layout {
+			grid-template-columns: 320px 1fr;
+			align-items: start;
+		}
+	}
+	.info-block {
+		margin-bottom: var(--space-8);
+	}
+	.info-block h2 {
+		font-size: var(--text-xl);
+		margin-bottom: var(--space-3);
+	}
+	.info-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: var(--space-4);
+	}
+	.info-label {
+		display: block;
+		font-family: var(--font-display);
+		font-size: var(--text-sm);
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		color: var(--color-text-muted);
+	}
+	.info-list address {
+		font-style: normal;
+		line-height: 1.7;
+	}
+	.muted {
+		color: var(--color-text-muted);
+	}
+	.social {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-4);
+	}
+	.social a {
+		font-family: var(--font-display);
+		font-weight: 500;
+	}
+
+	.contact-main {
+		display: grid;
+		gap: var(--space-8);
+	}
+	.form-card {
+		background: #fff;
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius);
+		padding: var(--space-8);
+		box-shadow: var(--shadow-sm);
+	}
+	.form-card h2 {
+		margin-bottom: var(--space-6);
+	}
+	.contact-form {
+		display: grid;
+		gap: var(--space-4);
+	}
+	.field-row {
+		display: grid;
+		gap: var(--space-4);
+	}
+	@media (min-width: 560px) {
+		.field-row {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	.contact-form label {
+		display: grid;
+		gap: var(--space-2);
+		font-family: var(--font-display);
+		font-weight: 500;
+		font-size: var(--text-sm);
+	}
+	.contact-form input,
+	.contact-form textarea {
+		font-family: var(--font-sans);
+		font-size: var(--text-base);
+		padding: 0.7em 0.9em;
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-sm);
+		background: var(--color-bg-soft);
+	}
+	.contact-form input:focus,
+	.contact-form textarea:focus {
+		outline: 2px solid var(--color-primary);
+		outline-offset: 1px;
+		background: #fff;
+	}
+	.contact-form button {
+		justify-self: start;
+		margin-top: var(--space-2);
+	}
+	.form-note {
+		margin-top: var(--space-4);
+		font-size: var(--text-sm);
+		color: var(--color-text-muted);
+	}
+	.map-card {
+		border-radius: var(--radius);
+		overflow: hidden;
+		border: 1px solid var(--color-border);
+		box-shadow: var(--shadow-sm);
+	}
+	.map-card iframe {
+		display: block;
+		width: 100%;
+		height: 340px;
+		border: 0;
+	}
+</style>

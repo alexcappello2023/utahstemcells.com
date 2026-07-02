@@ -40,6 +40,8 @@ const orgSchema = {
 		longitude: SITE.geo.lng,
 	},
 	medicalSpecialty: 'Regenerative medicine',
+	openingHours: SITE.hours.schema,
+	sameAs: Object.values(SITE.social),
 	physician: {
 		'@type': 'Physician',
 		name: SITE.doctor,

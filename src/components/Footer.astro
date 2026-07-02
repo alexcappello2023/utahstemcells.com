@@ -15,6 +15,11 @@ const year = new Date().getFullYear();
 				class="footer-logo"
 			/>
 			<p class="footer-tag">{SITE.tagline}</p>
+			<ul class="footer-social">
+				<li><a href={SITE.social.facebook} target="_blank" rel="noopener noreferrer">Facebook</a></li>
+				<li><a href={SITE.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a></li>
+				<li><a href={SITE.social.youtube} target="_blank" rel="noopener noreferrer">YouTube</a></li>
+			</ul>
 		</div>
 
 		<nav class="footer-col" aria-label="Footer">
@@ -77,6 +82,23 @@ const year = new Date().getFullYear();
 		color: var(--brand-200);
 		font-size: var(--text-sm);
 		max-width: 34ch;
+	}
+	.footer-social {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-4);
+		list-style: none;
+		margin: var(--space-4) 0 0;
+		padding: 0;
+		font-size: var(--text-sm);
+	}
+	.footer-social a {
+		color: var(--slate-200);
+		text-decoration: none;
+	}
+	.footer-social a:hover {
+		color: #fff;
+		text-decoration: underline;
 	}
 	.footer-col h4 {
 		font-family: var(--font-display);
