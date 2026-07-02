@@ -121,17 +121,22 @@ Regole:
   # — Ketamine therapy
 /treatments/ketamine-therapy/             (il vecchio sito rankava già su ketamine)
 
-/conditions/                             HUB patologie  (⚠️ da validare col cliente, vedi §5.1)
+/conditions/                             HUB patologie
+  # — Ortopedico / articolare (Stem Cell Joint Regeneration + PRP)
 /conditions/knee-osteoarthritis/
 /conditions/shoulder-pain/
 /conditions/hip-pain/
 /conditions/back-pain/
+/conditions/neck-pain/
 /conditions/joint-pain/
+  # — Neurologiche (CONFERMATO offerto dalla clinica, 2026-07-02)
+/conditions/autism/
+/conditions/multiple-sclerosis/
+/conditions/cerebral-palsy/
+/conditions/spinal-cord-injury/
+  # — Altre
 /conditions/erectile-dysfunction/
 /conditions/hair-loss/
-  # — Neuro (SOLO se il cliente conferma di offrirle ancora): autism, MS,
-  #   cerebral-palsy, spinal-cord-injury. Erano sul vecchio sito, NON nel
-  #   documento servizi ufficiale. Non pubblicare senza conferma.
 
 /locations/                              HUB sedi/città
 /locations/sandy/                         (sede principale)
@@ -178,11 +183,9 @@ Pagine città per i servizi core. GSC mostra ranking già presenti (pos 19-70) c
 
 ## 5. Mappa redirect 301 (preservare l'equity)
 
-### 5.1 ⚠️ Caveat Conditions neurologiche — DA VALIDARE
-Il vecchio sito ha pagine attive e con traffico per **autism** (75 clic), **multiple sclerosis**, **cerebral palsy**, **spinal cord injury** (fonte: GSC). Ma il **documento servizi ufficiale della clinica NON le elenca**.
-Prima di costruire/redirezionare queste pagine, confermare con i titolari se offrono ancora staminali per queste patologie. Motivo: la FDA è severa sulle claim staminali per condizioni neurologiche → rischio legale se pubblicate senza offerta reale.
-- Se **confermate** → mantieni le condition page + 301 dai vecchi URL.
-- Se **dismesse** → 301 verso `/conditions/` o `/treatments/stem-cell-joint-regeneration/`, e rimuovi le claim.
+### 5.1 Conditions neurologiche — CONFERMATE (2026-07-02)
+I titolari confermano che la clinica **offre ancora** trattamenti con staminali per **autism, multiple sclerosis, cerebral palsy, spinal cord injury**. → si **mantengono** le condition page e si fanno i **301** dai vecchi URL (`/autism/` → `/conditions/autism/`, ecc.).
+⚠️ Trattandosi di YMYL su patologie neurologiche (area sotto scrutinio FDA), i testi vanno scritti in modo prudente ed evidence-based: descrivere l'approccio, niente promesse di guarigione, disclaimer medico, firma del Dr. Cimikoski.
 
 **Vincitori da redirezionare con precisione (hanno clic/impression reali):**
 
