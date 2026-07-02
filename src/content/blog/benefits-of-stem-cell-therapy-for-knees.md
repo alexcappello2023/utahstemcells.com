@@ -14,7 +14,7 @@ Joint ligaments work together in order to protect bones from rubbing together an
 
 A common chronic degenerative condition is Osteoarthritis, and what happens is joint ligaments essentially break down over time within the knee area. This can be caused for a variety of reasons including some form of knee damage occurring, tendon issues cropping up, or the popping or cracking of joints. Once a joint begins to become unstable, this can wear out the articular ligament and affect bone material, tendons, muscles, and other ligaments. One issue can lead to others and it creates a downward spiral that can be hard to resolve without proper care and an effective treatment plan in place.
 
-Stem cell therapy for knees is negligibly intrusive and it aims to diminish the amount of aggravation inflicted, decelerate and fix harmful [joint inflammation issues](/services/stem-cell-joint-regeneration/), arthritis, and works to keep patients free from having to undergo surgery and to endure a lengthy and challenging rehab process.
+Stem cell therapy for knees is negligibly intrusive and it aims to diminish the amount of aggravation inflicted, decelerate and fix harmful [joint inflammation issues](/treatments/stem-cell-joint-regeneration/), arthritis, and works to keep patients free from having to undergo surgery and to endure a lengthy and challenging rehab process.
 
 **How does Stem Cell therapy for knees help?**
 

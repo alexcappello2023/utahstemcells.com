@@ -17,7 +17,7 @@ When I first walked into the spa it was dark and lit by candles creating an extr
 
 When the esthetician came back in she then micro-needled all over my face once at a low level (the levels go from .5-2.5, the deeper you penetrate the more dramatic the results), and then she put the PRP on my face and micro-needled all over again to penetrate the PRP into my skin. This is repeated 3 times.
 
-![](/wp-content/uploads/2020/07/vampire-customer-in-a-clinic-225x300.png)
+![](/blog-images/vampire-facial-customer-review-2.webp)
 
 
 

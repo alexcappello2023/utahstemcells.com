@@ -6,7 +6,7 @@ author: "Dr. William Cimikoski"
 hero: "/blog-images/how-stem-cell-therapy-has-changed-hero.webp"
 ---
 
-In the rennet years, there has been a significant advancement in [stem cell therapy](/services/stem-cell-iv-therapies/). The usefulness, promising results, and minimal invasiveness have enhanced the expectations of this treatment method. You might be wondering about the support of stem cell therapy to aid your loved ones with an alarming disease. Therefore, you need to be aware of stem cells, their use in medicine for various diseases and injuries.
+In the rennet years, there has been a significant advancement in [stem cell therapy](/treatments/iv-stem-cell-therapy/). The usefulness, promising results, and minimal invasiveness have enhanced the expectations of this treatment method. You might be wondering about the support of stem cell therapy to aid your loved ones with an alarming disease. Therefore, you need to be aware of stem cells, their use in medicine for various diseases and injuries.
 
 **What are Stem Cells?**
 
@@ -47,7 +47,7 @@ Before performing a trial of new drugs on people, stem cells can be used to find
 
 - Stem cell therapy also termed regenerative medicine encourages the healing process in the damaged or dead tissue with the aid of stem cells. This could be helpful to get alternative treatment instead of an organ transplant which faces the difficulty of getting organs. Stem cells are developed in laboratories to be transformed into precise cell types like nerve cells, blood cells, bone, or heart muscle cells. Such specifically programmed cells are given to a person in the region of damage. If the individual has a problem related to nerves, then these cells are implanted in the specific nerves. The healthy cells will grow to generate new cells and replace the damaged nerve cell. As mentioned above, these processes give results when it is practiced by an experienced therapist/doctor at a specific sterile setting.
 - There is constant research on developing and finding cells to grow into specific cells. They have also shown positive results in boosting the immune system of the body. It helps fight ailments like cancer and blood linked diseases like neuroblastoma, lymphoma, leukemia, and multiple myeloma. Stem cell therapy is also useful and has shown amazing results in treating many other ailments and injuries. The list includes many types of chronic issues, hair loss, cell
-[joint regeneration](/services/stem-cell-joint-regeneration/), Autoimmune diseases, Autoimmune therapy, intimate wellness for men and women, weight loss,[stretch mark reductions](/services/stretch-marks-resurfacing/), and other body /skin rejuvenation treatments.
+[joint regeneration](/treatments/stem-cell-joint-regeneration/), Autoimmune diseases, Autoimmune therapy, intimate wellness for men and women, weight loss,[stretch mark reductions](/treatments/morpheus8/), and other body /skin rejuvenation treatments.
 
 **Bottom Line:**
 

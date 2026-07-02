@@ -28,7 +28,7 @@ Another example comes from the University of Toronto, were 4 case studies evalua
 
 ### Do you have joint pain, back pain, or any chronic pain issues?
 
-[Dr. Cimikoski](/about-us/) is a highly experienced, AAOM certified, medical toxicologist, who specializes in [Joint Regeneration](/services/stem-cell-joint-regeneration/). If you are suffering from back pain, hip pain, or any debilitating pain, and live in Utah, we recommend you come in for a consultation. We have two locations, one in Park City (at the Westgate Resort) and in Sandy UT
+[Dr. Cimikoski](/about/) is a highly experienced, AAOM certified, medical toxicologist, who specializes in [Joint Regeneration](/treatments/stem-cell-joint-regeneration/). If you are suffering from back pain, hip pain, or any debilitating pain, and live in Utah, we recommend you come in for a consultation. We have two locations, one in Park City (at the Westgate Resort) and in Sandy UT
 
 [Contact us](/contact/) today at (385) 213-3006.
 

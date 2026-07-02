@@ -18,7 +18,7 @@ Stem cells are undifferentiated cells capable of developing into different types
 
 The most common sources are adipose tissue and PRP. Adipose-derived stem cells are usually collected from fat in areas such as the abdomen or thighs, while PRP is obtained from a blood draw and processed to concentrate growth factors. In many cases, clinics combine both approaches to support better regenerative potential.
 
-For men considering a more complete approach, [penile enhancement therapy](/services/penile-enhancement-therapy/) may include both stem cells and PRP, depending on the patient’s needs and medical evaluation.
+For men considering a more complete approach, [penile enhancement therapy](/treatments/penile-enhancement/) may include both stem cells and PRP, depending on the patient’s needs and medical evaluation.
 
 ## How the Procedure Works
 

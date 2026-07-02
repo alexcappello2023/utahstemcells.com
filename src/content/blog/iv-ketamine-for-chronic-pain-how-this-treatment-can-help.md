@@ -8,7 +8,7 @@ hero: "/blog-images/iv-ketamine-for-chronic-pain-how-this-treatment-can-help-her
 
 IV Ketamine is often used to treat patients with chronic pain. Still, no studies have determined the long-term impact of ketamine infusions. However, the therapy is a new approach to managing chronic pain, and the early results are very promising. Still, there is much more studying and testing before it can be effectively considered a long-term therapy.
 
-If you have pain that lasts longer than three months, [ketamine therapy](/services/iv-ketamine/) is a possible treatment for chronic pain. Currently[,](https://www.instagram.com/utahstemcells/) ketamine therapy isn’t a first-line treatment, but it may be an option when other pain management strategies don’t work.
+If you have pain that lasts longer than three months, [ketamine therapy](/treatments/ketamine-therapy/) is a possible treatment for chronic pain. Currently[,](https://www.instagram.com/utahstemcells/) ketamine therapy isn’t a first-line treatment, but it may be an option when other pain management strategies don’t work.
 
 **What is Ketamine?**
 
@@ -48,6 +48,6 @@ considering ketamine therapy.
 
 **Conclusion**
 
-[Ketamine therapy](/services/iv-ketamine/) is an emerging treatment for chronic pain. If you would like to try Ketamine, talk with your care team. Mention other treatments you have tried, medication you take, and any underlying health conditions. If you decide to pursue ketamine therapy, work with a qualified treatment center that has board-certified physicians on staff.
+[Ketamine therapy](/treatments/ketamine-therapy/) is an emerging treatment for chronic pain. If you would like to try Ketamine, talk with your care team. Mention other treatments you have tried, medication you take, and any underlying health conditions. If you decide to pursue ketamine therapy, work with a qualified treatment center that has board-certified physicians on staff.
 
 Utah Stem Cells is a clinic that will help you with ketamine treatment. Content them at [385-240-1000](tel:385-240-1000). Visit their website at []() for more information and a consultation for pain relief using Ketamine IV therapy.
