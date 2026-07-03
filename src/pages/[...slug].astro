@@ -1,10 +1,10 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import RelatedGrid from '../../components/RelatedGrid.astro';
-import CtaBand from '../../components/CtaBand.astro';
-import { SITE } from '../../consts';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import RelatedGrid from '../components/RelatedGrid.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { SITE } from '../consts';
 
 export async function getStaticPaths() {
 	const items = await getCollection('blog', ({ data }) => !data.draft);
@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 const { item } = Astro.props;
 const { data } = item;
 const { Content } = await render(item);
-const path = `/blog/${item.id}/`;
+const path = `/${item.id}/`;
 
 const dateStr = data.pubDate.toLocaleDateString('en-US', {
 	year: 'numeric',

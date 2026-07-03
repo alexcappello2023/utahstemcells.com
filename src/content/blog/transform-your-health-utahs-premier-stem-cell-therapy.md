@@ -18,7 +18,7 @@ Stem cell therapy is part of regenerative medicine and is designed to work with 
 
 **Stem cell injections** are treatments that use regenerative cells or cellular signaling factors to support tissue repair, reduce inflammation, and stimulate healing activity in the body.
 
-Unlike traditional treatments that mainly focus on symptom management, [stem cell therapy](/blog/) aims to influence the underlying biological environment. The goal is to help the body repair damaged or irritated tissue more effectively.
+Unlike traditional treatments that mainly focus on symptom management, [stem cell therapy](/) aims to influence the underlying biological environment. The goal is to help the body repair damaged or irritated tissue more effectively.
 
 Modern regenerative protocols often use mesenchymal stem cells, commonly sourced from ethically donated umbilical cord tissue. These cells are valued because they contain growth factors and signaling molecules that may help regulate inflammation, support circulation, and encourage cellular repair.
 
