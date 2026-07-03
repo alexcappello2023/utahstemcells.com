@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../consts';
+---
+
+<BaseLayout
+	title="Thank You | Utah Stem Cells"
+	description="Thank you for contacting Utah Stem Cells. We'll be in touch shortly."
+	canonicalPath="/thank-you/"
+	noindex={true}
+>
+	<section class="section thank-you">
+		<div class="container container-narrow ty-inner">
+			<div class="ty-check" aria-hidden="true">
+				<svg viewBox="0 0 24 24" width="34" height="34"
+					><path
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M20 6 9 17l-5-5"></path></svg
+				>
+			</div>
+			<p class="eyebrow">Message sent</p>
+			<h1>Thank you!</h1>
+			<p class="lead">
+				We've received your message and a member of our team will get back to you
+				shortly. For anything urgent, feel free to call us at
+				<a href={`tel:${SITE.phoneHref}`}>{SITE.phone}</a>.
+			</p>
+			<div class="ty-actions">
+				<a href="/" class="btn btn-primary">Back to home</a>
+				<a href="/treatments/" class="btn btn-ghost">Explore treatments</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.thank-you {
+		text-align: center;
+		padding-block: var(--space-24);
+	}
+	.ty-inner {
+		margin-inline: auto;
+	}
+	.ty-check {
+		display: grid;
+		place-items: center;
+		width: 68px;
+		height: 68px;
+		margin: 0 auto var(--space-6);
+		border-radius: 50%;
+		background: var(--brand-50);
+		color: var(--color-primary);
+	}
+	.ty-actions {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: var(--space-3);
+		margin-top: var(--space-8);
+	}
+</style>
