@@ -39,6 +39,7 @@ export const NAV = [
 	{ label: 'About', href: '/about/' },
 	{ label: 'Reviews', href: '/reviews/' },
 	{ label: 'Blog', href: '/blog/' },
+	{ label: 'Contact', href: '/contact/' },
 ];
 
 export const TREATMENT_CATEGORIES: Record<string, string> = {
