@@ -40,6 +40,16 @@ const year = new Date().getFullYear();
 		</div>
 	</div>
 
+	<div class="container">
+		<p class="footer-disclaimer">
+			<strong>Important:</strong> All information presented on this website is intended
+			for informational purposes only and not for the purpose of rendering medical
+			advice. Statements made on this website have not been evaluated by the Food and
+			Drug Administration. The information contained herein is not intended to
+			diagnose, treat, cure or prevent any disease.
+		</p>
+	</div>
+
 	<div class="container footer-bottom">
 		<p>© {year} {SITE.name}. All rights reserved.</p>
 		<ul>
@@ -129,6 +139,17 @@ const year = new Date().getFullYear();
 		font-style: normal;
 		line-height: 1.9;
 		font-size: var(--text-sm);
+	}
+	.footer-disclaimer {
+		margin-top: var(--space-8);
+		padding-top: var(--space-6);
+		border-top: 1px solid rgba(255, 255, 255, 0.12);
+		font-size: var(--text-sm);
+		line-height: 1.6;
+		color: var(--brand-200);
+	}
+	.footer-disclaimer strong {
+		color: #fff;
 	}
 	.footer-bottom {
 		display: flex;
