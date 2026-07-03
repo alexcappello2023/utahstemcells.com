@@ -9,25 +9,21 @@ if (!ID) {
 	process.exit(1);
 }
 
-const ENDPOINT =
-	process.env.FEATURABLE_API || `https://featurable.com/api/v1/widgets/${ID}`;
+const MAX_DISPLAY = 15; // how many reviews to show on the page
 
-const res = await fetch(ENDPOINT, { headers: { accept: 'application/json' } });
+const res = await fetch(`https://api.featurable.com/v1/widgets/${ID}`, {
+	headers: { accept: 'application/json' },
+});
 const data = await res.json().catch(() => ({}));
 
-if (!res.ok) {
+if (!res.ok || !data.success) {
 	console.error(`✗ Featurable API error (${res.status}):`, JSON.stringify(data, null, 2));
 	process.exit(1);
 }
 
-// tolerate a couple of response shapes
-const w = data.widget ?? data;
-const list = data.reviews ?? w.reviews ?? [];
-
 const relTime = (iso) => {
 	if (!iso) return '';
-	const then = new Date(iso).getTime();
-	const days = Math.round((Date.now() - then) / 86400000);
+	const days = Math.round((Date.now() - new Date(iso).getTime()) / 86400000);
 	if (days < 30) return days <= 1 ? 'recently' : `${days} days ago`;
 	const months = Math.round(days / 30);
 	if (months < 12) return `${months} month${months > 1 ? 's' : ''} ago`;
@@ -35,30 +31,28 @@ const relTime = (iso) => {
 	return `${years} year${years > 1 ? 's' : ''} ago`;
 };
 
-const reviews = list
-	.map((r) => ({
-		author: r.reviewer?.displayName ?? r.author ?? 'Google user',
-		photo: r.reviewer?.profilePhotoUrl ?? '',
-		profileUrl: r.reviewer?.profileUrl ?? '',
-		rating: r.starRating ?? r.rating ?? 5,
-		text: (r.comment ?? r.text ?? '').trim(),
-		when: r.relativeTime ?? relTime(r.createTime ?? r.updateTime),
-		reviewUrl: r.reviewUrl ?? '',
-	}))
-	.filter((r) => r.text.length > 0);
+const clean = (s) =>
+	(s ?? '')
+		.replace(/^[\s"“”']+/, '')
+		.replace(/[\s"“”']+$/, '')
+		.trim();
 
-const rating =
-	w.averageRating ??
-	data.averageRating ??
-	(reviews.length
-		? Math.round((reviews.reduce((s, r) => s + r.rating, 0) / reviews.length) * 10) / 10
-		: 0);
+const reviews = (data.reviews ?? [])
+	.filter((r) => clean(r.comment).length > 0)
+	.slice(0, MAX_DISPLAY)
+	.map((r) => ({
+		author: r.reviewer?.displayName ?? 'Google user',
+		photo: r.reviewer?.profilePhotoUrl ?? '',
+		rating: r.starRating ?? 5,
+		text: clean(r.comment),
+		when: relTime(r.createTime ?? r.updateTime),
+	}));
 
 const out = {
-	placeName: w.name ?? 'Utah Stem Cells',
-	placeUrl: w.googleUrl ?? w.url ?? '',
-	rating,
-	total: w.totalReviewCount ?? data.totalReviewCount ?? reviews.length,
+	placeName: 'Utah Stem Cells',
+	placeUrl: data.profileUrl ?? '',
+	rating: Math.round((data.averageRating ?? 0) * 10) / 10,
+	total: data.totalReviewCount ?? reviews.length,
 	fetchedAt: new Date().toISOString().slice(0, 10),
 	reviews,
 };
