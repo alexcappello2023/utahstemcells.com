@@ -1,8 +1,27 @@
 ---
-import { NAV, SITE } from '../consts';
+import { getCollection } from 'astro:content';
+import { NAV, SITE, TREATMENT_CATEGORIES, TREATMENT_LINKS } from '../consts';
 import logo from '../assets/logo.svg';
+
 const path = Astro.url.pathname;
 const isActive = (href: string) => href !== '/' && path.startsWith(href);
+
+// Treatments grouped by category for the mega-menu
+const treatments = await getCollection('treatments', ({ data }) => !data.draft);
+treatments.sort((a, b) => a.data.order - b.data.order);
+const treatmentGroups = Object.keys(TREATMENT_CATEGORIES)
+	.map((key) => ({
+		key,
+		label: TREATMENT_CATEGORIES[key],
+		items: treatments
+			.filter((t) => t.data.category === key)
+			.map((t) => ({
+				href: `/treatments/${t.id}/`,
+				label: TREATMENT_LINKS[t.id]?.label ?? t.data.title,
+				title: TREATMENT_LINKS[t.id]?.title ?? t.data.summary,
+			})),
+	}))
+	.filter((g) => g.items.length > 0);
 ---
 
 <header class="site-header">
@@ -30,16 +49,49 @@ const isActive = (href: string) => href !== '/' && path.startsWith(href);
 		<nav class="site-nav" aria-label="Main">
 			<ul>
 				{
-					NAV.map((item) => (
-						<li>
-							<a
-								href={item.href}
-								class={isActive(item.href) ? 'active' : ''}
-							>
-								{item.label}
-							</a>
-						</li>
-					))
+					NAV.map((item) =>
+						item.href === '/treatments/' ? (
+							<li class="nav-mega">
+								<a
+									href={item.href}
+									class={isActive(item.href) ? 'active' : ''}
+									aria-haspopup="true"
+								>
+									{item.label}
+									<span class="mega-caret" aria-hidden="true">▾</span>
+								</a>
+								<div class="mega-panel">
+									<div class="container mega-inner">
+										<div class="mega-grid">
+											{treatmentGroups.map((g) => (
+												<div class="mega-col">
+													<span class="mega-head">{g.label}</span>
+													<ul>
+														{g.items.map((it) => (
+															<li>
+																<a href={it.href} title={it.title}>
+																	{it.label}
+																</a>
+															</li>
+														))}
+													</ul>
+												</div>
+											))}
+										</div>
+										<a href="/treatments/" class="mega-all">
+											View all treatments →
+										</a>
+									</div>
+								</div>
+							</li>
+						) : (
+							<li>
+								<a href={item.href} class={isActive(item.href) ? 'active' : ''}>
+									{item.label}
+								</a>
+							</li>
+						)
+					)
 				}
 			</ul>
 			<a
@@ -115,7 +167,7 @@ const isActive = (href: string) => href !== '/' && path.startsWith(href);
 		align-items: center;
 		gap: var(--space-6);
 	}
-	.site-nav ul {
+	.site-nav > ul {
 		display: flex;
 		align-items: center;
 		gap: var(--space-6);
@@ -130,9 +182,14 @@ const isActive = (href: string) => href !== '/' && path.startsWith(href);
 		color: var(--color-text);
 		text-decoration: none;
 	}
-	.site-nav a:hover,
-	.site-nav a.active {
+	.site-nav > ul > li > a:hover,
+	.site-nav > ul > li > a.active {
 		color: var(--color-primary);
+	}
+	.mega-caret {
+		font-size: 0.7em;
+		margin-left: 2px;
+		color: var(--color-text-muted);
 	}
 	.site-nav a.nav-cta {
 		white-space: nowrap;
@@ -143,6 +200,75 @@ const isActive = (href: string) => href !== '/' && path.startsWith(href);
 	.site-nav a.nav-cta:hover {
 		background: var(--color-primary-dark);
 		color: #fff;
+	}
+
+	/* --- Mega menu (desktop) --- */
+	.mega-panel {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 100%;
+		background: #fff;
+		border-top: 1px solid var(--color-border);
+		border-bottom: 1px solid var(--color-border);
+		box-shadow: var(--shadow);
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-6px);
+		transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+		z-index: 45;
+	}
+	.nav-mega:hover .mega-panel,
+	.nav-mega:focus-within .mega-panel {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+	.mega-inner {
+		padding-block: var(--space-8);
+	}
+	.mega-grid {
+		column-count: 4;
+		column-gap: var(--space-8);
+	}
+	.mega-col {
+		break-inside: avoid;
+		margin-bottom: var(--space-6);
+	}
+	.mega-head {
+		display: block;
+		font-family: var(--font-display);
+		font-weight: 600;
+		font-size: var(--text-sm);
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: var(--color-primary);
+		margin-bottom: var(--space-3);
+	}
+	.mega-col ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: 1px;
+	}
+	.mega-col a {
+		display: block;
+		font-family: var(--font-sans);
+		font-weight: 400;
+		font-size: 0.92rem;
+		color: var(--color-text);
+		padding: 5px 0;
+	}
+	.mega-col a:hover {
+		color: var(--color-primary);
+	}
+	.mega-all {
+		display: inline-block;
+		margin-top: var(--space-6);
+		font-family: var(--font-display);
+		font-weight: 600;
+		color: var(--color-primary);
 	}
 
 	.nav-toggle,
@@ -183,16 +309,23 @@ const isActive = (href: string) => href !== '/' && path.startsWith(href);
 			transform: translateY(-120%);
 			transition: transform 0.25s ease;
 		}
-		.site-nav ul {
+		.site-nav > ul {
 			flex-direction: column;
 			align-items: stretch;
 			gap: var(--space-2);
 		}
-		.site-nav a {
+		.site-nav > ul > li > a {
 			display: block;
 			padding: var(--space-3) 0;
 			font-size: 1.1rem;
 			border-bottom: 1px solid var(--color-border);
+		}
+		.mega-caret {
+			display: none;
+		}
+		/* On mobile the mega panel collapses — Treatments links to the hub. */
+		.mega-panel {
+			display: none;
 		}
 		.nav-cta {
 			margin-top: var(--space-2);
