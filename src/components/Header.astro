@@ -246,13 +246,18 @@ const megaFor = (href: string) =>
 	}
 	@media (max-width: 560px) {
 		.top-bar-inner {
-			justify-content: center;
-			gap: var(--space-2) var(--space-4);
+			flex-direction: column;
+			align-items: stretch;
+			gap: var(--space-2);
+		}
+		.top-bar-left {
+			justify-content: flex-start;
 		}
 		.top-bar-item {
 			font-size: 0.8rem;
 		}
 		.top-bar-social {
+			justify-content: flex-end;
 			margin-right: 0;
 		}
 	}
