@@ -3,26 +3,43 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import { SITE } from '../../consts';
+import reviewsData from '../../data/reviews.json';
 
-const googleReviews = `https://www.google.com/search?q=${encodeURIComponent(
-	`${SITE.name} ${SITE.address.city} UT reviews`
-)}`;
+const { rating, total, reviews, placeUrl } = reviewsData;
+const hasReviews = reviews.length > 0;
 
-// TODO: sostituire con recensioni reali (o widget Google) prima del go-live.
-// Testo segnaposto, neutro — NON pubblicare come reale.
-const testimonials = [
-	{ quote: 'Placeholder review — replace with a real patient testimonial about joint regeneration.', name: 'Verified patient', context: 'Stem cell joint regeneration' },
-	{ quote: 'Placeholder review — replace with a real patient testimonial about hair restoration.', name: 'Verified patient', context: 'Hair restoration' },
-	{ quote: 'Placeholder review — replace with a real patient testimonial about the team and care.', name: 'Verified patient', context: 'Regenerative medicine' },
-	{ quote: 'Placeholder review — replace with a real patient testimonial about aesthetics.', name: 'Verified patient', context: 'Medical aesthetics' },
-	{ quote: 'Placeholder review — replace with a real patient testimonial about IV therapy.', name: 'Verified patient', context: 'IV therapy' },
-	{ quote: 'Placeholder review — replace with a real patient testimonial about the consultation.', name: 'Verified patient', context: 'Consultation' },
-];
+const stars = (n: number) => '★★★★★☆☆☆☆☆'.slice(5 - Math.round(n), 10 - Math.round(n));
+
+// Rich-snippet schema (AggregateRating + Review) — enables stars in Google results
+const schema = hasReviews
+	? {
+			'@context': 'https://schema.org',
+			'@type': 'MedicalClinic',
+			name: SITE.name,
+			url: SITE.url,
+			aggregateRating: {
+				'@type': 'AggregateRating',
+				ratingValue: rating,
+				reviewCount: total,
+				bestRating: 5,
+			},
+			review: reviews.slice(0, 5).map((r) => ({
+				'@type': 'Review',
+				author: { '@type': 'Person', name: r.author },
+				reviewRating: {
+					'@type': 'Rating',
+					ratingValue: r.rating,
+					bestRating: 5,
+				},
+				reviewBody: r.text,
+			})),
+		}
+	: null;
 ---
 
 <BaseLayout
 	title="Patient Reviews & Testimonials | Utah Stem Cells"
-	description="Read what patients say about Utah Stem Cells in Sandy, UT — regenerative medicine, aesthetics and wellness care led by Dr. William Cimikoski."
+	description="Read real Google reviews from patients of Utah Stem Cells in Sandy, UT — regenerative medicine, aesthetics and wellness care led by Dr. William Cimikoski."
 	canonicalPath="/reviews/"
 >
 	<header class="page-hero">
@@ -30,51 +47,109 @@ const testimonials = [
 			<Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Reviews' }]} />
 			<p class="eyebrow">What patients say</p>
 			<h1>Patient reviews &amp; testimonials</h1>
-			<p class="lead">
-				We're grateful for the trust our patients place in us. Here's what they
-				have to say.
-			</p>
-			<a href={googleReviews} target="_blank" rel="noopener noreferrer" class="btn btn-primary"
-				>Read our Google reviews</a
-			>
+			{
+				hasReviews ? (
+					<div class="rating-summary">
+						<span class="rating-stars" aria-hidden="true">{stars(rating)}</span>
+						<span class="rating-value">{rating.toFixed(1)}</span>
+						<span class="rating-meta">
+							out of 5 · {total} Google reviews
+						</span>
+					</div>
+				) : (
+					<p class="lead">
+						We're grateful for the trust our patients place in us.
+					</p>
+				)
+			}
 		</div>
 	</header>
 
 	<section class="section">
 		<div class="container">
-			<div class="grid grid-3">
-				{
-					testimonials.map((t) => (
-						<figure class="card review-card">
-							<blockquote>“{t.quote}”</blockquote>
-							<figcaption>
-								<span class="review-name">{t.name}</span>
-								<span class="review-context">{t.context}</span>
-							</figcaption>
-						</figure>
-					))
-				}
-			</div>
+			{
+				hasReviews ? (
+					<div class="grid grid-3">
+						{reviews.map((r) => (
+							<figure class="card review-card">
+								<div class="review-stars" aria-label={`${r.rating} out of 5`}>
+									{stars(r.rating)}
+								</div>
+								<blockquote>{r.text}</blockquote>
+								<figcaption>
+									<span class="review-name">{r.author}</span>
+									{r.when && <span class="review-when">{r.when}</span>}
+								</figcaption>
+							</figure>
+						))}
+					</div>
+				) : (
+					<p class="reviews-empty">
+						Our patient reviews are loading soon. In the meantime, see them on
+						our <a href={placeUrl || 'https://www.google.com/maps/search/Utah+Stem+Cells+Sandy+UT'} target="_blank" rel="noopener noreferrer">Google listing</a>.
+					</p>
+				)
+			}
+			{
+				hasReviews && (
+					<p class="reviews-source">
+						Verified Google reviews.
+						{placeUrl && (
+							<>
+								{' '}
+								<a href={placeUrl} target="_blank" rel="noopener noreferrer">
+									See all on Google
+								</a>
+							</>
+						)}
+					</p>
+				)
+			}
 		</div>
 	</section>
 
 	<CtaBand
-		title="Have you visited us?"
-		text="We'd love to hear about your experience — leave us a review on Google."
+		title="Ready to become our next success story?"
+		text="Book a free, no-pressure consultation with our team."
 	/>
+	{schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
 </BaseLayout>
 
 <style>
+	.rating-summary {
+		display: flex;
+		align-items: baseline;
+		gap: var(--space-3);
+		margin-top: var(--space-2);
+		flex-wrap: wrap;
+	}
+	.rating-stars {
+		color: var(--amber-500, #e8a33d);
+		font-size: 1.6rem;
+		letter-spacing: 2px;
+		color: #f5a623;
+	}
+	.rating-value {
+		font-family: var(--font-display);
+		font-weight: 700;
+		font-size: var(--text-2xl);
+	}
+	.rating-meta {
+		color: var(--color-text-muted);
+	}
 	.review-card {
 		display: flex;
 		flex-direction: column;
-		gap: var(--space-4);
+		gap: var(--space-3);
+	}
+	.review-stars {
+		color: #f5a623;
+		letter-spacing: 2px;
 	}
 	.review-card blockquote {
 		margin: 0;
-		font-family: var(--font-voice, Georgia, serif);
-		font-size: var(--text-lg);
-		line-height: 1.5;
+		font-size: var(--text-base);
+		line-height: 1.6;
 		color: var(--color-text);
 		flex: 1;
 	}
@@ -82,14 +157,23 @@ const testimonials = [
 		display: flex;
 		flex-direction: column;
 		border-top: 1px solid var(--color-border);
-		padding-top: var(--space-4);
+		padding-top: var(--space-3);
 	}
 	.review-name {
 		font-family: var(--font-display);
 		font-weight: 600;
 	}
-	.review-context {
+	.review-when {
 		font-size: var(--text-sm);
-		color: var(--color-primary);
+		color: var(--color-text-muted);
+	}
+	.reviews-source {
+		margin-top: var(--space-8);
+		color: var(--color-text-muted);
+		font-size: var(--text-sm);
+	}
+	.reviews-empty {
+		text-align: center;
+		color: var(--color-text-muted);
 	}
 </style>
