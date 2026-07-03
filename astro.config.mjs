@@ -7,6 +7,8 @@ import { defineConfig, fontProviders } from 'astro/config';
 export default defineConfig({
 	site: 'https://utahstemcells.com',
 	integrations: [mdx(), sitemap()],
+	// Prefetch internal pages on hover → near-instant navigation.
+	prefetch: { prefetchAll: true, defaultStrategy: 'hover' },
 	fonts: [
 		{
 			provider: fontProviders.google(),

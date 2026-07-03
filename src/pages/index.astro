@@ -64,6 +64,7 @@ const stats = [
 						width={1600}
 						height={900}
 						loading={i === 0 ? 'eager' : 'lazy'}
+						fetchpriority={i === 0 ? 'high' : 'low'}
 					/>
 				))
 			}

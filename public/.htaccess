@@ -1,3 +1,25 @@
+# Utah Stem Cells — performance (compression + caching)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json image/svg+xml application/xml text/xml application/rss+xml
+</IfModule>
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/javascript application/javascript application/json image/svg+xml application/xml application/rss+xml
+</IfModule>
+<IfModule mod_headers.c>
+  # Static assets — cache 1 year
+  <FilesMatch "\.(webp|jpe?g|png|gif|svg|ico|woff2?|css|js)$">
+    Header set Cache-Control "public, max-age=31536000"
+  </FilesMatch>
+  # Hashed build assets — immutable (safe to cache forever)
+  <If "%{REQUEST_URI} =~ m#^/_astro/#">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </If>
+  # HTML — always revalidate so content updates are seen immediately
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
 # Utah Stem Cells — redirects & canonical (generated)
 <IfModule mod_rewrite.c>
   RewriteEngine On
