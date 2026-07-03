@@ -35,4 +35,4 @@ Most procedures take about an hour and there is essentially no real downtime. Yo
 
 [Utah Stem Cells](/) has two convenient locations: one in Park City at the Westgate Resort, and one in Sandy, UT.
 
-Call: [801-316-8858](tel:801-316-8858)
+Call: [801-999-4860](tel:801-999-4860)
