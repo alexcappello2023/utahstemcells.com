@@ -174,3 +174,105 @@ export const TREATMENT_LINKS: Record<string, { label: string; title: string }> =
 		title: "Ketamine therapy in Utah — physician-supervised in-office sessions. Learn if it's right for you.",
 	},
 };
+
+// Grouping for the Conditions mega-menu (conditions have no category field).
+export const CONDITION_GROUPS: { label: string; slugs: string[] }[] = [
+	{
+		label: 'Joint & orthopedic',
+		slugs: [
+			'knee-osteoarthritis',
+			'osteoarthritis',
+			'rheumatoid-arthritis',
+			'shoulder-pain',
+			'hip-pain',
+			'back-pain',
+			'neck-pain',
+			'joint-pain',
+			'sacroiliac-joint-dysfunction',
+		],
+	},
+	{
+		label: 'Neurological',
+		slugs: ['autism', 'multiple-sclerosis', 'cerebral-palsy', 'spinal-cord-injury', 'neuropathy'],
+	},
+	{
+		label: 'Systemic & other',
+		slugs: ['heart-failure', 'autoimmune-conditions', 'erectile-dysfunction', 'hair-loss'],
+	},
+];
+
+// Menu label + keyword-rich, persuasive `title` for each condition.
+export const CONDITION_LINKS: Record<string, { label: string; title: string }> = {
+	'knee-osteoarthritis': {
+		label: 'Knee Osteoarthritis',
+		title: 'Knee osteoarthritis treatment in Utah — reduce knee pain and improve mobility without surgery. See your options.',
+	},
+	osteoarthritis: {
+		label: 'Osteoarthritis',
+		title: 'Osteoarthritis treatment in Utah — non-surgical, regenerative relief for worn joints. Explore how we can help.',
+	},
+	'rheumatoid-arthritis': {
+		label: 'Rheumatoid Arthritis',
+		title: 'Rheumatoid arthritis support in Utah — regenerative options for joint comfort alongside your care.',
+	},
+	'shoulder-pain': {
+		label: 'Shoulder Pain',
+		title: 'Shoulder pain treatment in Utah — non-surgical, regenerative relief for injury and arthritis. Learn more.',
+	},
+	'hip-pain': {
+		label: 'Hip Pain',
+		title: 'Hip pain treatment in Utah — regenerative options to ease pain and restore mobility, no surgery.',
+	},
+	'back-pain': {
+		label: 'Back Pain',
+		title: 'Back pain treatment in Utah — non-surgical, regenerative care for chronic, spine-related pain.',
+	},
+	'neck-pain': {
+		label: 'Neck Pain',
+		title: 'Neck pain treatment in Utah — regenerative options to relieve stiffness and chronic discomfort.',
+	},
+	'joint-pain': {
+		label: 'Joint Pain',
+		title: 'Joint pain treatment in Utah — regenerative relief across knees, shoulders, hips and more.',
+	},
+	'sacroiliac-joint-dysfunction': {
+		label: 'Sacroiliac (SI) Joint',
+		title: 'Sacroiliac joint dysfunction treatment in Utah — target SI joint pain without surgery. Discover the approach.',
+	},
+	autism: {
+		label: 'Autism',
+		title: 'Regenerative medicine and autism in Utah — a physician-led, individualized evaluation. Learn what to expect.',
+	},
+	'multiple-sclerosis': {
+		label: 'Multiple Sclerosis',
+		title: 'Regenerative medicine and MS in Utah — physician-led, individualized care. Explore your options honestly.',
+	},
+	'cerebral-palsy': {
+		label: 'Cerebral Palsy',
+		title: 'Regenerative medicine and cerebral palsy in Utah — an individualized, physician-led evaluation. Learn more.',
+	},
+	'spinal-cord-injury': {
+		label: 'Spinal Cord Injury',
+		title: 'Regenerative medicine and spinal cord injury in Utah — careful, individualized physician evaluation.',
+	},
+	neuropathy: {
+		label: 'Neuropathy',
+		title: 'Regenerative options for neuropathy in Utah — physician-led care for nerve-related pain. Explore the approach.',
+	},
+	'heart-failure': {
+		label: 'Heart Failure',
+		title: 'Regenerative medicine and heart failure in Utah — physician-led, in coordination with your cardiac care.',
+	},
+	'autoimmune-conditions': {
+		label: 'Autoimmune Conditions',
+		title: 'Regenerative medicine and autoimmune conditions in Utah — individualized options alongside your care.',
+	},
+	'erectile-dysfunction': {
+		label: 'Erectile Dysfunction',
+		title: 'Erectile dysfunction treatment in Utah — discreet, physician-led options like the P-Shot and GAINSWave.',
+	},
+	'hair-loss': {
+		label: 'Hair Loss',
+		title: 'Hair loss treatment in Utah — natural, non-surgical PRP options for men and women. See how it works.',
+	},
+};

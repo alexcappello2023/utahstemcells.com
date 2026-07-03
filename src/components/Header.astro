@@ -1,6 +1,13 @@
 ---
 import { getCollection } from 'astro:content';
-import { NAV, SITE, TREATMENT_CATEGORIES, TREATMENT_LINKS } from '../consts';
+import {
+	NAV,
+	SITE,
+	TREATMENT_CATEGORIES,
+	TREATMENT_LINKS,
+	CONDITION_GROUPS,
+	CONDITION_LINKS,
+} from '../consts';
 import logo from '../assets/logo.svg';
 
 const path = Astro.url.pathname;
@@ -11,7 +18,6 @@ const treatments = await getCollection('treatments', ({ data }) => !data.draft);
 treatments.sort((a, b) => a.data.order - b.data.order);
 const treatmentGroups = Object.keys(TREATMENT_CATEGORIES)
 	.map((key) => ({
-		key,
 		label: TREATMENT_CATEGORIES[key],
 		items: treatments
 			.filter((t) => t.data.category === key)
@@ -22,6 +28,23 @@ const treatmentGroups = Object.keys(TREATMENT_CATEGORIES)
 			})),
 	}))
 	.filter((g) => g.items.length > 0);
+
+// Conditions grouped for the mega-menu
+const conditions = await getCollection('conditions', ({ data }) => !data.draft);
+const condById = Object.fromEntries(conditions.map((c) => [c.id, c]));
+const conditionGroups = CONDITION_GROUPS.map((g) => ({
+	label: g.label,
+	items: g.slugs
+		.filter((s) => condById[s])
+		.map((s) => ({
+			href: `/conditions/${s}/`,
+			label: CONDITION_LINKS[s]?.label ?? condById[s].data.title,
+			title: CONDITION_LINKS[s]?.title ?? condById[s].data.summary,
+		})),
+})).filter((g) => g.items.length > 0);
+
+const megaFor = (href: string) =>
+	href === '/treatments/' ? treatmentGroups : href === '/conditions/' ? conditionGroups : null;
 ---
 
 <header class="site-header">
@@ -49,8 +72,9 @@ const treatmentGroups = Object.keys(TREATMENT_CATEGORIES)
 		<nav class="site-nav" aria-label="Main">
 			<ul>
 				{
-					NAV.map((item) =>
-						item.href === '/treatments/' ? (
+					NAV.map((item) => {
+						const groups = megaFor(item.href);
+						return groups ? (
 							<li class="nav-mega">
 								<a
 									href={item.href}
@@ -63,7 +87,7 @@ const treatmentGroups = Object.keys(TREATMENT_CATEGORIES)
 								<div class="mega-panel">
 									<div class="container mega-inner">
 										<div class="mega-grid">
-											{treatmentGroups.map((g) => (
+											{groups.map((g) => (
 												<div class="mega-col">
 													<span class="mega-head">{g.label}</span>
 													<ul>
@@ -78,8 +102,8 @@ const treatmentGroups = Object.keys(TREATMENT_CATEGORIES)
 												</div>
 											))}
 										</div>
-										<a href="/treatments/" class="mega-all">
-											View all treatments →
+										<a href={item.href} class="mega-all">
+											View all {item.label.toLowerCase()} →
 										</a>
 									</div>
 								</div>
@@ -90,8 +114,8 @@ const treatmentGroups = Object.keys(TREATMENT_CATEGORIES)
 									{item.label}
 								</a>
 							</li>
-						)
-					)
+						);
+					})
 				}
 			</ul>
 			<a
