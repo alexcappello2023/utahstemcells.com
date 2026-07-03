@@ -34,7 +34,7 @@ We may share personal data with companies we trust.
 
 We may share personally identifiable information (such as name, address, email or phone) with trusted partners in order to provide you with relevant advertising, offers or services.
 
-California residents are legally entitled (at no charge and no more than once annually) to request information about how we may have shared your information with others for direct marketing purposes. Contact us for this information: nathan@simpletexting.net.
+California residents are legally entitled (at no charge and no more than once annually) to request information about how we may have shared your information with others for direct marketing purposes. Contact us for this information: info@utahstemcells.com.
 
 No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
 
