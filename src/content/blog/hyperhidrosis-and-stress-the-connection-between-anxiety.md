@@ -34,7 +34,7 @@ Conversely, those with the genetic condition of hyperhidrosis may experience anx
 
 Sweating is a natural bodily function, but it goes beyond the norm for some. Do you experience excessively sweaty palms, odorous and damp feet, or armpits that leave your shirts soaked? Hyperhidrosis, a disorder characterized by excessive sweating, impacts 4.8% of the US population. This condition can be not only embarrassing but also disruptive to daily activities. If traditional solutions haven’t worked for you, we encourage you to explore the innovative treatment options available at Utah Stem Cells.
 
-**Botox for Hyperhidrosis**
+**[Botox](/treatments/botox/) for Hyperhidrosis**
 
 Botox works by temporarily inhibiting the secretion of a specific chemical in your body that activates sweat glands, effectively reducing sweating in treated areas. Consider the following information to determine if this treatment is the right choice for you:
 
@@ -46,7 +46,7 @@ Botox works by temporarily inhibiting the secretion of a specific chemical in yo
 - No downtime is required post-treatment
 - Semi-permanent results necessitate maintenance
 
-**Morpheus8 for Hyperhidrosis**
+**[Morpheus8](/treatments/morpheus8/) for Hyperhidrosis**
 
 Utilizing advanced radio frequency technology, our cutting-edge device is designed to accurately target sweat glands situated deep within the subcutaneous tissue layer. This process effectively coagulates the tissue, inducing thermolysis that can permanently disrupt eccrine and apocrine glands responsible for sweat and odor production. Discover more about this innovative treatment below:
 

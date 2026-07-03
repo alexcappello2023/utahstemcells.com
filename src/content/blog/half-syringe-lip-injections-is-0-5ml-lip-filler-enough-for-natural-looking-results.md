@@ -198,7 +198,7 @@ When evaluating cost-effectiveness, consider:
 
 Not all clinics offer the option to **purchase half a syringe**. Here’s what to understand:
 
-- Dermal fillers come in pre-packaged, sterile 1ml syringes from the manufacturer
+- [Dermal fillers](/treatments/dermal-fillers/) come in pre-packaged, sterile 1ml syringes from the manufacturer
 - When a practitioner uses only 0.5ml, the remaining product cannot legally or safely be stored for future use due to contamination risk
 - Some clinics use the remaining 0.5ml on another patient the same day (with proper sterile technique and separate needles)
 - Always verify that your injector is using a fresh, sealed syringe opened in front of you
@@ -316,7 +316,7 @@ While **half syringe lip injections** can achieve beautiful results on their own
 
 ### Lip Flip with Botox
 
-A *lip flip* uses small amounts of botulinum toxin (Botox) injected into the orbicularis oris muscle around the upper lip. This relaxes the muscle, causing the lip to gently “flip” outward, creating the appearance of fuller lips without adding volume. A lip flip can be combined with **0.5ml of filler** for enhanced definition with subtle volume.
+A *lip flip* uses small amounts of botulinum toxin ([Botox](/treatments/botox/)) injected into the orbicularis oris muscle around the upper lip. This relaxes the muscle, causing the lip to gently “flip” outward, creating the appearance of fuller lips without adding volume. A lip flip can be combined with **0.5ml of filler** for enhanced definition with subtle volume.
 
 ### Perioral Lines Treatment
 

@@ -17,7 +17,7 @@ Our IV therapy menu delivers customized blends of vitamins and nutrients directl
 
 ## Our infusions
 
-- **NAD+ infusions** — support cellular energy and recovery
+- **[NAD+](/treatments/iv-therapy/nad/) infusions** — support cellular energy and recovery
 - **IV vitamin infusions** — customized nutrient blends
 - **High-dose vitamin C** — immune and wellness support
 - **Wellness injections** — quick in-office nutrient boosts

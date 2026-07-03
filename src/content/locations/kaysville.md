@@ -15,7 +15,7 @@ order: 80
 
 ## Serving Kaysville
 
-Kaysville patients in Davis County travel to our Sandy clinic — about 40 minutes south — for regenerative care they can't find closer to home. Hair restoration and stem cell joint regeneration are especially popular with our Kaysville patients.
+Kaysville patients in Davis County travel to our Sandy clinic — about 40 minutes south — for regenerative care they can't find closer to home. Hair restoration and [stem cell joint regeneration](/treatments/stem-cell-joint-regeneration/) are especially popular with our Kaysville patients.
 
 ## Worth the trip
 

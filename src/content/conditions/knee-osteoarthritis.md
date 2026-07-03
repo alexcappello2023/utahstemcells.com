@@ -11,7 +11,7 @@ order: 10
 
 ## Understanding knee osteoarthritis
 
-Knee osteoarthritis develops as the protective cartilage in the knee wears down over time, leading to pain, stiffness and reduced mobility. It's one of the most common reasons people seek joint care.
+Knee [osteoarthritis](/conditions/osteoarthritis/) develops as the protective cartilage in the knee wears down over time, leading to pain, stiffness and reduced mobility. It's one of the most common reasons people seek joint care.
 
 ## How we can help
 

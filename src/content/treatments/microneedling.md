@@ -17,6 +17,6 @@ Microneedling uses fine needles to create controlled micro-channels in the skin,
 
 ## Often combined for better results
 
-Microneedling pairs well with PRP (see our Vampire Facial) for enhanced rejuvenation.
+Microneedling pairs well with PRP (see our [Vampire Facial](/treatments/vampire-facial/)) for enhanced rejuvenation.
 
 > This page is for general education. Treatment suitability is determined by the physician based on individual evaluation.

@@ -12,7 +12,7 @@ relatedConditions:
 
 **Brief History:**
 
-My name is Spencer H. I suffer from neuropathy. I first started feeling its effects about 6 years ago in my feet and legs. I had frequent burning sensations in my toes especially, as well as pins and needle-type pain. It became almost impossible to wear shoes and stockings. In the fall of 2016, I was examined by a neurologist who arrived at the neuropathy diagnosis following several lab tests. My feet lost their sensitivity to cold and hot temperatures. I was able to walk, but not for long distances. Sandals were my only form of footwear. I had constant cramps in my legs at night, and could not stand to have even bedsheets over my feet. It felt as if they were on fire.
+My name is Spencer H. I suffer from [neuropathy](/conditions/neuropathy/). I first started feeling its effects about 6 years ago in my feet and legs. I had frequent burning sensations in my toes especially, as well as pins and needle-type pain. It became almost impossible to wear shoes and stockings. In the fall of 2016, I was examined by a neurologist who arrived at the neuropathy diagnosis following several lab tests. My feet lost their sensitivity to cold and hot temperatures. I was able to walk, but not for long distances. Sandals were my only form of footwear. I had constant cramps in my legs at night, and could not stand to have even bedsheets over my feet. It felt as if they were on fire.
 
 On the recommendation of a son-in-law who received stem cell treatment for a knee injury, I contacted Dr. Cimikoski’s office and made an appointment for November 27, 2018.
 

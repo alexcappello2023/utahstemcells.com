@@ -11,7 +11,7 @@ order: 90
 
 ## Understanding SI joint dysfunction
 
-The sacroiliac (SI) joints connect the spine to the pelvis. When they become inflamed or unstable, they can cause lower-back and hip pain that's often mistaken for other conditions.
+The sacroiliac (SI) joints connect the spine to the pelvis. When they become inflamed or unstable, they can cause lower-back and [hip pain](/conditions/hip-pain/) that's often mistaken for other conditions.
 
 ## How we can help
 

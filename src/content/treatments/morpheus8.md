@@ -13,7 +13,7 @@ order: 50
 
 ## Microneedling meets radiofrequency
 
-Morpheus8 combines microneedling with radiofrequency energy to firm and refresh the skin, reaching deeper to support tightening and a smoother texture.
+Morpheus8 combines [microneedling](/treatments/microneedling/) with radiofrequency energy to firm and refresh the skin, reaching deeper to support tightening and a smoother texture.
 
 ## Face and body
 

@@ -26,17 +26,17 @@ Platelet-rich plasma (PRP), or platelet concentrates, have been studied extensiv
 
 2. Type 1 Diabetes
 
-3. Erectile Dysfunction
+3. [Erectile Dysfunction](/conditions/erectile-dysfunction/)
 
-4. Multiple Sclerosis
+4. [Multiple Sclerosis](/conditions/multiple-sclerosis/)
 
 5. Osteoarthritis
 
 6. Parkinson’s Disease
 
-7. Rheumatoid Arthritis
+7. [Rheumatoid Arthritis](/conditions/rheumatoid-arthritis/)
 
-8. Spinal Cord Injuries
+8. [Spinal Cord](/conditions/spinal-cord-injury/) Injuries
 
 9. Systemic Lupus Erythematosus
 

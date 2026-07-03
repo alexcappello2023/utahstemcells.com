@@ -22,7 +22,7 @@ With Prolotherapy, a special solution is injected into the joint space or injure
 
 Currently, Prolotherapy is indicated for muscle and joint injuries. It is particularly popular with sports injuries, such as ligament tears, muscle sprains, etc. The safe and quick mode of action is responsible for its widespread popularity and ensures that athletes are back on their feet in no time.
 
-Prolotherapy has also been proven to be very effective in the treatment of chronic lower back pain, tendonitis as well as arthritis.
+Prolotherapy has also been proven to be very effective in the treatment of chronic lower [back pain](/conditions/back-pain/), tendonitis as well as arthritis.
 
 There is currently research going on in its application in other conditions. And with the success rates seen with these current applications, there is no doubt that proliferation therapy is the future of regeneration medicine.
 

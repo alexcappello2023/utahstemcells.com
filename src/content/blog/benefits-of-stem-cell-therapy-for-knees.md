@@ -16,7 +16,7 @@ Most patients seek out knee treatments in order to reduce the amount of pain the
 
 Joint ligaments work together in order to protect bones from rubbing together and to encourage the smooth development of the joint surfaces. The impact felt within the knees can be a whopping 20x that of a patient’s actual body weight, so it’s important that stem cell therapy for this particular body part takes this into account – especially for patients who are physically active and involved in sports.
 
-A common chronic degenerative condition is Osteoarthritis, and what happens is joint ligaments essentially break down over time within the knee area. This can be caused for a variety of reasons including some form of knee damage occurring, tendon issues cropping up, or the popping or cracking of joints. Once a joint begins to become unstable, this can wear out the articular ligament and affect bone material, tendons, muscles, and other ligaments. One issue can lead to others and it creates a downward spiral that can be hard to resolve without proper care and an effective treatment plan in place.
+A common chronic degenerative condition is [Osteoarthritis](/conditions/osteoarthritis/), and what happens is joint ligaments essentially break down over time within the knee area. This can be caused for a variety of reasons including some form of knee damage occurring, tendon issues cropping up, or the popping or cracking of joints. Once a joint begins to become unstable, this can wear out the articular ligament and affect bone material, tendons, muscles, and other ligaments. One issue can lead to others and it creates a downward spiral that can be hard to resolve without proper care and an effective treatment plan in place.
 
 Stem cell therapy for knees is negligibly intrusive and it aims to diminish the amount of aggravation inflicted, decelerate and fix harmful [joint inflammation issues](/treatments/stem-cell-joint-regeneration/), arthritis, and works to keep patients free from having to undergo surgery and to endure a lengthy and challenging rehab process.
 
@@ -36,7 +36,7 @@ Interestingly enough, a case study showed that both knees can be improved in pat
 - Minimizing the inflammation
 - Discharging proteins known as cytokines that moderate degeneration of cartilage and decrease pain.
 
-Ongoing research has a goal to determine the optimal and most reliable outcomes for stem cell knee therapy based on using proven techniques, ideal dosage amounts, and correct cell choices. Prolotherapy has shown tremendous success for joint regeneration, even when sugar water was applied.
+Ongoing research has a goal to determine the optimal and most reliable outcomes for stem cell knee therapy based on using proven techniques, ideal dosage amounts, and correct cell choices. [Prolotherapy](/understanding-prolotherapy-and-how-it-works/) has shown tremendous success for joint regeneration, even when sugar water was applied.
 
 **Side effects or reactions**
 

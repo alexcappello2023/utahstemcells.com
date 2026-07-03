@@ -9,7 +9,7 @@ relatedTreatments:
   - facetite-bodytite
 ---
 
-A depressive disorder is affecting a significant portion of adults in the United States.IV Ketamine Helps Treat Depression. Depression comes with sleep disorders, feeling of sadness, anxiety, lack of interest, energy loss, guilt feeling, changes in appetite, psychomotor agitation and also feeling of suicides. Ketamine once used widely as an anesthetic has been recently used to treat treatment-resistant depression and shown useful results.
+A depressive disorder is affecting a significant portion of adults in the United States.IV [Ketamine](/treatments/ketamine-therapy/) Helps Treat Depression. Depression comes with sleep disorders, feeling of sadness, anxiety, lack of interest, energy loss, guilt feeling, changes in appetite, psychomotor agitation and also feeling of suicides. Ketamine once used widely as an anesthetic has been recently used to treat treatment-resistant depression and shown useful results.
 
 
 **Ketamine:**

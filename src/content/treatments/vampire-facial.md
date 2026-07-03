@@ -13,7 +13,7 @@ order: 70
 
 ## Microneedling plus your own PRP
 
-The Vampire Facial combines microneedling with platelet-rich plasma (PRP) drawn from your own blood, using your body's growth factors to enhance skin rejuvenation and glow.
+The Vampire Facial combines [microneedling](/treatments/microneedling/) with platelet-rich plasma (PRP) drawn from your own blood, using your body's growth factors to enhance skin rejuvenation and glow.
 
 ## What to expect
 

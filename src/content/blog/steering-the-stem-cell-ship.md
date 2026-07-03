@@ -19,21 +19,21 @@ When you hear the words, “[stem cell therapy](https://sarahcimikoski.wpengine.
 
 “We use the latest advancements in stem cell technology and focus entirely on treatments to help our patients feel stronger, live happier and look better,” noted Dr. William Cimikoski, founder of Utah Stem Cells. “Our therapies can help alleviate joint pain, intimate impediments and even enhance appearance.”
 
-A medical toxicologist, Dr. Cimikoski specializes in using stem cell therapies for joint regeneration, bio-identical hormone replacement therapy, medical aesthetics, and medical weight loss.
+A medical toxicologist, Dr. Cimikoski specializes in using stem cell therapies for joint regeneration, bio-identical hormone replacement therapy, medical aesthetics, and [medical weight loss](/treatments/medical-weight-loss/).
 
 “At Utah Stem Cells, we use stem cell therapeutics to help promote complete and permanent regeneration of damaged, aged, or unhealthy tissue throughout the body,” he said.
 
 Who can benefit from stem cell therapy? Nearly anyone Dr. Cimikoski says, especially those with a few years of skiing under their knees. “Th ose with various forms of musculoskeletal disorders are prime candidates for these therapies,” he confirmed. “Conditions like arthritis, tendonitis, ligamentous instability, and bursitis, have all improved with stem cell therapies. Elite athletes like Payton Manning have used stem cell therapy and have been able to return to their sport faster, stronger, and healthier.”
 
-Of course, joint pain and functionality are just the tip of the knee brace when it comes to treatments. In addition to stem cell joint regeneration, Utah Stem Cells offers many other procedures, including:
+Of course, joint pain and functionality are just the tip of the knee brace when it comes to treatments. In addition to [stem cell joint regeneration](/treatments/stem-cell-joint-regeneration/), Utah Stem Cells offers many other procedures, including:
 
 **Bioidentical Hormones Therapy** for men and women to assist with hormone depletion that comes with age.
 
-**Stem Cell Enhanced Medical Aesthetics** including dermal fillers, micro needling, lasers and a non-surgical facelift procedure that involves withdrawing a patient’s own blood and then processing it to create platelet rich plasma and injecting it back into the skin.
+**Stem Cell Enhanced Medical Aesthetics** including [dermal fillers](/treatments/dermal-fillers/), micro needling, lasers and a non-surgical facelift procedure that involves withdrawing a patient’s own blood and then processing it to create platelet rich plasma and injecting it back into the skin.
 
 **Stem Cell IV Therapeutics** which allow for many procedures to be performed intravenously.
 
-**Stem Cell Hair Restoration** to treat thinning and advanced hair loss in men and women.
+**Stem Cell [Hair Restoration](/treatments/hair-restoration/)** to treat thinning and advanced hair loss in men and women.
 
 **Stem Cell Treatments** including the P-Shot™ and O-Shot™ to enhance intimate function and pleasure.
 

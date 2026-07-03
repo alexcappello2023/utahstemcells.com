@@ -11,7 +11,7 @@ order: 50
 
 ## Understanding hip pain
 
-Hip pain often results from osteoarthritis, overuse or injury, and can limit walking, sleep and everyday movement.
+Hip pain often results from [osteoarthritis](/conditions/osteoarthritis/), overuse or injury, and can limit walking, sleep and everyday movement.
 
 ## How we can help
 

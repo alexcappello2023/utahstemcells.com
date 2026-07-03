@@ -16,6 +16,6 @@ Erectile dysfunction affects many men and can have physical and lifestyle causes
 
 ## Regenerative options
 
-We offer discreet, physician-led treatments — including regenerative approaches such as the P-Shot and GAINSWave — tailored to your evaluation.
+We offer discreet, physician-led treatments — including regenerative approaches such as the P-Shot and [GAINSWave](/treatments/gainswave/) — tailored to your evaluation.
 
 > This page is for general education and does not replace medical advice. Treatment suitability is determined by the physician based on individual evaluation.

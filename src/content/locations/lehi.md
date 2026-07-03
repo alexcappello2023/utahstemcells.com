@@ -15,7 +15,7 @@ order: 70
 
 ## Serving Lehi
 
-Lehi and the Silicon Slopes area are about 25 minutes north of Lehi up I-15 to our Sandy clinic. We offer regenerative medicine, medical weight loss, IV wellness, aesthetics and more.
+Lehi and the Silicon Slopes area are about 25 minutes north of Lehi up I-15 to our Sandy clinic. We offer regenerative medicine, [medical weight loss](/treatments/medical-weight-loss/), IV wellness, aesthetics and more.
 
 ## Care worth the drive from Utah County
 

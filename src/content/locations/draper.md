@@ -15,7 +15,7 @@ order: 20
 
 ## Serving Draper
 
-Draper sits right next to Sandy, so you're only about 10 minutes from our clinic — one of the easiest trips of any Salt Lake Valley community. We offer regenerative medicine, aesthetics, sexual wellness, hormones, weight loss and IV therapy.
+Draper sits right next to Sandy, so you're only about 10 minutes from our clinic — one of the easiest trips of any Salt Lake Valley community. We offer regenerative medicine, aesthetics, sexual wellness, hormones, [weight loss](/treatments/medical-weight-loss/) and IV therapy.
 
 ## Care close to home
 

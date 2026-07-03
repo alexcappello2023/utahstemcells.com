@@ -129,7 +129,7 @@ __14 July 2019__
 
 It’s been about two weeks since my last posting. I am happy to report that I have noticed some very positive changes. One that stands out immediately is my ability to perform cardio at a medium to high intensity level for a sustainable amount of time ~ between 20 to 30 minutes. I am then able to perform an additional 30 to 40 minutes of weight lifting at a moderate to high level.
 
-I believe I am over my jet lag ~ and I didn’t want to report during this time because of the confusion the adverse effects of jet lag and heart failure present.
+I believe I am over my jet lag ~ and I didn’t want to report during this time because of the confusion the adverse effects of jet lag and [heart failure](/conditions/heart-failure/) present.
 
 One thing is clear, I do know these stem cells are working however, it is a very, very slow progression. There are up days and, there are down days. But the line on the graph keeps going up, like a stock during a bull run in the stock market ~ there are up days and down days, but at the end of the year, there are positive gains.
 

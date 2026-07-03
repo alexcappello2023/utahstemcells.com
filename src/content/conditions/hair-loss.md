@@ -14,6 +14,6 @@ Hair loss has many causes — genetics, hormones, stress and age among them. Ear
 
 ## A regenerative approach
 
-Our hair restoration treatments use your own PRP, with or without stem cells, to encourage natural regrowth without surgery.
+Our [hair restoration](/treatments/hair-restoration/) treatments use your own PRP, with or without stem cells, to encourage natural regrowth without surgery.
 
 > This page is for general education and does not replace medical advice. Treatment suitability is determined by the physician based on individual evaluation.

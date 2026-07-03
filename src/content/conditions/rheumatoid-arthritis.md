@@ -11,7 +11,7 @@ order: 30
 
 ## Understanding rheumatoid arthritis
 
-Rheumatoid arthritis is an autoimmune condition in which the immune system attacks the joints, causing inflammation, pain and damage over time. It is a chronic condition that is typically co-managed with a rheumatologist.
+Rheumatoid arthritis is an [autoimmune](/conditions/autoimmune-conditions/) condition in which the immune system attacks the joints, causing inflammation, pain and damage over time. It is a chronic condition that is typically co-managed with a rheumatologist.
 
 ## How we may help
 

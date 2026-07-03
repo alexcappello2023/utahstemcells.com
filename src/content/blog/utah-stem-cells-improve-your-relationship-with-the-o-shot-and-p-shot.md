@@ -11,7 +11,7 @@ relatedConditions:
   - erectile-dysfunction
 ---
 
-(KUTV) Sandy, UT – On Fresh Living Dr. William Cimikoski, Medical Director of Utah Stem Cells Joint Treatment & Wellness Center, sat down with Kari & Brooke to talk about two Stem Cells procedures the “O Shot,” and “P Shot.” The O shot is for sexual enhancement for women and helps them achieve orgasms more intensely and quickly, and also treats incontinence. The P shot is for Erectile Dysfunction for men, of which 50% of all men suffer from.
+(KUTV) Sandy, UT – On Fresh Living Dr. William Cimikoski, Medical Director of Utah Stem Cells Joint Treatment & Wellness Center, sat down with Kari & Brooke to talk about two Stem Cells procedures the “O Shot,” and “P Shot.” The O shot is for sexual enhancement for women and helps them achieve orgasms more intensely and quickly, and also treats incontinence. The P shot is for [Erectile Dysfunction](/conditions/erectile-dysfunction/) for men, of which 50% of all men suffer from.
 
 **SANDY, UT**
 

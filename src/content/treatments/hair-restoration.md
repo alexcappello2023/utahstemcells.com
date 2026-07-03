@@ -15,10 +15,10 @@ Our hair restoration treatments use your body's own platelet-rich plasma (PRP), 
 
 ## Who it's for
 
-Men and women experiencing thinning or early hair loss who want a natural, minimally invasive option.
+Men and women experiencing thinning or early [hair loss](/conditions/hair-loss/) who want a natural, minimally invasive option.
 
 ## What's included
 
-Each treatment plan includes a complimentary microneedling session to support absorption and results.
+Each treatment plan includes a complimentary [microneedling](/treatments/microneedling/) session to support absorption and results.
 
 > This page is for general education. Treatment suitability is determined by the physician based on individual evaluation.
