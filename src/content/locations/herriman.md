@@ -15,7 +15,7 @@ order: 60
 
 ## Serving Herriman
 
-Herriman patients are about 20 minutes from our Sandy clinic. Our physician-led team offers regenerative joint care, [hair restoration](/treatments/hair-restoration/), aesthetics, wellness and more — all in one location.
+Herriman patients are about 20 minutes from our Sandy clinic. Our physician-led team offers regenerative joint care, [hair restoration](/hair-restoration/), aesthetics, wellness and more — all in one location.
 
 ## Why Herriman patients choose us
 

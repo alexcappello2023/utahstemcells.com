@@ -10,9 +10,9 @@ relatedConditions:
   - hair-loss
 ---
 
-**stem cell hair treatment before and after**results, you are probably looking for a clear answer: does this treatment really help with [hair loss](/conditions/hair-loss/)?
+**stem cell hair treatment before and after**results, you are probably looking for a clear answer: does this treatment really help with [hair loss](/hair-loss/)?
 
-Stem cell therapy is one of the most discussed regenerative options for [hair restoration](/treatments/hair-restoration/) because it aims to reactivate weakened follicles, improve scalp health, and support natural hair growth without surgery. In this article, we explain how it works, what kind of results you can expect, how long they take to appear, and who may be a good candidate.
+Stem cell therapy is one of the most discussed regenerative options for [hair restoration](/hair-restoration/) because it aims to reactivate weakened follicles, improve scalp health, and support natural hair growth without surgery. In this article, we explain how it works, what kind of results you can expect, how long they take to appear, and who may be a good candidate.
 
 ## How Stem Cell Hair Treatment Works
 
@@ -78,7 +78,7 @@ The best candidates for stem cell hair treatment are usually men and women with 
 
 It may be especially useful for patients who want a non-surgical approach and still have enough viable follicles in the treatment area.
 
-Less ideal candidates include people with completely bald areas where follicles have been absent for many years, active scalp infections, certain [autoimmune conditions](/conditions/autoimmune-conditions/), or unrealistic expectations of overnight regrowth.
+Less ideal candidates include people with completely bald areas where follicles have been absent for many years, active scalp infections, certain [autoimmune conditions](/autoimmune-conditions/), or unrealistic expectations of overnight regrowth.
 
 A consultation is necessary because the success of the treatment depends heavily on follicle viability and the cause of hair loss.
 

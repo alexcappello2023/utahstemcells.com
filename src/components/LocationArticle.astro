@@ -1,0 +1,144 @@
+---
+import { getEntry, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import RelatedGrid from './RelatedGrid.astro';
+import CtaBand from './CtaBand.astro';
+import { SITE } from '../consts';
+
+const { item } = Astro.props;
+const { data } = item;
+const { Content } = await render(item);
+const path = `/${item.id}/`;
+
+const featured = (
+	await Promise.all((data.featuredTreatments ?? []).map((ref) => getEntry(ref)))
+).filter(Boolean);
+
+const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
+	`${SITE.name}, ${SITE.address.street}, ${SITE.address.city}, ${SITE.address.region} ${SITE.address.postal}`
+)}`;
+
+const schema = {
+	'@context': 'https://schema.org',
+	'@type': 'MedicalClinic',
+	name: `${SITE.name} — serving ${data.city}, ${data.region}`,
+	url: new URL(path, SITE.url).href,
+	telephone: SITE.phone,
+	address: {
+		'@type': 'PostalAddress',
+		streetAddress: SITE.address.street,
+		addressLocality: SITE.address.city,
+		addressRegion: SITE.address.region,
+		postalCode: SITE.address.postal,
+		addressCountry: SITE.address.country,
+	},
+	geo: { '@type': 'GeoCoordinates', latitude: SITE.geo.lat, longitude: SITE.geo.lng },
+	areaServed: { '@type': 'City', name: `${data.city}, ${data.region}` },
+};
+---
+
+<BaseLayout
+	title={data.metaTitle ?? data.title}
+	description={data.description}
+	canonicalPath={path}
+>
+	<article>
+		<header class="page-hero">
+			<div class="container">
+				<Breadcrumbs
+					items={[
+						{ label: 'Home', href: '/' },
+						{ label: 'Locations', href: '/locations/' },
+						{ label: data.city },
+					]}
+				/>
+				<p class="eyebrow">Serving {data.city}, {data.region}</p>
+				<h1>{data.title}</h1>
+				<p class="lead">{data.summary}</p>
+				<div class="loc-actions">
+					<a
+						href={SITE.bookingUrl}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn-primary">Book a visit</a
+					>
+					<a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="btn btn-ghost"
+						>Get directions</a
+					>
+				</div>
+			</div>
+		</header>
+
+		<div class="section">
+			<div class="container loc-layout">
+				<div class="prose">
+					<Content />
+				</div>
+				<aside class="loc-card">
+					<h3>Visit our Sandy clinic</h3>
+					<p class="loc-meta">{data.driveTime}</p>
+					<address>
+						{SITE.address.street}<br />
+						{SITE.address.city}, {SITE.address.region} {SITE.address.postal}<br />
+						<a href={`tel:${SITE.phoneHref}`}>{SITE.phone}</a>
+					</address>
+					<a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="btn btn-ghost"
+						>Get directions</a
+					>
+				</aside>
+			</div>
+		</div>
+	</article>
+
+	<RelatedGrid
+		soft
+		eyebrow={`Popular in ${data.city}`}
+		heading="Treatments we offer"
+		items={featured.map((t) => ({
+			title: t!.data.title,
+			href: `/${t!.id}/`,
+			summary: t!.data.summary,
+		}))}
+	/>
+
+	<CtaBand />
+	<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+</BaseLayout>
+
+<style>
+	.loc-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-3);
+		margin-top: var(--space-6);
+	}
+	.loc-layout {
+		display: grid;
+		gap: var(--space-8);
+	}
+	@media (min-width: 860px) {
+		.loc-layout {
+			grid-template-columns: 1fr 320px;
+			align-items: start;
+		}
+	}
+	.loc-card {
+		background: var(--color-bg-soft);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius);
+		padding: var(--space-6);
+	}
+	.loc-card h3 {
+		margin-bottom: var(--space-2);
+	}
+	.loc-meta {
+		color: var(--color-primary);
+		font-weight: 500;
+	}
+	.loc-card address {
+		font-style: normal;
+		line-height: 1.8;
+		margin-bottom: var(--space-4);
+	}
+</style>

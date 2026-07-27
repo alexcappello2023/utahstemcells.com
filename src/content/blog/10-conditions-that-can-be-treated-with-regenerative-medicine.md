@@ -18,7 +18,7 @@ Platelet-rich plasma (PRP), or platelet concentrates, have been studied extensiv
 
 **What Is Stem Cell Therapy?**
 
-[Stem cell therapy](/treatments/iv-stem-cell-therapy/) focuses on delivering stem cells to parts of the body that are in need. Stem cells can be harvested from a patient’s own body from Adipose (fat) tissue or bone marrow. The tissue is processed into a stem cell concentrate and injected at the focal point of treatment in the patient’s body. Once the stem cell concentrate has entered the treatment site, the regeneration process begins. Stem cell therapy is completely safe as we are using what your body naturally produces, concentrating the desired critical components and transplanting them into the affected area for effective tissue regeneration and healing. There is no risk of rejection and very minimal overall procedural risk.
+[Stem cell therapy](/iv-stem-cell-therapy/) focuses on delivering stem cells to parts of the body that are in need. Stem cells can be harvested from a patient’s own body from Adipose (fat) tissue or bone marrow. The tissue is processed into a stem cell concentrate and injected at the focal point of treatment in the patient’s body. Once the stem cell concentrate has entered the treatment site, the regeneration process begins. Stem cell therapy is completely safe as we are using what your body naturally produces, concentrating the desired critical components and transplanting them into the affected area for effective tissue regeneration and healing. There is no risk of rejection and very minimal overall procedural risk.
 
 10 conditions that can be treated with regenerative medicine.
 
@@ -26,17 +26,17 @@ Platelet-rich plasma (PRP), or platelet concentrates, have been studied extensiv
 
 2. Type 1 Diabetes
 
-3. [Erectile Dysfunction](/conditions/erectile-dysfunction/)
+3. [Erectile Dysfunction](/erectile-dysfunction/)
 
-4. [Multiple Sclerosis](/conditions/multiple-sclerosis/)
+4. [Multiple Sclerosis](/multiple-sclerosis/)
 
 5. Osteoarthritis
 
 6. Parkinson’s Disease
 
-7. [Rheumatoid Arthritis](/conditions/rheumatoid-arthritis/)
+7. [Rheumatoid Arthritis](/rheumatoid-arthritis/)
 
-8. [Spinal Cord](/conditions/spinal-cord-injury/) Injuries
+8. [Spinal Cord](/spinal-cord-injury/) Injuries
 
 9. Systemic Lupus Erythematosus
 

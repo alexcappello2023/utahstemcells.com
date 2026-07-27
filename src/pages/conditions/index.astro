@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CtaBand from '../../components/CtaBand.astro';
-import { CONDITION_LINKS } from '../../consts';
 
 const items = await getCollection('conditions', ({ data }) => !data.draft);
 items.sort((a, b) => a.data.order - b.data.order || a.data.title.localeCompare(b.data.title));
@@ -31,11 +30,7 @@ items.sort((a, b) => a.data.order - b.data.order || a.data.title.localeCompare(b
 			<div class="grid grid-3">
 				{
 					items.map((c) => (
-						<a
-							href={`/conditions/${c.id}/`}
-							class="card link-card"
-							title={CONDITION_LINKS[c.id]?.title ?? c.data.summary}
-						>
+						<a href={`/${c.id}/`} class="card link-card">
 							<h3>{c.data.title}</h3>
 							<p>{c.data.summary}</p>
 							<span class="card-link">Learn more →</span>

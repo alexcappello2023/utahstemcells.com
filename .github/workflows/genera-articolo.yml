@@ -1,0 +1,66 @@
+name: Genera articolo blog
+
+# Ogni settimana nel cloud di GitHub (anche a Mac spento).
+# GENERA e COMMITTA l'articolo, ma NON pubblica: il deploy online è manuale
+# (workflow "Deploy sito (FTP)") → revisione umana prima del live.
+on:
+  schedule:
+    # Lunedì 06:37 UTC. Minuto NON tondo di proposito: gli ":00" sono congestionati
+    # e GitHub tende a ritardarli/saltarli.
+    - cron: '37 6 * * 1'
+  workflow_dispatch: {} # avvio manuale dal sito di GitHub (per i test)
+
+permissions:
+  contents: write # per ricommittare l'articolo generato (la "memoria")
+
+concurrency:
+  group: genera-articolo
+  cancel-in-progress: false
+
+jobs:
+  genera:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica il progetto
+        uses: actions/checkout@v4
+
+      - name: Configura Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Installa le dipendenze
+        run: npm ci
+
+      - name: Installa Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      # L'AGENTE SCRIVE SOLO IL TESTO. Immagine, build e commit sono passi
+      # deterministici (sotto), così non dipendono dalla diligenza dell'AI.
+      - name: Genera l'articolo (solo testo)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude -p "Follow the instructions in routine/genera-articolo.md, but do ONLY research and writing. Steps: 1) run 'npm run next-keyword' to get the next topic (if the output contains 'done' stop without creating anything); 2) run 'ls src/content/treatments src/content/conditions src/content/blog' and only link to slugs that actually exist, in root form /<slug>/; 3) synchronous SERP analysis with WebSearch and WebFetch (1 search + up to 3 fetches) in this same process, WITHOUT the deep-research skill and WITHOUT background workflows/tasks; 4) write ONE new English article in src/content/blog/<slug>.md with the frontmatter and body defined in routine/genera-articolo.md (single quotes on text frontmatter fields; correct stem-cell sourcing = donated umbilical/amniotic + autologous PRP, NO autologous stem cells; hedged YMYL, no cure claims, disclaimer; FAQ; 1200-1600 words; 6-10 internal root links). Do NOT set the hero field, do NOT download images, do NOT build, do NOT deploy, do NOT use git: images, build, deploy and saving are handled by the automatic steps after you." \
+            --dangerously-skip-permissions \
+            --model claude-sonnet-5
+
+      - name: Aggiungi l'immagine hero (Pexels, deterministico)
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: npm run add-hero
+
+      - name: Build di validazione (non pubblica)
+        run: npm run build
+
+      - name: Salva l'articolo su GitHub (senza deploy)
+        run: |
+          git config user.name "Utah Stem Cells Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica da salvare (topic esauriti o nessun articolo generato)."
+          else
+            git commit -m "Bozza articolo automatico del $(date +%F) — da revisionare e pubblicare"
+            git push
+          fi

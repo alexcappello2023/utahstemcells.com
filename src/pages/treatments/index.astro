@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CtaBand from '../../components/CtaBand.astro';
-import { SITE, TREATMENT_CATEGORIES, TREATMENT_LINKS } from '../../consts';
+import { SITE, TREATMENT_CATEGORIES } from '../../consts';
 
 const items = await getCollection('treatments', ({ data }) => !data.draft);
 items.sort((a, b) => a.data.order - b.data.order);
@@ -39,15 +39,11 @@ const grouped = Object.keys(TREATMENT_CATEGORIES).map((key) => ({
 				grouped.map(
 					(g) =>
 						g.items.length > 0 && (
-							<section class="cat-group">
+							<section class="cat-group" id={g.key}>
 								<h2>{g.label}</h2>
 								<div class="grid grid-3">
 									{g.items.map((t) => (
-										<a
-											href={`/treatments/${t.id}/`}
-											class="card link-card"
-											title={TREATMENT_LINKS[t.id]?.title ?? t.data.summary}
-										>
+										<a href={`/${t.id}/`} class="card link-card">
 											<h3>{t.data.title}</h3>
 											<p>{t.data.summary}</p>
 											<span class="card-link">Learn more →</span>
@@ -67,6 +63,8 @@ const grouped = Object.keys(TREATMENT_CATEGORIES).map((key) => ({
 <style>
 	.cat-group {
 		margin-bottom: var(--space-16);
+		/* offset so anchor jumps clear the sticky header */
+		scroll-margin-top: 90px;
 	}
 	.cat-group:last-child {
 		margin-bottom: 0;

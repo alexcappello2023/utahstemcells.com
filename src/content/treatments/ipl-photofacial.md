@@ -4,6 +4,7 @@ metaTitle: "IPL Photofacial in Utah | Utah Stem Cells & USC MedSpa"
 description: "IPL Photofacial in Sandy, UT — intense pulsed light treatment that improves skin tone, sun damage and overall complexion."
 category: aesthetics
 summary: "A light-based facial treatment that improves skin tone, sun damage and overall complexion."
+draft: true
 relatedTreatments:
   - botox
   - dermal-fillers

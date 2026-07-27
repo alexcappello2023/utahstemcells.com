@@ -8,6 +8,9 @@ const mapEmbed = `https://www.google.com/maps?q=${encodeURIComponent(
 	`${SITE.name}, ${fullAddress}`
 )}&output=embed`;
 const mapsLink = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(fullAddress)}`;
+const thankYouUrl = new URL('/thank-you/', SITE.url).href;
+// Make webhook — fans the lead into Brevo (via sendBeacon on submit).
+const makeWebhook = 'https://hook.eu1.make.com/sh64luy2jr3vt0ina5j2xbg35bqqm70r';
 ---
 
 <BaseLayout
@@ -45,10 +48,6 @@ const mapsLink = `https://www.google.com/maps/dir/?api=1&destination=${encodeURI
 							<a href={`tel:${SITE.phoneHref}`}>{SITE.phone}</a>
 						</li>
 						<li>
-							<span class="info-label">Fax</span>
-							<span>{SITE.fax}</span>
-						</li>
-						<li>
 							<span class="info-label">Email</span>
 							<a href={`mailto:${SITE.email}`}>{SITE.email}</a>
 						</li>
@@ -64,6 +63,10 @@ const mapsLink = `https://www.google.com/maps/dir/?api=1&destination=${encodeURI
 							>
 						</li>
 					</ul>
+					<p class="muted">
+						Traveling from out of state? See our page for{' '}
+						<a href="/out-of-town-patients/">out-of-town patients</a>.
+					</p>
 				</div>
 
 				<div class="info-block">
@@ -86,12 +89,20 @@ const mapsLink = `https://www.google.com/maps/dir/?api=1&destination=${encodeURI
 			<div class="contact-main">
 				<div class="form-card">
 					<h2>Send us a message</h2>
-					<!-- TODO: collegare l'action a un form handler (Formspree / Netlify Forms) prima del go-live -->
 					<form
+						id="contact-form"
 						class="contact-form"
-						action="https://formspree.io/f/YOUR_FORM_ID"
+						action="https://api.web3forms.com/submit"
 						method="POST"
+						data-webhook={makeWebhook}
+						data-source="utahstemcells.com — contact form"
 					>
+						<input type="hidden" name="access_key" value="095b64c3-7af1-4c87-88f2-1fd6198161b9" />
+						<input type="hidden" name="subject" value="New contact form submission — Utah Stem Cells" />
+						<input type="hidden" name="from_name" value="Utah Stem Cells website" />
+						<input type="hidden" name="redirect" value={thankYouUrl} />
+						<!-- Honeypot: bots fill this; real users never see it -->
+						<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
 						<div class="field-row">
 							<label>
 								Name
@@ -108,7 +119,7 @@ const mapsLink = `https://www.google.com/maps/dir/?api=1&destination=${encodeURI
 						</label>
 						<label>
 							Subject
-							<input type="text" name="subject" />
+							<input type="text" name="Regarding" />
 						</label>
 						<label>
 							Message
@@ -116,6 +127,35 @@ const mapsLink = `https://www.google.com/maps/dir/?api=1&destination=${encodeURI
 						</label>
 						<button type="submit" class="btn btn-primary">Send message</button>
 					</form>
+					<script is:inline>
+						// On submit: mirror the lead to the Make webhook (→ Brevo) via
+						// sendBeacon, then let the native Web3Forms submit proceed
+						// (email notification + redirect stay exactly as before).
+						(function () {
+							var f = document.getElementById('contact-form');
+							if (!f) return;
+							f.addEventListener('submit', function () {
+								try {
+									var el = f.elements;
+									// Honeypot: bots fill this — skip the beacon if checked
+									if (el.botcheck && el.botcheck.checked) return;
+									var fd = new FormData();
+									fd.append('source', f.dataset.source || 'website');
+									fd.append('page', location.href);
+									fd.append('name', (el.name && el.name.value) || '');
+									fd.append('email', (el.email && el.email.value) || '');
+									fd.append('phone', (el.phone && el.phone.value) || '');
+									fd.append('subject', (el.Regarding && el.Regarding.value) || '');
+									fd.append('message', (el.message && el.message.value) || '');
+									if (navigator.sendBeacon && f.dataset.webhook) {
+										navigator.sendBeacon(f.dataset.webhook, fd);
+									}
+								} catch (e) {
+									/* never block the email submit */
+								}
+							});
+						})();
+					</script>
 					<p class="form-note">
 						Note: for questions about a treatment or procedure already performed,
 						please call our office directly at

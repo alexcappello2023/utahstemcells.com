@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import { SITE } from '../consts';
 import exterior from '../assets/clinic-exterior.webp';
-import reception from '../assets/clinic-reception.webp';
+import reception from '../assets/clinic-reception-v5.webp';
 
 const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
 	`Utah Stem Cells, ${SITE.address.street}, ${SITE.address.city}, ${SITE.address.region} ${SITE.address.postal}`
@@ -38,7 +38,7 @@ const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIC
 					src={exterior}
 					alt="The Sandy 100 building, home of Utah Stem Cells"
 					width={900}
-					height={675}
+					height={1200}
 				/>
 				<figcaption>Our building — Sandy&nbsp;100</figcaption>
 			</figure>
@@ -47,7 +47,7 @@ const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIC
 					src={reception}
 					alt="Utah Stem Cells reception and front desk"
 					width={900}
-					height={675}
+					height={1200}
 				/>
 				<figcaption>Welcome to our front desk</figcaption>
 			</figure>
@@ -96,7 +96,7 @@ const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIC
 	.visit-photos img {
 		width: 100%;
 		height: auto;
-		aspect-ratio: 4 / 3;
+		aspect-ratio: 3 / 4;
 		object-fit: cover;
 		border-radius: var(--radius);
 		box-shadow: var(--shadow);

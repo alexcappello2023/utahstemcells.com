@@ -30,7 +30,7 @@ items.sort((a, b) => Number(b.data.isPrimary) - Number(a.data.isPrimary) || a.da
 			<div class="grid grid-3">
 				{
 					items.map((l) => (
-						<a href={`/locations/${l.id}/`} class="card link-card">
+						<a href={`/${l.id}/`} class="card link-card">
 							<h3>
 								{l.data.city}
 								{l.data.isPrimary && <span class="badge">Main clinic</span>}

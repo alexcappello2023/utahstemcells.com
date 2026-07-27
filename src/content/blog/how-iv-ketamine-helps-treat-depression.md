@@ -9,7 +9,7 @@ relatedTreatments:
   - facetite-bodytite
 ---
 
-A depressive disorder is affecting a significant portion of adults in the United States.IV [Ketamine](/treatments/ketamine-therapy/) Helps Treat Depression. Depression comes with sleep disorders, feeling of sadness, anxiety, lack of interest, energy loss, guilt feeling, changes in appetite, psychomotor agitation and also feeling of suicides. Ketamine once used widely as an anesthetic has been recently used to treat treatment-resistant depression and shown useful results.
+A depressive disorder is affecting a significant portion of adults in the United States.IV [Ketamine](/ketamine-therapy/) Helps Treat Depression. Depression comes with sleep disorders, feeling of sadness, anxiety, lack of interest, energy loss, guilt feeling, changes in appetite, psychomotor agitation and also feeling of suicides. Ketamine once used widely as an anesthetic has been recently used to treat treatment-resistant depression and shown useful results.
 
 
 **Ketamine:**
@@ -73,4 +73,4 @@ As mentioned above, the positive response of patients is generally seen within t
 
 **Bottom Line:**
 
-Ketamine was earlier used mostly as an anesthetic on war fields and in operation theatres. Currently, this medication is giving positive results and is widely used as a promising treatment for some significant cases of major depression, which is one of the leading causes of disability worldwide. The intention of IV Ketamine therapy and [AccuTite](/treatments/facetite-bodytite/) treatment at [Utah Stem Cells](/) is to help you find both relief and a renewed lease on life with the support of Ketamine therapy. We trust that you will find our staff supportive, the environment not only friendly but safe, and the experience healing.
+Ketamine was earlier used mostly as an anesthetic on war fields and in operation theatres. Currently, this medication is giving positive results and is widely used as a promising treatment for some significant cases of major depression, which is one of the leading causes of disability worldwide. The intention of IV Ketamine therapy and [AccuTite](/facetite-bodytite/) treatment at [Utah Stem Cells](/) is to help you find both relief and a renewed lease on life with the support of Ketamine therapy. We trust that you will find our staff supportive, the environment not only friendly but safe, and the experience healing.

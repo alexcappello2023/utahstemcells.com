@@ -15,7 +15,7 @@ order: 40
 
 ## Serving West Jordan
 
-West Jordan patients are about 15 minutes from our Sandy clinic. From regenerative joint care to [medical weight loss](/treatments/medical-weight-loss/) and IV wellness, our physician-led team offers a broad range of services under one roof.
+West Jordan patients are about 15 minutes from our Sandy clinic. From regenerative joint care to [medical weight loss](/medical-weight-loss/) and IV wellness, our physician-led team offers a broad range of services under one roof.
 
 ## Care worth the short drive
 

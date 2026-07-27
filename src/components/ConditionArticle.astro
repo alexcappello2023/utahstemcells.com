@@ -1,0 +1,354 @@
+---
+import { getEntry, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import drCimikoski from '../assets/dr-cimikoski.jpeg';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import RelatedGrid from './RelatedGrid.astro';
+import CtaBand from './CtaBand.astro';
+import { SITE } from '../consts';
+
+const { item } = Astro.props;
+const { data } = item;
+const { Content } = await render(item);
+const path = `/${item.id}/`;
+
+const treatments = (
+	await Promise.all((data.treatments ?? []).map((ref) => getEntry(ref)))
+).filter((t) => t && !t.data.draft);
+
+const schema = {
+	'@context': 'https://schema.org',
+	'@type': 'MedicalCondition',
+	name: data.title,
+	description: data.description,
+	url: new URL(path, SITE.url).href,
+};
+
+const faqSchema =
+	data.faqs.length > 0
+		? {
+				'@context': 'https://schema.org',
+				'@type': 'FAQPage',
+				mainEntity: data.faqs.map((f) => ({
+					'@type': 'Question',
+					name: f.q,
+					acceptedAnswer: { '@type': 'Answer', text: f.a },
+				})),
+			}
+		: null;
+---
+
+<BaseLayout
+	title={data.metaTitle ?? data.title}
+	description={data.description}
+	canonicalPath={path}
+>
+	<article>
+		<header class="page-hero">
+			<div class:list={['container', { 'hero-grid': data.image }]}>
+				<div class="hero-text">
+					<Breadcrumbs
+						items={[
+							{ label: 'Home', href: '/' },
+							{ label: 'Conditions', href: '/conditions/' },
+							{ label: data.title },
+						]}
+					/>
+					<p class="eyebrow">Condition</p>
+					<h1>{data.title}</h1>
+					<p class="lead">{data.usp ?? data.summary}</p>
+					<div class="hero-ctas">
+						<a
+							href={SITE.bookingUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-primary">Book a free consultation</a
+						>
+						<a href={`tel:${SITE.phoneHref}`} class="btn btn-ghost">Call {SITE.phone}</a>
+					</div>
+				</div>
+				{
+					data.image && (
+						<div class="hero-media">
+							<Image
+								src={data.image}
+								alt={data.imageAlt ?? data.title}
+								widths={[420, 640, 840]}
+								sizes="(max-width: 780px) 90vw, 40vw"
+								class="hero-img"
+							/>
+						</div>
+					)
+				}
+			</div>
+		</header>
+
+		<div class="section">
+			<div class="container prose">
+				<Content />
+			</div>
+		</div>
+
+		{
+			treatments.length > 0 && (
+				<RelatedGrid
+					soft
+					eyebrow="How we can help"
+					heading="Treatments for this condition"
+					items={treatments.map((t) => ({
+						title: t!.data.title,
+						href: `/${t!.id}/`,
+						summary: t!.data.summary,
+					}))}
+				/>
+			)
+		}
+
+		<div class="mid-cta">
+			<div class="container">
+				<p class="mid-cta-text">Not sure where to start? Talk it through with a physician.</p>
+				<div class="hero-ctas mid-cta-ctas">
+					<a
+						href={SITE.bookingUrl}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn-primary">Book a free consultation</a
+					>
+					<a href={`tel:${SITE.phoneHref}`} class="btn btn-ghost">Call {SITE.phone}</a>
+				</div>
+			</div>
+		</div>
+
+		<section class="section section-soft physician-band">
+			<div class="container physician-inner">
+				<Image
+					src={drCimikoski}
+					alt="Dr. William Cimikoski, Medical Director at Utah Stem Cells"
+					width={220}
+					height={220}
+					class="physician-photo"
+				/>
+				<div class="physician-text">
+					<p class="eyebrow">Physician-led care</p>
+					<h2>Your care is led by Dr. William Cimikoski</h2>
+					<p>
+						At Utah Stem Cells, your evaluation and care are guided by our Medical
+						Director, Dr. William Cimikoski — so you get honest, physician-led
+						guidance about your options from the first consultation onward.
+					</p>
+					<a href="/about/" class="btn btn-ghost">Meet Dr. Cimikoski</a>
+				</div>
+			</div>
+		</section>
+
+		{
+			data.videoUrl && (
+				<div class="section section-soft">
+					<div class="container">
+						<div class="video-frame">
+							<iframe
+								src={data.videoUrl}
+								title={`${data.title} — video`}
+								loading="lazy"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							/>
+						</div>
+					</div>
+				</div>
+			)
+		}
+
+		{
+			data.faqs.length > 0 && (
+				<section class="section faq-section">
+					<div class="container container-narrow">
+						<p class="eyebrow">FAQ</p>
+						<h2 class="faq-title">Frequently asked questions</h2>
+						<div class="faq-list">
+							{data.faqs.map((f) => (
+								<details class="faq-item">
+									<summary>{f.q}</summary>
+									<div class="faq-answer">
+										<p>{f.a}</p>
+									</div>
+								</details>
+							))}
+						</div>
+					</div>
+				</section>
+			)
+		}
+	</article>
+
+	<div class="mid-cta">
+		<div class="container">
+			<p class="mid-cta-text">Not sure where to start? Talk it through with a physician.</p>
+			<div class="hero-ctas mid-cta-ctas">
+				<a
+					href={SITE.bookingUrl}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="btn btn-primary">Book a free consultation</a
+				>
+				<a href={`tel:${SITE.phoneHref}`} class="btn btn-ghost">Call {SITE.phone}</a>
+			</div>
+		</div>
+	</div>
+
+	<CtaBand />
+	<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+	{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+</BaseLayout>
+
+<style>
+	.hero-ctas {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-3);
+		align-items: center;
+	}
+	.hero-grid {
+		display: grid;
+		gap: var(--space-8);
+		align-items: center;
+	}
+	.hero-media {
+		justify-self: center;
+	}
+	.hero-img {
+		display: block;
+		width: 100%;
+		height: auto;
+		max-width: 460px;
+		aspect-ratio: 4 / 5;
+		object-fit: cover;
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow);
+	}
+	@media (min-width: 820px) {
+		.hero-grid {
+			grid-template-columns: 1.1fr 0.9fr;
+			gap: var(--space-12);
+		}
+		.hero-media {
+			justify-self: end;
+		}
+	}
+	.mid-cta {
+		padding-block: var(--space-10);
+		text-align: center;
+	}
+	.mid-cta-text {
+		font-family: var(--font-display);
+		font-weight: 600;
+		font-size: var(--text-lg);
+		margin-bottom: var(--space-4);
+	}
+	.mid-cta-ctas {
+		justify-content: center;
+	}
+	.physician-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: var(--space-6);
+	}
+	.physician-photo {
+		width: 140px;
+		height: 140px;
+		border-radius: 50%;
+		object-fit: cover;
+		box-shadow: var(--shadow);
+		flex-shrink: 0;
+	}
+	.physician-text h2 {
+		margin: var(--space-1) 0 var(--space-3);
+	}
+	.physician-text p {
+		color: var(--color-text-muted);
+		max-width: 54ch;
+		margin: 0 auto var(--space-5);
+	}
+	@media (min-width: 720px) {
+		.physician-inner {
+			flex-direction: row;
+			text-align: left;
+			gap: var(--space-16);
+		}
+		.physician-photo {
+			width: 180px;
+			height: 180px;
+		}
+		.physician-text p {
+			margin-inline: 0;
+		}
+	}
+	.video-frame {
+		position: relative;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		border-radius: var(--radius);
+		overflow: hidden;
+		box-shadow: var(--shadow);
+	}
+	.video-frame iframe {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+	.faq-title {
+		margin-bottom: var(--space-6);
+	}
+	.faq-list {
+		display: grid;
+		gap: var(--space-3);
+	}
+	.faq-item {
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius);
+		background: #fff;
+		overflow: hidden;
+	}
+	.faq-item summary {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: var(--space-4);
+		padding: var(--space-4) var(--space-5);
+		font-family: var(--font-display);
+		font-weight: 600;
+		font-size: 1.02rem;
+		cursor: pointer;
+		list-style: none;
+	}
+	.faq-item summary::-webkit-details-marker {
+		display: none;
+	}
+	.faq-item summary::after {
+		content: '+';
+		font-size: 1.4rem;
+		font-weight: 400;
+		color: var(--color-primary);
+		transition: transform 0.2s ease;
+		line-height: 1;
+	}
+	.faq-item[open] summary::after {
+		transform: rotate(45deg);
+	}
+	.faq-item[open] summary {
+		border-bottom: 1px solid var(--color-border);
+	}
+	.faq-answer {
+		padding: var(--space-4) var(--space-5);
+		color: var(--color-text-muted);
+		line-height: 1.7;
+	}
+	.faq-answer p {
+		margin: 0;
+	}
+</style>

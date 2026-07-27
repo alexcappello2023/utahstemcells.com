@@ -10,7 +10,7 @@ relatedConditions:
   - erectile-dysfunction
 ---
 
-**stem cell for penile enlargement**uses biological material taken from the patient’s own body to support tissue regeneration, improve blood flow, and potentially enhance both size and sexual function.
+**Stem cell for penile enlargement** uses regenerative biologics — stem cells derived from ethically donated umbilical cord and amniotic tissue, together with PRP (platelet-rich plasma) drawn from your own blood — to support tissue regeneration, improve blood flow, and potentially enhance both size and sexual function.
 
 This guide explains how the treatment works, what results can realistically be expected, who may be a good candidate, and what risks or limitations should be considered before making a decision.
 
@@ -20,15 +20,15 @@ This guide explains how the treatment works, what results can realistically be e
 
 Stem cells are undifferentiated cells capable of developing into different types of tissue. In penile enhancement, they may help with tissue regeneration, collagen stimulation, improved vascular function, and cellular repair. This is why the treatment is often considered not only for size enhancement, but also for men experiencing reduced erectile quality, sensitivity changes, or mild functional concerns.
 
-The most common sources are adipose tissue and PRP. Adipose-derived stem cells are usually collected from fat in areas such as the abdomen or thighs, while PRP is obtained from a blood draw and processed to concentrate growth factors. In many cases, clinics combine both approaches to support better regenerative potential.
+At Utah Stem Cells, the regenerative material comes from two sources. The **stem cells** we use are derived from ethically donated **umbilical cord and amniotic tissue** — not harvested from your body — and prepared in a laboratory. **PRP** is obtained from a simple blood draw from you and processed to concentrate growth factors. The two can be combined to support better regenerative potential. We do not use autologous (your-own) stem cells such as fat- or bone-marrow-derived cells.
 
-For men considering a more complete approach, [penile enhancement therapy](/treatments/penile-enhancement/) may include both stem cells and PRP, depending on the patient’s needs and medical evaluation.
+For men considering a more complete approach, [penile enhancement therapy](/penile-enhancement/) may include both stem cells and PRP, depending on the patient’s needs and medical evaluation.
 
 ## How the Procedure Works
 
 The procedure is typically completed in three phases: collection, processing, and injection.
 
-The first phase involves harvesting the biological material. If adipose-derived stem cells are used, a small amount of fat is collected through a minor [liposuction](/treatments/liposuction/) procedure under local anesthesia. If PRP is used, the process begins with a standard blood draw.
+The first phase is preparing the biological material. The umbilical cord and amniotic stem cells are processed in a laboratory from ethically donated birth tissue, so there is no harvesting from your body. If PRP is used, the process begins with a standard blood draw from you.
 
 The second phase is laboratory processing. The collected material is treated to isolate and concentrate the regenerative cells or growth factors. This step is important because the final solution must contain a sufficient concentration of active material before being injected.
 
@@ -64,9 +64,9 @@ A proper consultation should include medical history, physical examination, disc
 
 ## Cost and Financial Considerations
 
-The cost of **stem cell for penile enlargement** can vary widely depending on the provider, location, treatment protocol, and whether PRP, adipose-derived stem cells, or a combined approach is used.
+The cost of **stem cell for penile enlargement** can vary widely depending on the provider, location, treatment protocol, and whether PRP, umbilical/amniotic stem cells, or a combined approach is used.
 
-In the United States, PRP-based treatments are usually less expensive, while adipose-derived stem cell treatments and combined protocols can be significantly higher. Cosmetic penile enhancement is typically not covered by insurance. However, if the treatment is being considered for a medical condition such as [erectile dysfunction](/conditions/erectile-dysfunction/) or Peyronie’s disease, some patients may explore whether partial coverage is possible.
+In the United States, PRP-based treatments are usually less expensive, while stem cell treatments and combined protocols can be significantly higher. Cosmetic penile enhancement is typically not covered by insurance. However, if the treatment is being considered for a medical condition such as [erectile dysfunction](/erectile-dysfunction/) or Peyronie’s disease, some patients may explore whether partial coverage is possible.
 
 Because this is a high-investment procedure, cost should not be the only deciding factor. Provider experience, medical standards, follow-up care, and realistic communication are more important than choosing the cheapest option.
 
@@ -80,7 +80,7 @@ The full effect does not appear overnight. Stem cells and growth factors need ti
 
 ## Advantages Compared to Traditional Options
 
-Compared with surgery, stem cell therapy is less invasive, involves less downtime, and does not require major incisions. Because the treatment uses the patient’s own biological material, the result may feel more natural and carry a lower risk of foreign-body reaction.
+Compared with surgery, stem cell therapy is less invasive, involves less downtime, and does not require major incisions. Because the treatment relies on regenerative biologics — your own PRP together with immune-privileged umbilical and amniotic stem cells — it is designed to work with your body’s natural repair processes.
 
 Compared with fillers, stem cell therapy may offer a more regenerative approach rather than simply adding temporary volume. Fillers can provide faster visible results, but they are usually temporary and may require repeated maintenance.
 

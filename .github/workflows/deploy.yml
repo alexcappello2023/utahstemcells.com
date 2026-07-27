@@ -1,0 +1,40 @@
+name: Deploy sito (FTP)
+
+# PUBBLICAZIONE MANUALE — il tuo "1-click".
+# Dopo aver revisionato l'articolo committato dal bot, avvia questo workflow
+# da GitHub → Actions → "Deploy sito (FTP)" → "Run workflow".
+# Fa build del sito e lo carica sull'hosting (cPanel) via FTP incrementale.
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: deploy-sito
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica il progetto
+        uses: actions/checkout@v4
+
+      - name: Configura Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Installa le dipendenze
+        run: npm ci
+
+      - name: Build del sito
+        run: npm run build
+
+      - name: Deploy via FTP
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_SECURE: ${{ secrets.FTP_SECURE }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
+        run: npm run deploy

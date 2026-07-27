@@ -1,0 +1,421 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { SITE } from '../../consts';
+import clinicExterior from '../../assets/clinic-exterior.webp';
+import drCimikoski from '../../assets/dr-cimikoski.jpeg';
+
+const path = '/out-of-town-patients/';
+const fullAddress = `${SITE.address.street}, ${SITE.address.city}, ${SITE.address.region} ${SITE.address.postal}`;
+const mapsLink = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(fullAddress)}`;
+
+const faqs = [
+	{
+		q: 'Do I need a consultation before I travel?',
+		a: "Yes — and that's the point. Every out-of-town journey starts with a phone consultation, so the physician can review your goals and history and tell you whether you're a candidate before you book any travel. You only make the trip once it makes sense.",
+	},
+	{
+		q: 'How does the process work if I live out of state?',
+		a: 'First we talk by phone about your goals and health history. If the physician determines you may be a candidate, we schedule your appointment and help you plan the timing of your visit to Sandy. After treatment, follow-up can be handled by phone.',
+	},
+	{
+		q: 'How far is the clinic from Salt Lake City International Airport?',
+		a: 'Our clinic in Sandy is roughly a 25-minute drive south of Salt Lake City International Airport (SLC), in the Salt Lake Valley. It is easy to reach by car, and there is on-site parking.',
+	},
+	{
+		q: 'How many days should I plan to stay?',
+		a: "It depends on the treatment and your individual plan, which the physician reviews with you during your phone consultation. We'll give you a clear idea of timing and any recommended recovery so you can plan your trip with confidence.",
+	},
+	{
+		q: 'Can you tell me if I qualify over the phone?',
+		a: 'The phone consultation is where we discuss your goals and history and whether an in-person evaluation and treatment make sense. Final suitability is always determined by the physician based on an individual evaluation.',
+	},
+	{
+		q: 'Is there anything to do in the area while I visit?',
+		a: 'Plenty. Sandy sits in the Salt Lake Valley, close to Salt Lake City and just a short drive from several world-class ski resorts and outdoor recreation. Many out-of-town patients build a short trip around their visit.',
+	},
+];
+
+const faqSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: faqs.map((f) => ({
+		'@type': 'Question',
+		name: f.q,
+		acceptedAnswer: { '@type': 'Answer', text: f.a },
+	})),
+};
+---
+
+<BaseLayout
+	title="Out-of-Town & Traveling Patients | Utah Stem Cells"
+	description="Traveling to Utah Stem Cells in Sandy, UT? We start with a phone consultation, so you only travel when you're a candidate. About 25 minutes from Salt Lake City International Airport."
+	canonicalPath={path}
+>
+	<article>
+		<header class="page-hero">
+			<div class="container hero-grid">
+				<div class="hero-text">
+					<Breadcrumbs
+						items={[{ label: 'Home', href: '/' }, { label: 'Out-of-town patients' }]}
+					/>
+					<p class="eyebrow">Traveling patients</p>
+					<h1>Traveling to Utah Stem Cells</h1>
+					<p class="lead">
+						Coming from out of state? We make it simple — it starts with a phone
+						consultation, so you only travel to Sandy once the physician confirms
+						you're a candidate.
+					</p>
+					<div class="hero-ctas">
+						<a
+							href={`tel:${SITE.phoneHref}`}
+							class="btn btn-primary">Call {SITE.phone}</a
+						>
+						<a
+							href={SITE.bookingUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-ghost">Book a free consultation</a
+						>
+					</div>
+				</div>
+				<div class="hero-media">
+					<Image
+						src={clinicExterior}
+						alt="Utah Stem Cells clinic in Sandy, Utah"
+						widths={[420, 640, 840]}
+						sizes="(max-width: 780px) 90vw, 40vw"
+						class="hero-img"
+					/>
+				</div>
+			</div>
+		</header>
+
+		<div class="section">
+			<div class="container container-narrow prose">
+				<h2>Why patients travel to us</h2>
+				<p>
+					Patients come to Sandy from across the country because regenerative care is
+					personal, and the details matter — patient selection, technique and honest
+					guidance. At Utah Stem Cells, every plan is physician-led by Dr. William
+					Cimikoski, and we're candid about who is and isn't a good candidate. The goal
+					is simple: you travel once, and only when it genuinely makes sense for you.
+				</p>
+			</div>
+		</div>
+
+		<section class="section section-soft">
+			<div class="container">
+				<p class="eyebrow">How it works</p>
+				<h2 class="steps-title">Your visit, step by step</h2>
+				<ol class="steps">
+					<li>
+						<span class="step-n">1</span>
+						<div>
+							<h3>Phone consultation</h3>
+							<p>
+								We start with a phone call about your goals and health history. The
+								physician reviews whether you may be a candidate — before you book any
+								travel.
+							</p>
+						</div>
+					</li>
+					<li>
+						<span class="step-n">2</span>
+						<div>
+							<h3>Schedule your visit</h3>
+							<p>
+								If it's a fit, we book your appointment and help you plan the timing of
+								your trip to Sandy, including how long to allow.
+							</p>
+						</div>
+					</li>
+					<li>
+						<span class="step-n">3</span>
+						<div>
+							<h3>Treatment day in Sandy</h3>
+							<p>
+								Your in-person evaluation and treatment take place at our physician-led
+								clinic in the Salt Lake Valley.
+							</p>
+						</div>
+					</li>
+					<li>
+						<span class="step-n">4</span>
+						<div>
+							<h3>Follow-up by phone</h3>
+							<p>
+								After you head home, follow-up and check-ins can be handled by phone, so
+								distance isn't a barrier to good care.
+							</p>
+						</div>
+					</li>
+				</ol>
+			</div>
+		</section>
+
+		<div class="section">
+			<div class="container getting-here">
+				<div class="prose">
+					<h2>Getting here</h2>
+					<p>
+						Our clinic is easy to reach and about a <strong>25-minute drive</strong> south
+						of <strong>Salt Lake City International Airport (SLC)</strong>, in the heart of
+						the Salt Lake Valley, with on-site parking.
+					</p>
+					<address class="clinic-address">
+						{SITE.name}<br />
+						{SITE.address.street}<br />
+						{SITE.address.city}, {SITE.address.region} {SITE.address.postal}<br />
+						<a href={`tel:${SITE.phoneHref}`}>{SITE.phone}</a>
+					</address>
+					<a href={mapsLink} target="_blank" rel="noopener noreferrer" class="btn btn-ghost"
+						>Get directions →</a
+					>
+				</div>
+				<div class="prose stay">
+					<h2>Where to stay &amp; the area</h2>
+					<p>
+						Sandy sits minutes from Salt Lake City and a short drive from several
+						world-class ski resorts and outdoor recreation. There are plenty of hotels
+						nearby, and many out-of-town patients build a short trip around their visit.
+						Let us know your dates during your call and we'll help you plan the timing.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<section class="section faq-section">
+			<div class="container container-narrow">
+				<p class="eyebrow">FAQ</p>
+				<h2 class="faq-title">Traveling patient questions</h2>
+				<div class="faq-list">
+					{
+						faqs.map((f) => (
+							<details class="faq-item">
+								<summary>{f.q}</summary>
+								<div class="faq-answer">
+									<p>{f.a}</p>
+								</div>
+							</details>
+						))
+					}
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-soft physician-band">
+			<div class="container physician-inner">
+				<Image
+					src={drCimikoski}
+					alt="Dr. William Cimikoski, Medical Director at Utah Stem Cells"
+					width={220}
+					height={220}
+					class="physician-photo"
+				/>
+				<div class="physician-text">
+					<p class="eyebrow">Physician-led care</p>
+					<h2>Your care is led by Dr. William Cimikoski</h2>
+					<p>
+						Wherever you're traveling from, your evaluation and care are guided by our
+						Medical Director, Dr. William Cimikoski — so you get honest, physician-led
+						guidance from the very first phone call.
+					</p>
+					<a href="/about/" class="btn btn-ghost">Meet Dr. Cimikoski</a>
+				</div>
+			</div>
+		</section>
+	</article>
+
+	<CtaBand
+		title="Thinking about traveling to Sandy?"
+		text="Start with a free phone consultation — no pressure, just honest guidance."
+	/>
+	<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+</BaseLayout>
+
+<style>
+	.hero-ctas {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-3);
+		align-items: center;
+	}
+	.hero-grid {
+		display: grid;
+		gap: var(--space-8);
+		align-items: center;
+	}
+	.hero-media {
+		justify-self: center;
+	}
+	.hero-img {
+		display: block;
+		width: 100%;
+		height: auto;
+		max-width: 460px;
+		aspect-ratio: 4 / 5;
+		object-fit: cover;
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow);
+	}
+	@media (min-width: 820px) {
+		.hero-grid {
+			grid-template-columns: 1.1fr 0.9fr;
+			gap: var(--space-12);
+		}
+		.hero-media {
+			justify-self: end;
+		}
+	}
+	/* Steps */
+	.steps-title {
+		margin-bottom: var(--space-8);
+	}
+	.steps {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: var(--space-6);
+	}
+	@media (min-width: 720px) {
+		.steps {
+			grid-template-columns: 1fr 1fr;
+			gap: var(--space-8) var(--space-10);
+		}
+	}
+	.steps li {
+		display: flex;
+		gap: var(--space-4);
+		align-items: flex-start;
+	}
+	.step-n {
+		flex-shrink: 0;
+		display: grid;
+		place-items: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: var(--color-primary);
+		color: #fff;
+		font-family: var(--font-display);
+		font-weight: 700;
+	}
+	.steps h3 {
+		margin: 0 0 var(--space-1);
+		font-size: var(--text-lg);
+	}
+	.steps p {
+		margin: 0;
+		color: var(--color-text-muted);
+	}
+	/* Getting here */
+	.getting-here {
+		display: grid;
+		gap: var(--space-10);
+	}
+	@media (min-width: 820px) {
+		.getting-here {
+			grid-template-columns: 1fr 1fr;
+			gap: var(--space-16);
+			align-items: start;
+		}
+	}
+	.clinic-address {
+		font-style: normal;
+		line-height: 1.9;
+		margin: var(--space-4) 0 var(--space-4);
+	}
+	/* Physician band */
+	.physician-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: var(--space-6);
+	}
+	.physician-photo {
+		width: 140px;
+		height: 140px;
+		border-radius: 50%;
+		object-fit: cover;
+		box-shadow: var(--shadow);
+		flex-shrink: 0;
+	}
+	.physician-text h2 {
+		margin: var(--space-1) 0 var(--space-3);
+	}
+	.physician-text p {
+		color: var(--color-text-muted);
+		max-width: 54ch;
+		margin: 0 auto var(--space-5);
+	}
+	@media (min-width: 720px) {
+		.physician-inner {
+			flex-direction: row;
+			text-align: left;
+			gap: var(--space-16);
+		}
+		.physician-photo {
+			width: 180px;
+			height: 180px;
+		}
+		.physician-text p {
+			margin-inline: 0;
+		}
+	}
+	/* FAQ */
+	.faq-title {
+		margin-bottom: var(--space-6);
+	}
+	.faq-list {
+		display: grid;
+		gap: var(--space-3);
+	}
+	.faq-item {
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius);
+		background: #fff;
+		overflow: hidden;
+	}
+	.faq-item summary {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: var(--space-4);
+		padding: var(--space-4) var(--space-5);
+		font-family: var(--font-display);
+		font-weight: 600;
+		font-size: 1.02rem;
+		cursor: pointer;
+		list-style: none;
+	}
+	.faq-item summary::-webkit-details-marker {
+		display: none;
+	}
+	.faq-item summary::after {
+		content: '+';
+		font-size: 1.4rem;
+		font-weight: 400;
+		color: var(--color-primary);
+		transition: transform 0.2s ease;
+		line-height: 1;
+	}
+	.faq-item[open] summary::after {
+		transform: rotate(45deg);
+	}
+	.faq-item[open] summary {
+		border-bottom: 1px solid var(--color-border);
+	}
+	.faq-answer {
+		padding: var(--space-4) var(--space-5);
+		color: var(--color-text-muted);
+		line-height: 1.7;
+	}
+	.faq-answer p {
+		margin: 0;
+	}
+</style>

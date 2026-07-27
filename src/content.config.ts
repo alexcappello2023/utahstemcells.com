@@ -14,7 +14,8 @@ const seo = {
 // Trattamenti — /treatments/[slug]/
 const treatments = defineCollection({
 	loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/treatments' }),
-	schema: z.object({
+	schema: ({ image }) =>
+		z.object({
 		...seo,
 		category: z.enum([
 			'regenerative',
@@ -26,8 +27,15 @@ const treatments = defineCollection({
 			'weight-loss',
 			'iv-therapy',
 			'ketamine',
+			'peptides',
 		]),
 		summary: z.string(), // frase breve per card e hub
+		// Landing-page fields (opzionali → propagabili a tutte le schede)
+		usp: z.string().optional(), // promessa/differenziante sotto l'H1 (above the fold)
+		image: image().optional(), // immagine hero rappresentativa (ottimizzata)
+		imageAlt: z.string().optional(), // testo alternativo dell'immagine hero
+		videoUrl: z.string().optional(), // embed video (es. YouTube) — slot futuro
+		faqs: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
 		// interlink del cluster
 		conditions: z.array(reference('conditions')).default([]),
 		relatedTreatments: z.array(reference('treatments')).default([]),
@@ -38,12 +46,19 @@ const treatments = defineCollection({
 // Patologie — /conditions/[slug]/
 const conditions = defineCollection({
 	loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/conditions' }),
-	schema: z.object({
-		...seo,
-		summary: z.string(),
-		treatments: z.array(reference('treatments')).default([]),
-		order: z.number().default(50),
-	}),
+	schema: ({ image }) =>
+		z.object({
+			...seo,
+			summary: z.string(),
+			// Landing-page fields (come i treatments)
+			usp: z.string().optional(),
+			image: image().optional(),
+			imageAlt: z.string().optional(),
+			videoUrl: z.string().optional(),
+			faqs: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+			treatments: z.array(reference('treatments')).default([]),
+			order: z.number().default(50),
+		}),
 });
 
 // Città / aree servite — /locations/[slug]/

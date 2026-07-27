@@ -45,7 +45,7 @@ Of course, it’s the most popular question! NO, it didn’t hurt. I found the f
 
 ### Was Votiva embarrassing?
 
-Considering nearly 50% of women age 20 and older experience stress urinary incontinence, the topic shouldn’t be and I wasn’t embarrassed at all. It might seem a little weird at first having someone in that zone. I’ve given birth to children and did that in front of a team of people. I’ve tried waxing and that’s not done by a [medical](/treatments/medical-weight-loss/) professional. I’ve been intimate with men. Taking all that into consideration, I wasn’t embarrassed to bear it all. Social norms have cultivated feelings of embarrassment for most people when it comes to feminine health. Just keep in mind you are dealing with medical professionals who have dedicated their careers to helping us resolve personal issues.
+Considering nearly 50% of women age 20 and older experience stress urinary incontinence, the topic shouldn’t be and I wasn’t embarrassed at all. It might seem a little weird at first having someone in that zone. I’ve given birth to children and did that in front of a team of people. I’ve tried waxing and that’s not done by a [medical](/medical-weight-loss/) professional. I’ve been intimate with men. Taking all that into consideration, I wasn’t embarrassed to bear it all. Social norms have cultivated feelings of embarrassment for most people when it comes to feminine health. Just keep in mind you are dealing with medical professionals who have dedicated their careers to helping us resolve personal issues.
 
 ### Were there any negative side effects after the treatment?
 

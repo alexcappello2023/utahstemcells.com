@@ -10,7 +10,7 @@ relatedConditions:
   - joint-pain
 ---
 
-Stem cell therapy uses a patient’s own stem cells to help repair damaged tissues and repair injuries. This therapy is a part of the regenerative medicine field that is rapidly growing. A Benefits Of [Stem Cell Therapy](/treatments/stem-cell-joint-regeneration/) is used for include reducing joint pain, increasing motion and flexibility, and treating tendon and ligament tears.
+Stem cell therapy uses a patient’s own stem cells to help repair damaged tissues and repair injuries. This therapy is a part of the regenerative medicine field that is rapidly growing. A Benefits Of [Stem Cell Therapy](/stem-cell-joint-regeneration/) is used for include reducing joint pain, increasing motion and flexibility, and treating tendon and ligament tears.
 
 **What is a stem cell?**
 

@@ -4,6 +4,7 @@ metaTitle: "GAINSWave Therapy in Utah | Utah Stem Cells"
 description: "GAINSWave therapy in Sandy, UT — a non-invasive acoustic wave treatment to support male sexual wellness and performance."
 category: sexual-wellness
 summary: "A non-invasive acoustic wave treatment used to support male sexual wellness and performance."
+draft: true
 conditions:
   - erectile-dysfunction
 relatedTreatments:

@@ -19,15 +19,15 @@ Stop hiding behind bulky scarves to cover your neck. Stem Cell Facelift is the p
 
 **2. CONTOUR & SLIM. **
 
-All the clothes you receive this season will be sure to always fit with weekly injections of Skinny shots. This treatment helps contour and slim those stubborn areas while giving your metabolism the boost it needs to put you in [weight loss](/treatments/medical-weight-loss/) mode.
+All the clothes you receive this season will be sure to always fit with weekly injections of Skinny shots. This treatment helps contour and slim those stubborn areas while giving your metabolism the boost it needs to put you in [weight loss](/medical-weight-loss/) mode.
 
 **3. ERASE WRINKLES. **
 
-Erase crow’s feet and frown lines with [Botox](/treatments/botox/) or Xeomin. This quick and easy treatment can give you a smooth, wrinkle-free appearance to get you picture perfect.
+Erase crow’s feet and frown lines with [Botox](/botox/) or Xeomin. This quick and easy treatment can give you a smooth, wrinkle-free appearance to get you picture perfect.
 
 **4. EXFOLIATE. **
 
-A great way to get radiant skin is to exfoliate with [microneedling](/treatments/microneedling/) every 3 months or dermaplaning once a month, followed by a medical-grade gel peel suited for your skin type. This is a great service to shed that dull layer without significant downtime while leaving a radiant glow.
+A great way to get radiant skin is to exfoliate with [microneedling](/microneedling/) every 3 months or dermaplaning once a month, followed by a medical-grade gel peel suited for your skin type. This is a great service to shed that dull layer without significant downtime while leaving a radiant glow.
 
 **5. LIPS! **
 
@@ -43,7 +43,7 @@ Lashes are this season’s big accessory. By using Latisse you can have longer, 
 
 **8. VANISH DARK SPOTS AND STRETCH MARKS. **
 
-Don’t let sunspots give away your age. With just 2 spot removal treatments you could have spot free skin by next sumer. Our [Vampire Facial](/treatments/vampire-facial/) can be combined with lactic acid to give you results, fast! Same treatment can be very effective to diminish the looks of stretch marks, expect up to 70% to vanish!
+Don’t let sunspots give away your age. With just 2 spot removal treatments you could have spot free skin by next sumer. Our [Vampire Facial](/vampire-facial/) can be combined with lactic acid to give you results, fast! Same treatment can be very effective to diminish the looks of stretch marks, expect up to 70% to vanish!
 
 **9. FLAWLESS FINISH. **
 

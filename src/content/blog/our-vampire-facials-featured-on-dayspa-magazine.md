@@ -6,7 +6,7 @@ author: "Dr. William Cimikoski"
 hero: "/blog-images/our-vampire-facials-featured-on-dayspa-magazine-hero.webp"
 ---
 
-We love that our Vampire Facials at Westgate Park City Resort and Spa, in Park City, Utah are getting recognized for the amazing treatments they are.
+We love that our [Vampire Facials](/vampire-facial/) at Westgate Park City Resort and Spa, in Park City, Utah are getting recognized for the amazing treatments they are.
 
 DaySpa, the online magazine, has featured us in their “On Our Radar” section. To go to this article, click here (link to [https://www.dayspamagazine.com/westgate-park-city-vampire-facials/](https://www.dayspamagazine.com/westgate-park-city-vampire-facials/))
 

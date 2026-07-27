@@ -213,6 +213,26 @@ img {
 .prose a {
 	text-decoration: underline;
 }
+.prose img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow);
+	margin-block: var(--space-10);
+}
+.prose figure {
+	margin: var(--space-10) 0;
+}
+.prose figure img {
+	margin-block: 0;
+}
+.prose figcaption {
+	font-size: var(--text-sm);
+	color: var(--color-text-muted);
+	text-align: center;
+	margin-top: var(--space-3);
+}
 
 /* Interior page hero (treatments, conditions, locations, blog) */
 .page-hero {

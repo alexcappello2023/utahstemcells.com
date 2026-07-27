@@ -54,6 +54,9 @@ const orgSchema = {
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Site-wide head injector: edit /site-head.js on the server to add
+		     analytics, Meta Pixel, verification tags, etc. (no rebuild needed) -->
+		<script is:inline src="/site-head.js"></script>
 		<link rel="icon" href="/favicon.jpg" type="image/jpeg" />
 		<meta name="generator" content={Astro.generator} />
 		<Font cssVariable="--font-sans" preload />

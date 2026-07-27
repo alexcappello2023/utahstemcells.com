@@ -14,7 +14,7 @@ relatedConditions:
 
 ### What is Osteoarthritis?
 
-Osteoarthritis, the most common form of arthritis, can occur as a result of injury, infection, from being overweight, or for some it can be heredity. [Knee Osteoarthritis](/conditions/knee-osteoarthritis/) occurs when the cartilage in the joints breaks down causing chronic knee pain, stiffness, and abnormal joint functioning. The knee is the joint where the bones of the upper leg and lower leg meet. The largest joint in the body, the knee moves like a hinge, allowing you to sit, squat, walk or jump. When knee problems arise, they can interfere with almost all your daily activities and certainly compromise your participation in more advanced activities or sports.
+Osteoarthritis, the most common form of arthritis, can occur as a result of injury, infection, from being overweight, or for some it can be heredity. [Knee Osteoarthritis](/knee-osteoarthritis/) occurs when the cartilage in the joints breaks down causing chronic knee pain, stiffness, and abnormal joint functioning. The knee is the joint where the bones of the upper leg and lower leg meet. The largest joint in the body, the knee moves like a hinge, allowing you to sit, squat, walk or jump. When knee problems arise, they can interfere with almost all your daily activities and certainly compromise your participation in more advanced activities or sports.
 
 ### Stem Cell Therapy for Knee Osteoarthritis
 
@@ -22,7 +22,7 @@ Traditionally, treatments have been centered around surgical and pharmaceutical 
 
 ### What About Prolotherapy?
 
-A safer, non-surgical treatment is available at Utah Stem Cells for patients with knee [osteoarthritis](/conditions/osteoarthritis/) looking for relief. Utah Stem Cells specializes in an advanced form of prolotherapy, called stem cell prolotherapy.
+A safer, non-surgical treatment is available at Utah Stem Cells for patients with knee [osteoarthritis](/osteoarthritis/) looking for relief. Utah Stem Cells specializes in an advanced form of prolotherapy, called stem cell prolotherapy.
 
 [Prolotherapy](/understanding-prolotherapy-and-how-it-works/) is an accurate injection of a non-toxic substance into the injured tissue, which causes a temporary and purposeful therapeutic inflammation. The resultant inflammation initiates a beneficial healing cascade causing an increase in blood supply, growth factors, and stem cells. This eventually produces an increase in collagen that essentially grows stronger tissues and cartilage.
 
