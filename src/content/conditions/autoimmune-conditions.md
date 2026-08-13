@@ -25,7 +25,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "We're a physician-led, physician-owned clinic in Sandy, Utah, and we lead with honesty. Dr. William Cimikoski will tell you plainly when regenerative medicine is not the answer for your condition. You get a real conversation, not hype or pressure."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. Please keep your specialist informed and continue your current care. The physician will review your situation and give you honest, individualized guidance."
+    a: "Book a no-pressure consultation. Please keep your specialist informed and continue your current care. The physician will review your situation and give you honest, individualized guidance."
 ---
 
 ## An honest, individualized approach

@@ -1,7 +1,7 @@
 ---
 title: "NAD+ IV Therapy"
 metaTitle: "NAD+ IV Therapy in Salt Lake City & Sandy, UT | Utah Stem Cells"
-description: "Physician-supervised NAD+ IV therapy in Sandy, UT, serving the Salt Lake Valley. A NAD+ IV infusion to support energy, mental clarity and cellular wellness. Book a free consultation."
+description: "Physician-supervised NAD+ IV therapy in Sandy, UT, serving the Salt Lake Valley. A NAD+ IV infusion to support energy, mental clarity and cellular wellness. Book a consultation."
 category: iv-therapy
 summary: "A physician-supervised NAD+ IV infusion delivered in-office to support energy, mental clarity and whole-body cellular wellness."
 image: ../../assets/treatments/nad-iv-therapy.webp
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every infusion is physician-supervised by Dr. William Cimikoski — not delegated to a technician — and grounded in honest, evidence-informed guidance: we tell you when NAD+ IV therapy fits your goals and when it doesn't. You get a real evaluation, an individualized plan and clear expectations, all under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will review your goals and health history and tell you whether NAD+ IV therapy is a good fit for you."
+    a: "Book a no-pressure consultation. The physician will review your goals and health history and tell you whether NAD+ IV therapy is a good fit for you."
 ---
 
 ## When your energy and focus just aren't what they used to be

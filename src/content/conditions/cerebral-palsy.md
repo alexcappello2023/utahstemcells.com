@@ -23,7 +23,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every evaluation is led by our Medical Director, Dr. William Cimikoski — not a technician. We are candid about what is and is not appropriate, and we will tell you when a treatment is not a good fit."
   - q: "How do I get started?"
-    a: "You can request a free, no-pressure consultation. The physician will take time to understand your child's situation and give you honest guidance about whether a regenerative option might be considered."
+    a: "You can request a no-pressure consultation. The physician will take time to understand your child's situation and give you honest guidance about whether a regenerative option might be considered."
 ---
 
 ## When you are exploring every option for your child

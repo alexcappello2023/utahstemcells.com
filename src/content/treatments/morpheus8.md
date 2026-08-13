@@ -1,7 +1,7 @@
 ---
 title: "Morpheus8 (Microneedling with Radiofrequency)"
 metaTitle: "Morpheus8 in Utah — Skin Tightening with Microneedling + RF | Utah Stem Cells & USC MedSpa"
-description: "Physician-led Morpheus8 in Sandy, UT — microneedling combined with radiofrequency energy to firm and tighten skin and improve the appearance of stretch marks on the face and body. Free consultation."
+description: "Physician-led Morpheus8 in Sandy, UT — microneedling combined with radiofrequency energy to firm and tighten skin and improve the appearance of stretch marks on the face and body."
 category: aesthetics
 summary: "A skin-tightening treatment that combines microneedling with radiofrequency energy to firm and refresh the skin."
 image: ../../assets/treatments/morpheus8.webp
@@ -30,7 +30,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Your treatment is medically supervised under Dr. William Cimikoski rather than run as a walk-in service, and we take an honest approach: if Morpheus8 isn't the right tool for your goals, we'll tell you and suggest what is. Consultation, treatment and follow-up happen under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. We'll assess your skin, discuss your firming and smoothing goals, and recommend a Morpheus8 plan only if it's a good fit."
+    a: "Book a no-pressure consultation. We'll assess your skin, discuss your firming and smoothing goals, and recommend a Morpheus8 plan only if it's a good fit."
 ---
 
 ## When you want firmer, tighter skin — not just smoother

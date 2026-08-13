@@ -25,7 +25,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every evaluation is physician-led by Dr. William Cimikoski — not delegated to a technician — and grounded in honesty. We use your own biology, and we'll tell you candidly whether you're a good candidate. You get a tailored plan under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free consultation. The physician will assess your hair and scalp, review your history and goals, and tell you whether a regenerative approach is right for you."
+    a: "Book a consultation. The physician will assess your hair and scalp, review your history and goals, and tell you whether a regenerative approach is right for you."
 ---
 
 ## When your hair starts to thin

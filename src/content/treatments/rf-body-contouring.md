@@ -1,7 +1,7 @@
 ---
 title: "Radiofrequency Body Contouring"
 metaTitle: "Radiofrequency Body Contouring in Utah — Skin Tightening, No Surgery | Utah Stem Cells"
-description: "Radiofrequency body contouring in Sandy, UT — minimally invasive, physician-performed skin tightening to refine the abdomen, arms, thighs, flanks and more. Book a free consultation."
+description: "Radiofrequency body contouring in Sandy, UT — minimally invasive, physician-performed skin tightening to refine the abdomen, arms, thighs, flanks and more. Book a consultation."
 category: body-contouring
 summary: "Minimally invasive treatments that use radiofrequency energy to tighten skin and refine targeted areas."
 image: ../../assets/treatments/rf-body-contouring.webp
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every procedure is physician-led by Dr. William Cimikoski and grounded in honest guidance: we tell you when radiofrequency contouring is a good fit and when it is not. You get a real evaluation, a tailored plan and clear expectations, all under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will assess the areas you would like to address, review your goals and health history, and tell you whether radiofrequency body contouring is right for you."
+    a: "Book a no-pressure consultation. The physician will assess the areas you would like to address, review your goals and health history, and tell you whether radiofrequency body contouring is right for you."
 ---
 
 ## When firmer contours are the goal

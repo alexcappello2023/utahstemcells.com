@@ -26,7 +26,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every evaluation and procedure is physician-led by Dr. William Cimikoski — not delegated to a technician — and grounded in honest, evidence-informed guidance. If you're a good candidate, we'll tell you; if you're not, we'll tell you that too. You get a real evaluation and clear expectations, all under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will examine your joint, review any imaging and your health history, and tell you whether a regenerative approach is right for you."
+    a: "Book a no-pressure consultation. The physician will examine your joint, review any imaging and your health history, and tell you whether a regenerative approach is right for you."
 ---
 
 ## When osteoarthritis starts deciding what you can do

@@ -27,7 +27,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every evaluation is physician-led by Dr. William Cimikoski — not delegated to a technician — and grounded in honesty. We'll tell you when an option may help support your goals and when it isn't a good fit. You get a discreet, tailored plan under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, discreet consultation. The physician will review your history and goals in confidence and tell you which options, if any, may be appropriate for you."
+    a: "Book a discreet consultation. The physician will review your history and goals in confidence and tell you which options, if any, may be appropriate for you."
 ---
 
 ## A common, private concern — and a positive step to address it

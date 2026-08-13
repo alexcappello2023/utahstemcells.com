@@ -1,7 +1,7 @@
 ---
 title: "Microneedling"
 metaTitle: "Microneedling in Utah — Improve Skin Tone, Texture & Fine Lines | Utah Stem Cells & USC MedSpa"
-description: "Physician-led microneedling in Sandy, UT — a fine-needle treatment that stimulates your skin's natural collagen renewal to smooth texture, refine tone and soften fine lines. Free consultation."
+description: "Physician-led microneedling in Sandy, UT — a fine-needle treatment that stimulates your skin's natural collagen renewal to smooth texture, refine tone and soften fine lines."
 category: aesthetics
 summary: "A treatment using fine needles to create micro-channels in the skin, stimulating natural renewal and improving texture."
 image: ../../assets/treatments/microneedling.webp
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Your treatment is medically supervised under Dr. William Cimikoski rather than run as a walk-in cosmetic service, and we take an honest approach: if microneedling isn't right for you, we'll say so. Evaluation, treatment and follow-up all happen under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. We'll review your skin and goals, explain what microneedling can and can't do for you, and recommend a plan only if it's a good fit."
+    a: "Book a no-pressure consultation. We'll review your skin and goals, explain what microneedling can and can't do for you, and recommend a plan only if it's a good fit."
 ---
 
 ## Smoother, fresher-looking skin — powered by your own renewal

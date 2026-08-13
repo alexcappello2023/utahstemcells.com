@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Your care is delivered under the medical oversight of Medical Director Dr. William Cimikoski in a physician-led clinic. We offer a curated range of fillers rather than pushing one product, and we give honest guidance — if a different treatment would better serve your goals, we'll tell you."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. We'll assess your facial structure and skin, discuss your goals, and recommend the right filler and approach — or another option — that fits you best."
+    a: "Book a no-pressure consultation. We'll assess your facial structure and skin, discuss your goals, and recommend the right filler and approach — or another option — that fits you best."
 ---
 
 ## Bring back the volume that time takes away

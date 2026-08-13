@@ -1,7 +1,7 @@
 ---
 title: "Votiva / FemTite"
 metaTitle: "Votiva & FemTite in Utah — Feminine Radiofrequency Wellness | Utah Stem Cells"
-description: "Votiva and FemTite in Sandy, UT — discreet, physician-led radiofrequency treatments that support women's intimate wellness, comfort, and confidence. Book a free consultation."
+description: "Votiva and FemTite in Sandy, UT — discreet, physician-led radiofrequency treatments that support women's intimate wellness, comfort, and confidence. Book a consultation."
 category: sexual-wellness
 summary: "In-office radiofrequency treatments to support women's intimate wellness and comfort."
 image: ../../assets/treatments/votiva-femtite.webp
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Care is overseen by our Medical Director, Dr. William Cimikoski — physician-led, not handed off to a technician. We offer honest, discreet guidance: we'll tell you candidly whether you're a good candidate, and you'll get a real evaluation and clear expectations under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will review your goals and health history in private and let you know whether Votiva or FemTite is right for you."
+    a: "Book a no-pressure consultation. The physician will review your goals and health history in private and let you know whether Votiva or FemTite is right for you."
 ---
 
 ## Feminine wellness, addressed with care

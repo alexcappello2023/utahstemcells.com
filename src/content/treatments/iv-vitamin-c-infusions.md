@@ -1,7 +1,7 @@
 ---
 title: "IV Vitamin C Infusions"
 metaTitle: "IV Vitamin C Infusions in Sandy & Salt Lake City, UT | Utah Stem Cells"
-description: "Physician-overseen high-dose IV vitamin C infusions in Sandy, UT — intravenous vitamin C to support immune wellness and recovery in the Salt Lake Valley. Free consultation."
+description: "Physician-overseen high-dose IV vitamin C infusions in Sandy, UT — intravenous vitamin C to support immune wellness and recovery in the Salt Lake Valley."
 summary: "High-dose intravenous vitamin C to support immune wellness and recovery."
 image: ../../assets/treatments/iv-vitamin-c-infusions.webp
 imageAlt: "IV vitamin C infusions — woman relaxing during a high-dose vitamin C IV drip"
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Your infusion is delivered in a physician-led clinic under the medical oversight of Dr. William Cimikoski, with honest guidance about what IV vitamin C can and can't do. It's wellness and immune support — we won't oversell it — all under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. We'll talk through your goals and health history and confirm whether an IV vitamin C infusion is appropriate for you before you begin."
+    a: "Book a no-pressure consultation. We'll talk through your goals and health history and confirm whether an IV vitamin C infusion is appropriate for you before you begin."
 ---
 
 ## A convenient boost for immune wellness

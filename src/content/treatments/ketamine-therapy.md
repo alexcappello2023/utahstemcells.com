@@ -24,7 +24,7 @@ faqs:
   - q: "Is ketamine therapy safe?"
     a: "Ketamine is administered under physician supervision with medical monitoring, which is central to how we approach safety. As with any medical service there are potential risks and side effects, and it isn't appropriate for everyone. The physician reviews your individual situation to weigh benefits and risks before any session."
   - q: "How is Utah Stem Cells different, and how do I get started?"
-    a: "Ketamine therapy here is genuinely physician-supervised under Dr. William Cimikoski, with medical monitoring and an honest, careful approach to who is and isn't a good candidate — we won't oversell it. Book a free, no-pressure consultation and the physician will review your history and goals and tell you whether it's an appropriate option."
+    a: "Ketamine therapy here is genuinely physician-supervised under Dr. William Cimikoski, with medical monitoring and an honest, careful approach to who is and isn't a good candidate — we won't oversell it. Book a no-pressure consultation and the physician will review your history and goals and tell you whether it's an appropriate option."
 ---
 
 ## When chronic pain hasn't responded to the usual options

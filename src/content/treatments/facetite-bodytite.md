@@ -1,7 +1,7 @@
 ---
 title: "FaceTite & BodyTite (Skin Tightening)"
 metaTitle: "FaceTite & BodyTite in Utah — Minimally Invasive Skin Tightening | Utah Stem Cells"
-description: "FaceTite and BodyTite in Sandy, UT — physician-performed radiofrequency skin tightening for the face, neck and body, with less downtime than a surgical lift. Book a free consultation."
+description: "FaceTite and BodyTite in Sandy, UT — physician-performed radiofrequency skin tightening for the face, neck and body, with less downtime than a surgical lift. Book a consultation."
 category: body-contouring
 summary: "Minimally invasive radiofrequency treatments that firm and refine the face and body."
 image: ../../assets/treatments/facetite-bodytite.webp
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every procedure is physician-led by Dr. William Cimikoski and grounded in honest guidance: if FaceTite or BodyTite is not the right fit for your goals, we will tell you and explain your options. You get a genuine evaluation, a tailored plan and clear expectations, all under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will assess the areas you would like to address, review your goals and health history, and tell you whether FaceTite or BodyTite is a good fit for you."
+    a: "Book a no-pressure consultation. The physician will assess the areas you would like to address, review your goals and health history, and tell you whether FaceTite or BodyTite is a good fit for you."
 ---
 
 ## When loose skin doesn't match how you feel

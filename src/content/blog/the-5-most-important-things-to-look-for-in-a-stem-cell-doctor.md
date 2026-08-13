@@ -1,6 +1,6 @@
 ---
 title: "The 5 Most Important Things To Look For In A Stem Cell Doctor"
-description: "Check out the 5 Most Important Things to Look For In A Stem Cell Doctor. Book your Free Consultation Today & Contact us for more information."
+description: "Check out the 5 Most Important Things to Look For In A Stem Cell Doctor. Book your Consultation Today & Contact us for more information."
 pubDate: 2019-10-11
 author: "Dr. William Cimikoski"
 hero: "/blog-images/the-5-most-important-things-to-look-for-in-a-stem-cell-doctor-hero.webp"

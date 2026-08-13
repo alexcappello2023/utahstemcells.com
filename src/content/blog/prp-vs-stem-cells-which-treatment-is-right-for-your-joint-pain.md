@@ -1,7 +1,7 @@
 ---
 title: "PRP vs Stem Cells: Which Treatment Is Right for Your Joint Pain?"
 metaTitle: "PRP vs Stem Cells for Joint Pain in Utah — Which Is Right? | Utah Stem Cells"
-description: "PRP vs stem cells for joint pain in Sandy, UT — how the two regenerative treatments differ, when each makes sense, and how a physician helps you choose. Free consultation."
+description: "PRP vs stem cells for joint pain in Sandy, UT — how the two regenerative treatments differ, when each makes sense, and how a physician helps you choose."
 pubDate: 2026-07-16
 author: "Dr. William Cimikoski"
 hero: "/blog-images/prp-vs-stem-cells-which-treatment-is-right-for-your-joint-pain-hero.webp"
@@ -82,6 +82,6 @@ In many cases, yes. Combining them is common when the physician wants to support
 No. These are regenerative approaches intended to help reduce pain and support function — not FDA-approved cures for arthritis. Results vary, and expectations should be set honestly by the physician.
 
 ### How do I decide?
-Book a free, no-pressure consultation. We'll evaluate the joint, review your imaging and history, and recommend the option — PRP, stem cells, a combination, or something else — that best fits your situation.
+Book a no-pressure consultation. We'll evaluate the joint, review your imaging and history, and recommend the option — PRP, stem cells, a combination, or something else — that best fits your situation.
 
 > This article is for general education. It is not medical advice and is not a promise of any particular result. Regenerative treatments are not FDA-approved cures for arthritis, and suitability is determined by the physician based on individual evaluation.

@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Your treatment is delivered under the medical oversight of Medical Director Dr. William Cimikoski in a physician-led clinic. We take an honest, evidence-informed approach and set realistic expectations — because Sculptra is a gradual, multi-session treatment, we make sure it genuinely fits your goals before recommending it."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. Your provider will assess your skin and facial volume, discuss your goals, and recommend whether Sculptra — or another option — is the right fit, along with how many sessions you might need."
+    a: "Book a no-pressure consultation. Your provider will assess your skin and facial volume, discuss your goals, and recommend whether Sculptra — or another option — is the right fit, along with how many sessions you might need."
 ---
 
 ## Volume that looks like you, not like filler

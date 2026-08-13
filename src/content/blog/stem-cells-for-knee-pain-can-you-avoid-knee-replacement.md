@@ -1,7 +1,7 @@
 ---
 title: "Stem Cells for Knee Pain: Can You Avoid Knee Replacement?"
 metaTitle: "Stem Cells for Knee Pain in Utah — A Knee Replacement Alternative? | Utah Stem Cells"
-description: "Exploring stem cells for knee pain in Sandy, UT — how physician-led regenerative treatment may help some patients ease pain and delay or avoid knee replacement. Free consultation."
+description: "Exploring stem cells for knee pain in Sandy, UT — how physician-led regenerative treatment may help some patients ease pain and delay or avoid knee replacement."
 pubDate: 2026-07-15
 author: "Dr. William Cimikoski"
 hero: "/blog-images/stem-cells-for-knee-pain-can-you-avoid-knee-replacement-hero.webp"
@@ -84,6 +84,6 @@ It's a minimally invasive, in-office procedure that most patients tolerate well,
 Regenerative approaches work gradually as your body responds over the following weeks. Timelines and results vary from person to person, which is why the physician sets realistic expectations for your situation.
 
 ### How do I find out if I'm a candidate?
-Book a free, no-pressure consultation. We'll review your imaging and history, examine the knee, and give you an honest recommendation — including whether surgery would actually serve you better.
+Book a no-pressure consultation. We'll review your imaging and history, examine the knee, and give you an honest recommendation — including whether surgery would actually serve you better.
 
 > This article is for general education. It is not medical advice and is not a promise of any particular result. Stem cell therapy is not an FDA-approved cure for arthritis, and treatment suitability is determined by the physician based on individual evaluation.

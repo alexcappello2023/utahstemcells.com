@@ -1,7 +1,7 @@
 ---
 title: "Peptide Therapy"
 metaTitle: "Peptide Therapy in Sandy & Salt Lake City, UT | Utah Stem Cells"
-description: "Physician-guided peptide therapy in Sandy, UT, serving the Salt Lake Valley — individualized, medically supervised peptide protocols to support recovery, energy and wellness. Free consultation."
+description: "Physician-guided peptide therapy in Sandy, UT, serving the Salt Lake Valley — individualized, medically supervised peptide protocols to support recovery, energy and wellness."
 summary: "Physician-guided, individualized peptide protocols to support recovery, energy and wellness."
 usp: "Physician-guided peptide therapy — individualized, medically supervised protocols matched to your goals, with honest guidance about what peptides can and can't do."
 category: peptides
@@ -26,7 +26,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Peptide therapy here is genuinely physician-guided under Dr. William Cimikoski — individualized protocols, medical oversight and honest guidance, not a one-size-fits-all menu. We're clear about what peptides can and can't do, all under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will review your goals and health history and tell you whether a peptide protocol is an appropriate option for you."
+    a: "Book a no-pressure consultation. The physician will review your goals and health history and tell you whether a peptide protocol is an appropriate option for you."
 ---
 
 ## A physician-guided way to support recovery, energy and wellness

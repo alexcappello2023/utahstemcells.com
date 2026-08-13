@@ -1,7 +1,7 @@
 ---
 title: "IV Stem Cell Therapy"
 metaTitle: "IV Stem Cell Therapy in Utah — Whole-Body Regenerative Infusion | Utah Stem Cells"
-description: "Physician-supervised IV stem cell therapy in Sandy, UT — a regenerative infusion delivered intravenously as a whole-body approach to wellness and recovery. Free consultation."
+description: "Physician-supervised IV stem cell therapy in Sandy, UT — a regenerative infusion delivered intravenously as a whole-body approach to wellness and recovery."
 category: regenerative
 summary: "An intravenous regenerative therapy delivered through the bloodstream — a whole-body approach to wellness and recovery."
 image: ../../assets/treatments/iv-stem-cell-therapy.webp
@@ -27,7 +27,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Care is physician-led by Dr. William Cimikoski and grounded in honest, evidence-informed guidance — we tell you when a therapy is a reasonable fit and when it is not. You get a real evaluation, a tailored plan, and clear expectations, all under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will review your goals and health history and tell you whether IV stem cell therapy is an appropriate part of your wellness and recovery plan."
+    a: "Book a no-pressure consultation. The physician will review your goals and health history and tell you whether IV stem cell therapy is an appropriate part of your wellness and recovery plan."
 ---
 
 ## A whole-body approach to wellness and recovery

@@ -1,7 +1,7 @@
 ---
 title: "IV Vitamin Infusions"
 metaTitle: "IV Vitamin Infusions in Sandy & Salt Lake City, UT | Utah Stem Cells"
-description: "Physician-overseen IV vitamin infusions in Sandy, UT — customized nutrient and hydration blends to support energy, immunity and recovery in the Salt Lake Valley. Free consultation."
+description: "Physician-overseen IV vitamin infusions in Sandy, UT — customized nutrient and hydration blends to support energy, immunity and recovery in the Salt Lake Valley."
 summary: "Customized IV vitamin and nutrient blends to support hydration, energy, immunity and recovery."
 image: ../../assets/treatments/iv-vitamin-infusions.webp
 imageAlt: "IV vitamin infusions — woman relaxing during a customized vitamin IV drip"
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Your infusion is delivered in a physician-led clinic under the medical oversight of Dr. William Cimikoski, with honest guidance about what IV vitamin therapy can and can't do. You get a blend matched to your goals, all under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. We'll talk through your goals and health history and help you choose the infusion that makes sense for you — with the physician confirming it's appropriate before you begin."
+    a: "Book a no-pressure consultation. We'll talk through your goals and health history and help you choose the infusion that makes sense for you — with the physician confirming it's appropriate before you begin."
 ---
 
 ## A convenient way to top up hydration and nutrients

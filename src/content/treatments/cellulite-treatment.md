@@ -1,7 +1,7 @@
 ---
 title: "Cellulite Treatment"
 metaTitle: "Cellulite Treatment in Sandy, UT | Utah Stem Cells & USC MedSpa"
-description: "Cellulite treatment in Sandy, UT to help smooth dimpled skin and reduce the appearance of cellulite on the thighs, buttocks and more. Physician-led care for smoother-looking skin — book a free consultation."
+description: "Cellulite treatment in Sandy, UT to help smooth dimpled skin and reduce the appearance of cellulite on the thighs, buttocks and more. Physician-led care for smoother-looking skin — book a consultation."
 category: body-contouring
 summary: "A physician-led cellulite treatment that helps smooth dimpling and reduce the appearance of cellulite for firmer, smoother-looking skin."
 image: ../../assets/treatments/cellulite-treatment.webp
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every plan is physician-led by Dr. William Cimikoski and grounded in honest, realistic guidance — we tell you what a cellulite treatment can and can't do, so your expectations are set the right way from the start. You get a real evaluation and a tailored plan, all under one roof at our clinic in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will evaluate your skin, discuss the areas you'd like to smooth, and recommend whether a cellulite treatment is a good fit for you."
+    a: "Book a no-pressure consultation. The physician will evaluate your skin, discuss the areas you'd like to smooth, and recommend whether a cellulite treatment is a good fit for you."
 ---
 
 ## Dimpled skin doesn't have to be something you just live with

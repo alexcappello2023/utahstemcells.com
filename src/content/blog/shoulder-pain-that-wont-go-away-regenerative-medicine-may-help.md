@@ -1,7 +1,7 @@
 ---
 title: "Shoulder Pain That Won't Go Away? Regenerative Medicine May Help"
 metaTitle: "Shoulder Pain Treatment in Utah — Regenerative Medicine Options | Utah Stem Cells"
-description: "Chronic shoulder pain that won't go away? Explore physician-led regenerative medicine in Sandy, UT — PRP and stem cell options that may help support natural repair. Free consultation."
+description: "Chronic shoulder pain that won't go away? Explore physician-led regenerative medicine in Sandy, UT — PRP and stem cell options that may help support natural repair."
 pubDate: 2026-07-17
 author: "Dr. William Cimikoski"
 hero: "/blog-images/shoulder-pain-that-wont-go-away-regenerative-medicine-may-help-hero.webp"
@@ -78,6 +78,6 @@ Treatment is minimally invasive and performed in-office. Most patients tolerate 
 Regenerative approaches work gradually as your body responds over the following weeks. Timelines and results vary from person to person, which is why the physician sets realistic expectations for your situation.
 
 ### How do I find out if I'm a candidate?
-Book a free, no-pressure consultation. We'll examine the shoulder, review your imaging and history, and give you an honest recommendation — including whether another approach would serve you better.
+Book a no-pressure consultation. We'll examine the shoulder, review your imaging and history, and give you an honest recommendation — including whether another approach would serve you better.
 
 > This article is for general education. It is not medical advice and is not a promise of any particular result. Regenerative treatments are not FDA-approved cures, and suitability is determined by the physician based on individual evaluation.

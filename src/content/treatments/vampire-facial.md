@@ -1,7 +1,7 @@
 ---
 title: "Vampire Facial"
 metaTitle: "Vampire Facial in Utah — Microneedling + PRP for Glow & Texture | Utah Stem Cells & USC MedSpa"
-description: "Physician-led Vampire Facial in Sandy, UT — microneedling combined with your own platelet-rich plasma (PRP) to boost skin rejuvenation, refine texture and restore a natural glow. Free consultation."
+description: "Physician-led Vampire Facial in Sandy, UT — microneedling combined with your own platelet-rich plasma (PRP) to boost skin rejuvenation, refine texture and restore a natural glow."
 category: aesthetics
 summary: "Microneedling combined with your own PRP to enhance skin rejuvenation and glow."
 image: ../../assets/treatments/vampire-facial.webp
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Your treatment is medically supervised under Dr. William Cimikoski, and your PRP is prepared and handled in a physician-led clinic rather than a walk-in cosmetic setting. We're honest about candidacy: if the Vampire Facial isn't right for you, we'll say so. Consultation, treatment and follow-up all happen under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. We'll review your skin and goals, explain what the Vampire Facial can and can't do, and recommend a plan only if it's a good fit."
+    a: "Book a no-pressure consultation. We'll review your skin and goals, explain what the Vampire Facial can and can't do, and recommend a plan only if it's a good fit."
 ---
 
 ## Refresh dull, tired-looking skin with your own growth factors

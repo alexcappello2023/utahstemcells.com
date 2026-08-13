@@ -1,7 +1,7 @@
 ---
 title: "P-Shot (Male Wellness Injection)"
 metaTitle: "P-Shot in Utah — Male Intimate Wellness Injection (PRP) | Utah Stem Cells"
-description: "The P-Shot in Sandy, UT — a discreet, physician-led PRP treatment for men designed to support intimate wellness, performance, and confidence. Book a free consultation."
+description: "The P-Shot in Sandy, UT — a discreet, physician-led PRP treatment for men designed to support intimate wellness, performance, and confidence. Book a consultation."
 category: sexual-wellness
 summary: "A stem cell and/or PRP-based treatment for men designed to support intimate wellness and function."
 image: ../../assets/treatments/p-shot.webp
@@ -30,7 +30,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every P-Shot is overseen by our Medical Director, Dr. William Cimikoski — this is physician-led care, not treatment handed off to a technician. We offer honest, discreet guidance: we'll tell you candidly whether you're a good candidate, and you'll get a real evaluation and clear expectations under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will review your goals and health history in private and let you know whether the P-Shot is right for you."
+    a: "Book a no-pressure consultation. The physician will review your goals and health history in private and let you know whether the P-Shot is right for you."
 ---
 
 ## Intimate confidence matters — and it's worth a real conversation

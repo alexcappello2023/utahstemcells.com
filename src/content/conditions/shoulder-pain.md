@@ -26,7 +26,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every evaluation and procedure is physician-led by Dr. William Cimikoski — not delegated to a technician — and grounded in honest, evidence-informed guidance. We take the time to identify what's actually causing your shoulder pain, and if you're not a good candidate, we'll tell you."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will examine your shoulder, review any imaging and your history, and tell you whether a non-surgical regenerative approach is right for you."
+    a: "Book a no-pressure consultation. The physician will examine your shoulder, review any imaging and your history, and tell you whether a non-surgical regenerative approach is right for you."
 ---
 
 ## When shoulder pain limits every reach

@@ -1,7 +1,7 @@
 ---
 title: "Hormone Pellet Therapy"
 metaTitle: "Hormone Pellet Therapy in Utah (Men & Women) — Bioidentical HRT | Utah Stem Cells"
-description: "Physician-managed bioidentical hormone replacement therapy (HRT) in Sandy, UT for men and women — hormone pellets and testosterone optimization to help support energy, mood and wellness. Lab-guided. Free consultation."
+description: "Physician-managed bioidentical hormone replacement therapy (HRT) in Sandy, UT for men and women — hormone pellets and testosterone optimization to help support energy, mood and wellness. Lab-guided."
 category: hormones
 summary: "Tiny hormone pellets placed under the skin that release steadily over months to help balance energy, mood and overall wellness."
 image: ../../assets/treatments/hormone-pellet-therapy.webp
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Your therapy is physician-managed by Dr. William Cimikoski and guided by your lab work — not a generic protocol. We are evidence-informed and honest about what hormone optimization can and cannot do, and your levels are monitored over time. It is all handled under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will review your goals and health history, order lab work to evaluate your hormone levels, and tell you whether hormone pellet therapy is right for you."
+    a: "Book a no-pressure consultation. The physician will review your goals and health history, order lab work to evaluate your hormone levels, and tell you whether hormone pellet therapy is right for you."
 ---
 
 ## When your energy, mood and drive don't feel like your own

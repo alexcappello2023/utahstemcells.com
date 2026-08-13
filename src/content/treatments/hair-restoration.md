@@ -1,7 +1,7 @@
 ---
 title: "Hair Restoration"
 metaTitle: "PRP & Stem Cell Hair Restoration in Utah (Men & Women) | Utah Stem Cells"
-description: "Natural, non-surgical hair restoration in Sandy, UT using your own PRP, with or without stem cells, for men and women. Physician-supervised, includes a complimentary microneedling session. Free consultation."
+description: "Natural, non-surgical hair restoration in Sandy, UT using your own PRP, with or without stem cells, for men and women. Physician-supervised, includes a complimentary microneedling session."
 category: hair-restoration
 summary: "Regenerative hair regrowth for men and women using your own PRP, with or without stem cells — includes a complimentary microneedling session."
 image: ../../assets/treatments/hair-restoration.webp
@@ -26,7 +26,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Care is physician-supervised by Dr. William Cimikoski and grounded in honest, evidence-informed guidance — if you are not a good candidate for hair restoration, we will tell you. You get a real evaluation, a tailored plan, and a complimentary microneedling session, all under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will evaluate your hair loss, review your goals and health history, and tell you whether PRP hair restoration, with or without stem cells, is right for you."
+    a: "Book a no-pressure consultation. The physician will evaluate your hair loss, review your goals and health history, and tell you whether PRP hair restoration, with or without stem cells, is right for you."
 ---
 
 ## When thinning hair starts to change how you feel

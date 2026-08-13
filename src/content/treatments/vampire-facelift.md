@@ -1,7 +1,7 @@
 ---
 title: "Vampire Face Lift"
 metaTitle: "Vampire Face Lift in Utah — Injectable PRP for Volume & Tone | Utah Stem Cells & USC MedSpa"
-description: "Physician-led Vampire Face Lift in Sandy, UT — injectable platelet-rich plasma (PRP), with or without stem cells, to help restore facial volume, tone and a refreshed look. No microneedling. Free consultation."
+description: "Physician-led Vampire Face Lift in Sandy, UT — injectable platelet-rich plasma (PRP), with or without stem cells, to help restore facial volume, tone and a refreshed look. No microneedling."
 category: aesthetics
 summary: "Injectable PRP — on its own or with stem cells — to restore facial volume and tone. No microneedling."
 image: ../../assets/treatments/vampire-facelift.webp
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "The Vampire Face Lift is physician-performed by Dr. William Cimikoski — not delegated — and your PRP is prepared and injected in a physician-led clinic. We're honest about candidacy and results: if it isn't right for you, we'll tell you. Consultation, treatment and follow-up all happen under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will review your goals and the facial areas you'd like to address, and recommend whether the Vampire Face Lift is a good fit for you."
+    a: "Book a no-pressure consultation. The physician will review your goals and the facial areas you'd like to address, and recommend whether the Vampire Face Lift is a good fit for you."
 ---
 
 ## Restore facial volume and tone — naturally, without surgery

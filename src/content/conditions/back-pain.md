@@ -26,7 +26,7 @@ faqs:
   - q: "What does treatment involve?"
     a: "It starts with a physician evaluation to identify the source of your pain and confirm suitability. If you're a candidate, regenerative components are prepared and precisely delivered in-office, with the goal of supporting natural repair over the following weeks."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will evaluate your back pain, review your goals and health history, and tell you whether a regenerative approach is right for you."
+    a: "Book a no-pressure consultation. The physician will evaluate your back pain, review your goals and health history, and tell you whether a regenerative approach is right for you."
 ---
 
 ## Living with back pain that won't let up

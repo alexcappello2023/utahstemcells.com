@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Your treatment is delivered under the medical oversight of Medical Director Dr. William Cimikoski in a physician-led clinic. We give honest, evidence-informed guidance about whether Kybella is right for your anatomy and goals — and we'll tell you if another approach would serve you better."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will evaluate the under-chin area, review your goals, and recommend whether Kybella — or another option — is the right fit, along with how many sessions you might need."
+    a: "Book a no-pressure consultation. The physician will evaluate the under-chin area, review your goals, and recommend whether Kybella — or another option — is the right fit, along with how many sessions you might need."
 ---
 
 ## Say goodbye to the stubborn double chin

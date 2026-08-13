@@ -30,7 +30,7 @@ faqs:
   - q: "Where can I get IV therapy near me in Salt Lake City?"
     a: "We offer physician-overseen IV therapy at our clinic in Sandy, right in the Salt Lake Valley and convenient to the greater Salt Lake City area. It's a short drive from surrounding communities, and every infusion is delivered in a real medical clinic rather than a pop-up drip bar."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. We'll talk through your goals and health history and help you choose the infusion that makes sense for you — with the physician confirming it's appropriate before you begin."
+    a: "Book a no-pressure consultation. We'll talk through your goals and health history and help you choose the infusion that makes sense for you — with the physician confirming it's appropriate before you begin."
 ---
 
 ## When you want to feel like yourself again

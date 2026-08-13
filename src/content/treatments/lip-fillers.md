@@ -1,7 +1,7 @@
 ---
 title: "Lip Fillers"
 metaTitle: "Lip Fillers in Sandy, UT — Half Syringe & Full Options | Utah Stem Cells"
-description: "Natural-looking lip fillers in Sandy, UT — from a subtle half-syringe (0.5 ml) mini plump to a fuller lip. Physician-led at Utah Stem Cells. Book a free consultation."
+description: "Natural-looking lip fillers in Sandy, UT — from a subtle half-syringe (0.5 ml) mini plump to a fuller lip. Physician-led at Utah Stem Cells. Book a consultation."
 category: aesthetics
 summary: "Natural-looking lip enhancement, from a subtle half-syringe mini plump to a fuller look — physician-led in Sandy, UT."
 image: ../../assets/treatments/lip-fillers.webp
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Your treatment is physician-led by Dr. William Cimikoski with real medical oversight — not handed off to a technician. We favor a natural-looking, conservative approach and give honest guidance: if a half syringe is all you need, we'll tell you. It's one clinic in Sandy, with a real evaluation and clear expectations."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will review your goals and health history, talk through the mini (half-syringe) versus full-lip options, and recommend what's right for you."
+    a: "Book a no-pressure consultation. The physician will review your goals and health history, talk through the mini (half-syringe) versus full-lip options, and recommend what's right for you."
 ---
 
 ## You want fuller lips — not obvious ones

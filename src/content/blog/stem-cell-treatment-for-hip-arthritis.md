@@ -1,7 +1,7 @@
 ---
 title: "Stem Cell Treatment for Hip Arthritis"
 metaTitle: "Stem Cell Treatment for Hip Arthritis in Utah | Utah Stem Cells"
-description: "Stem cell treatment for hip arthritis in Sandy, UT — a non-surgical, physician-led regenerative option that may help ease hip pain and delay or avoid hip replacement. Free consultation."
+description: "Stem cell treatment for hip arthritis in Sandy, UT — a non-surgical, physician-led regenerative option that may help ease hip pain and delay or avoid hip replacement."
 pubDate: 2026-07-18
 author: "Dr. William Cimikoski"
 hero: "/blog-images/stem-cell-treatment-for-hip-arthritis-hero.webp"
@@ -80,6 +80,6 @@ For some patients with mild to moderate hip arthritis, it may reduce pain and im
 It's a minimally invasive, in-office procedure that most patients tolerate well, with little to no downtime. Your provider explains exactly what to expect and how to care for the hip afterward.
 
 ### How do I find out if I'm a candidate?
-Book a free, no-pressure consultation. We'll review your imaging and history, examine the hip, and give you an honest recommendation — including whether surgery would actually serve you better.
+Book a no-pressure consultation. We'll review your imaging and history, examine the hip, and give you an honest recommendation — including whether surgery would actually serve you better.
 
 > This article is for general education. It is not medical advice and is not a promise of any particular result. Stem cell therapy is not an FDA-approved cure for arthritis, and treatment suitability is determined by the physician based on individual evaluation.

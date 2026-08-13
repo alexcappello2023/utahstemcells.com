@@ -26,7 +26,7 @@ faqs:
   - q: "What does treatment involve?"
     a: "It begins with a physician evaluation to confirm suitability. If you're a candidate, regenerative components — PRP from your own blood and, where appropriate, donor-derived umbilical or amniotic stem cells — are prepared and precisely delivered into the affected joint in-office, with the goal of supporting natural repair over the following weeks."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will evaluate the joint, review your goals and health history, and tell you whether a regenerative approach is right for you."
+    a: "Book a no-pressure consultation. The physician will evaluate the joint, review your goals and health history, and tell you whether a regenerative approach is right for you."
 ---
 
 ## When joint pain starts deciding what you can do

@@ -1,7 +1,7 @@
 ---
 title: "Fat Transfer Procedures"
 metaTitle: "Fat Transfer in Utah — Natural Volume Using Your Own Fat | Utah Stem Cells"
-description: "Fat transfer in Sandy, UT — physician-performed procedures that relocate your own fat to restore natural volume and refine contour in targeted areas. Book a free consultation."
+description: "Fat transfer in Sandy, UT — physician-performed procedures that relocate your own fat to restore natural volume and refine contour in targeted areas. Book a consultation."
 category: body-contouring
 summary: "Procedures that relocate your own fat to enhance volume and contour in targeted areas."
 image: ../../assets/treatments/fat-transfer.webp
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every procedure is physician-led by Dr. William Cimikoski and grounded in honest guidance: we tell you when fat transfer is a good fit and when it is not. You get a real evaluation, a tailored plan and clear expectations, all under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will assess your donor and target areas, review your goals and health history, and tell you whether fat transfer is right for you."
+    a: "Book a no-pressure consultation. The physician will assess your donor and target areas, review your goals and health history, and tell you whether fat transfer is right for you."
 ---
 
 ## Restore volume that feels — and looks — like you

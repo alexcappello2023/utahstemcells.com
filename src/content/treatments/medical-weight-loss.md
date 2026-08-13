@@ -26,7 +26,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "This is genuinely physician-supervised weight management under Dr. William Cimikoski, with honest guidance and no miracle promises. You get an individualized plan, real medical oversight, and support to make change sustainable — all under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will review your health, history and goals and design a weight management plan that's realistic and right for you."
+    a: "Book a no-pressure consultation. The physician will review your health, history and goals and design a weight management plan that's realistic and right for you."
 ---
 
 ## When you're ready for a plan that actually fits

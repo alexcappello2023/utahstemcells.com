@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Your aesthetic care is delivered under the medical oversight of Medical Director Dr. William Cimikoski, in a physician-led clinic — not a high-volume storefront. We favor honest, conservative guidance and a natural-looking approach: if a different treatment would serve your goals better, we'll tell you."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. We'll review your goals, assess your facial movement and skin, and recommend whether wrinkle-relaxing injectables — or another option — are the right fit for you."
+    a: "Book a no-pressure consultation. We'll review your goals, assess your facial movement and skin, and recommend whether wrinkle-relaxing injectables — or another option — are the right fit for you."
 ---
 
 ## Softer lines, without looking overdone

@@ -1,7 +1,7 @@
 ---
 title: "Platelet-Rich Plasma (PRP) Joint Treatment"
 metaTitle: "PRP Joint Injections in Utah — Non-Surgical Regenerative Joint Support | Utah Stem Cells"
-description: "Physician-performed PRP joint injections in Sandy, UT — a concentrated preparation from your own blood to support natural joint repair and help reduce pain, with minimal downtime. Free consultation."
+description: "Physician-performed PRP joint injections in Sandy, UT — a concentrated preparation from your own blood to support natural joint repair and help reduce pain, with minimal downtime."
 category: regenerative
 summary: "A concentrated preparation from your own blood, injected into a joint to support natural repair."
 image: ../../assets/treatments/prp-joint-treatment.webp
@@ -29,7 +29,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every procedure is physician-performed by Dr. William Cimikoski — not handed off to a technician — and grounded in honest, evidence-informed guidance. If PRP is not the right fit for you, we will tell you. You get a real evaluation and a tailored plan under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will evaluate your joint, review your goals and health history, and tell you whether PRP joint treatment is right for you."
+    a: "Book a no-pressure consultation. The physician will evaluate your joint, review your goals and health history, and tell you whether PRP joint treatment is right for you."
 ---
 
 ## When a joint aches but surgery feels like too much

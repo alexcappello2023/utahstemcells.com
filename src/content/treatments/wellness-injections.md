@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Our wellness injections are offered in a physician-led clinic under the medical oversight of Dr. William Cimikoski, with honest guidance about what they can and can't do. You get real medical context and everything under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. We'll talk through your goals, and the physician will confirm which injection, if any, is a good fit for you."
+    a: "Book a no-pressure consultation. We'll talk through your goals, and the physician will confirm which injection, if any, is a good fit for you."
 ---
 
 ## A quick boost when you need one

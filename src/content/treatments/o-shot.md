@@ -1,7 +1,7 @@
 ---
 title: "O-Shot (Female Wellness Injection)"
 metaTitle: "O-Shot in Utah — Female Intimate Wellness Injection (PRP) | Utah Stem Cells"
-description: "The O-Shot in Sandy, UT — a discreet, physician-led PRP treatment for women designed to support intimate wellness, sensitivity, and comfort. Book a free consultation."
+description: "The O-Shot in Sandy, UT — a discreet, physician-led PRP treatment for women designed to support intimate wellness, sensitivity, and comfort. Book a consultation."
 category: sexual-wellness
 summary: "A stem cell and/or PRP-based treatment for women designed to support intimate wellness and function."
 image: ../../assets/treatments/o-shot.webp
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every O-Shot is overseen by our Medical Director, Dr. William Cimikoski — this is physician-led care, not treatment handed off to a technician. We offer honest, discreet guidance: we'll tell you candidly whether you're a good candidate, and you'll get a real evaluation and clear expectations under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will review your goals and health history in private and let you know whether the O-Shot is right for you."
+    a: "Book a no-pressure consultation. The physician will review your goals and health history in private and let you know whether the O-Shot is right for you."
 ---
 
 ## Intimate wellness is part of overall wellness

@@ -26,7 +26,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every evaluation and procedure is physician-led by Dr. William Cimikoski — not delegated to a technician — and grounded in honest, evidence-informed guidance. Because SI joint pain is so often misdiagnosed, that careful, physician-first evaluation matters. If you're not a good candidate, we'll tell you."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will assess your SI joint, review your symptoms and history, and tell you whether a non-surgical regenerative approach is right for you."
+    a: "Book a no-pressure consultation. The physician will assess your SI joint, review your symptoms and history, and tell you whether a non-surgical regenerative approach is right for you."
 ---
 
 ## When SI joint pain follows you through the day

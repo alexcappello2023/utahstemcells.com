@@ -26,7 +26,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every evaluation is physician-led by Dr. William Cimikoski and grounded in honesty. With an autoimmune condition like RA, that honesty matters most: we won't overstate what regenerative options can do, we respect the role of your rheumatologist, and we'll tell you plainly if you're not a good candidate."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will review your history and current care, discuss your goals, and give you an honest assessment of whether a supportive regenerative option may be appropriate alongside your existing treatment."
+    a: "Book a no-pressure consultation. The physician will review your history and current care, discuss your goals, and give you an honest assessment of whether a supportive regenerative option may be appropriate alongside your existing treatment."
 ---
 
 ## Living with rheumatoid arthritis

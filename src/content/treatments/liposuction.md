@@ -1,7 +1,7 @@
 ---
 title: "Liposuction & Skin Tightening"
 metaTitle: "Liposuction & Skin Tightening in Utah — Body Sculpting | Utah Stem Cells"
-description: "Liposuction with skin tightening in Sandy, UT — physician-performed body sculpting that removes stubborn fat and refines the surrounding skin for a smoother contour. Book a free consultation."
+description: "Liposuction with skin tightening in Sandy, UT — physician-performed body sculpting that removes stubborn fat and refines the surrounding skin for a smoother contour. Book a consultation."
 category: body-contouring
 summary: "Body sculpting procedures that remove unwanted fat and tighten the surrounding skin."
 image: ../../assets/treatments/liposuction.webp
@@ -28,7 +28,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "Every procedure is physician-led by Dr. William Cimikoski and grounded in honest guidance: we tell you when liposuction is a good fit and when it is not. You get a genuine evaluation, a tailored plan and clear expectations, all under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will assess the areas you would like to address, review your goals and health history, and tell you whether liposuction with skin tightening is right for you."
+    a: "Book a no-pressure consultation. The physician will assess the areas you would like to address, review your goals and health history, and tell you whether liposuction with skin tightening is right for you."
 ---
 
 ## When stubborn fat won't budge

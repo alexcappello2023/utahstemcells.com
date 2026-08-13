@@ -1,7 +1,7 @@
 ---
 title: "Penile Enhancement"
 metaTitle: "Penile Enhancement in Utah — Discreet, Physician-Performed Procedure | Utah Stem Cells"
-description: "Penile enhancement in Sandy, UT — a discreet, physician-performed in-office injectable procedure for male enhancement and confidence. Book a free consultation."
+description: "Penile enhancement in Sandy, UT — a discreet, physician-performed in-office injectable procedure for male enhancement and confidence. Book a consultation."
 category: sexual-wellness
 summary: "An in-office injectable procedure for male enhancement, performed discreetly by our physician."
 image: ../../assets/treatments/penile-enhancement.webp
@@ -30,7 +30,7 @@ faqs:
   - q: "How is Utah Stem Cells different?"
     a: "The procedure is overseen by our Medical Director, Dr. William Cimikoski — physician-led care, not treatment handed off to a technician. We offer honest, discreet guidance: we'll tell you candidly whether you're a good candidate and what's realistic, with a real evaluation under one roof in Sandy."
   - q: "How do I get started?"
-    a: "Book a free, no-pressure consultation. The physician will review your goals and health history in private and let you know whether penile enhancement is an appropriate option for you."
+    a: "Book a no-pressure consultation. The physician will review your goals and health history in private and let you know whether penile enhancement is an appropriate option for you."
 ---
 
 ## A private conversation about confidence
