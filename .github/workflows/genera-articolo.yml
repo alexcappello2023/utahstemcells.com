@@ -1,17 +1,18 @@
 name: Genera articolo blog
 
-# Ogni settimana nel cloud di GitHub (anche a Mac spento).
-# GENERA e COMMITTA l'articolo, ma NON pubblica: il deploy online è manuale
-# (workflow "Deploy sito (FTP)") → revisione umana prima del live.
+# Piano editoriale AUTONOMO: 4 articoli/mese, senza intervento umano.
+# Ogni run: (1) rifornisce i topic se in esaurimento (ricerca di mercato/volumi,
+# focus staminali) → (2) scrive l'articolo dal prossimo topic → (3) immagine
+# hero → (4) aggiorna il Piano Editoriale → (5) build → (6) commit → (7) PUBBLICA
+# online via FTP. Tutto in automatico.
 on:
   schedule:
-    # Lunedì 06:37 UTC. Minuto NON tondo di proposito: gli ":00" sono congestionati
-    # e GitHub tende a ritardarli/saltarli.
-    - cron: '37 6 * * 1'
-  workflow_dispatch: {} # avvio manuale dal sito di GitHub (per i test)
+    # 4 volte al mese (giorni 1, 8, 15, 22) alle 06:37 UTC. Minuto non tondo = più affidabile.
+    - cron: '37 6 1,8,15,22 * *'
+  workflow_dispatch: {} # avvio manuale per i test
 
 permissions:
-  contents: write # per ricommittare l'articolo generato (la "memoria")
+  contents: write
 
 concurrency:
   group: genera-articolo
@@ -35,32 +36,62 @@ jobs:
       - name: Installa Claude Code
         run: npm install -g @anthropic-ai/claude-code
 
-      # L'AGENTE SCRIVE SOLO IL TESTO. Immagine, build e commit sono passi
-      # deterministici (sotto), così non dipendono dalla diligenza dell'AI.
+      # Quanti topic restano in coda? (per decidere se rifornire)
+      - name: Conta i topic in coda
+        id: coda
+        run: echo "remaining=$(npm run --silent remaining-topics)" >> "$GITHUB_OUTPUT"
+
+      # AUTO-REPLENISH: se la coda è quasi vuota, l'AI crea NUOVI topic di mercato.
+      - name: Rifornisci i topic (se in esaurimento)
+        if: ${{ fromJSON(steps.coda.outputs.remaining) < 6 }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude -p "Task: refill the editorial plan for a regenerative-medicine clinic (Utah Stem Cells). Steps: 1) read keywords/keyword-utahstemcells.csv and list all existing keywords; 2) run 'ls src/content/blog' to see already-published article slugs; 3) with WebSearch, research CURRENT high-interest, high-search-volume blog topics in stem-cell and regenerative-medicine care relevant to this clinic's services (joints/knee/hip/shoulder, PRP, hair restoration, sexual wellness, aesthetics, hormones, peptides, NAD/IV, weight loss, ketamine) — with a STRONG focus on STEM CELLS; 4) APPEND about 8 NEW rows to keywords/keyword-utahstemcells.csv in the exact format 'keyword,argomento,categoria,priorita'. Rules: each new keyword must be UNIQUE — not already a row in the CSV and not already an article slug; wrap the 'argomento' field in double quotes (it contains commas) and include a short note with the internal links to use; give each new row a 'priorita' higher than the current maximum. Edit ONLY the CSV file. Do NOT write articles, do NOT build, do NOT deploy, do NOT use git." \
+            --dangerously-skip-permissions \
+            --model claude-sonnet-5
+
+      # Scrive UN articolo dal prossimo topic (solo testo).
       - name: Genera l'articolo (solo testo)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          claude -p "Follow the instructions in routine/genera-articolo.md, but do ONLY research and writing. Steps: 1) run 'npm run next-keyword' to get the next topic (if the output contains 'done' stop without creating anything); 2) run 'ls src/content/treatments src/content/conditions src/content/blog' and only link to slugs that actually exist, in root form /<slug>/; 3) synchronous SERP analysis with WebSearch and WebFetch (1 search + up to 3 fetches) in this same process, WITHOUT the deep-research skill and WITHOUT background workflows/tasks; 4) write ONE new English article in src/content/blog/<slug>.md with the frontmatter and body defined in routine/genera-articolo.md (single quotes on text frontmatter fields; correct stem-cell sourcing = donated umbilical/amniotic + autologous PRP, NO autologous stem cells; hedged YMYL, no cure claims, disclaimer; FAQ; 1200-1600 words; 6-10 internal root links). Do NOT set the hero field, do NOT download images, do NOT build, do NOT deploy, do NOT use git: images, build, deploy and saving are handled by the automatic steps after you." \
+          claude -p "Follow the instructions in routine/genera-articolo.md, but do ONLY research and writing. Steps: 1) run 'npm run next-keyword' to get the next topic (if the output contains 'done' stop without creating anything); 2) run 'ls src/content/treatments src/content/conditions src/content/blog' and only link to slugs that actually exist, in root form /<slug>/; 3) synchronous SERP analysis with WebSearch and WebFetch (1 search + up to 3 fetches) in this same process, WITHOUT the deep-research skill and WITHOUT background workflows/tasks; 4) write ONE new English article in src/content/blog/<slug>.md with the frontmatter and body defined in routine/genera-articolo.md (single quotes on text frontmatter fields; correct stem-cell sourcing = donated umbilical/amniotic + autologous PRP, NO autologous stem cells; hedged YMYL, no cure claims, disclaimer; FAQ; 1200-1600 words; 6-10 internal root links). Do NOT set the hero field, do NOT download images, do NOT build, do NOT deploy, do NOT use git." \
             --dangerously-skip-permissions \
             --model claude-sonnet-5
 
-      - name: Aggiungi l'immagine hero (Pexels, deterministico)
+      - name: Aggiungi l'immagine hero (Pexels)
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: npm run add-hero
 
-      - name: Build di validazione (non pubblica)
+      - name: Aggiorna il Piano Editoriale
+        run: npm run update-plan
+
+      - name: Build del sito
         run: npm run build
 
-      - name: Salva l'articolo su GitHub (senza deploy)
+      - name: Salva su GitHub (articolo + topic + piano)
         run: |
           git config user.name "Utah Stem Cells Bot"
           git config user.email "bot@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
-            echo "Nessuna modifica da salvare (topic esauriti o nessun articolo generato)."
+            echo "Nessuna modifica (nessun articolo generato)."
           else
-            git commit -m "Bozza articolo automatico del $(date +%F) — da revisionare e pubblicare"
+            git commit -m "Articolo automatico del $(date +%F)"
             git push
           fi
+
+      # PUBBLICAZIONE AUTOMATICA online (nessun intervento umano).
+      - name: Pubblica online via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./dist/
+          server-dir: /public_html/
+          timeout: 60000

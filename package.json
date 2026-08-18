@@ -11,6 +11,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "next-keyword": "node scripts/next-keyword.mjs",
+    "remaining-topics": "node scripts/remaining-topics.mjs",
+    "update-plan": "node scripts/update-plan.mjs",
     "add-hero": "node scripts/add-hero.mjs",
     "deploy": "node scripts/deploy-ftp.mjs",
     "build:deploy": "astro build && node scripts/deploy-ftp.mjs"
