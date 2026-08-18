@@ -22,22 +22,32 @@ sono passi automatici che vengono dopo di te — **non** scaricare immagini, **n
 4. **Scrivi** il file `src/content/blog/<slug>.md` (usa lo slug dato da next-keyword) con frontmatter
    e corpo secondo le regole sotto.
 
-## Frontmatter (metti SEMPRE i campi di testo tra apici singoli)
+## Frontmatter (usa SEMPRE apici DOPPI per i campi di testo)
+
+I campi `title`, `metaTitle`, `description`, `author`, `imageQuery` vanno tra **apici doppi** `"..."`.
+Gli apici doppi gestiscono gli apostrofi inglesi (`won't`, `you're`, `it's`) senza rompere lo YAML —
+gli apici SINGOLI invece si rompono con gli apostrofi, quindi NON usarli. Se un testo contiene già
+apici doppi, sostituiscili con apici singoli o rimuovili. NON scrivere "free consultation" (la
+consulenza non è gratuita).
 
 ```
 ---
-title: '<il titolo/keyword>'
-metaTitle: '<keyword-first, ~50-60 char> | Utah Stem Cells'
-description: '<150-160 caratteri, keyword all'inizio, valore + "Free consultation." dove sta bene>'
+title: "<il titolo/keyword>"
+metaTitle: "<keyword-first, ~50-60 char> | Utah Stem Cells"
+description: "<150-160 caratteri, keyword all'inizio, valore. Puoi chiudere con 'Book a consultation.'>"
 pubDate: <DATA DI OGGI in formato YYYY-MM-DD>
-author: 'Dr. William Cimikoski'
+author: "Dr. William Cimikoski"
 relatedTreatments:
-  - <1-3 slug di trattamenti ESISTENTI e pertinenti>
+  - <1-3 slug di trattamenti ESISTENTI e pertinenti (SOLO slug che esistono davvero)>
 relatedConditions:
-  - <1-2 slug di condition ESISTENTI e pertinenti>
-imageQuery: '<2-4 parole in inglese per una foto stock A COLORI pertinente, es. "knee pain doctor">'
+  - <1-2 slug di condition ESISTENTI e pertinenti (SOLO slug che esistono davvero)>
+imageQuery: "<2-4 parole in inglese per una foto stock A COLORI pertinente, es. knee pain doctor>"
 ---
 ```
+
+⚠️ `relatedTreatments`/`relatedConditions` devono contenere **solo slug che esistono** (li hai
+elencati con `ls src/content/treatments src/content/conditions`). Uno slug inesistente **rompe il build**.
+Nel dubbio, metti meno voci o ometti del tutto le due liste.
 
 - **NON** mettere il campo `hero` (lo imposta lo script immagini dopo di te).
 - `relatedTreatments`/`relatedConditions` devono contenere solo slug che esistono (vedi passo 2).
