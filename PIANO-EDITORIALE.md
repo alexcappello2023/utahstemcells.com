@@ -3,13 +3,12 @@
 _File generato automaticamente ad ogni pubblicazione — non modificare a mano._
 Ritmo: **4 articoli/mese**. Quando la coda si esaurisce, il sistema **genera nuovi topic da solo** (in base al mercato e ai volumi di ricerca, con focus sulle cellule staminali).
 
-**Pubblicati: 36** · **In coda: 23** · Prossimo: _Stem Cells vs Cortisone for Knee Arthritis: What the Research Says_
+**Pubblicati: 35** · **In coda: 23** · Prossimo: _Stem Cells vs Cortisone for Knee Arthritis: What the Research Says_
 
 ## ✅ Pubblicati
 
 | Data | Titolo | URL |
 |---|---|---|
-| 2026-08-18 | How Much Does Stem Cell Therapy For Knees Cost | `/how-much-does-stem-cell-therapy-for-knees-cost/` |
 | 2026-07-18 | Stem Cell Treatment for Hip Arthritis | `/stem-cell-treatment-for-hip-arthritis/` |
 | 2026-07-17 | Shoulder Pain That Won't Go Away? Regenerative Medicine May Help | `/shoulder-pain-that-wont-go-away-regenerative-medicine-may-help/` |
 | 2026-07-16 | PRP vs Stem Cells: Which Treatment Is Right for Your Joint Pain? | `/prp-vs-stem-cells-which-treatment-is-right-for-your-joint-pain/` |

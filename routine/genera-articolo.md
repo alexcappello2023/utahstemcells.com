@@ -66,6 +66,12 @@ Nel dubbio, metti meno voci o ometti del tutto le due liste.
 
 ## Regole di CONTENUTO obbligatorie (compliance medica / YMYL)
 
+**MAI parlare di COSTI o PREZZI (regola assoluta):**
+- NON scrivere cifre, prezzi, importi, simboli di valuta ($, €), fasce di prezzo, "quanto costa",
+  "cost", "price", "how much", né confronti economici o coperture assicurative in chiave di prezzo.
+- Se il tema del topic riguarda il costo, **NON scrivere l'articolo su quello**: sposta il focus su
+  valore clinico, candidatura, cosa aspettarsi, sicurezza ed evidenza — senza mai citare cifre.
+
 **Origine delle cellule (fondamentale — non sbagliare):**
 - Le **staminali** usate da Utah Stem Cells provengono da **tessuto donato di cordone ombelicale e
   amniotico** (allogeniche, preparate in laboratorio), **NON prelevate dal corpo del paziente**.
