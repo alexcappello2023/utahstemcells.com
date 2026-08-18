@@ -13,6 +13,7 @@
     "next-keyword": "node scripts/next-keyword.mjs",
     "remaining-topics": "node scripts/remaining-topics.mjs",
     "update-plan": "node scripts/update-plan.mjs",
+    "normalize-frontmatter": "node scripts/normalize-frontmatter.mjs",
     "add-hero": "node scripts/add-hero.mjs",
     "deploy": "node scripts/deploy-ftp.mjs",
     "build:deploy": "astro build && node scripts/deploy-ftp.mjs"
@@ -24,6 +25,7 @@
     "astro": "^7.0.2",
     "basic-ftp": "^6.0.2",
     "dotenv": "^17.4.2",
+    "js-yaml": "^4.3.1",
     "sharp": "^0.34.3"
   }
 }

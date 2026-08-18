@@ -65,6 +65,9 @@ jobs:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: npm run add-hero
 
+      - name: Normalizza il frontmatter (rete di sicurezza)
+        run: npm run normalize-frontmatter
+
       - name: Aggiorna il Piano Editoriale
         run: npm run update-plan
 
