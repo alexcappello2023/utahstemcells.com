@@ -1,13 +1,8 @@
-// Rete di sicurezza: normalizza il frontmatter dell'articolo appena generato,
-// così un piccolo errore dell'AI non rompe il build (autonomia a prova di errore).
-// Elabora il file .md del blog PIÙ RECENTE (quello appena scritto):
-//   - garantisce title e description (fallback dal titolo/slug)
-//   - forza pubDate = oggi (stringa YYYY-MM-DD)
-//   - author di default se mancante
-//   - rimuove da relatedTreatments/relatedConditions gli slug INESISTENTI
-//   - rimuove imageQuery residuo
-//   - ri-serializza un frontmatter YAML sempre valido
-// Se il frontmatter non è nemmeno parsabile, esce con errore (così si nota).
+// Rete di sicurezza BULLETPROOF: normalizza il frontmatter dell'articolo appena
+// generato così un errore dell'AI non rompe mai il build (autonomia reale).
+// Gestisce: code fence ```md, BOM, CRLF, chiavi in grassetto **title**, YAML
+// rotto, frontmatter assente. Produce SEMPRE un frontmatter YAML valido.
+// Elabora il file .md del blog più recente (quello appena scritto).
 
 import yaml from 'js-yaml';
 import { readdir, readFile, writeFile, stat } from 'node:fs/promises';
@@ -29,11 +24,28 @@ const humanize = (slug) => slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toU
 async function newestArticle() {
 	const files = (await readdir(BLOG)).filter((f) => /\.md$/.test(f));
 	let best = null, bestM = -1;
-	for (const f of files) {
-		const m = (await stat(join(BLOG, f))).mtimeMs;
-		if (m > bestM) { bestM = m; best = f; }
-	}
+	for (const f of files) { const m = (await stat(join(BLOG, f))).mtimeMs; if (m > bestM) { bestM = m; best = f; } }
 	return best;
+}
+
+function clean(str) {
+	let t = String(str).replace(/^﻿/, '').replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+	const fence = t.match(/^```[a-zA-Z-]*\n([\s\S]*?)\n```$/); // tutto avvolto in un code fence
+	if (fence) t = fence[1].trim();
+	return t;
+}
+
+function splitFrontmatter(t) {
+	const m = t.match(/^---[ \t]*\n([\s\S]*?)\n---[ \t]*(?:\n([\s\S]*))?$/);
+	if (!m) return null;
+	return { fm: m[1], body: (m[2] || '').replace(/^\n+/, '') };
+}
+
+// estrazione best-effort di un campo scalare (gestisce **key** e quote)
+function grab(fmRaw, key) {
+	const m = fmRaw.match(new RegExp(`^\\**${key}\\**[ \t]*:[ \t]*(.+?)[ \t]*$`, 'im'));
+	if (!m) return '';
+	return m[1].replace(/^["']|["']$/g, '').trim();
 }
 
 async function main() {
@@ -41,33 +53,33 @@ async function main() {
 	if (!file) { console.log('Nessun articolo da normalizzare.'); return; }
 	const slug = file.replace(/\.md$/, '');
 	const full = join(BLOG, file);
-	const text = await readFile(full, 'utf8');
+	const raw = await readFile(full, 'utf8');
+	const t = clean(raw);
 
-	const m = text.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
-	if (!m) { console.error(`[${slug}] Nessun frontmatter: impossibile normalizzare.`); process.exit(1); }
-
-	let data;
-	try { data = yaml.load(m[1]) || {}; }
-	catch (e) { console.error(`[${slug}] Frontmatter YAML non parsabile: ${e.message}`); process.exit(1); }
-	if (typeof data !== 'object' || Array.isArray(data)) data = {};
-
-	const body = m[2];
 	const [treatSlugs, condSlugs] = await Promise.all([slugsIn(TREAT), slugsIn(COND)]);
 	const today = new Date().toISOString().slice(0, 10);
 
-	// campi obbligatori + normalizzazioni
-	const title = (typeof data.title === 'string' && data.title.trim()) ? data.title.trim() : humanize(slug);
-	const metaTitle = (typeof data.metaTitle === 'string' && data.metaTitle.trim()) ? data.metaTitle.trim() : `${title} | Utah Stem Cells`;
-	let description = (typeof data.description === 'string' && data.description.trim()) ? data.description.trim() : `${title} — physician-led regenerative medicine in Sandy, UT.`;
-	if (description.length > 300) description = description.slice(0, 297).trimEnd() + '…';
-	const author = (typeof data.author === 'string' && data.author.trim()) ? data.author.trim() : 'Dr. William Cimikoski';
-	const hero = typeof data.hero === 'string' ? data.hero : undefined;
+	const split = splitFrontmatter(t);
+	let data = {}, fmRaw = '', body = t;
+	if (split) {
+		fmRaw = split.fm; body = split.body;
+		try { const d = yaml.load(fmRaw); if (d && typeof d === 'object' && !Array.isArray(d)) data = d; } catch { /* YAML rotto → uso grab() sotto */ }
+	}
 
-	const clean = (arr, valid) => Array.isArray(arr)
-		? [...new Set(arr.map(String).map((s) => s.trim()).filter((s) => valid.has(s)))]
+	const pick = (k) => (typeof data[k] === 'string' && data[k].trim()) ? data[k].trim() : grab(fmRaw, k);
+
+	const title = pick('title') || humanize(slug);
+	const metaTitle = pick('metaTitle') || `${title} | Utah Stem Cells`;
+	let description = pick('description') || `${title} — physician-led regenerative medicine in Sandy, UT. Book a consultation.`;
+	if (description.length > 300) description = description.slice(0, 297).trimEnd() + '…';
+	const author = pick('author') || 'Dr. William Cimikoski';
+	const hero = (typeof data.hero === 'string' && data.hero.trim()) ? data.hero.trim() : grab(fmRaw, 'hero');
+
+	const cleanList = (arr, valid) => Array.isArray(arr)
+		? [...new Set(arr.map(String).map((s) => s.trim().replace(/^["']|["']$/g, '')).filter((s) => valid.has(s)))]
 		: [];
-	const relatedTreatments = clean(data.relatedTreatments, treatSlugs);
-	const relatedConditions = clean(data.relatedConditions, condSlugs);
+	const relatedTreatments = cleanList(data.relatedTreatments, treatSlugs);
+	const relatedConditions = cleanList(data.relatedConditions, condSlugs);
 
 	const out = { title, metaTitle, description, pubDate: today, author };
 	if (hero) out.hero = hero;
@@ -75,8 +87,9 @@ async function main() {
 	if (relatedConditions.length) out.relatedConditions = relatedConditions;
 
 	const fm = yaml.dump(out, { lineWidth: -1, quotingType: '"', forceQuotes: true }).trimEnd();
-	await writeFile(full, `---\n${fm}\n---\n\n${body.replace(/^\n+/, '')}`, 'utf8');
-	console.log(`[${slug}] frontmatter normalizzato (pubDate=${today}, related tr:${relatedTreatments.length} co:${relatedConditions.length}).`);
+	const finalBody = (body || '').trim() || `${title}\n\nContent coming soon.`;
+	await writeFile(full, `---\n${fm}\n---\n\n${finalBody}\n`, 'utf8');
+	console.log(`[${slug}] frontmatter normalizzato (title="${title.slice(0, 50)}", pubDate=${today}, tr:${relatedTreatments.length} co:${relatedConditions.length}, fm=${split ? 'trovato' : 'ricostruito'}).`);
 }
 
 main().catch((e) => { console.error(e.message); process.exit(1); });
