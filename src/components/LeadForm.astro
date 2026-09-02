@@ -1,0 +1,189 @@
+---
+// Reusable lead form. Mirrors the contact-page backend: Web3Forms POST
+// (email + redirect to /thank-you/) plus a sendBeacon to the Make webhook (→ Brevo).
+// Rendered multiple times per page; the <script> is bundled ONCE by Astro and
+// binds every .js-lead-form on the page.
+import { SITE } from '../consts';
+
+interface Props {
+	treatment?: string; // prefills "Which treatment" + subject/source
+	heading?: string;
+	subtext?: string;
+	tone?: 'soft' | 'plain';
+}
+
+const {
+	treatment,
+	heading = 'Request your consultation',
+	subtext = "Tell us what you're dealing with and our team will follow up. No obligation.",
+	tone = 'soft',
+} = Astro.props;
+
+const thankYouUrl = new URL('/thank-you/', SITE.url).href;
+// Make webhook — fans the lead into Brevo (via sendBeacon on submit).
+const makeWebhook = 'https://hook.eu1.make.com/sh64luy2jr3vt0ina5j2xbg35bqqm70r';
+const subjectLine = treatment
+	? `New treatment inquiry — ${treatment} — Utah Stem Cells`
+	: 'New treatment inquiry — Utah Stem Cells';
+const source = treatment
+	? `utahstemcells.com — treatment form (${treatment})`
+	: 'utahstemcells.com — treatment form';
+---
+
+<section class:list={['lead-band', { 'lead-band-soft': tone === 'soft' }]}>
+	<div class="container container-narrow">
+		<div class="lead-card">
+			<div class="lead-head">
+				<p class="eyebrow">Get started</p>
+				<h2 class="lead-title">{heading}</h2>
+				<p class="lead-sub">{subtext}</p>
+			</div>
+			<form
+				class="lead-form js-lead-form"
+				action="https://api.web3forms.com/submit"
+				method="POST"
+				data-webhook={makeWebhook}
+				data-source={source}
+			>
+				<input type="hidden" name="access_key" value="095b64c3-7af1-4c87-88f2-1fd6198161b9" />
+				<input type="hidden" name="subject" value={subjectLine} />
+				<input type="hidden" name="from_name" value="Utah Stem Cells website" />
+				<input type="hidden" name="redirect" value={thankYouUrl} />
+				<!-- Honeypot: bots fill this; real users never see it -->
+				<input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+				<div class="field-row">
+					<label>Name<input type="text" name="name" required /></label>
+					<label>Email<input type="email" name="email" required /></label>
+				</div>
+				<label>Phone<input type="tel" name="phone" /></label>
+				<label>
+					Which treatment are you interested in?
+					<input type="text" name="treatment_interest" value={treatment ?? ''} required />
+				</label>
+				<label>
+					What are you experiencing, and how can we help?
+					<textarea name="problem" rows="3" required></textarea>
+				</label>
+				<label>
+					Anything else? <span class="opt">(optional)</span>
+					<textarea name="message" rows="3"></textarea>
+				</label>
+				<button type="submit" class="btn btn-primary">Request my consultation</button>
+				<p class="lead-note">
+					By submitting, you agree to be contacted about your inquiry. We respect your privacy.
+				</p>
+			</form>
+		</div>
+	</div>
+</section>
+
+<script>
+	// Mirror every lead form to the Make webhook (→ Brevo) on submit, then let the
+	// native Web3Forms POST proceed (email notification + redirect unchanged).
+	// Astro bundles this script ONCE per page even if the component repeats.
+	document.querySelectorAll('form.js-lead-form').forEach((form) => {
+		const f = /** @type {HTMLFormElement} */ (form);
+		f.addEventListener('submit', () => {
+			try {
+				const el = f.elements as any;
+				if (el.botcheck && el.botcheck.checked) return; // honeypot → skip beacon
+				const fd = new FormData();
+				fd.append('source', f.dataset.source || 'website');
+				fd.append('page', location.href);
+				fd.append('name', (el.name && el.name.value) || '');
+				fd.append('email', (el.email && el.email.value) || '');
+				fd.append('phone', (el.phone && el.phone.value) || '');
+				fd.append('treatment', (el.treatment_interest && el.treatment_interest.value) || '');
+				fd.append('problem', (el.problem && el.problem.value) || '');
+				fd.append('message', (el.message && el.message.value) || '');
+				if (navigator.sendBeacon && f.dataset.webhook) {
+					navigator.sendBeacon(f.dataset.webhook, fd);
+				}
+			} catch (e) {
+				/* never block the email submit */
+			}
+		});
+	});
+</script>
+
+<style>
+	.lead-band {
+		padding-block: var(--space-12);
+	}
+	.lead-band-soft {
+		background: var(--color-bg-soft);
+		border-block: 1px solid var(--color-border);
+	}
+	.lead-card {
+		background: #fff;
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-lg);
+		padding: var(--space-8);
+		box-shadow: var(--shadow-sm);
+	}
+	.lead-head {
+		text-align: center;
+		margin-bottom: var(--space-6);
+	}
+	.lead-title {
+		margin: var(--space-1) 0 var(--space-2);
+	}
+	.lead-sub {
+		color: var(--color-text-muted);
+		max-width: 52ch;
+		margin: 0 auto;
+	}
+	.lead-form {
+		display: grid;
+		gap: var(--space-4);
+	}
+	.field-row {
+		display: grid;
+		gap: var(--space-4);
+	}
+	@media (min-width: 560px) {
+		.field-row {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	.lead-form label {
+		display: grid;
+		gap: var(--space-2);
+		font-family: var(--font-display);
+		font-weight: 500;
+		font-size: var(--text-sm);
+	}
+	.lead-form .opt {
+		font-weight: 400;
+		color: var(--color-text-muted);
+	}
+	.lead-form input,
+	.lead-form textarea {
+		font-family: var(--font-sans);
+		font-size: var(--text-base);
+		padding: 0.7em 0.9em;
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-sm);
+		background: var(--color-bg-soft);
+	}
+	.lead-form input:focus,
+	.lead-form textarea:focus {
+		outline: 2px solid var(--color-primary);
+		outline-offset: 1px;
+		background: #fff;
+	}
+	.lead-form button {
+		justify-self: start;
+		margin-top: var(--space-2);
+	}
+	.lead-note {
+		margin: 0;
+		font-size: var(--text-sm);
+		color: var(--color-text-muted);
+	}
+	/* Honeypot — hidden from humans */
+	.hp {
+		display: none !important;
+	}
+</style>

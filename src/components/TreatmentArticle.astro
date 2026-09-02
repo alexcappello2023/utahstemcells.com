@@ -6,6 +6,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from './Breadcrumbs.astro';
 import RelatedGrid from './RelatedGrid.astro';
 import CtaBand from './CtaBand.astro';
+import LeadForm from './LeadForm.astro';
 import { SITE, TREATMENT_CATEGORIES } from '../consts';
 
 const { item } = Astro.props;
@@ -91,26 +92,20 @@ const faqSchema =
 			</div>
 		</header>
 
+		<LeadForm treatment={data.title} heading="Request your consultation" />
+
 		<div class="section">
 			<div class="container prose">
 				<Content />
 			</div>
 		</div>
 
-		<div class="mid-cta">
-			<div class="container">
-				<p class="mid-cta-text">Ready to talk it through with a physician?</p>
-				<div class="hero-ctas mid-cta-ctas">
-					<a
-						href={SITE.bookingUrl}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="btn btn-primary">Book a consultation</a
-					>
-					<a href={`tel:${SITE.phoneHref}`} class="btn btn-ghost">Call {SITE.phone}</a>
-				</div>
-			</div>
-		</div>
+		<LeadForm
+			treatment={data.title}
+			tone="plain"
+			heading={`Have questions about ${data.title}?`}
+			subtext="Send a quick note about your situation and our team will follow up with next steps."
+		/>
 
 		<section class="section section-soft physician-band">
 			<div class="container physician-inner">
@@ -174,20 +169,7 @@ const faqSchema =
 		}
 	</article>
 
-	<div class="mid-cta">
-		<div class="container">
-			<p class="mid-cta-text">Ready to talk it through with a physician?</p>
-			<div class="hero-ctas mid-cta-ctas">
-				<a
-					href={SITE.bookingUrl}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="btn btn-primary">Book a consultation</a
-				>
-				<a href={`tel:${SITE.phoneHref}`} class="btn btn-ghost">Call {SITE.phone}</a>
-			</div>
-		</div>
-	</div>
+	<LeadForm treatment={data.title} heading="Ready to take the next step?" />
 
 	<RelatedGrid
 		soft
