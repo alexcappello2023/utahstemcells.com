@@ -68,10 +68,10 @@ const faqSchema =
 					<p class="lead">{data.usp ?? data.summary}</p>
 					<div class="hero-ctas">
 						<a
-							href={SITE.bookingUrl}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="btn btn-primary">Book a consultation</a
+							href="#request"
+							class="btn btn-primary"
+							data-scroll-form
+							data-fallback={SITE.bookingUrl}>Book a consultation</a
 						>
 						<a href={`tel:${SITE.phoneHref}`} class="btn btn-ghost">Call {SITE.phone}</a>
 					</div>
@@ -92,7 +92,7 @@ const faqSchema =
 			</div>
 		</header>
 
-		<LeadForm treatment={data.title} heading="Request your consultation" />
+		<LeadForm treatment={data.title} heading="Request your consultation" id="request" />
 
 		<div class="section">
 			<div class="container prose">

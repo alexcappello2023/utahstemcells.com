@@ -74,5 +74,25 @@ const orgSchema = {
 			<slot />
 		</main>
 		<Footer />
+		<script>
+			// "Book a consultation" buttons: if the page has a lead form (#request),
+			// smooth-scroll to it and focus the first field; otherwise fall back to
+			// the online booking URL (data-fallback). Header "Book a visit" is untouched.
+			document.addEventListener('click', (e) => {
+				const target = e.target as HTMLElement;
+				const a = target.closest('a[data-scroll-form]') as HTMLAnchorElement | null;
+				if (!a) return;
+				const form = document.getElementById('request');
+				if (form) {
+					e.preventDefault();
+					form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+					const field = form.querySelector('input:not([type=hidden]):not(.hp), textarea') as HTMLElement | null;
+					if (field) window.setTimeout(() => field.focus({ preventScroll: true }), 600);
+				} else if (a.dataset.fallback) {
+					e.preventDefault();
+					window.open(a.dataset.fallback, '_blank', 'noopener');
+				}
+			});
+		</script>
 	</body>
 </html>
