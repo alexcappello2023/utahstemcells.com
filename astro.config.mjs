@@ -6,7 +6,11 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://utahstemcells.com',
-	integrations: [mdx(), sitemap()],
+	integrations: [
+		mdx(),
+		// /progress/ è l'area cliente: fuori dalla sitemap (e noindex nella pagina).
+		sitemap({ filter: (page) => !page.includes('/progress/') }),
+	],
 	// Prefetch internal pages on hover → near-instant navigation.
 	prefetch: { prefetchAll: true, defaultStrategy: 'hover' },
 	fonts: [

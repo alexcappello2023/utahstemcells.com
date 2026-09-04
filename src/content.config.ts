@@ -89,4 +89,31 @@ const blog = defineCollection({
 	}),
 });
 
-export const collections = { treatments, conditions, locations, blog };
+// Avanzamento lavori (area cliente) — /progress/
+// Un file per mese. Pagina noindex, fuori dalla sitemap, non linkata dal sito.
+const progress = defineCollection({
+	loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/progress' }),
+	schema: z.object({
+		month: z.coerce.date(), // primo giorno del mese — serve solo per l'ordinamento
+		label: z.string(), // es. "September 2026"
+		status: z.enum(['in-progress', 'completed']).default('completed'),
+		summary: z.string(), // 1-2 frasi: il senso del mese, in chiaro
+		updated: z.coerce.date().optional(),
+		// numeri chiave mostrati in cima al mese
+		stats: z
+			.array(z.object({ value: z.string(), label: z.string() }))
+			.default([]),
+		// le tre liste del report
+		completed: z
+			.array(z.object({ title: z.string(), detail: z.string().optional() }))
+			.default([]),
+		ongoing: z
+			.array(z.object({ title: z.string(), detail: z.string().optional() }))
+			.default([]),
+		next: z
+			.array(z.object({ title: z.string(), detail: z.string().optional() }))
+			.default([]),
+	}),
+});
+
+export const collections = { treatments, conditions, locations, blog, progress };

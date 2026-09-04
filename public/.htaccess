@@ -20,6 +20,13 @@
   </FilesMatch>
 </IfModule>
 
+# Area cliente /progress/ — fuori dagli indici dei motori di ricerca
+<IfModule mod_headers.c>
+  <If "%{REQUEST_URI} =~ m#^/progress/#">
+    Header set X-Robots-Tag "noindex, nofollow"
+  </If>
+</IfModule>
+
 # Utah Stem Cells — redirects & canonical (generated)
 <IfModule mod_rewrite.c>
   RewriteEngine On
