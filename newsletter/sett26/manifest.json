@@ -1,0 +1,50 @@
+[
+  {
+    "n": 1,
+    "slug": "01-keep-doing-what-you-love",
+    "subject": "KEEP DOING WHAT YOU LOVE",
+    "cta": "Contact us today",
+    "image": "01-keep-doing-what-you-love.jpg",
+    "bytes": 10618
+  },
+  {
+    "n": 2,
+    "slug": "02-dont-let-joint-pain-slow-you-down",
+    "subject": "DON’T LET JOINT PAIN SLOW YOU DOWN",
+    "cta": "Contact us today",
+    "image": "02-dont-let-joint-pain-slow-you-down.jpg",
+    "bytes": 6899
+  },
+  {
+    "n": 3,
+    "slug": "03-healthy-joints-brighter-days",
+    "subject": "HEALTHY JOINTS. BRIGHTER DAYS.",
+    "cta": "Request more information",
+    "image": "03-healthy-joints-brighter-days.jpg",
+    "bytes": 7018
+  },
+  {
+    "n": 4,
+    "slug": "04-get-back-to-what-moves-you",
+    "subject": "GET BACK TO WHAT MOVES YOU",
+    "cta": "Contact us today",
+    "image": "04-get-back-to-what-moves-you.jpg",
+    "bytes": 7109
+  },
+  {
+    "n": 5,
+    "slug": "05-play-more-hurt-less",
+    "subject": "PLAY MORE. HURT LESS.",
+    "cta": "Contact us today",
+    "image": "05-play-more-hurt-less.jpg",
+    "bytes": 7031
+  },
+  {
+    "n": 6,
+    "slug": "06-more-movement-more-life",
+    "subject": "MORE MOVEMENT. MORE LIFE.",
+    "cta": "Contact us today",
+    "image": "06-more-movement-more-life.jpg",
+    "bytes": 6836
+  }
+]
