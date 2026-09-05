@@ -7,7 +7,8 @@
     "image": "01-keep-doing-what-you-love.jpg",
     "bytes": 10618,
     "templateId": 5,
-    "action": "creato"
+    "action": "campagna creata",
+    "campaignId": 11
   },
   {
     "n": 2,
@@ -17,7 +18,8 @@
     "image": "02-dont-let-joint-pain-slow-you-down.jpg",
     "bytes": 6899,
     "templateId": 6,
-    "action": "creato"
+    "action": "campagna creata",
+    "campaignId": 12
   },
   {
     "n": 3,
@@ -27,7 +29,8 @@
     "image": "03-healthy-joints-brighter-days.jpg",
     "bytes": 7018,
     "templateId": 7,
-    "action": "creato"
+    "action": "campagna creata",
+    "campaignId": 13
   },
   {
     "n": 4,
@@ -37,7 +40,8 @@
     "image": "04-get-back-to-what-moves-you.jpg",
     "bytes": 7109,
     "templateId": 8,
-    "action": "creato"
+    "action": "campagna creata",
+    "campaignId": 14
   },
   {
     "n": 5,
@@ -47,7 +51,8 @@
     "image": "05-play-more-hurt-less.jpg",
     "bytes": 7031,
     "templateId": 9,
-    "action": "creato"
+    "action": "campagna creata",
+    "campaignId": 15
   },
   {
     "n": 6,
@@ -57,6 +62,7 @@
     "image": "06-more-movement-more-life.jpg",
     "bytes": 6836,
     "templateId": 10,
-    "action": "creato"
+    "action": "campagna creata",
+    "campaignId": 16
   }
 ]

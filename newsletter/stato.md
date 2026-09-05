@@ -141,8 +141,27 @@ Creare questo file di stato per trasferire il lavoro in Work e proseguire lì co
 - Liste principali: **4** Women july 26 (2.964), **3** Men july 26 (1.424), **13** SC Joint tx — not converted (52), **12** SC Joint tx — converted (39).
 - La chiave API ha la **restrizione IP attiva**: da riautorizzare se cambia l'IP pubblico.
 
+## Campagne in bozza (Campaigns → Email) — 5 settembre 2026
+
+Create con `POST /v3/emailCampaigns` **senza `scheduledAt` e senza `listIds`**: restano in bozza, non possono partire. Script: `scripts/create-campaigns.mjs` (idempotente, passa a PUT se il manifest ha già il `campaignId`).
+
+| # | Campaign ID | Oggetto |
+|---:|---:|---|
+| 01 | 11 | KEEP DOING WHAT YOU LOVE |
+| 02 | 12 | DON'T LET JOINT PAIN SLOW YOU DOWN |
+| 03 | 13 | HEALTHY JOINTS. BRIGHTER DAYS. |
+| 04 | 14 | GET BACK TO WHAT MOVES YOU |
+| 05 | 15 | PLAY MORE. HURT LESS. |
+| 06 | 16 | MORE MOVEMENT. MORE LIFE. |
+
+Il corpo si modifica nell'**editor HTML** di Brevo (non nel drag & drop): è la conseguenza di aver passato `htmlContent` grezzo. Oggetto, mittente, destinatari e programmazione si gestiscono normalmente dall'interfaccia.
+
+I template transazionali ID 5–10 restano inattivi come archivio: `POST /v3/smtp/templates` crea **template transazionali** (Transactional → Email → Templates), che non compaiono in Marketing. `isActive` li rende invocabili via API transazionale, non li sposta di sezione.
+
+Precedente campagna marketing inviata: **"Membership Launch!"** (25/08/2026) alle liste 2, 3, 8, 7, 4.
+
 ## Da fare
 
 - Verifica il link **Unsubscribe**: nei template è `{{ unsubscribe }}`, tag delle *campagne* Brevo. Va bene quando il template viene usato come campagna; in un invio transazionale resterebbe letterale.
-- Decidere **targeting e calendario** degli invii (suggerimento: liste 12/13 per il messaggio sul ritrattamento, 3/4 per il volume).
+- Assegnare **liste e data** alle 6 bozze e inviare dall'interfaccia (suggerimento: liste 12/13 per il messaggio sul ritrattamento, 3/4 per il volume).
 - Rigenerare gli script `scripts/build-templates.mjs` + `push-to-brevo.mjs` dopo ogni modifica ai testi: sono idempotenti (il manifest tiene i `templateId` e passa a PUT).
