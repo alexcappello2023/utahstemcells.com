@@ -109,3 +109,40 @@ Brevo consente di creare template email tramite API con `POST /v3/smtp/templates
 ## Ultima richiesta dell’utente
 
 Creare questo file di stato per trasferire il lavoro in Work e proseguire lì con la creazione dei template Brevo.
+
+---
+
+# Aggiornamento — 5 settembre 2026 (sessione Claude Code)
+
+## Fatto
+
+1. **Testi**: recuperati tutti e 6 dal Sheet `Sep26` (esportabile in CSV senza credenziali) → `sett26/sep26-copy.csv`.
+2. **Creatività**: le formule `=IMAGE()` delle righe 4–12 puntavano a URL firmati `oaiusercontent.com` **scaduti il 04/09 (HTTP 403)**. I master PNG sono stati messi in salvo in `sett26/creative-src/`. La creatività della riga 2 non era una formula ma un'**immagine incorporata**: estratta dall'export `.xlsx`.
+3. **Ottimizzazione**: 6 JPEG 1200px, <200 KB ciascuno (da ~2,2 MB) in `sett26/creative-email/`.
+4. **Hosting stabile**: pubblicati in `public/dem/` e deployati via FTP → `https://utahstemcells.com/dem/<slug>.jpg` (verificati HTTP 200).
+5. **Template HTML**: 6 file responsive in `sett26/html/`, generati da `scripts/build-templates.mjs`.
+   La DEM 01 ha l'hero ritagliato dall'immagine originale e i tre box offerta + trust badge **ricostruiti in HTML** (testo vero, non pixel).
+6. **Brevo**: 6 template creati **inattivi**, sender ID 1 `Utah Stem Cells <info@utahstemcells.com>`, tag `dem-sep26`.
+
+| # | Template ID | Oggetto |
+|---:|---:|---|
+| 01 | 5 | KEEP DOING WHAT YOU LOVE |
+| 02 | 6 | DON'T LET JOINT PAIN SLOW YOU DOWN |
+| 03 | 7 | HEALTHY JOINTS. BRIGHTER DAYS. |
+| 04 | 8 | GET BACK TO WHAT MOVES YOU |
+| 05 | 9 | PLAY MORE. HURT LESS. |
+| 06 | 10 | MORE MOVEMENT. MORE LIFE. |
+
+## Account Brevo (rilevato via API)
+
+- Sender verificato: **ID 1** `Utah Stem Cells <info@utahstemcells.com>` (unico).
+- Dominio `utahstemcells.com` **autenticato e verificato** (DKIM/DNS ok).
+- Piano Marketing: 20.000 invii nel ciclo 04/09 → 04/10. Contatti totali: 4.503.
+- Liste principali: **4** Women july 26 (2.964), **3** Men july 26 (1.424), **13** SC Joint tx — not converted (52), **12** SC Joint tx — converted (39).
+- La chiave API ha la **restrizione IP attiva**: da riautorizzare se cambia l'IP pubblico.
+
+## Da fare
+
+- Verifica il link **Unsubscribe**: nei template è `{{ unsubscribe }}`, tag delle *campagne* Brevo. Va bene quando il template viene usato come campagna; in un invio transazionale resterebbe letterale.
+- Decidere **targeting e calendario** degli invii (suggerimento: liste 12/13 per il messaggio sul ritrattamento, 3/4 per il volume).
+- Rigenerare gli script `scripts/build-templates.mjs` + `push-to-brevo.mjs` dopo ogni modifica ai testi: sono idempotenti (il manifest tiene i `templateId` e passa a PUT).

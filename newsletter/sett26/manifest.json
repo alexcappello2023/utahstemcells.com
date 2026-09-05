@@ -5,7 +5,9 @@
     "subject": "KEEP DOING WHAT YOU LOVE",
     "cta": "Contact us today",
     "image": "01-keep-doing-what-you-love.jpg",
-    "bytes": 10618
+    "bytes": 10618,
+    "templateId": 5,
+    "action": "creato"
   },
   {
     "n": 2,
@@ -13,7 +15,9 @@
     "subject": "DON’T LET JOINT PAIN SLOW YOU DOWN",
     "cta": "Contact us today",
     "image": "02-dont-let-joint-pain-slow-you-down.jpg",
-    "bytes": 6899
+    "bytes": 6899,
+    "templateId": 6,
+    "action": "creato"
   },
   {
     "n": 3,
@@ -21,7 +25,9 @@
     "subject": "HEALTHY JOINTS. BRIGHTER DAYS.",
     "cta": "Request more information",
     "image": "03-healthy-joints-brighter-days.jpg",
-    "bytes": 7018
+    "bytes": 7018,
+    "templateId": 7,
+    "action": "creato"
   },
   {
     "n": 4,
@@ -29,7 +35,9 @@
     "subject": "GET BACK TO WHAT MOVES YOU",
     "cta": "Contact us today",
     "image": "04-get-back-to-what-moves-you.jpg",
-    "bytes": 7109
+    "bytes": 7109,
+    "templateId": 8,
+    "action": "creato"
   },
   {
     "n": 5,
@@ -37,7 +45,9 @@
     "subject": "PLAY MORE. HURT LESS.",
     "cta": "Contact us today",
     "image": "05-play-more-hurt-less.jpg",
-    "bytes": 7031
+    "bytes": 7031,
+    "templateId": 9,
+    "action": "creato"
   },
   {
     "n": 6,
@@ -45,6 +55,8 @@
     "subject": "MORE MOVEMENT. MORE LIFE.",
     "cta": "Contact us today",
     "image": "06-more-movement-more-life.jpg",
-    "bytes": 6836
+    "bytes": 6836,
+    "templateId": 10,
+    "action": "creato"
   }
 ]
