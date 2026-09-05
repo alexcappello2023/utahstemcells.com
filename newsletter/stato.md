@@ -140,6 +140,7 @@ Creare questo file di stato per trasferire il lavoro in Work e proseguire lì co
 - Piano Marketing: 20.000 invii nel ciclo 04/09 → 04/10. Contatti totali: 4.503.
 - Liste principali: **4** Women july 26 (2.964), **3** Men july 26 (1.424), **13** SC Joint tx — not converted (52), **12** SC Joint tx — converted (39).
 - La chiave API ha la **restrizione IP attiva**: da riautorizzare se cambia l'IP pubblico.
+- Fuso orario account: **`America/Denver`** (impostato il 05/09/2026, prima era Los Angeles). Gli orari di programmazione si inseriscono quindi **direttamente in ora dello Utah**. Formato 24 ore, date dd-mm-yyyy.
 
 ## Campagne in bozza (Campaigns → Email) — 5 settembre 2026
 
