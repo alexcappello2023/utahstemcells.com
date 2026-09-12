@@ -3,6 +3,10 @@
 export const SITE = {
 	name: 'Utah Stem Cells',
 	brandLine: 'Utah Stem Cells & USC MedSpa',
+	// Entita' che gestisce la clinica. Deve combaciare con il nome
+	// dell'inserzionista verificato su Google Ads, altrimenti gli annunci
+	// vengono disapprovati: il sito di destinazione non nomina chi paga.
+	legalName: 'Cimikoski Stem Cells, LLC',
 	url: 'https://utahstemcells.com',
 	tagline: 'Regenerative medicine & aesthetics in Sandy, Utah',
 	phone: '(801) 999-4860',
