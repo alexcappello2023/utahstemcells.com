@@ -18,6 +18,12 @@
   <FilesMatch "\.html$">
     Header set Cache-Control "public, max-age=0, must-revalidate"
   </FilesMatch>
+  # site-head.js — iniettore di analytics/pixel: NON ha hash nel nome, quindi
+  # con la cache di un anno dei .js una modifica ai tag non raggiungerebbe
+  # per mesi chi ha gia visitato il sito. Va rivalidato come l'HTML.
+  <FilesMatch "^site-head\.js$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
 </IfModule>
 
 # Area cliente /progress/ — fuori dagli indici dei motori di ricerca
