@@ -1,11 +1,15 @@
 /* ============================================================================
    site-head.js  —  CODICI DA INIETTARE NEL <head> DI TUTTE LE PAGINE
    ----------------------------------------------------------------------------
-   COME SI USA (nessuna ricompilazione, nessun nuovo dist.zip):
-     1. Apri questo file sul server: cPanel  →  File Manager  →  site-head.js
-     2. Incolla i tuoi snippet tra i backtick ` ... ` della variabile HEAD_HTML
-        qui sotto (Google Analytics, Meta Pixel, verifiche, ecc.).
-     3. Salva. Fatto: il codice viene applicato AUTOMATICAMENTE a tutte le pagine.
+   COME SI USA (dal 2026-09-29 i codici vivono QUI, nel repository):
+     1. Modifica la variabile HEAD_HTML qui sotto (tra i backtick).
+     2. Committa e lancia il workflow "Deploy sito (FTP)".
+     3. Fatto: il codice e applicato a tutte le pagine.
+
+   ⚠️  NON modificare piu questo file sul server via cPanel: il primo deploy
+   che tocca questo file sovrascrive la copia remota e la tua modifica sparisce
+   senza errori. E successo con il tag Google Ads, aggiunto a mano il 17 agosto
+   2026 e sopravvissuto solo perche nessuno aveva piu toccato il file nel repo.
 
    Puoi incollare qualsiasi cosa che andrebbe nel <head>:
      <script>...</script>   <script src="..."></script>   <meta ...>   <noscript>...
@@ -22,7 +26,15 @@ var HEAD_HTML = `
 
   <!-- ▼▼▼  INCOLLA QUI SOTTO I TUOI CODICI  ▼▼▼ -->
 
-
+  <!-- Google tag (gtag.js) — un solo loader per GA4 e Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3CR83NYS8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F3CR83NYS8');    /* Google Analytics 4 */
+    gtag('config', 'AW-18394596324');  /* Google Ads */
+  </script>
 
   <!-- ▲▲▲  INCOLLA QUI SOPRA I TUOI CODICI  ▲▲▲ -->
 
