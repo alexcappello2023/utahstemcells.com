@@ -55,9 +55,13 @@ const orgSchema = {
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!-- Site-wide head injector: edit /site-head.js on the server to add
-		     analytics, Meta Pixel, verification tags, etc. (no rebuild needed) -->
-		<script is:inline src="/site-head.js"></script>
+		<!-- Site-wide head injector: analytics, pixel e tag di verifica.
+		     I codici stanno in public/site-head.js (versionati nel repo).
+		     Il ?v= serve a scavalcare la cache dei visitatori: fino al
+		     2026-09-29 il file era servito con cache di un anno, quindi chi
+		     lo aveva gia scaricato non avrebbe mai visto i tag nuovi.
+		     Alzare il numero solo se si ripresenta un caso simile. -->
+		<script is:inline src="/site-head.js?v=2"></script>
 		<link rel="icon" href="/favicon.jpg" type="image/jpeg" />
 		<meta name="generator" content={Astro.generator} />
 		<Font cssVariable="--font-sans" preload />
