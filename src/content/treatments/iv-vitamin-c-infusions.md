@@ -1,5 +1,6 @@
 ---
 title: "IV Vitamin C Infusions"
+h1: "High-Dose IV Vitamin C in Utah"
 metaTitle: "IV Vitamin C Infusions in Sandy & Salt Lake City, UT | Utah Stem Cells"
 description: "Physician-overseen high-dose IV vitamin C infusions in Sandy, UT — intravenous vitamin C to support immune wellness and recovery in the Salt Lake Valley."
 summary: "High-dose intravenous vitamin C to support immune wellness and recovery."

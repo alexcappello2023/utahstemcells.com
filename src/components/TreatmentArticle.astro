@@ -64,7 +64,7 @@ const faqSchema =
 						]}
 					/>
 					<p class="eyebrow">{TREATMENT_CATEGORIES[data.category]}</p>
-					<h1>{data.title}</h1>
+					<h1>{data.h1 ?? data.title}</h1>
 					<p class="lead">{data.usp ?? data.summary}</p>
 					<div class="hero-ctas">
 						<a

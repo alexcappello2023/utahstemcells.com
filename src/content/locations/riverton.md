@@ -1,6 +1,6 @@
 ---
-title: "Stem Cell Therapy & Regenerative Medicine near Riverton, UT"
-metaTitle: "Stem Cell Therapy near Riverton, UT"
+title: "Stem Cell Therapy near Riverton, UT"
+h1: "Stem Cell Therapy & Regenerative Medicine near Riverton, UT"
 description: "Stem cell therapy, PRP and regenerative medicine for Riverton, UT patients. About 15 minutes from Riverton to our Sandy clinic — physician-led and non-surgical. Book a consultation."
 summary: "Riverton patients are a short drive east to our Sandy clinic."
 city: "Riverton"

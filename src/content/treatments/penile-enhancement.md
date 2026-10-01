@@ -1,5 +1,6 @@
 ---
 title: "Penile Enhancement"
+h1: "Penile Enhancement in Utah"
 metaTitle: "Penile Enhancement in Utah — Discreet, Physician-Performed Procedure | Utah Stem Cells"
 description: "Penile enhancement in Sandy, UT — a discreet, physician-performed in-office injectable procedure for male enhancement and confidence. Book a consultation."
 category: sexual-wellness

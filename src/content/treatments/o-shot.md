@@ -1,5 +1,6 @@
 ---
 title: "O-Shot (Female Wellness Injection)"
+h1: "O-Shot in Utah"
 metaTitle: "O-Shot in Utah — Female Intimate Wellness Injection (PRP) | Utah Stem Cells"
 description: "The O-Shot in Sandy, UT — a discreet, physician-led PRP treatment for women designed to support intimate wellness, sensitivity, and comfort. Book a consultation."
 category: sexual-wellness

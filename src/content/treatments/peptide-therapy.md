@@ -1,5 +1,6 @@
 ---
 title: "Peptide Therapy"
+h1: "Peptide Therapy in Utah"
 metaTitle: "Peptide Therapy in Sandy & Salt Lake City, UT | Utah Stem Cells"
 description: "Physician-guided peptide therapy in Sandy, UT, serving the Salt Lake Valley — individualized, medically supervised peptide protocols to support recovery, energy and wellness."
 summary: "Physician-guided, individualized peptide protocols to support recovery, energy and wellness."

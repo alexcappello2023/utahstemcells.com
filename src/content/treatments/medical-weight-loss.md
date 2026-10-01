@@ -1,5 +1,6 @@
 ---
 title: "Medical Weight Loss"
+h1: "Medical Weight Loss in Utah"
 metaTitle: "Medical Weight Loss in Utah — Physician-Supervised Program | Utah Stem Cells"
 description: "Physician-supervised medical weight loss in Sandy, UT — an individualized program with medical oversight, nutrition support and, where appropriate, GLP-1 medications for healthy, sustainable results."
 category: weight-loss

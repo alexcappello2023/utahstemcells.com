@@ -1,5 +1,6 @@
 ---
 title: "FaceTite & BodyTite (Skin Tightening)"
+h1: "FaceTite & BodyTite Skin Tightening in Utah"
 metaTitle: "FaceTite & BodyTite in Utah — Minimally Invasive Skin Tightening | Utah Stem Cells"
 description: "FaceTite and BodyTite in Sandy, UT — physician-performed radiofrequency skin tightening for the face, neck and body, with less downtime than a surgical lift. Book a consultation."
 category: body-contouring

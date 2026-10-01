@@ -1,5 +1,6 @@
 ---
 title: "Morpheus8 (Microneedling with Radiofrequency)"
+h1: "Morpheus8 Skin Tightening in Utah"
 metaTitle: "Morpheus8 in Utah — Skin Tightening with Microneedling + RF | Utah Stem Cells & USC MedSpa"
 description: "Physician-led Morpheus8 in Sandy, UT — microneedling combined with radiofrequency energy to firm and tighten skin and improve the appearance of stretch marks on the face and body."
 category: aesthetics

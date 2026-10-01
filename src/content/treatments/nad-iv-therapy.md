@@ -1,5 +1,6 @@
 ---
 title: "NAD+ IV Therapy"
+h1: "NAD+ IV Therapy in Utah"
 metaTitle: "NAD+ IV Therapy in Salt Lake City & Sandy, UT | Utah Stem Cells"
 description: "Physician-supervised NAD+ IV therapy in Sandy, UT, serving the Salt Lake Valley. A NAD+ IV infusion to support energy, mental clarity and cellular wellness. Book a consultation."
 category: iv-therapy

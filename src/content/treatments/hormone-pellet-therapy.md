@@ -1,5 +1,6 @@
 ---
 title: "Hormone Pellet Therapy"
+h1: "Bioidentical Hormone Pellet Therapy in Utah"
 metaTitle: "Hormone Pellet Therapy in Utah (Men & Women) — Bioidentical HRT | Utah Stem Cells"
 description: "Physician-managed bioidentical hormone replacement therapy (HRT) in Sandy, UT for men and women — hormone pellets and testosterone optimization to help support energy, mood and wellness. Lab-guided."
 category: hormones

@@ -3,7 +3,8 @@ import { defineCollection, reference, z } from 'astro:content';
 
 // SEO fields shared by every content type
 const seo = {
-	title: z.string(), // <title> / H1
+	title: z.string(), // nome breve: <title>, schede, voci di menu
+	h1: z.string().optional(), // H1 esteso per la ricerca, quando il nome breve non basta
 	metaTitle: z.string().optional(), // override for <title> if different from H1
 	description: z.string(), // meta description
 	slug: z.string().optional(),

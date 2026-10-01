@@ -1,5 +1,6 @@
 ---
 title: "IV Therapy & Wellness Infusions"
+h1: "IV Therapy in Utah"
 metaTitle: "IV Therapy in Utah — NAD+, Vitamin C & Custom Infusions | Utah Stem Cells"
 description: "Physician-overseen IV therapy in Sandy & the Salt Lake City area — customized vitamin infusions, NAD+, high-dose vitamin C and wellness injections to support hydration, immunity, energy and recovery."
 category: iv-therapy

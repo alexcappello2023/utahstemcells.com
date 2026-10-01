@@ -1,5 +1,6 @@
 ---
 title: "IV Stem Cell Therapy"
+h1: "IV Stem Cell Therapy in Utah"
 metaTitle: "IV Stem Cell Therapy in Utah — Whole-Body Regenerative Infusion | Utah Stem Cells"
 description: "Physician-supervised IV stem cell therapy in Sandy, UT — a regenerative infusion delivered intravenously as a whole-body approach to wellness and recovery."
 category: regenerative

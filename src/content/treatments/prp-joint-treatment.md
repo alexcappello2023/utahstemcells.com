@@ -1,5 +1,6 @@
 ---
 title: "Platelet-Rich Plasma (PRP) Joint Treatment"
+h1: "PRP Joint Injections in Utah"
 metaTitle: "PRP Joint Injections in Utah — Non-Surgical Regenerative Joint Support | Utah Stem Cells"
 description: "Physician-performed PRP joint injections in Sandy, UT — a concentrated preparation from your own blood to support natural joint repair and help reduce pain, with minimal downtime."
 category: regenerative

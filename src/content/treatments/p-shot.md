@@ -1,5 +1,6 @@
 ---
 title: "P-Shot (Male Wellness Injection)"
+h1: "P-Shot (Priapus Shot) in Utah"
 metaTitle: "P-Shot in Utah — Male Intimate Wellness Injection (PRP) | Utah Stem Cells"
 description: "The P-Shot in Sandy, UT — a discreet, physician-led PRP treatment for men designed to support intimate wellness, performance, and confidence. Book a consultation."
 category: sexual-wellness

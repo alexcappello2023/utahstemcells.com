@@ -1,5 +1,6 @@
 ---
 title: "Ketamine Therapy"
+h1: "IV Ketamine Therapy in Utah"
 metaTitle: "Ketamine Therapy in Utah — Chronic Pain & Mood Support | Utah Stem Cells"
 description: "Physician-supervised ketamine therapy in Sandy, UT — in-office sessions with medical monitoring, explored for chronic pain and certain mood-related concerns in eligible patients."
 category: ketamine

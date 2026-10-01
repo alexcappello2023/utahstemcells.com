@@ -1,6 +1,6 @@
 ---
-title: "Stem Cell Therapy & Regenerative Medicine near Kaysville, UT"
-metaTitle: "Stem Cell Therapy near Kaysville, UT"
+title: "Stem Cell Therapy near Kaysville, UT"
+h1: "Stem Cell Therapy & Regenerative Medicine near Kaysville, UT"
 description: "Stem cell therapy, PRP and regenerative medicine for Kaysville, UT patients. About 40 minutes from Kaysville to our Sandy clinic — physician-led and non-surgical. Book a consultation."
 summary: "Kaysville patients travel to our Sandy clinic for hair restoration, joint care and more."
 city: "Kaysville"

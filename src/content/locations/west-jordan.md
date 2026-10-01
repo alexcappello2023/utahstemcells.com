@@ -1,6 +1,6 @@
 ---
-title: "Stem Cell Therapy & Regenerative Medicine near West Jordan, UT"
-metaTitle: "Stem Cell Therapy near West Jordan, UT"
+title: "Stem Cell Therapy near West Jordan, UT"
+h1: "Stem Cell Therapy & Regenerative Medicine near West Jordan, UT"
 description: "Stem cell therapy, PRP and regenerative medicine for West Jordan, UT patients. About 15 minutes from West Jordan to our Sandy clinic — physician-led and non-surgical. Book a consultation."
 summary: "West Jordan patients are a short drive from our Sandy clinic."
 city: "West Jordan"

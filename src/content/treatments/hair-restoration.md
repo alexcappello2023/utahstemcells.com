@@ -1,5 +1,6 @@
 ---
 title: "Hair Restoration"
+h1: "PRP & Stem Cell Hair Restoration in Utah"
 metaTitle: "PRP & Stem Cell Hair Restoration in Utah (Men & Women) | Utah Stem Cells"
 description: "Natural, non-surgical hair restoration in Sandy, UT using your own PRP, with or without stem cells, for men and women. Physician-supervised, includes a complimentary microneedling session."
 category: hair-restoration

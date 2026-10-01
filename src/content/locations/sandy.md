@@ -1,6 +1,6 @@
 ---
-title: "Stem Cell Therapy & MedSpa in Sandy, UT"
-metaTitle: "Stem Cell Therapy in Sandy, UT"
+title: "Stem Cell Therapy in Sandy, UT"
+h1: "Stem Cell Therapy & MedSpa in Sandy, UT"
 description: "Stem cell therapy, PRP and regenerative medicine at our Sandy, UT clinic — physician-led, non-surgical options for joints, hair, wellness and aesthetics. Book a consultation."
 summary: "Our home clinic in Sandy, serving the greater Salt Lake Valley."
 city: "Sandy"

@@ -1,6 +1,6 @@
 ---
-title: "Stem Cell Therapy & Regenerative Medicine near Lehi, UT"
-metaTitle: "Stem Cell Therapy near Lehi, UT"
+title: "Stem Cell Therapy near Lehi, UT"
+h1: "Stem Cell Therapy & Regenerative Medicine near Lehi, UT"
 description: "Stem cell therapy, PRP and regenerative medicine for Lehi, UT patients. About 25 minutes from Lehi to our Sandy clinic — physician-led and non-surgical. Book a consultation."
 summary: "Serving Lehi and the Silicon Slopes area from our Sandy clinic."
 city: "Lehi"

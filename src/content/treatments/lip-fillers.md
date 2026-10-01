@@ -1,5 +1,6 @@
 ---
 title: "Lip Fillers"
+h1: "Lip Fillers in Utah"
 metaTitle: "Lip Fillers in Sandy, UT — Half Syringe & Full Options | Utah Stem Cells"
 description: "Natural-looking lip fillers in Sandy, UT — from a subtle half-syringe (0.5 ml) mini plump to a fuller lip. Physician-led at Utah Stem Cells. Book a consultation."
 category: aesthetics

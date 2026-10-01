@@ -1,5 +1,6 @@
 ---
 title: "Microneedling"
+h1: "Microneedling in Utah"
 metaTitle: "Microneedling in Utah — Improve Skin Tone, Texture & Fine Lines | Utah Stem Cells & USC MedSpa"
 description: "Physician-led microneedling in Sandy, UT — a fine-needle treatment that stimulates your skin's natural collagen renewal to smooth texture, refine tone and soften fine lines."
 category: aesthetics

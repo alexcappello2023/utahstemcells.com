@@ -1,5 +1,6 @@
 ---
 title: "Stem Cell Joint Regeneration"
+h1: "Stem Cell Joint Regeneration in Utah"
 metaTitle: "Stem Cell Joint Regeneration in Utah — Non-Surgical Joint Pain Relief | Utah Stem Cells"
 description: "Non-surgical stem cell joint regeneration in Sandy, UT for knees, shoulders, hips, neck and back. Physician-performed regenerative medicine to reduce pain and restore mobility — minimal downtime."
 category: regenerative

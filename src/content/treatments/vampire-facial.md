@@ -1,5 +1,6 @@
 ---
 title: "Vampire Facial"
+h1: "Vampire Facial in Utah"
 metaTitle: "Vampire Facial in Utah — Microneedling + PRP for Glow & Texture | Utah Stem Cells & USC MedSpa"
 description: "Physician-led Vampire Facial in Sandy, UT — microneedling combined with your own platelet-rich plasma (PRP) to boost skin rejuvenation, refine texture and restore a natural glow."
 category: aesthetics

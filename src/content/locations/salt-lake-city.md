@@ -1,6 +1,6 @@
 ---
-title: "Stem Cell Therapy & Regenerative Medicine near Salt Lake City, UT"
-metaTitle: "Stem Cell Therapy near Salt Lake City, UT"
+title: "Stem Cell Therapy near Salt Lake City, UT"
+h1: "Stem Cell Therapy & Regenerative Medicine near Salt Lake City, UT"
 description: "Stem cell therapy, PRP and regenerative medicine for Salt Lake City, UT patients. About 20 minutes from downtown Salt Lake City to our Sandy clinic — physician-led and non-surgical. Book a consultation."
 summary: "Serving Salt Lake City patients from our Sandy clinic, about 20 minutes south."
 city: "Salt Lake City"

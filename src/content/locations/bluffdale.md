@@ -1,6 +1,6 @@
 ---
-title: "Stem Cell Therapy & Regenerative Medicine near Bluffdale, UT"
-metaTitle: "Stem Cell Therapy near Bluffdale, UT"
+title: "Stem Cell Therapy near Bluffdale, UT"
+h1: "Stem Cell Therapy & Regenerative Medicine near Bluffdale, UT"
 description: "Stem cell therapy, PRP and regenerative medicine for Bluffdale, UT patients. About 15 minutes from Bluffdale to our Sandy clinic — physician-led and non-surgical. Book a consultation."
 summary: "Bluffdale is a quick trip north to our Sandy clinic."
 city: "Bluffdale"
