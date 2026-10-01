@@ -1,7 +1,7 @@
 ---
-title: "Regenerative Medicine near Kaysville, UT"
-metaTitle: "Regenerative Medicine near Kaysville, UT | Utah Stem Cells"
-description: "Utah Stem Cells serves Kaysville, UT from our Sandy clinic — popular for hair restoration and stem cell joint regeneration."
+title: "Stem Cell Therapy & Regenerative Medicine near Kaysville, UT"
+metaTitle: "Stem Cell Therapy near Kaysville, UT"
+description: "Stem cell therapy, PRP and regenerative medicine for Kaysville, UT patients. About 40 minutes from Kaysville to our Sandy clinic — physician-led and non-surgical. Book a consultation."
 summary: "Kaysville patients travel to our Sandy clinic for hair restoration, joint care and more."
 city: "Kaysville"
 driveTime: "About 40 minutes from Kaysville"

@@ -1,7 +1,7 @@
 ---
-title: "Regenerative Medicine near South Jordan, UT"
-metaTitle: "Regenerative Medicine near South Jordan, UT | Utah Stem Cells"
-description: "Utah Stem Cells serves South Jordan, UT from our nearby Sandy clinic — stem cell therapy, PRP, aesthetics and wellness, about 12 minutes away."
+title: "Stem Cell Therapy & Regenerative Medicine near South Jordan, UT"
+metaTitle: "Stem Cell Therapy near South Jordan, UT"
+description: "Stem cell therapy, PRP and regenerative medicine for South Jordan, UT patients. About 12 minutes from South Jordan to our Sandy clinic — physician-led and non-surgical. Book a consultation."
 summary: "We welcome South Jordan patients at our Sandy clinic, a short drive east."
 city: "South Jordan"
 driveTime: "About 12 minutes from South Jordan"

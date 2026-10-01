@@ -1,7 +1,7 @@
 ---
-title: "Regenerative Medicine near Herriman, UT"
-metaTitle: "Regenerative Medicine near Herriman, UT | Utah Stem Cells"
-description: "Utah Stem Cells serves Herriman, UT from our Sandy clinic, about 20 minutes away — stem cell therapy, aesthetics and wellness."
+title: "Stem Cell Therapy & Regenerative Medicine near Herriman, UT"
+metaTitle: "Stem Cell Therapy near Herriman, UT"
+description: "Stem cell therapy, PRP and regenerative medicine for Herriman, UT patients. About 20 minutes from Herriman to our Sandy clinic — physician-led and non-surgical. Book a consultation."
 summary: "We welcome Herriman patients at our Sandy clinic."
 city: "Herriman"
 driveTime: "About 20 minutes from Herriman"

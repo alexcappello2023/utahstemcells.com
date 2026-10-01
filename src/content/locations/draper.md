@@ -1,7 +1,7 @@
 ---
-title: "Regenerative Medicine near Draper, UT"
-metaTitle: "Regenerative Medicine near Draper, UT | Utah Stem Cells"
-description: "Utah Stem Cells serves Draper, UT from our Sandy clinic, just about 10 minutes away — stem cell therapy, aesthetics and wellness."
+title: "Stem Cell Therapy & Regenerative Medicine near Draper, UT"
+metaTitle: "Stem Cell Therapy near Draper, UT"
+description: "Stem cell therapy, PRP and regenerative medicine for Draper, UT patients. About 10 minutes from Draper to our Sandy clinic — physician-led and non-surgical. Book a consultation."
 summary: "Draper is our closest neighbor — just a few minutes from the clinic."
 city: "Draper"
 driveTime: "About 10 minutes from Draper"

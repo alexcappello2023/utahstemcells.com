@@ -1,7 +1,7 @@
 ---
-title: "Regenerative Medicine & MedSpa in Sandy, UT"
-metaTitle: "Regenerative Medicine in Sandy, UT | Utah Stem Cells"
-description: "Utah Stem Cells & USC MedSpa is located in Sandy, UT — regenerative medicine, aesthetics and wellness led by Dr. William Cimikoski."
+title: "Stem Cell Therapy & MedSpa in Sandy, UT"
+metaTitle: "Stem Cell Therapy in Sandy, UT"
+description: "Stem cell therapy, PRP and regenerative medicine at our Sandy, UT clinic — physician-led, non-surgical options for joints, hair, wellness and aesthetics. Book a consultation."
 summary: "Our home clinic in Sandy, serving the greater Salt Lake Valley."
 city: "Sandy"
 driveTime: "You'll find us at our main clinic in Sandy"

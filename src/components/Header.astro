@@ -52,6 +52,16 @@ const locations = await getCollection('locations', ({ data }) => !data.draft);
 locations.sort((a, b) => a.data.order - b.data.order);
 const locationGroups = [
 	{
+		// Le citta mancavano dal menu: ogni pagina riceveva un solo link
+		// interno in tutto il sito, dalla pagina hub.
+		label: 'Areas we serve',
+		items: locations.map((l) => ({
+			href: `/${l.id}/`,
+			label: l.data.city,
+			title: l.data.summary,
+		})),
+	},
+	{
 		label: '',
 		items: [
 			{
