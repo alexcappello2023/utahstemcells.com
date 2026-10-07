@@ -29,6 +29,7 @@ const treatments = defineCollection({
 			'iv-therapy',
 			'ketamine',
 			'peptides',
+			'screening',
 		]),
 		summary: z.string(), // frase breve per card e hub
 		// Landing-page fields (opzionali → propagabili a tutte le schede)

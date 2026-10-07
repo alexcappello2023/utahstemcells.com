@@ -56,6 +56,7 @@ export const TREATMENT_CATEGORIES: Record<string, string> = {
 	'weight-loss': 'Medical weight loss',
 	'iv-therapy': 'IV therapy & wellness',
 	ketamine: 'Ketamine therapy',
+	screening: 'Early detection & screening',
 };
 
 // Two macro-buckets for the Treatments mega-menu (à la "Repair / Refine"),
@@ -72,6 +73,7 @@ export const TREATMENT_BUCKETS: { label: string; categories: string[] }[] = [
 			'peptides',
 			'iv-therapy',
 			'ketamine',
+			'screening',
 		],
 	},
 	{
