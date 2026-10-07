@@ -5,6 +5,8 @@ metaTitle: "Galleri Multi-Cancer Early Detection Test | Sandy, UT"
 description: "The Galleri multi-cancer early detection blood test in Sandy, UT — a prescription test ordered and reviewed by a physician, used alongside your routine cancer screening, not instead of it."
 summary: "A prescription blood test that looks for a signal shared by more than 50 cancers, ordered and reviewed by a physician."
 usp: "A single blood draw that looks for a cancer signal across more than 50 types of cancer — prescribed and reviewed by a physician, and used in addition to the screening you already do, never in place of it."
+image: ../../assets/treatments/galleri-test.webp
+imageAlt: "Galleri multi-cancer early detection test in Utah — a blood sample tube held in a gloved hand"
 category: screening
 order: 10
 faqs:
