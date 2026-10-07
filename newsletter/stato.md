@@ -166,3 +166,37 @@ Precedente campagna marketing inviata: **"Membership Launch!"** (25/08/2026) all
 - Verifica il link **Unsubscribe**: nei template è `{{ unsubscribe }}`, tag delle *campagne* Brevo. Va bene quando il template viene usato come campagna; in un invio transazionale resterebbe letterale.
 - Assegnare **liste e data** alle 6 bozze e inviare dall'interfaccia (suggerimento: liste 12/13 per il messaggio sul ritrattamento, 3/4 per il volume).
 - Rigenerare gli script `scripts/build-templates.mjs` + `push-to-brevo.mjs` dopo ogni modifica ai testi: sono idempotenti (il manifest tiene i `templateId` e passa a PUT).
+
+---
+
+# Tab ott26 — categoria Galleri (7 ottobre 2026)
+
+Nuovo tab **`ott26`** nello stesso Google Sheet (gid `2077370776`), schema identico a Sep26: `Oggetto | Body | Creative`, 12 righe (intestazione, 6 DEM, 5 separatori `#A4C2F4`).
+
+Sorgenti versionati in `newsletter/ott26/`:
+- `content.mjs` — testi e brief creativi (unica fonte di verità)
+- `build.mjs` — genera `ott26-piano.csv` (riferimento) e `ott26-piano.html` (tabella da incollare nel Sheet)
+
+Il Sheet non è scrivibile via API (nessun connettore Google): il tab è stato creato e popolato guidando Chrome sulla sessione Google dell'utente, incollando la tabella HTML dalla clipboard per preservare gli a capo dentro le celle.
+
+| # | Oggetto | Angolo |
+|---:|---|---|
+| 1 | ONE BLOOD DRAW. MORE THAN 50 CANCERS. | annuncio della nuova categoria |
+| 2 | IN ADDITION TO YOUR SCREENING. NEVER INSTEAD OF IT. | il fraintendimento da disinnescare subito |
+| 3 | THE CANCERS NOBODY SCREENS FOR | il vuoto che Galleri copre |
+| 4 | WHAT YOUR RESULT ACTUALLY MEANS | onestà sui due esiti possibili |
+| 5 | IS THE GALLERI TEST RIGHT FOR YOU? | qualificazione, inclusi i casi in cui è no |
+| 6 | HOW THE GALLERI TEST WORKS HERE | processo e supervisione del medico |
+
+## Vincoli di contenuto applicati
+
+- Ogni body chiude con la **Important Safety Information** di GRAIL (non FDA-approved, non rileva tutti i tumori, da usare *in aggiunta* allo screening di routine, falsi positivi e negativi, Rx only).
+- **Nessun prezzo**: la pagina `/galleri-test/` non ne riporta e la regola del sito vieta i costi. Da decidere con il cliente se inserirli nelle DEM, come fatto per Sep26.
+- Nessun tono allarmistico, nessuna promessa di diagnosi precoce, nessuna immagine di aghi o procedure.
+- CTA sempre "Book a consultation" (mai "free consultation").
+
+## Da fare
+
+- Decidere se le DEM devono riportare un prezzo e quale.
+- Produrre le 6 creatività dai brief in colonna C (nessuna immagine è stata generata).
+- Verificare se GRAIL impone requisiti di approvazione o co-branding sul materiale marketing dei partner.
