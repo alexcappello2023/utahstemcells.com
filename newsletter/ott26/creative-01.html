@@ -1,0 +1,51 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0a2a4a; --navy-deep:#061d35; --blue:#4fa8e8; --teal:#1f7e8c; --ink:#cfe0ee;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1536px;height:1024px;overflow:hidden}
+  body{font-family:'Archivo','Helvetica Neue',Arial,sans-serif;position:relative;background:var(--navy)}
+  .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:80% 50%}
+  .scrim{position:absolute;inset:0;
+    background:linear-gradient(100deg,
+      var(--navy) 0%, var(--navy) 25%,
+      rgba(10,42,74,.95) 33%, rgba(10,42,74,.62) 43%,
+      rgba(10,42,74,.22) 52%, rgba(10,42,74,0) 60%);}
+  .content{position:absolute;left:84px;top:70px;width:748px}
+  .logo{width:270px;display:block;margin-bottom:50px}
+  h1{font-size:66px;line-height:.98;font-weight:800;letter-spacing:-1.5px;color:#fff;text-transform:uppercase}
+  h1 .accent{color:var(--blue);display:block}
+  .sub{margin-top:24px;font-size:22px;line-height:1.45;color:var(--ink);font-weight:400;max-width:600px}
+  .rule{width:92px;height:3px;background:var(--blue);margin:34px 0 30px;border-radius:2px}
+  .points{list-style:none}
+  .points li{display:flex;align-items:flex-start;gap:16px;margin-bottom:18px;font-size:21px;line-height:1.4;color:#fff;font-weight:600;max-width:610px}
+  .dot{flex:0 0 auto;width:28px;height:28px;border-radius:50%;background:rgba(79,168,232,.16);
+       border:1.5px solid var(--blue);display:flex;align-items:center;justify-content:center;margin-top:1px}
+  .dot svg{width:15px;height:15px}
+  .cta{display:inline-block;margin-top:34px;background:var(--teal);color:#fff;font-size:22px;font-weight:700;
+       letter-spacing:1.6px;text-transform:uppercase;padding:21px 46px;border-radius:7px;text-decoration:none}
+  .isi{position:absolute;left:0;right:0;bottom:0;padding:17px 84px;
+       background:linear-gradient(to right,var(--navy-deep) 0%,var(--navy-deep) 62%,rgba(6,29,53,.88) 100%);
+       font-size:14px;line-height:1.5;color:#8ba7bf;letter-spacing:.2px}
+</style></head>
+<body>
+  <img class="photo" src="creative-src/01-bg.png">
+  <div class="scrim"></div>
+  <div class="content">
+    <img class="logo" src="logo.svg">
+    <h1>One blood draw.<span class="accent">More than<br>50 cancers.</span></h1>
+    <p class="sub">A single blood test that looks for a signal shared by more than 50 types of cancer &mdash; now available at Utah Stem Cells.</p>
+    <div class="rule"></div>
+    <ul class="points">
+      <li><span class="dot"><svg viewBox="0 0 16 16" fill="none" stroke="#4fa8e8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+        <span>In addition to your routine screening &mdash; never instead of it.</span></li>
+      <li><span class="dot"><svg viewBox="0 0 16 16" fill="none" stroke="#4fa8e8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+        <span>A prescription test, ordered and reviewed by a physician.</span></li>
+    </ul>
+    <a class="cta" href="#">Book a consultation</a>
+  </div>
+  <div class="isi">Galleri&reg; is a prescription test and has not been cleared or approved by the FDA. It does not detect all cancers and is intended to be used in addition to routine cancer screening recommended by a healthcare provider. A result of No Cancer Signal Detected does not rule out cancer. False positive and false negative results do occur. Rx only.</div>
+</body></html>
