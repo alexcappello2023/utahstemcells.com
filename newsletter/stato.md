@@ -195,8 +195,23 @@ Il Sheet non è scrivibile via API (nessun connettore Google): il tab è stato c
 - Nessun tono allarmistico, nessuna promessa di diagnosi precoce, nessuna immagine di aghi o procedure.
 - CTA sempre "Book a consultation" (mai "free consultation").
 
+## Creatività — fatte (8 ottobre 2026)
+
+Tutte e sei prodotte e inserite nella colonna C come `=IMAGE("https://utahstemcells.com/dem-ott26/<slug>.jpg")`.
+Gli URL sono **permanenti** (deploy FTP del sito), non link temporanei come in Sep26.
+
+Pipeline in `newsletter/ott26/` — vedi `README.md`:
+- fotografia generata con AI **senza testo**, con spazio negativo a sinistra (01, 02, 04, 05);
+- 03 interamente in HTML (visualizzazione dati, nessuna foto);
+- 06 con le **foto reali**: `clinic-reception-v5.webp` e `dr-cimikoski.jpeg` del sito;
+- testo + `logo.svg` ufficiale composti in HTML, render Chrome headless 1536×1024;
+- `build-creatives.mjs` genera i sei HTML da un layout condiviso: per correggere un testo si modifica il config e si rirenderizza.
+
+I brief creativi che prima stavano in colonna C restano in `content.mjs` (campo `creative`).
+
 ## Da fare
 
 - Decidere se le DEM devono riportare un prezzo e quale.
-- Produrre le 6 creatività dai brief in colonna C (nessuna immagine è stata generata).
-- Verificare se GRAIL impone requisiti di approvazione o co-branding sul materiale marketing dei partner.
+- Verificare se GRAIL impone requisiti di approvazione o co-branding sul materiale marketing dei partner, e come vuole sia citato il marchio Galleri®.
+- Sostituire le creatività rotte del tab Sep26 con gli URL stabili `utahstemcells.com/dem/` (le formule `=IMAGE()` originali sono scadute).
+- Costruire i template/campagne Brevo per ott26, come fatto per Sep26.
