@@ -11,9 +11,9 @@ if (!KEY) throw new Error('BREVO_API_KEY mancante');
 
 const LISTS = [4, 3];
 const WAVE = [
-  { campaignId: 17, at: '2026-10-09T16:00:00.000Z', label: '01 — ONE BLOOD DRAW' },
-  { campaignId: 18, at: '2026-10-16T16:00:00.000Z', label: '02 — IN ADDITION. NEVER INSTEAD' },
-  { campaignId: 21, at: '2026-10-23T16:00:00.000Z', label: '05 — IS THIS TEST RIGHT FOR YOU?' },
+  // 17 gia' programmata per il 09/10, non viene toccata
+  { campaignId: 18, at: '2026-10-14T16:00:00.000Z', label: '02 — IN ADDITION. NEVER INSTEAD' },
+  { campaignId: 21, at: '2026-10-21T16:00:00.000Z', label: '05 — IS THIS TEST RIGHT FOR YOU?' },
 ];
 
 async function api(method, path, body) {
