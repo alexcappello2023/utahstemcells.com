@@ -255,6 +255,18 @@ da mirare su chi ha aperto o cliccato.
 Per fermare o modificare un invio: Campaigns → Email → la campagna → *Unschedule*, oppure
 `PUT /v3/emailCampaigns/<id>` con `scheduledAt` nullo. Va fatto **prima** dell'orario di invio.
 
+## Invii di prova
+
+Indirizzo fisso per i test: **alex.cappello@gmail.com**.
+
+Brevo rifiuta `sendTest` verso un indirizzo che non sia un contatto appartenente ad almeno una lista
+(`Test emails cannot be sent to non-existent/blacklisted/without-contact-list users`). Il contatto
+esisteva (id 4526) ma era senza liste, quindi è stata creata la lista **14 "Test interni"** apposta.
+Non va mai usata come destinataria di campagne.
+
+Test delle tre campagne della prima ondata inviati il 09/10/2026 (HTTP 204).
+Attenzione: i `sendTest` **non generano statistiche**, quindi non verificano il tracciamento dei click.
+
 ## Risultati Sep26 (per riferimento)
 
 Inviate tutte alla **sola lista 12** (SC Joint — converted), ~35 destinatari, dal 5 al 28 settembre.
