@@ -237,6 +237,24 @@ Script: `newsletter/ott26/create-campaigns.mjs` (idempotente, passa a PUT con il
 Template generati da `newsletter/ott26/build-emails.mjs` in `newsletter/ott26/email/`:
 hero dalle creatività su `/dem-ott26/`, link a `/galleri-test/`, ISI in un blocco dedicato sopra il footer.
 
+## Prima ondata programmata (approvata il 09/10/2026)
+
+Liste **4 (Women - july 26, 2.964)** + **3 (Men - july 26, 1.424)** = 4.388 destinatari per invio.
+Script: `newsletter/ott26/schedule-campaigns.mjs`.
+
+| ID | Campagna | Invio | Stato |
+|---:|---|---|---|
+| 17 | 01 — ONE BLOOD DRAW | mar 14 ott, 10:00 MDT | queued |
+| 18 | 02 — IN ADDITION. NEVER INSTEAD | mar 21 ott, 10:00 MDT | queued |
+| 21 | 05 — IS THIS TEST RIGHT FOR YOU? | mer 28 ott, 10:00 MDT | queued |
+
+Totale 13.164 invii sui 20.000 del ciclo 04/10 → 04/11.
+Le campagne **19, 20, 22** (DEM 03, 04, 06) restano in bozza per una seconda ondata a novembre,
+da mirare su chi ha aperto o cliccato.
+
+Per fermare o modificare un invio: Campaigns → Email → la campagna → *Unschedule*, oppure
+`PUT /v3/emailCampaigns/<id>` con `scheduledAt` nullo. Va fatto **prima** dell'orario di invio.
+
 ## Risultati Sep26 (per riferimento)
 
 Inviate tutte alla **sola lista 12** (SC Joint — converted), ~35 destinatari, dal 5 al 28 settembre.
