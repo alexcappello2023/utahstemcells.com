@@ -215,3 +215,45 @@ I brief creativi che prima stavano in colonna C restano in `content.mjs` (campo 
 - Verificare se GRAIL impone requisiti di approvazione o co-branding sul materiale marketing dei partner, e come vuole sia citato il marchio Galleri®.
 - Sostituire le creatività rotte del tab Sep26 con gli URL stabili `utahstemcells.com/dem/` (le formule `=IMAGE()` originali sono scadute).
 - Costruire i template/campagne Brevo per ott26, come fatto per Sep26.
+
+---
+
+# Sequenza email ott26 su Brevo (9 ottobre 2026)
+
+## Campagne in bozza
+
+Create con `POST /v3/emailCampaigns`, **senza `scheduledAt` e senza `listIds`**: non possono partire.
+Script: `newsletter/ott26/create-campaigns.mjs` (idempotente, passa a PUT con il `campaignId` del manifest).
+
+| # | Campaign ID | Oggetto |
+|---:|---:|---|
+| 01 | 17 | ONE BLOOD DRAW. MORE THAN 50 CANCERS. |
+| 02 | 18 | IN ADDITION TO YOUR SCREENING. NEVER INSTEAD OF IT. |
+| 03 | 19 | THE CANCERS NOBODY SCREENS FOR |
+| 04 | 20 | WHAT YOUR RESULT ACTUALLY MEANS |
+| 05 | 21 | IS THE GALLERI TEST RIGHT FOR YOU? |
+| 06 | 22 | HOW THE GALLERI TEST WORKS HERE |
+
+Template generati da `newsletter/ott26/build-emails.mjs` in `newsletter/ott26/email/`:
+hero dalle creatività su `/dem-ott26/`, link a `/galleri-test/`, ISI in un blocco dedicato sopra il footer.
+
+## Risultati Sep26 (per riferimento)
+
+Inviate tutte alla **sola lista 12** (SC Joint — converted), ~35 destinatari, dal 5 al 28 settembre.
+
+| ID | Data | Consegnate | Aperture | Click | Disiscr. |
+|---:|---|---:|---:|---:|---:|
+| 11 | 05/09 | 35 | 9 (25,7%) | 9 | 0 |
+| 12 | 09/09 | 35 | 5 (14,3%) | 0 | 0 |
+| 13 | 12/09 | 35 | 6 (17,1%) | 0 | 0 |
+| 14 | 16/09 | 35 | 7 (20,0%) | 0 | 0 |
+| 15 | 20/09 | 35 | 8 (22,9%) | 0 | 1 |
+| 16 | 28/09 | 34 | 6 (17,6%) | 0 | 0 |
+
+Zero click su cinque campagne su sei: da verificare prima di replicare lo schema.
+
+## Vincoli da tenere presenti
+
+- **Nessun attributo età** fra gli attributi contatto: impossibile segmentare i 50+, che sono il pubblico indicato per Galleri.
+- **Limite di invio 20.000/mese** (ciclo 04/10 → 04/11). Sei email a Women+Men (4.388) farebbero 26.328: non ci stanno in un ciclo.
+- La restrizione IP sull'account Brevo è stata **disattivata** il 09/10/2026.

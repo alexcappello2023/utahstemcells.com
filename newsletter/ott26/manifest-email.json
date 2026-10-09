@@ -1,0 +1,56 @@
+[
+  {
+    "n": 1,
+    "slug": "01-one-blood-draw",
+    "subject": "ONE BLOOD DRAW. MORE THAN 50 CANCERS.",
+    "image": "01-one-blood-draw.jpg",
+    "bytes": 7751,
+    "campaignId": 17,
+    "action": "creata"
+  },
+  {
+    "n": 2,
+    "slug": "02-in-addition-never-instead",
+    "subject": "IN ADDITION TO YOUR SCREENING. NEVER INSTEAD OF IT.",
+    "image": "02-in-addition-never-instead.jpg",
+    "bytes": 7765,
+    "campaignId": 18,
+    "action": "creata"
+  },
+  {
+    "n": 3,
+    "slug": "03-cancers-nobody-screens-for",
+    "subject": "THE CANCERS NOBODY SCREENS FOR",
+    "image": "03-cancers-nobody-screens-for.jpg",
+    "bytes": 7717,
+    "campaignId": 19,
+    "action": "creata"
+  },
+  {
+    "n": 4,
+    "slug": "04-what-your-result-means",
+    "subject": "WHAT YOUR RESULT ACTUALLY MEANS",
+    "image": "04-what-your-result-means.jpg",
+    "bytes": 7766,
+    "campaignId": 20,
+    "action": "creata"
+  },
+  {
+    "n": 5,
+    "slug": "05-is-this-test-right-for-you",
+    "subject": "IS THE GALLERI TEST RIGHT FOR YOU?",
+    "image": "05-is-this-test-right-for-you.jpg",
+    "bytes": 7656,
+    "campaignId": 21,
+    "action": "creata"
+  },
+  {
+    "n": 6,
+    "slug": "06-how-it-works-here",
+    "subject": "HOW THE GALLERI TEST WORKS HERE",
+    "image": "06-how-it-works-here.jpg",
+    "bytes": 7802,
+    "campaignId": 22,
+    "action": "creata"
+  }
+]
