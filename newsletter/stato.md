@@ -244,9 +244,11 @@ Script: `newsletter/ott26/schedule-campaigns.mjs`.
 
 | ID | Campagna | Invio | Stato |
 |---:|---|---|---|
-| 17 | 01 — ONE BLOOD DRAW | mar 14 ott, 10:00 MDT | queued |
-| 18 | 02 — IN ADDITION. NEVER INSTEAD | mar 21 ott, 10:00 MDT | queued |
-| 21 | 05 — IS THIS TEST RIGHT FOR YOU? | mer 28 ott, 10:00 MDT | queued |
+| 17 | 01 — ONE BLOOD DRAW | ven 9 ott, 10:00 MDT | queued |
+| 18 | 02 — IN ADDITION. NEVER INSTEAD | ven 16 ott, 10:00 MDT | queued |
+| 21 | 05 — IS THIS TEST RIGHT FOR YOU? | ven 23 ott, 10:00 MDT | queued |
+
+Calendario anticipato su richiesta dell'utente il 09/10 (prima era 14/21/28 ottobre).
 
 Totale 13.164 invii sui 20.000 del ciclo 04/10 → 04/11.
 Le campagne **19, 20, 22** (DEM 03, 04, 06) restano in bozza per una seconda ondata a novembre,
