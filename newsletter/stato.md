@@ -241,16 +241,19 @@ hero dalle creatività su `/dem-ott26/`, link a `/galleri-test/`, ISI in un bloc
 
 Inviate tutte alla **sola lista 12** (SC Joint — converted), ~35 destinatari, dal 5 al 28 settembre.
 
-| ID | Data | Consegnate | Aperture | Click | Disiscr. |
+| ID | Data | Consegnate | Aperture uniche | Click unici | Disiscr. |
 |---:|---|---:|---:|---:|---:|
-| 11 | 05/09 | 35 | 9 (25,7%) | 9 | 0 |
+| 11 | 05/09 | 35 | 9 (25,7%) | 0 | 0 |
 | 12 | 09/09 | 35 | 5 (14,3%) | 0 | 0 |
 | 13 | 12/09 | 35 | 6 (17,1%) | 0 | 0 |
 | 14 | 16/09 | 35 | 7 (20,0%) | 0 | 0 |
 | 15 | 20/09 | 35 | 8 (22,9%) | 0 | 1 |
 | 16 | 28/09 | 34 | 6 (17,6%) | 0 | 0 |
 
-Zero click su cinque campagne su sei: da verificare prima di replicare lo schema.
+**Zero click su tutte e sei** (dato da `campaignStats`; il campo `globalStats` della lista campagne
+restituisce un valore fuorviante). Non è un problema di tracciamento: `linksStats` registra entrambi
+i link (`/` e `/contact/`) con contatore a 0, quindi erano tracciabili e nessuno li ha aperti.
+Su ~209 consegne complessive è un segnale, non rumore: lo schema non va replicato tale e quale.
 
 ## Vincoli da tenere presenti
 
