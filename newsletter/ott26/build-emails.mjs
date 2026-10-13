@@ -20,6 +20,17 @@ const C = {
   text: '#333333', muted: '#6b7c8c', boxBg: '#eaf4fc', border: '#d6e4f0',
 };
 
+// CTA a basso impegno: il primo invio ha dato 19,5% di aperture ma ~0,2% di click,
+// e dei 9 click 6 sono andati alla home. Chi apre vuole capire, non prenotare.
+const CTAS = [
+  'Book a consultation',
+  'See where each one fits',
+  'See what Galleri looks for',
+  'See what each result means',
+  'See if it applies to you',
+  'See how the test works here',
+];
+
 const slugs = [
   '01-one-blood-draw', '02-in-addition-never-instead', '03-cancers-nobody-screens-for',
   '04-what-your-result-means', '05-is-this-test-right-for-you', '06-how-it-works-here',
@@ -50,7 +61,7 @@ const keyPoints = () => `
                 </td></tr>
               </table>`;
 
-function render({ subject, paragraphs, image, isi }) {
+function render({ subject, paragraphs, image, isi, cta }) {
   const preheader = paragraphs[0].replace(/<[^>]+>/g, '').slice(0, 120);
   const body = paragraphs
     .map((p) => `<p style="margin:0 0 16px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:${C.text};">${p}</p>`)
@@ -94,10 +105,10 @@ function render({ subject, paragraphs, image, isi }) {
         ${keyPoints()}
       </td></tr>
       <tr><td class="px btn" align="center" style="padding:30px 40px 10px;">
-        ${button('Book a consultation', LANDING)}
+        ${button(cta, LANDING)}
       </td></tr>
       <tr><td class="px" align="center" style="padding:6px 40px 34px;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:${C.muted};">
-        or call <a href="${PHONE_HREF}" style="color:${C.navy};font-weight:bold;text-decoration:none;">${PHONE}</a>
+        Prefer to talk it through? Book a consultation on <a href="${PHONE_HREF}" style="color:${C.navy};font-weight:bold;text-decoration:none;">${PHONE}</a>
       </td></tr>
       <tr><td class="px" style="padding:0 40px 26px;">
         <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:1.55;color:${C.muted};border-top:1px solid ${C.border};padding-top:16px;">${esc(isi)}</p>
@@ -122,9 +133,9 @@ const manifest = dems.map((d, i) => {
   const lines = d.body.split('\n').map((l) => l.trim()).filter(Boolean)
     .filter((l) => !/^(Phone|Web):/i.test(l) && !/^Important Safety Information:/i.test(l));
   const paragraphs = lines.map(hi);
-  const html = render({ subject: d.oggetto, paragraphs, image: `${slugs[i]}.jpg`, isi: ISI });
+  const html = render({ subject: d.oggetto, paragraphs, image: `${slugs[i]}.jpg`, isi: ISI, cta: CTAS[i] });
   writeFileSync(join(OUT, `${slugs[i]}.html`), html);
-  return { n: i + 1, slug: slugs[i], subject: d.oggetto, image: `${slugs[i]}.jpg`, bytes: html.length };
+  return { n: i + 1, slug: slugs[i], subject: d.oggetto, image: `${slugs[i]}.jpg`, cta: CTAS[i], bytes: html.length };
 });
 
 writeFileSync(join(HERE, 'manifest-email.json'), JSON.stringify(manifest, null, 2));

@@ -6,6 +6,16 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 
 const ISI = 'Galleri&reg; is a prescription test and has not been cleared or approved by the FDA. It does not detect all cancers and is intended to be used in addition to routine cancer screening recommended by a healthcare provider. A result of No Cancer Signal Detected does not rule out cancer. False positive and false negative results do occur. Rx only.';
 const CTA = 'Book a consultation';
+// CTA a basso impegno: il primo invio ha mostrato 19,5% di aperture ma ~0,2% di click.
+// Chi apre vuole capire, non prenotare. Il booking resta nel corpo dell'email.
+const CTAS = {
+  '01': 'Book a consultation',
+  '02': 'See where each one fits',
+  '03': 'See what Galleri looks for',
+  '04': 'See what each result means',
+  '05': 'See if it applies to you',
+  '06': 'See how the test works here',
+};
 
 const CSS = `
 :root{--navy:#0a2a4a;--navy-deep:#061d35;--navy-card:#102f4f;--blue:#4fa8e8;--teal:#1f7e8c;--ink:#cfe0ee;--dim:#8ba7bf}
@@ -74,11 +84,11 @@ ${body}
 
 const check = `<span class="dot"><svg viewBox="0 0 16 16" fill="none" stroke="#4fa8e8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>`;
 const logo = `<img class="logo" src="logo.svg">`;
-const cta = `<a class="cta" href="#">${CTA}</a>`;
+const ctaFor = (n) => `<a class="cta" href="#">${CTAS[n] || CTA}</a>`;
 const h1 = (a, b) => `<h1>${a}<span class="accent">${b}</span></h1>`;
 
 // ---- layout fotografico ----
-const photoLayout = ({ bg, pos, head, accent, sub, block, extra }) => page(head, `
+const photoLayout = ({ n, bg, pos, head, accent, sub, block, extra }) => page(head, `
   <img class="photo" src="creative-src/${bg}" style="object-position:${pos}">
   <div class="scrim"></div>
   <div class="content">
@@ -87,11 +97,12 @@ const photoLayout = ({ bg, pos, head, accent, sub, block, extra }) => page(head,
     <p class="sub">${sub}</p>
     <div class="rule"></div>
     ${block}
-    ${cta}
+    ${ctaFor(n)}
   </div>`, extra);
 
 const creatives = {
   '01': photoLayout({
+    n: '01',
     bg: '01-bg.png', pos: '80% 50%',
     head: 'One blood draw.', accent: 'More than<br>50 cancers.',
     sub: 'A single blood test that looks for a signal shared by more than 50 types of cancer &mdash; now available at Utah Stem Cells.',
@@ -102,6 +113,7 @@ const creatives = {
   }),
 
   '02': photoLayout({
+    n: '02',
     bg: '02-bg.png', pos: '78% 50%',
     head: 'In addition.', accent: 'Never instead.',
     sub: 'Galleri is designed to work alongside the cancer screening you already do.',
@@ -118,6 +130,7 @@ const creatives = {
   }),
 
   '04': photoLayout({
+    n: '04',
     bg: '04-bg.png', pos: '76% 45%',
     head: 'What your result', accent: 'actually means.',
     sub: 'Know this before the blood draw, not after it.',
@@ -130,6 +143,7 @@ const creatives = {
   }),
 
   '05': photoLayout({
+    n: '05',
     bg: '05-bg.png', pos: '74% 50%',
     head: 'Is this test', accent: 'right for you?',
     sub: 'It is not right for everyone &mdash; and we will tell you when it is not.',
@@ -146,7 +160,7 @@ const creatives = {
     ${logo}
     ${h1('The cancers', 'nobody<br>screens for.')}
     <p class="sub" style="max-width:540px;margin-top:30px;font-size:23px">Most cancers have no routine screening test at all. Galleri looks for a signal shared by more than 50 types &mdash; from a single blood sample.</p>
-    ${cta}
+    ${ctaFor('03')}
   </div>
   <div class="viz" style="top:186px">
     <div class="vrow">
@@ -181,7 +195,7 @@ const creatives = {
       <div><div class="d1">Dr. William Cimikoski</div>
       <div class="d2">Medical Director. Oversees this process personally.</div></div>
     </div>
-    ${cta}
+    ${ctaFor('06')}
   </div>`, `.logo{margin-bottom:30px}h1{font-size:58px}.steps li{margin-bottom:13px}
      .steps .txt{font-size:18px}.num{width:32px;height:32px;font-size:16px}
      .doc{margin-top:22px}.cta{margin-top:22px;padding:19px 42px}`),
