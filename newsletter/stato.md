@@ -293,3 +293,44 @@ Su ~209 consegne complessive è un segnale, non rumore: lo schema non va replica
 - **Nessun attributo età** fra gli attributi contatto: impossibile segmentare i 50+, che sono il pubblico indicato per Galleri.
 - **Limite di invio 20.000/mese** (ciclo 04/10 → 04/11). Sei email a Women+Men (4.388) farebbero 26.328: non ci stanno in un ciclo.
 - La restrizione IP sull'account Brevo è stata **disattivata** il 09/10/2026.
+
+---
+
+# Risultati primo invio ott26 — campagna 17, 9 ottobre 2026
+
+Partita alle 10:23 MDT (Brevo accoda, non parte al secondo esatto).
+
+| Metrica | Valore | Su consegnate |
+|---|---:|---:|
+| Inviate | 3.517 | |
+| Consegnate | 3.420 | 97,2% |
+| Aperture uniche | 665–680 | ~19,5% |
+| Click | **6–9** (vedi nota) | ~0,2% |
+| Disiscrizioni | 25 | 0,73% |
+| Soft bounce | 100 | 2,9% |
+| Hard bounce | 2 | 0,06% |
+| Segnalazioni spam | 4 | 0,12% |
+
+Dettaglio per lista: **Men (3)** 1.141 consegnate, 278 aperture, 3 click, 12 disiscr. —
+**Women (4)** 2.331 consegnate, 387 aperture, 3 click, 13 disiscr.
+
+## Due trappole nei dati di Brevo
+
+1. **`campaignStats` è un array con una riga per lista.** Leggere solo `[0]` dà i numeri di una
+   lista sola (1.141 invece di 3.420). Vanno sommate tutte le righe.
+2. **`globalStats.uniqueClicks` è inaffidabile.** Riporta 43 click, ma `linksStats` conta 9 click
+   totali sui due link tracciati (`/` 6, `/galleri-test/` 3) e la somma per lista dà 6 click unici.
+   Un valore di click unici non può superare i click totali. Stessa anomalia a settembre
+   (globalStats 9, realtà 0). Fidarsi di `linksStats` + somma di `campaignStats`.
+
+## Destinatari reali: 3.517, non 4.388
+
+Le liste dichiarano 4.388 iscritti unici ma includono i blacklisted: Women 585, Men 262.
+I contattabili erano 3.541, gli inviati 3.517. Brevo esclude i blacklisted in automatico.
+**Per i preventivi di invio usare i contattabili, non `uniqueSubscribers`.**
+
+## Lettura
+
+Consegna e aperture nella norma. Il problema è il click: ~0,2%, cioè il tema interessa
+(uno su cinque apre) ma la CTA non converte. Il tracciamento funziona, quindi non è un problema
+tecnico: è la call to action.
