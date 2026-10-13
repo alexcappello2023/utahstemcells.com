@@ -6,7 +6,8 @@
     "image": "01-one-blood-draw.jpg",
     "cta": "Book a consultation",
     "bytes": 7793,
-    "campaignId": 17
+    "campaignId": 17,
+    "action": "saltata (già inviata)"
   },
   {
     "n": 2,
@@ -15,7 +16,8 @@
     "image": "02-in-addition-never-instead.jpg",
     "cta": "See where each one fits",
     "bytes": 7811,
-    "campaignId": 18
+    "campaignId": 18,
+    "action": "aggiornata"
   },
   {
     "n": 3,
@@ -24,7 +26,8 @@
     "image": "03-cancers-nobody-screens-for.jpg",
     "cta": "See what Galleri looks for",
     "bytes": 7766,
-    "campaignId": 19
+    "campaignId": 19,
+    "action": "aggiornata"
   },
   {
     "n": 4,
@@ -33,7 +36,8 @@
     "image": "04-what-your-result-means.jpg",
     "cta": "See what each result means",
     "bytes": 7815,
-    "campaignId": 20
+    "campaignId": 20,
+    "action": "aggiornata"
   },
   {
     "n": 5,
@@ -42,7 +46,8 @@
     "image": "05-is-this-test-right-for-you.jpg",
     "cta": "See if it applies to you",
     "bytes": 7703,
-    "campaignId": 21
+    "campaignId": 21,
+    "action": "aggiornata"
   },
   {
     "n": 6,
@@ -51,6 +56,7 @@
     "image": "06-how-it-works-here.jpg",
     "cta": "See how the test works here",
     "bytes": 7852,
-    "campaignId": 22
+    "campaignId": 22,
+    "action": "aggiornata"
   }
 ]

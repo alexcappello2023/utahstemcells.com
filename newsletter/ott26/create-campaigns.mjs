@@ -26,7 +26,19 @@ async function api(method, path, body) {
 const manifest = JSON.parse(readFileSync(join(HERE, 'manifest-email.json'), 'utf8'));
 const out = [];
 
+// Una campagna già inviata non è modificabile: Brevo risponde 405.
+const sent = new Set();
+{
+  const list = await api('GET', '/emailCampaigns?limit=100');
+  for (const c of list.campaigns || []) if (c.status === 'sent') sent.add(c.id);
+}
+
 for (const dem of manifest) {
+  if (dem.campaignId && sent.has(dem.campaignId)) {
+    out.push({ ...dem, action: 'saltata (già inviata)' });
+    console.log(`saltata     campaignId=${dem.campaignId}  già inviata  ${dem.subject}`);
+    continue;
+  }
   const htmlContent = readFileSync(join(HERE, 'email', `${dem.slug}.html`), 'utf8');
   const payload = {
     name: `DEM Ott26 Galleri — ${String(dem.n).padStart(2, '0')} — ${dem.subject}`,

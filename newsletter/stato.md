@@ -334,3 +334,27 @@ I contattabili erano 3.541, gli inviati 3.517. Brevo esclude i blacklisted in au
 Consegna e aperture nella norma. Il problema è il click: ~0,2%, cioè il tema interessa
 (uno su cinque apre) ma la CTA non converte. Il tracciamento funziona, quindi non è un problema
 tecnico: è la call to action.
+
+## CTA rivista (13 ottobre 2026)
+
+Dopo il primo invio — 19,5% aperture, ~0,2% click, e **6 click su 9 andati alla home** invece che
+alla landing — la CTA è passata da "Book a consultation" a un invito a leggere, specifico per DEM.
+La prenotazione resta sotto il bottone: *"Prefer to talk it through? Book a consultation on (801) 999-4860"*.
+
+| # | ID | CTA |
+|---:|---:|---|
+| 01 | 17 | Book a consultation *(invariata: già inviata)* |
+| 02 | 18 | See where each one fits |
+| 03 | 19 | See what Galleri looks for |
+| 04 | 20 | See what each result means |
+| 05 | 21 | See if it applies to you |
+| 06 | 22 | See how the test works here |
+
+Cambiata **sia nel bottone dell'email sia dentro la creatività**, che aveva "BOOK A CONSULTATION"
+inciso nell'immagine. Creatività 02-06 rigenerate e ripubblicate su `/dem-ott26/` (stessi URL,
+quindi le campagne già programmate puntano automaticamente alle nuove).
+
+**Una campagna già inviata non è aggiornabile**: Brevo risponde `405 method_not_allowed`.
+`create-campaigns.mjs` ora salta le campagne in stato `sent`.
+
+Test della 18 inviato a alex.cappello@gmail.com il 13/10.
