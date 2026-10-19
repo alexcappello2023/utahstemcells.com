@@ -17,6 +17,8 @@ order: 10
 faqs:
   - q: "What is stem cell joint regeneration?"
     a: "It's a non-surgical, in-office procedure that concentrates regenerative biologics (your own PRP plus donor-derived stem cells) and places them where a joint is worn or injured, to support your natural repair processes. The goal is to reduce pain and improve how the joint moves — without the operating room."
+  - q: "How much does stem cell joint regeneration cost?"
+    a: "Your first treatment is $6,000. Every treatment after that is $2,200, whether it is a further session for the same area or treatment for a different area of the body. Whether stem cell joint regeneration is appropriate for you is decided by the physician at your consultation, so that is the first step before anything else."
   - q: "How is it different from joint replacement surgery?"
     a: "Joint replacement removes and replaces the joint, and requires anesthesia, hospital time and weeks of rehab. Stem cell joint regeneration works with the joint you already have: it's performed in-office, uses regenerative biologics (your own PRP plus donor-derived stem cells), and most patients return to everyday activities quickly. It's designed for people who want to delay or avoid surgery."
   - q: "Which joints can be treated?"
@@ -58,6 +60,14 @@ It's designed for patients who want to reduce pain and stay active **without** t
 - **Regenerative biologics.** The treatment combines PRP from your own blood with umbilical cord and amniotic stem cells from ethically donated birth tissue — we do not use autologous (your-own) stem cells.
 - **Honest guidance.** We're evidence-informed and straight with you: if you're not a good candidate, we'll tell you.
 - **One roof in Sandy.** Evaluation, treatment and follow-up in a single, physician-owned clinic in the Salt Lake Valley.
+
+## Straightforward pricing
+
+Your first treatment is **$6,000**. Every treatment after that is **$2,200** — and that applies whether you come back for the same area or want a different area of the body treated.
+
+So one patient pays $6,000 once, and from then on each further treatment, wherever it is, is $2,200. There is no separate price for a second joint.
+
+Whether stem cell joint regeneration is right for you is decided by the physician after an evaluation, not by the price list. [Book a consultation](/contact/) and Dr. Cimikoski will tell you honestly whether you are a good candidate.
 
 ## Which joints we treat
 
