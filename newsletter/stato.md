@@ -453,3 +453,27 @@ Un invio a tutti i contattabili costa **3.565** crediti. Il piano ne dà 20.000 
 
 - 12 email a tutti = **42.780 invii**, cioè ~2,1 cicli mensili.
 - Nel ciclo corrente (04/10 → 04/11) restano **12.997** crediti: 3 invii a tutti.
+
+## Campagne Nov26 create (19 ottobre 2026) — opzione "liste calde + selezione sulle grandi"
+
+Due flussi, tutte **bozze senza data**. Script: `newsletter/nov26/create-campaigns.mjs`.
+
+**Flusso W — tutte e 12 alle liste calde** (13, 12, 6, 7, 11): **120 destinatari** deduplicati.
+
+| DEM | ID | DEM | ID | DEM | ID |
+|---:|---:|---:|---:|---:|---:|
+| 01 | 23 | 05 | 29 | 09 | 34 |
+| 02 | 25 | 06 | 30 | 10 | 35 |
+| 03 | 26 | 07 | 31 | 11 | 37 |
+| 04 | 28 | 08 | 33 | 12 | 38 |
+
+**Flusso B — 5 DEM a Women+Men** (01, 03, 07, 10, 12), scelte perché autonome e comprensibili
+senza le altre: ID **24, 27, 32, 36, 39**. Ciascuna **esclude le liste calde**
+(`recipients.exclusionListIds`), così i 17 contatti presenti in entrambi i gruppi non ricevono
+due volte lo stesso messaggio. Destinatari: **3.445**.
+
+Costo: 12 × 120 = 1.440 + 5 × 3.445 = 17.225 → **18.665 invii**. Il ciclo corrente
+(04/10 → 04/11) ha **12.997** crediti residui, quindi il flusso B va spalmato su due cicli.
+
+Template email generati da `newsletter/nov26/build-emails.mjs`: hero da `/dem-nov26/`,
+link a `/stem-cell-joint-regeneration/`, riquadro con le due cifre, disclaimer sopra il footer.

@@ -1,0 +1,115 @@
+[
+  {
+    "n": 1,
+    "slug": "01-6000-once-2200-after",
+    "subject": "$6,000 ONCE. $2,200 EVERY TIME AFTER.",
+    "image": "01-6000-once-2200-after.jpg",
+    "cta": "See the full pricing",
+    "bytes": 7597,
+    "warmId": 23,
+    "bigId": 24
+  },
+  {
+    "n": 2,
+    "slug": "02-second-same-as-tenth",
+    "subject": "THE SECOND TREATMENT COSTS THE SAME AS THE TENTH",
+    "image": "02-second-same-as-tenth.jpg",
+    "cta": "Read how it works",
+    "bytes": 7472,
+    "warmId": 25
+  },
+  {
+    "n": 3,
+    "slug": "03-different-joint-same-price",
+    "subject": "A DIFFERENT JOINT. THE SAME PRICE.",
+    "image": "03-different-joint-same-price.jpg",
+    "cta": "See what it means for you",
+    "bytes": 7494,
+    "warmId": 26,
+    "bigId": 27
+  },
+  {
+    "n": 4,
+    "slug": "04-prices-on-our-website",
+    "subject": "OUR PRICES ARE ON OUR WEBSITE",
+    "image": "04-prices-on-our-website.jpg",
+    "cta": "Read the pricing",
+    "bytes": 7540,
+    "warmId": 28
+  },
+  {
+    "n": 5,
+    "slug": "05-two-numbers",
+    "subject": "TWO NUMBERS. NO PACKAGES. NO TIERS.",
+    "image": "05-two-numbers.jpg",
+    "cta": "See the pricing",
+    "bytes": 7673,
+    "warmId": 29
+  },
+  {
+    "n": 6,
+    "slug": "06-when-the-other-knee-goes",
+    "subject": "WHAT HAPPENS WHEN THE OTHER KNEE GOES",
+    "image": "06-when-the-other-knee-goes.jpg",
+    "cta": "See how it applies",
+    "bytes": 7437,
+    "warmId": 30
+  },
+  {
+    "n": 7,
+    "slug": "07-should-not-have-to-call",
+    "subject": "YOU SHOULD NOT HAVE TO CALL TO FIND OUT THE PRICE",
+    "image": "07-should-not-have-to-call.jpg",
+    "cta": "Read the price list",
+    "bytes": 7439,
+    "warmId": 31,
+    "bigId": 32
+  },
+  {
+    "n": 8,
+    "slug": "08-price-is-the-easy-part",
+    "subject": "THE PRICE IS THE EASY PART",
+    "image": "08-price-is-the-easy-part.jpg",
+    "cta": "Book a consultation",
+    "bytes": 7246,
+    "warmId": 33
+  },
+  {
+    "n": 9,
+    "slug": "09-still-2200",
+    "subject": "KNEE TODAY. SHOULDER IN THREE YEARS. STILL $2,200.",
+    "image": "09-still-2200.jpg",
+    "cta": "See how it works over time",
+    "bytes": 7263,
+    "warmId": 34
+  },
+  {
+    "n": 10,
+    "slug": "10-where-the-cells-come-from",
+    "subject": "WHERE THE CELLS ACTUALLY COME FROM",
+    "image": "10-where-the-cells-come-from.jpg",
+    "cta": "Read what it involves",
+    "bytes": 7494,
+    "warmId": 35,
+    "bigId": 36
+  },
+  {
+    "n": 11,
+    "slug": "11-what-the-first-includes",
+    "subject": "WHAT THE FIRST TREATMENT ACTUALLY INCLUDES",
+    "image": "11-what-the-first-includes.jpg",
+    "cta": "See the steps",
+    "bytes": 7338,
+    "warmId": 37
+  },
+  {
+    "n": 12,
+    "slug": "12-ask-us-anything",
+    "subject": "ASK US ANYTHING ABOUT THE PRICE",
+    "image": "12-ask-us-anything.jpg",
+    "cta": "Book a consultation",
+    "bytes": 7307,
+    "warmId": 38,
+    "bigId": 39
+  }
+]
