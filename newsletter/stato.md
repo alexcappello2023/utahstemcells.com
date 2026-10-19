@@ -477,3 +477,32 @@ Costo: 12 × 120 = 1.440 + 5 × 3.445 = 17.225 → **18.665 invii**. Il ciclo co
 
 Template email generati da `newsletter/nov26/build-emails.mjs`: hero da `/dem-nov26/`,
 link a `/stem-cell-joint-regeneration/`, riquadro con le due cifre, disclaimer sopra il footer.
+
+
+## Calendario Nov26 programmato (19 ottobre 2026)
+
+Partenza **oggi**, su richiesta dell'utente. Tutte e 17 in stato `queued`, orario 10:00 America/Denver.
+Script: `newsletter/nov26/schedule-campaigns.mjs`.
+
+| Data | Flusso W (120 dest.) | Flusso B (3.445 dest.) |
+|---|---|---|
+| lun 19 ott | W01 (23) | **B01 (24)** |
+| lun 26 ott | W02 (25) | — |
+| lun 2 nov | W03 (26) | B03 (27) |
+| lun 9 nov | W04 (28) | — |
+| lun 16 nov | W05 (29) | B07 (32) |
+| lun 23 nov | W06 (30) | — |
+| lun 30 nov | W07 (31) | B10 (36) |
+| lun 7 dic | W08 (33) | — |
+| lun 14 dic | W09 (34) | B12 (39) |
+| *21 e 28 dic* | *pausa festività* | — |
+| lun 4 gen | W10 (35) | — |
+| lun 11 gen | W11 (37) | — |
+| lun 18 gen | W12 (38) | — |
+
+**Attenzione al cambio ora**: gli Stati Uniti passano a MST il 1° novembre. Dal 2 novembre in poi
+le 10:00 di Denver sono le **17:00 UTC**, non le 16:00. Lo script lo calcola da solo; se si aggiungono
+date future va mantenuta quella logica.
+
+Consumo per ciclo: 04/10→04/11 = 7.250 invii (su 12.997 residui); 04/11→04/12 = 7.370; 04/12→04/01 = 3.925.
+Tutti entro il limite di 20.000.
