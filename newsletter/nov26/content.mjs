@@ -1,0 +1,241 @@
+// Piano editoriale DEM nov26 — staminali, leva sul prezzo.
+// Cifre ammesse (STATO.md regola 1): 6.000 USD primo trattamento, 2.200 USD ogni successivo,
+// stessa zona o zona diversa. Nessun confronto con concorrenti o chirurgia.
+// Staminali: cordone + amniotico DONATI, PRP autologo. Mai "staminali del paziente".
+
+export const DISCLAIMER = [
+  'Stem cell therapy is not an FDA-approved treatment for any specific disease, and individual results vary.',
+  'The stem cells used are from ethically donated umbilical cord and amniotic tissue, combined with PRP from your own blood — they are not harvested from your body.',
+  'Whether treatment is appropriate for you is decided by the physician after an individual evaluation.',
+].join(' ');
+
+const LANDING = 'https://utahstemcells.com/stem-cell-joint-regeneration/';
+const close = (line) => `${line}\n\nPhone: (801) 999-4860\n\nWeb: ${LANDING}\n\n${DISCLAIMER}`;
+
+export const dems = [
+  {
+    oggetto: '$6,000 ONCE. $2,200 EVERY TIME AFTER.',
+    body: `Most clinics will not tell you what a regenerative treatment costs until you are sitting in front of them. We would rather you knew now.
+
+Your first stem cell treatment at Utah Stem Cells is $6,000.
+
+Every treatment after that is $2,200.
+
+That is the whole price list. There are no packages, no tiers and no quote that changes depending on who you speak to.
+
+What the second number means in practice is this: the cost of coming back is settled before you have even started. You are not deciding whether to begin something open-ended.
+
+Whether the treatment is right for you is a separate question, and one only the physician can answer after an evaluation.
+
+${close('See the full pricing, written plainly, on our website.')}`,
+    creative: `Landscape 3:2. Navy panel left, photograph right: man and woman 55-65 at a kitchen table reviewing something together on a tablet, calm, unhurried.
+Headline: $6,000 ONCE. / $2,200 EVERY TIME AFTER.
+Two stacked figure cards: "FIRST TREATMENT $6,000" and "EVERY TREATMENT AFTER $2,200".
+CTA button: SEE THE FULL PRICING. Logo top left, navy/teal palette.
+Avoid: price tags, discount badges, percentages, anything that reads as a sale.`,
+  },
+  {
+    oggetto: 'THE SECOND TREATMENT COSTS THE SAME AS THE TENTH',
+    body: `Here is the part most people have to read twice.
+
+After your first stem cell treatment at $6,000, every treatment that follows is $2,200. Not the second one only. Every one.
+
+There is no point at which the price goes back up, and no limit after which the arrangement stops applying. If you are treated once this year and again in four years, the second one is $2,200.
+
+We set it up this way because joints do not work to a schedule. Needing another session later is not a failure of the first one, and we did not want the cost of that conversation to be the reason you avoid it.
+
+The physician decides whether another treatment is warranted. The price is already decided.
+
+${close('Read how the pricing works.')}`,
+    creative: `Landscape 3:2. Graphic-led on navy, minimal photography.
+A horizontal timeline: first marker "$6,000", then four further markers all reading "$2,200", spaced across years.
+Headline: THE SECOND COSTS THE SAME AS THE TENTH.
+CTA button: READ HOW IT WORKS.
+Avoid: upward arrows, growth charts, anything implying escalating cost.`,
+  },
+  {
+    oggetto: 'A DIFFERENT JOINT. THE SAME PRICE.',
+    body: `This is the detail that surprises people most, so we will be explicit about it.
+
+The $2,200 does not only apply to the joint we treated first. It applies to any area.
+
+Treat a knee this year, and if a shoulder needs attention in two years, that treatment is $2,200 as well. There is no separate first-time price for a second area of the body. You pay the $6,000 once, as a patient, not once per joint.
+
+Bodies rarely wear out in one place at a time. Pricing each new area as if it were a fresh start never reflected how people actually need treatment, so we stopped doing it.
+
+As always, whether any particular area should be treated is the physician's call after an evaluation.
+
+${close('See what this means for your situation.')}`,
+    creative: `Landscape 3:2. Navy panel left, photograph right: active couple 55-65 walking outdoors in Utah autumn light.
+Headline: A DIFFERENT JOINT. / THE SAME PRICE.
+Row of four simple line icons — knee, shoulder, hip, back — each labelled "$2,200".
+CTA button: SEE WHAT IT MEANS FOR YOU.
+Avoid: anatomical cutaways, red pain hotspots, medical diagrams.`,
+  },
+  {
+    oggetto: 'OUR PRICES ARE ON OUR WEBSITE',
+    body: `You can read them right now, without calling anyone, without giving us your phone number and without sitting through a consultation first.
+
+$6,000 for the first stem cell treatment. $2,200 for every treatment after that, for any area.
+
+We are aware this is unusual in regenerative medicine. The normal practice is to treat the price as something to be revealed late, once you are already invested in the conversation. We think that tells you something about the price.
+
+If you are weighing this up against other options, the comparison is easier when both numbers are in front of you. Ours are.
+
+What we cannot put on a website is whether the treatment is appropriate for you. That takes an evaluation with the physician, and it is the one part we will not shortcut.
+
+${close('Read the pricing before you speak to anyone.')}`,
+    creative: `Landscape 3:2. Navy canvas, typographic, no stock photography.
+Centre: a clean browser-frame mock showing the "Straightforward pricing" heading with $6,000 and $2,200 legible.
+Headline: OUR PRICES ARE ON OUR WEBSITE.
+Subline: No call required. No form first.
+CTA button: READ THE PRICING.
+Avoid: competitor comparisons of any kind, crossed-out figures.`,
+  },
+  {
+    oggetto: 'TWO NUMBERS. NO PACKAGES. NO TIERS.',
+    body: `Regenerative medicine has developed a habit of complicated pricing. Bundles of sessions bought upfront. Membership levels. Prices that depend on which day you ask.
+
+We have two numbers.
+
+$6,000 for your first treatment. $2,200 for each one after it, whatever area of the body it is for.
+
+Nothing is bundled, so you are never buying sessions you may not need. Nothing expires, so there is no pressure to use something before a date. And nothing changes depending on how the conversation goes.
+
+Simple pricing is not generosity on our part. It is what happens when a clinic is confident enough in the treatment that it does not need the price structure to do the persuading.
+
+Whether you are a candidate at all is decided by the physician, at an evaluation, before anything is booked.
+
+${close('See the pricing in full.')}`,
+    creative: `Landscape 3:2. Navy canvas, bold typography.
+Two very large figures side by side: $6,000 and $2,200, each with a one-line caption beneath.
+Headline across the top: TWO NUMBERS. THAT IS THE WHOLE PRICE LIST.
+CTA button: SEE THE PRICING.
+Avoid: checklists of "what's included", tier tables, anything resembling a pricing grid.`,
+  },
+  {
+    oggetto: 'WHAT HAPPENS WHEN THE OTHER KNEE GOES',
+    body: `It is a fair question, and one worth answering before you need the answer.
+
+Say you are treated for one knee. A few years later the other one starts to trouble you. At most clinics that is a new patient conversation with a new first-time price.
+
+Here it is $2,200. The same as it would be for the original knee, or a shoulder, or your back.
+
+You paid the $6,000 once. That part is behind you permanently.
+
+We are describing how the pricing works, not predicting what your body will do or promising any outcome — nobody can do that honestly. What we can tell you is that if another area does need attention, the cost of that decision is already known and will not be used as leverage.
+
+${close('See how the pricing applies across areas.')}`,
+    creative: `Landscape 3:2. Navy panel left, photograph right: man ~60 at home, relaxed, mid-conversation with his partner off-frame.
+Headline: WHAT HAPPENS WHEN / THE OTHER KNEE GOES.
+Small card: "Still $2,200. You pay the first-treatment price once."
+CTA button: SEE HOW IT APPLIES.
+Avoid: anyone limping, grimacing, holding a joint in pain.`,
+  },
+  {
+    oggetto: 'YOU SHOULD NOT HAVE TO CALL TO FIND OUT THE PRICE',
+    body: `If a clinic will not publish what a treatment costs, there is usually a reason, and it is rarely in your favor.
+
+Our first treatment is $6,000. Every treatment after is $2,200, for any area of the body. Those figures are on our website, where anyone can read them without speaking to us.
+
+The usual argument is that every patient is different, so a price cannot be published. Patients are different. Whether you are a good candidate is genuinely individual, and the physician decides it at an evaluation. But that is a clinical question, not a pricing one. The cost of the procedure does not change because of who is asking.
+
+Keeping the two separate means you can work out whether this is even worth a conversation, on your own, before you have one.
+
+${close('Read the price list for yourself.')}`,
+    creative: `Landscape 3:2. Navy canvas, typographic and quiet.
+Large question mark struck through, or a simple phone icon struck through — one single visual idea, nothing busy.
+Headline: YOU SHOULD NOT HAVE TO CALL / TO FIND OUT THE PRICE.
+Subline: $6,000 first treatment. $2,200 every one after.
+CTA button: READ THE PRICE LIST.
+Avoid: naming or alluding to specific competitors.`,
+  },
+  {
+    oggetto: 'THE PRICE IS THE EASY PART',
+    body: `We have spent several emails on what this costs, so it is worth saying plainly what the price does not settle.
+
+It does not tell you whether stem cell treatment will help you. That depends on your joint, your history, your general health and what you are hoping for, and it is decided by Dr. Cimikoski at an evaluation — not by you, and not by us in an email.
+
+Some people who come in are good candidates. Some are not, and we tell them so. That conversation is more useful to you than any number in this message.
+
+Stem cell therapy is not an FDA-approved treatment for any specific disease, and we will not tell you it is guaranteed to work. We will tell you what it costs, what it involves and whether we think it is right for you.
+
+${close('Book a consultation and get a straight answer.')}`,
+    creative: `Landscape 3:2. Navy panel left, photograph right: the real reception at the Sandy clinic, or the real photograph of Dr. Cimikoski.
+Headline: THE PRICE IS THE EASY PART.
+Subline: Whether it is right for you is decided at an evaluation, not on a price list.
+CTA button: BOOK A CONSULTATION.
+Note: any physician shown must be the real Dr. William Cimikoski.
+Avoid: stock doctors, stethoscopes, generic clinical imagery.`,
+  },
+  {
+    oggetto: 'KNEE TODAY. SHOULDER IN THREE YEARS. STILL $2,200.',
+    body: `Time is the part of this that people underestimate.
+
+The $2,200 does not run out. There is no window within which you have to come back to keep it, and no renewal to remember. Whether the next treatment is in six months or six years, and whether it is for the same area or a different one, the figure is the same.
+
+That is deliberate. A price that expires creates pressure to be treated on the clinic's timetable rather than when your body and your physician agree it makes sense. We did not want to build that pressure into the arrangement.
+
+So there is nothing to act on today unless you want there to be. The treatment is there when it is clinically appropriate, at a cost you already know.
+
+${close('See how the pricing works over time.')}`,
+    creative: `Landscape 3:2. Navy panel left, photograph right: couple 55-65 outdoors in warm light, walking, unhurried.
+Headline: KNEE TODAY. SHOULDER IN THREE YEARS. / STILL $2,200.
+Subline: No expiry. No renewal. No window to act within.
+CTA button: SEE HOW IT WORKS OVER TIME.
+Avoid: countdown timers, calendars, urgency cues of any kind.`,
+  },
+  {
+    oggetto: 'WHERE THE CELLS ACTUALLY COME FROM',
+    body: `A fair question to ask any clinic offering this, and one you should get a straight answer to.
+
+The stem cells we use come from ethically donated umbilical cord and amniotic birth tissue, prepared in a laboratory. They are not harvested from your own body — not from fat, not from bone marrow.
+
+Alongside them we use PRP, which is prepared from a small sample of your own blood on the day.
+
+We are specific about this because the field is not always specific, and "stem cell therapy" is used to describe several quite different things. You are entitled to know which one you are being offered before you pay $6,000 for it.
+
+Stem cell therapy is not an FDA-approved treatment for any specific disease. The physician will explain what is known, what is not, and whether it is appropriate for you.
+
+${close('Read what the treatment involves.')}`,
+    creative: `Landscape 3:2. Navy canvas, clean editorial illustration, no photography of procedures.
+Two labelled elements side by side: "DONATED UMBILICAL CORD + AMNIOTIC TISSUE — prepared in a laboratory" and "PRP — from a small sample of your own blood".
+Headline: WHERE THE CELLS ACTUALLY COME FROM.
+CTA button: READ WHAT IT INVOLVES.
+Avoid: needles, syringes, blood, laboratory glassware, anything clinical or unsettling.`,
+  },
+  {
+    oggetto: 'WHAT THE FIRST TREATMENT ACTUALLY INCLUDES',
+    body: `$6,000 is a real amount of money, so it is reasonable to ask what is inside it.
+
+The evaluation with Dr. Cimikoski, where your joint and your history are assessed and you are told honestly whether you are a candidate. The preparation of the regenerative components — PRP from your own blood, and donated umbilical cord and amniotic stem cells where appropriate. The procedure itself, performed in-office by the physician rather than delegated. And the follow-up afterwards.
+
+It is one clinic, in Sandy, under one roof, with the same physician throughout. You are not handed between a sales consultant, a technician and a clinic you never see again.
+
+Every treatment after the first is $2,200, for any area.
+
+${close('See what is involved, step by step.')}`,
+    creative: `Landscape 3:2. Navy panel left, photograph right: the real Sandy clinic reception.
+Headline: WHAT THE FIRST TREATMENT INCLUDES.
+Four numbered steps: 1 Physician evaluation — 2 Preparation of the biologics — 3 In-office procedure — 4 Follow-up.
+CTA button: SEE THE STEPS.
+Avoid: treatment-room or procedure photography, gloved hands, equipment.`,
+  },
+  {
+    oggetto: 'ASK US ANYTHING ABOUT THE PRICE',
+    body: `We have been direct about the numbers for a reason: we would rather you decided with them in front of you than discovered them at the end of a sales conversation.
+
+$6,000 for the first treatment. $2,200 for every treatment after, for any area of the body, with no expiry.
+
+If something about that is unclear — how it applies to your situation, what the follow-up involves, what happens if you need more than one area treated — ask. A phone call costs nothing and you are not obliged to book anything at the end of it.
+
+And if, after an evaluation, Dr. Cimikoski does not think you are a good candidate, he will tell you. That answer is worth having too.
+
+${close('Call us, or book a consultation when you are ready.')}`,
+    creative: `Landscape 3:2. Navy panel left, photograph right: woman ~58 on the phone at home, relaxed, natural daylight.
+Headline: ASK US ANYTHING / ABOUT THE PRICE.
+Phone number set large and legible: (801) 999-4860.
+CTA button: BOOK A CONSULTATION.
+Avoid: call-centre imagery, headsets, urgency.`,
+  },
+];

@@ -358,3 +358,42 @@ quindi le campagne già programmate puntano automaticamente alle nuove).
 `create-campaigns.mjs` ora salta le campagne in stato `sent`.
 
 Test della 18 inviato a alex.cappello@gmail.com il 13/10.
+
+---
+
+# Tab Nov26 — staminali, leva sul prezzo (19 ottobre 2026)
+
+**12 DEM**, schema `Oggetto | Body | Creative`, 24 righe (intestazione, 12 DEM, 11 separatori `#A4C2F4`).
+gid `286234867`. Sorgenti in `newsletter/nov26/` (`content.mjs`, `build.mjs`).
+
+Arco: offerta → meccanica del prezzo → trasparenza → fiducia → onestà clinica → chiusura.
+
+| # | Oggetto |
+|---:|---|
+| 1 | $6,000 ONCE. $2,200 EVERY TIME AFTER. |
+| 2 | THE SECOND TREATMENT COSTS THE SAME AS THE TENTH |
+| 3 | A DIFFERENT JOINT. THE SAME PRICE. |
+| 4 | OUR PRICES ARE ON OUR WEBSITE |
+| 5 | TWO NUMBERS. NO PACKAGES. NO TIERS. |
+| 6 | WHAT HAPPENS WHEN THE OTHER KNEE GOES |
+| 7 | YOU SHOULD NOT HAVE TO CALL TO FIND OUT THE PRICE |
+| 8 | THE PRICE IS THE EASY PART |
+| 9 | KNEE TODAY. SHOULDER IN THREE YEARS. STILL $2,200. |
+| 10 | WHERE THE CELLS ACTUALLY COME FROM |
+| 11 | WHAT THE FIRST TREATMENT ACTUALLY INCLUDES |
+| 12 | ASK US ANYTHING ABOUT THE PRICE |
+
+## Conformità verificata
+
+Solo `$6,000` e `$2,200`, nessun'altra cifra. Nessun confronto con concorrenti o chirurgia.
+Nessun "cheap/affordable/discount/% off/free consultation". Staminali sempre come donate
+(cordone + amniotico) con PRP autologo. Disclaimer FDA in tutte e 12.
+
+**Il confronto "i concorrenti chiedono 10.000 USD" non è stato inserito**: è una dichiarazione
+comparativa non documentata, vietata dalla regola 1 di `STATO.md`. La leva usata è quella
+documentabile e già pubblicata sul sito: 6.000 una volta, poi 2.200 per sempre, per qualunque zona.
+
+## Sito: già fatto
+
+Le cifre erano già su `stem-cell-joint-regeneration` e `iv-stem-cell-therapy` (sezione
+"Straightforward pricing" + FAQ), verificate live in produzione il 19/10. Nessuna modifica necessaria.
