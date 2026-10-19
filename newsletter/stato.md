@@ -506,3 +506,27 @@ date future va mantenuta quella logica.
 
 Consumo per ciclo: 04/10→04/11 = 7.250 invii (su 12.997 residui); 04/11→04/12 = 7.370; 04/12→04/01 = 3.925.
 Tutti entro il limite di 20.000.
+
+## Galleri sospeso (19 ottobre 2026)
+
+Decisione dell'utente: fermare la sequenza sul cancro e lasciare spazio a quella sulle staminali.
+
+| ID | DEM | Stato |
+|---:|---|---|
+| 17 | 01 ONE BLOOD DRAW | inviata 09/10 — non annullabile |
+| 18 | 02 IN ADDITION | inviata 14/10 — non annullabile |
+| 19, 20, 22 | 03, 04, 06 | bozze, mai programmate |
+| 21 | 05 IS THIS TEST RIGHT FOR YOU? | **suspended** (era per il 21/10) |
+
+**Come si sospende una campagna in coda**: `PUT /v3/emailCampaigns/<id>/status` con
+`{"status":"suspended"}`. Due trappole verificate il 19/10:
+- `PUT /v3/emailCampaigns/<id>` con `scheduledAt: null` risponde **204 ma non cancella la data**:
+  la campagna resta con la vecchia data accanto allo stato `suspended`. È solo cosmetico, non parte.
+- Da `suspended` **non si può tornare a `draft`**: risposta `400 draft is an invalid status for
+  suspended campaign`. Per riusare quel contenuto serve una campagna nuova.
+
+Restano in coda **17 campagne, tutte staminali**. Nessuna Galleri partirà più.
+
+Capacità liberata nel ciclo corrente: i 3.445 invii del 21/10. Dopo gli invii di oggi e il resto
+del piano fino al 4/11 restano circa **5.700 invii inutilizzati**: c'è spazio per portare il flusso B
+da 5 a 7 DEM, se si decide di coprire di più le liste grandi.
