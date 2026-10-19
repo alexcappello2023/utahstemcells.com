@@ -28,14 +28,71 @@ const related = [
 	...rc.map((c) => ({ title: c!.data.title, href: `/${c!.id}/`, summary: c!.data.summary })),
 ];
 
+// FAQ strutturata: la sezione "## Frequently asked questions" con le domande
+// come "### ...?" diventa uno schema FAQPage. Il testo e lo stesso che si legge
+// in pagina (solo ripulito dal markdown), cosi lo schema non puo divergere.
+const stripMd = (t: string) =>
+	t
+		.replace(/!\[[^\]]*\]\([^)]*\)/g, '')
+		.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+		.replace(/[*_`]+/g, '')
+		.replace(/^\s*[-*]\s+/gm, '')
+		.replace(/\s+/g, ' ')
+		.trim();
+
+function faqFromBody(body: string | undefined) {
+	if (!body) return [];
+	const start = body.match(/^##\s+frequently asked questions\b.*$/im);
+	if (!start) return [];
+	const rest = body.slice(start.index! + start[0].length);
+	const nextH2 = rest.search(/^##\s/m);
+	const section = nextH2 === -1 ? rest : rest.slice(0, nextH2);
+	return section
+		.split(/^###\s+/m)
+		.slice(1)
+		.map((chunk) => {
+			const [q, ...lines] = chunk.split('\n');
+			// La risposta finisce al disclaimer (blockquote) o a un filetto.
+			const end = lines.findIndex((l) => /^\s*(>|---)/.test(l));
+			const a = (end === -1 ? lines : lines.slice(0, end)).join('\n');
+			return { q: stripMd(q), a: stripMd(a) };
+		})
+		.filter((f) => f.q && f.a);
+}
+const faqs = faqFromBody(item.body);
+
+// L'autore: se e il medico, riusa quanto la pagina About dichiara gia di lui
+// (Medical Director, MD). Nessuna qualifica aggiunta oltre a quelle.
+const author =
+	data.author === `Dr. ${SITE.doctor.replace(/^Dr\.\s*/, '')}` || data.author === SITE.doctor
+		? {
+				'@type': 'Person',
+				name: 'William Cimikoski',
+				honorificPrefix: 'Dr.',
+				honorificSuffix: 'MD',
+				jobTitle: 'Medical Director',
+				url: new URL('/about/', SITE.url).href,
+				worksFor: { '@type': 'MedicalClinic', name: SITE.name, url: SITE.url },
+			}
+		: { '@type': 'Person', name: data.author };
+
+const updated = data.updated ?? data.pubDate;
+const showUpdated =
+	data.updated && data.updated.toDateString() !== data.pubDate.toDateString();
+const updatedStr = updated.toLocaleDateString('en-US', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+});
+
 const schema = {
 	'@context': 'https://schema.org',
 	'@type': 'MedicalWebPage',
 	headline: data.title,
 	description: data.description,
 	datePublished: data.pubDate.toISOString(),
-	...(data.updated ? { dateModified: data.updated.toISOString() } : {}),
-	author: { '@type': 'Person', name: data.author },
+	dateModified: updated.toISOString(),
+	author,
 	publisher: { '@type': 'MedicalClinic', name: SITE.name, url: SITE.url },
 	url: new URL(path, SITE.url).href,
 };
@@ -60,6 +117,11 @@ const schema = {
 				<h1>{data.title}</h1>
 				<p class="post-meta">
 					By {data.author} · <time datetime={data.pubDate.toISOString()}>{dateStr}</time>
+					{showUpdated && (
+						<>
+							{' '}· Updated <time datetime={updated.toISOString()}>{updatedStr}</time>
+						</>
+					)}
 				</p>
 			</div>
 		</header>
@@ -95,6 +157,22 @@ const schema = {
 
 	<CtaBand />
 	<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+	{
+		faqs.length > 0 && (
+			<script
+				type="application/ld+json"
+				set:html={JSON.stringify({
+					'@context': 'https://schema.org',
+					'@type': 'FAQPage',
+					mainEntity: faqs.map((f) => ({
+						'@type': 'Question',
+						name: f.q,
+						acceptedAnswer: { '@type': 'Answer', text: f.a },
+					})),
+				})}
+			/>
+		)
+	}
 </BaseLayout>
 
 <style>
