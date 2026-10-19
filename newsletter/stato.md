@@ -530,3 +530,25 @@ Restano in coda **17 campagne, tutte staminali**. Nessuna Galleri partirà più.
 Capacità liberata nel ciclo corrente: i 3.445 invii del 21/10. Dopo gli invii di oggi e il resto
 del piano fino al 4/11 restano circa **5.700 invii inutilizzati**: c'è spazio per portare il flusso B
 da 5 a 7 DEM, se si decide di coprire di più le liste grandi.
+
+
+## Cadenza raddoppiata sul flusso caldo (19 ottobre 2026)
+
+Su richiesta: il flusso W passa da **una a due email a settimana**, lunedì e giovedì.
+Il flusso B resta ogni due lunedì: raddoppiarlo su 3.445 contatti freddi significherebbe
+~175 disiscrizioni attese sulla sequenza, e nel ciclo corrente non ci starebbe comunque.
+
+| | Prima | Dopo |
+|---|---|---|
+| Cadenza W | 1/settimana | **2/settimana (lun + gio)** |
+| Fine sequenza W | lun 18 gennaio | **lun 30 novembre** |
+| Pausa festività | 21 e 28 dicembre | non serve più |
+| Invii totali | 18.665 | 18.665 (identici) |
+
+**Giovedì 26 novembre è il Ringraziamento**: saltato, W12 slitta a lunedì 30 novembre.
+
+Consumo per ciclo dopo il raddoppio: 04/10→04/11 **7.490** su 12.997 residui;
+04/11→04/12 **7.730**; 04/12→04/01 **3.445**. Tutti dentro, margine minimo 5.507.
+
+Raddoppiare non costa un invio in più: le stesse 12 email arrivano alle stesse 120 persone,
+solo in sei settimane invece di tredici.
