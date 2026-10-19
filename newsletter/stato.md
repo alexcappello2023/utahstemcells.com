@@ -419,3 +419,37 @@ per correggere un testo si modifica il config e si rirenderizza, senza rigenerar
 - I layout senza fotografia partono in alto e lasciano un vuoto in fondo: vanno fatti partire più in
   basso (`top`) e ingranditi. Con headline su tre righe, però, sforano sotto la fascia ISI: 05 e 07
   hanno richiesto `top` ridotto e font più piccolo.
+
+---
+
+# Mappa delle liste Brevo (19 ottobre 2026)
+
+Conteggi ottenuti **scorrendo tutti i contatti uno per uno**, non dal campo `totalBlacklisted`
+dell'elenco liste, che riporta 0 ovunque ed è inaffidabile (la GET sulla singola lista invece è corretta).
+
+| ID | Lista | In lista | Contattabili | Nuovi rispetto a Women+Men | Campagne ricevute |
+|---:|---|---:|---:|---:|---|
+| 4 | Women - july 26 | 2964 | 2367 | — | 4 |
+| 3 | Men - july 26 | 1424 | 1149 | — | 4 |
+| 13 | SC Joint tx — not converted | 52 | 47 | **47** | mai scritto |
+| 12 | SC Joint tx — converted | 39 | 34 | 31 | 6 |
+| 6 | Contacts involved in conversations | 25 | 21 | 12 | mai scritto |
+| 7 | Website | 18 | 17 | 16 | 1 |
+| 11 | P-Shot Tx List | 19 | 14 | 9 | mai scritto |
+| 8 | Social | 92 | **3** | 1 | 1 |
+| 14 | Test interni | 1 | 1 | 0 | mai scritto |
+| 2 | La tua prima lista | 1 | 1 | 0 | 1 |
+
+- **Contatti totali: 4.533. Contattabili: 3.566** (967 disiscritti o in blacklist, il **21,3%**).
+- Nessun contatto è fuori da tutte le liste.
+- **Women + Men deduplicate = 3.462**, cioè il 97% dell'universo raggiungibile. 54 persone sono in entrambe (Brevo deduplica da solo).
+- Tutte le liste piccole insieme aggiungono solo **103 persone nuove**.
+- **La lista 13 non ha alcuna sovrapposizione con Women/Men**: quei 47 non hanno mai ricevuto nulla.
+- **La lista 8 "Social" è morta**: 92 iscritti, 3 contattabili. 97% disiscritti.
+
+## Capacità di invio
+
+Un invio a tutti i contattabili costa **3.565** crediti. Il piano ne dà 20.000 al mese.
+
+- 12 email a tutti = **42.780 invii**, cioè ~2,1 cicli mensili.
+- Nel ciclo corrente (04/10 → 04/11) restano **12.997** crediti: 3 invii a tutti.
