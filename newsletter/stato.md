@@ -397,3 +397,25 @@ documentabile e già pubblicata sul sito: 6.000 una volta, poi 2.200 per sempre,
 
 Le cifre erano già su `stem-cell-joint-regeneration` e `iv-stem-cell-therapy` (sezione
 "Straightforward pricing" + FAQ), verificate live in produzione il 19/10. Nessuna modifica necessaria.
+
+## Creatività Nov26 — fatte (19 ottobre 2026)
+
+Dodici grafiche 1536×1024, inserite in colonna C del tab Nov26 come
+`=IMAGE("https://utahstemcells.com/dem-nov26/<slug>.jpg")`. URL permanenti (deploy FTP), verificati
+byte per byte contro i file locali. Sorgenti e generatore in `newsletter/nov26/`.
+
+| Tipo | Creatività | Come è fatta |
+|---|---|---|
+| Fotografia AI | 01, 03, 06, 09, 12 | foto generata senza testo, spazio negativo a sinistra |
+| Tipografica | 02, 04, 05, 07, 10 | interamente HTML su fondo navy, nessuna foto |
+| Foto reali | 08, 11 | `clinic-reception-v5.webp` e `dr-cimikoski.jpeg` del sito |
+
+`build-creatives.mjs` genera i dodici HTML da tre layout condivisi (`photo`, `typo`, `clinic`):
+per correggere un testo si modifica il config e si rirenderizza, senza rigenerare le fotografie.
+
+**Due trappole incontrate, già corrette nel file:**
+- `.duo div` e `.pairs div` colpivano anche i div annidati, disegnando un riquadro dentro il riquadro.
+  Servono i selettori figlio diretto (`.duo>div`).
+- I layout senza fotografia partono in alto e lasciano un vuoto in fondo: vanno fatti partire più in
+  basso (`top`) e ingranditi. Con headline su tre righe, però, sforano sotto la fascia ISI: 05 e 07
+  hanno richiesto `top` ridotto e font più piccolo.
