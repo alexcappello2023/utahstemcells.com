@@ -1,0 +1,98 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>$6,000 once.</title><style>
+:root{--navy:#0a2a4a;--navy-deep:#061d35;--card:#102f4f;--blue:#4fa8e8;--teal:#1f7e8c;--ink:#cfe0ee;--dim:#8ba7bf}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1536px;height:1024px;overflow:hidden}
+body{font-family:'Archivo','Helvetica Neue',Arial,sans-serif;position:relative;background:var(--navy)}
+.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.scrim{position:absolute;inset:0;background:linear-gradient(100deg,var(--navy) 0%,var(--navy) 25%,rgba(10,42,74,.95) 33%,rgba(10,42,74,.62) 43%,rgba(10,42,74,.22) 52%,rgba(10,42,74,0) 60%)}
+.content{position:absolute;left:84px;top:70px;width:748px}
+.logo{width:262px;display:block;margin-bottom:40px}
+h1{font-size:62px;line-height:.99;font-weight:800;letter-spacing:-1.4px;color:#fff;text-transform:uppercase}
+h1 .accent{color:var(--blue);display:block}
+.sub{margin-top:20px;font-size:21px;line-height:1.45;color:var(--ink);max-width:620px}
+.rule{width:92px;height:3px;background:var(--blue);margin:26px 0 24px;border-radius:2px}
+.cta{display:inline-block;margin-top:28px;background:var(--teal);color:#fff;font-size:21px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:19px 42px;border-radius:7px;text-decoration:none}
+.isi{position:absolute;left:0;right:0;bottom:0;padding:15px 84px;background:linear-gradient(to right,var(--navy-deep) 0%,var(--navy-deep) 62%,rgba(6,29,53,.9) 100%);font-size:13px;line-height:1.5;color:var(--dim)}
+/* schede cifra */
+.figs{display:flex;flex-direction:column;gap:13px;max-width:620px}
+.fig{display:flex;align-items:center;justify-content:space-between;gap:20px;background:rgba(16,47,79,.86);border:1px solid rgba(79,168,232,.3);border-radius:10px;padding:16px 24px}
+.fig .l{font-size:15px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--blue)}
+.fig .v{font-size:40px;font-weight:800;color:#fff;line-height:1;white-space:nowrap}
+.fig.alt .v{color:var(--blue)}
+/* timeline */
+.tl{display:flex;align-items:flex-end;gap:0;margin-top:10px}
+.tl .step{flex:1;text-align:center;position:relative}
+.tl .step:before{content:'';position:absolute;top:26px;left:0;right:0;height:2px;background:rgba(139,167,191,.35)}
+.tl .step:first-child:before{left:50%}
+.tl .step:last-child:before{right:50%}
+.tl .bub{position:relative;display:inline-block;background:var(--navy);border:2px solid var(--blue);border-radius:30px;padding:9px 14px;font-size:19px;font-weight:800;color:#fff}
+.tl .step.first .bub{background:var(--blue);color:var(--navy);font-size:21px}
+.tl .cap{margin-top:12px;font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:var(--dim)}
+/* riga icone zone */
+.zones{display:flex;gap:12px;max-width:650px}
+.zone{flex:1;background:rgba(16,47,79,.86);border:1px solid rgba(79,168,232,.3);border-radius:10px;padding:16px 10px;text-align:center}
+.zone .n{font-size:15px;font-weight:700;color:#fff;letter-spacing:.4px}
+.zone .p{margin-top:7px;font-size:21px;font-weight:800;color:var(--blue)}
+/* mock browser */
+.mock{max-width:660px;background:#fff;border-radius:11px;overflow:hidden;box-shadow:0 18px 48px rgba(0,0,0,.35)}
+.mock .bar{background:#e9eef3;padding:11px 14px;display:flex;gap:7px;align-items:center}
+.mock .bar i{width:11px;height:11px;border-radius:50%;background:#c6d0da;display:block}
+.mock .bar .url{margin-left:12px;background:#fff;border-radius:20px;padding:5px 15px;font-size:13px;color:#6b7c8c;font-family:Arial,sans-serif}
+.mock .body{padding:24px 28px 26px}
+.mock h3{font-size:22px;color:var(--navy);margin-bottom:14px}
+.mock p{font-size:17px;line-height:1.6;color:#333}
+.mock b{color:var(--navy)}
+/* due cifre giganti */
+.duo{display:flex;gap:22px;max-width:680px}
+.duo>div{flex:1;background:rgba(16,47,79,.86);border:1px solid rgba(79,168,232,.3);border-radius:12px;padding:26px 22px;text-align:center}
+.duo .v{font-size:58px;font-weight:800;line-height:1;color:#fff}
+.duo>div:last-child .v{color:var(--blue)}
+.duo .c{margin-top:12px;font-size:14px;letter-spacing:1.3px;text-transform:uppercase;color:var(--ink);line-height:1.4}
+/* scheda singola */
+.note{max-width:620px;background:rgba(16,47,79,.86);border-left:4px solid var(--blue);border-radius:10px;padding:20px 24px;font-size:20px;line-height:1.45;color:#fff;font-weight:600}
+.note b{color:var(--blue)}
+/* elenco negativo */
+.nos{list-style:none;max-width:620px}
+.nos li{display:flex;align-items:center;gap:15px;margin-bottom:15px;font-size:21px;color:#fff;font-weight:600}
+.nos .x{flex:0 0 auto;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--blue);background:rgba(79,168,232,.16);display:flex;align-items:center;justify-content:center}
+.nos .x svg{width:14px;height:14px}
+/* due elementi etichettati */
+.pairs{display:flex;gap:18px;max-width:680px}
+.pairs>div{flex:1;background:rgba(16,47,79,.86);border:1px solid rgba(79,168,232,.3);border-radius:11px;padding:22px}
+.pairs .t{font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.pairs .b{font-size:18px;line-height:1.45;color:#fff;font-weight:500}
+/* telefono grande */
+.tel{font-size:50px;font-weight:800;color:#fff;letter-spacing:-1px}
+.tel span{display:block;font-size:14px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--blue);margin-bottom:9px}
+/* passi */
+.steps{list-style:none}
+.steps li{display:flex;align-items:flex-start;gap:16px;margin-bottom:14px;max-width:620px}
+.num{flex:0 0 auto;width:32px;height:32px;border-radius:50%;background:var(--blue);color:var(--navy);font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.steps .txt{font-size:18px;line-height:1.38;color:#fff;font-weight:600;padding-top:3px}
+.doc{display:flex;align-items:center;gap:17px;margin-top:22px;max-width:620px}
+.doc img{width:84px;height:84px;border-radius:12px;object-fit:cover;object-position:50% 18%;border:2px solid rgba(79,168,232,.45)}
+.doc .d1{font-size:18px;font-weight:700;color:#fff}
+.doc .d2{font-size:15px;color:var(--ink);line-height:1.4;margin-top:3px}
+/* pannello foto reale a destra */
+.sphoto{position:absolute;right:0;top:0;width:704px;height:1024px;object-fit:cover;object-position:50% 40%}
+.sscrim{position:absolute;inset:0;background:linear-gradient(97deg,var(--navy) 0%,var(--navy) 51%,rgba(10,42,74,.94) 56%,rgba(10,42,74,.52) 63%,rgba(10,42,74,.14) 71%,rgba(10,42,74,0) 79%)}
+h1{font-size:56px}</style></head>
+<body>
+
+  <img class="photo" src="creative-src/01-bg.png" style="object-position:80% 50%">
+  <div class="scrim"></div>
+  <div class="content">
+    <img class="logo" src="logo.svg"><h1>$6,000 once.<span class="accent">$2,200 every time after.</span></h1>
+    <p class="sub">The whole price list, in two numbers.</p>
+    <div class="rule"></div>
+    <div class="figs">
+      <div class="fig"><span class="l">First treatment</span><span class="v">$6,000</span></div>
+      <div class="fig alt"><span class="l">Every treatment after</span><span class="v">$2,200</span></div>
+    </div>
+    <a class="cta" href="#">See the full pricing</a>
+  </div>
+<div class="isi">Stem cell therapy is not an FDA-approved treatment for any specific disease, and individual results vary. The cells used are from ethically donated umbilical cord and amniotic tissue, combined with PRP from your own blood &mdash; they are not harvested from your body. Whether treatment is appropriate for you is decided by the physician after an individual evaluation.</div>
+</body></html>
