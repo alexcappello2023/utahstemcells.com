@@ -2,6 +2,7 @@
 title: "Understanding Prolotherapy And How It Works"
 description: "Prolotherapy is a form of therapy that makes use of the body’s natural responses to injury to relieve pain and promote healing."
 pubDate: 2017-09-14
+updated: 2026-10-20
 author: "Dr. William Cimikoski"
 hero: "/blog-images/understanding-prolotherapy-and-how-it-works-hero.webp"
 relatedTreatments:
@@ -12,7 +13,7 @@ relatedConditions:
 
 **What Is Prolotherapy?**
 
-Prolotherapy is a form of therapy that makes use of the body’s natural responses to injury to relieve pain and promote healing. Also known as proliferative or regenerative therapy, it has proven to be very useful in treatment of stiff joints and muscle pains. The best part is that it is minimally invasive and eliminates the need to rely on painkillers.
+Prolotherapy is a form of therapy that makes use of the body’s natural responses to injury to relieve pain and promote healing.Also known as proliferative or regenerative therapy, it is used by some physicians for stiff joints and muscle pain.It is minimally invasive, and some patients find they rely less on painkillers.
 
 **The Procedure And How It Works**
 
@@ -22,7 +23,7 @@ With Prolotherapy, a special solution is injected into the joint space or injure
 
 Currently, Prolotherapy is indicated for muscle and joint injuries. It is particularly popular with sports injuries, such as ligament tears, muscle sprains, etc. The safe and quick mode of action is responsible for its widespread popularity and ensures that athletes are back on their feet in no time.
 
-Prolotherapy has also been proven to be very effective in the treatment of chronic lower [back pain](/back-pain/), tendonitis as well as arthritis.
+Prolotherapy is also used for chronic lower [back pain](/back-pain/), tendonitis and arthritis. Evidence for it is mixed, and results vary.
 
 There is currently research going on in its application in other conditions. And with the success rates seen with these current applications, there is no doubt that proliferation therapy is the future of regeneration medicine.
 

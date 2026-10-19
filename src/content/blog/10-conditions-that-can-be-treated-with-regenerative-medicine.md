@@ -2,6 +2,7 @@
 title: "10 Conditions That Can Be Treated with Regenerative Medicine"
 description: "Treat conditions such as ED, Osteoarthritis,Sports Injury, Spinal Cord Injury, Type 1 Diabetes & many more with Regenerative Medicine."
 pubDate: 2017-09-14
+updated: 2026-10-20
 author: "Dr. William Cimikoski"
 hero: "/blog-images/10-conditions-that-can-be-treated-with-regenerative-medicine-hero.webp"
 relatedTreatments:
@@ -10,7 +11,7 @@ relatedConditions:
   - osteoarthritis
 ---
 
-Regenerative medicine involves using your own body’s tissue to help heal disease and injury. Before we list some conditions that can be treated by regenerative medicine, it may be helpful to know a little bit more about each treatment we offer.
+Regenerative medicine uses biological materials, such as platelet-rich plasma (PRP) from your own blood and stem cells from donated birth tissue, to support the body's own repair processes. Before we list some conditions that regenerative medicine is used for, it may be helpful to know a little more about each treatment we offer.
 
 **What Is Platelet-Rich Plasma?**
 
@@ -18,7 +19,7 @@ Platelet-rich plasma (PRP), or platelet concentrates, have been studied extensiv
 
 **What Is Stem Cell Therapy?**
 
-[Stem cell therapy](/iv-stem-cell-therapy/) focuses on delivering stem cells to parts of the body that are in need. Stem cells can be harvested from a patient’s own body from Adipose (fat) tissue or bone marrow. The tissue is processed into a stem cell concentrate and injected at the focal point of treatment in the patient’s body. Once the stem cell concentrate has entered the treatment site, the regeneration process begins. Stem cell therapy is completely safe as we are using what your body naturally produces, concentrating the desired critical components and transplanting them into the affected area for effective tissue regeneration and healing. There is no risk of rejection and very minimal overall procedural risk.
+[Stem cell therapy](/iv-stem-cell-therapy/) focuses on delivering stem cells to parts of the body that need them. At Utah Stem Cells the stem cells come from ethically donated umbilical cord and amniotic tissue, prepared in a laboratory; they are not taken from your own body. They are delivered to the area being treated, where they are intended to support the body's natural repair. Like any medical procedure it carries risks, and suitability is decided by the physician after an individual evaluation. Stem cell therapies are not FDA-approved for these uses, and results vary.
 
 10 conditions that can be treated with regenerative medicine.
 

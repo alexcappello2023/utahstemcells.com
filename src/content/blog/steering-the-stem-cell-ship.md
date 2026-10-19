@@ -2,6 +2,7 @@
 title: "Steering the Stem Cell Ship"
 description: "Steering the Stem Cell Ship - Dr. Cimikoski says stem cell therapy procedures take about one hour to complete & patients can resume their normal lives quickly."
 pubDate: 2018-03-09
+updated: 2026-10-20
 author: "Dr. William Cimikoski"
 hero: "/blog-images/steering-the-stem-cell-ship-hero.webp"
 relatedTreatments:
@@ -15,13 +16,13 @@ relatedConditions:
 
 ### How we use stems cells to fix what ails and ages you.
 
-When you hear the words, “[stem cell therapy](https://sarahcimikoski.wpengine.com/services/stem-cell-joint-regeneration/)” often what comes to mind is a bone marrow transplant, cutting-edge science, or possibly even controversy. But at Utah Stem Cells, stem cell therapy is about one thing — enhancing your quality of life.
+When you hear the words, “[stem cell therapy](/stem-cell-joint-regeneration/)” often what comes to mind is a bone marrow transplant, cutting-edge science, or possibly even controversy. But at Utah Stem Cells, stem cell therapy is about one thing — enhancing your quality of life.
 
 “We use the latest advancements in stem cell technology and focus entirely on treatments to help our patients feel stronger, live happier and look better,” noted Dr. William Cimikoski, founder of Utah Stem Cells. “Our therapies can help alleviate joint pain, intimate impediments and even enhance appearance.”
 
 A medical toxicologist, Dr. Cimikoski specializes in using stem cell therapies for joint regeneration, bio-identical hormone replacement therapy, medical aesthetics, and [medical weight loss](/medical-weight-loss/).
 
-“At Utah Stem Cells, we use stem cell therapeutics to help promote complete and permanent regeneration of damaged, aged, or unhealthy tissue throughout the body,” he said.
+The aim, as Dr. Cimikoski describes it, is to support the regeneration of damaged, aged or unhealthy tissue. Results vary from person to person and are not guaranteed.
 
 Who can benefit from stem cell therapy? Nearly anyone Dr. Cimikoski says, especially those with a few years of skiing under their knees. “Th ose with various forms of musculoskeletal disorders are prime candidates for these therapies,” he confirmed. “Conditions like arthritis, tendonitis, ligamentous instability, and bursitis, have all improved with stem cell therapies. Elite athletes like Payton Manning have used stem cell therapy and have been able to return to their sport faster, stronger, and healthier.”
 

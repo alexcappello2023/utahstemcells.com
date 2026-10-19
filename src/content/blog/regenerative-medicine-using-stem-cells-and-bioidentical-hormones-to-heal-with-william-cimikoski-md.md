@@ -2,6 +2,7 @@
 title: "Regenerative Medicine: Using Stem Cells and Bioidentical Hormones to Heal with William Cimikoski, MD"
 description: "Using Stem Cells And BH to Heal - Dr.Cimikoski started doing stem cell treatments with his patients some 10 years.Contact us for more information"
 pubDate: 2019-12-10
+updated: 2026-10-20
 author: "Dr. William Cimikoski"
 hero: "/blog-images/regenerative-medicine-using-stem-cells-and-bioidentical-hormones-to-heal-with-william-cimikoski-md-hero.webp"
 relatedTreatments:
@@ -26,9 +27,9 @@ Have you ever wondered why younger people heal quicker than older people? It’s
 
 ### Which Stem Cells Are Ideal?
 
-Placental and Umbilical cord stem cells are ideal to be used for treatment procedures. Stem cells originating from these two delicate areas have healing and growth factors that aren’t found in other stem cells, so the results are optimal for the patients who receive them. A drawback with placental stem cells is that the quantity of them is low – so they are more about quality than anything else. Overall, umbilical core stem cells are the most coveted of any stem cells and are often used together with placental stem cells to take advantage of each of their native qualities to deliver the best of both worlds.
+Placental and Umbilical cord stem cells are ideal to be used for treatment procedures.Stem cells originating from these two sources have healing and growth factors that are not found in other stem cells, which is one reason many practitioners prefer them. A drawback with placental stem cells is that the quantity of them is low – so they are more about quality than anything else. Overall, umbilical core stem cells are the most coveted of any stem cells and are often used together with placental stem cells to take advantage of each of their native qualities to deliver the best of both worlds.
 
-Fatty tissue and bone marrow stem cells used to be the most popular stem cells used in treatments, but after further research proved that placental and umbilical cord stem cells were superior to them, these are now the most derived and used when available. One’s own body produces the best stem cells for him or her because when stem cells are brought in from another body they can be rejected for several reasons and fail to register effective healing results.
+Stem cells from fat tissue and bone marrow were once the most commonly used in treatments, while umbilical cord and amniotic stem cells are now widely used because they can be collected without any procedure on the patient. Utah Stem Cells uses stem cells from ethically donated birth tissue, not cells taken from the patient's own body.Scientific understanding in this field is still developing, and results vary from person to person.
 
 ### Ethical Concerns About Stem Cells
 

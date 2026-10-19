@@ -1,7 +1,8 @@
 ---
 title: "5 Benefits of Stem Cell Therapy"
-description: "Benefits Of Stem Cell Therapy - Utilizes biologic material harvested directly from patients body,minimal recovery time & minimal worry."
+description: "Five benefits patients ask about when considering stem cell therapy, what the treatment involves and where the cells come from, with honest limits on what it can promise."
 pubDate: 2017-09-14
+updated: 2026-10-20
 author: "Dr. William Cimikoski"
 hero: "/blog-images/5-benefits-of-stem-cell-therapy-hero.webp"
 relatedTreatments:
@@ -10,40 +11,54 @@ relatedConditions:
   - joint-pain
 ---
 
-Stem cell therapy uses a patient’s own stem cells to help repair damaged tissues and repair injuries. This therapy is a part of the regenerative medicine field that is rapidly growing. A Benefits Of [Stem Cell Therapy](/stem-cell-joint-regeneration/) is used for include reducing joint pain, increasing motion and flexibility, and treating tendon and ligament tears.
+Stem cell therapy is part of the fast-growing field of regenerative medicine. At Utah Stem Cells it combines two things: platelet-rich plasma (PRP) prepared from a small sample of your own blood, and stem cells from ethically donated umbilical cord and amniotic tissue, prepared in a laboratory. The stem cells are **not** taken from your own body.
 
-**What is a stem cell?**
+Here are the main reasons patients ask about it. Stem cell therapies are not FDA-approved for these uses, results vary from person to person, and whether a treatment is appropriate for you is decided by the physician after an individual evaluation. To explore it for a joint, see our page on [stem cell joint regeneration](/stem-cell-joint-regeneration/).
 
-Before we explain some of the Benefits Of Stem Cell Therapy, it may be helpful to know a little bit more about stem cells in general.
+## What is a stem cell?
 
-According to the National Institute of Health,
+According to the National Institutes of Health:
 
 “Stem cells are important for living organisms for many reasons. In the 3- to 5-day-old embryo, called a blastocyst, the inner cells give rise to the entire body of the organism, including all of the many specialized cell types and organs such as the heart, lungs, skin, sperm, eggs and other tissues. In some adult tissues, such as bone marrow, muscle, and brain, discrete populations of adult stem cells generate replacements for other cells that are lost through normal wear and tear, injury, or disease.”
 
-**Benefits**
+## Five benefits patients ask about
 
-With so many options out there, you may be wondering what benefits choosing stem cell therapy provides. Overall, because stem cell therapy utilizes biologic material harvested directly from the patient’s body, the general benefits include minimal risk, minimal recovery time, and minimal worry.
+### 1. A non-surgical option
 
-Here are 5 more specific benefits to be aware of:
+Stem cell therapy is a minimally invasive, in-office procedure rather than an operation. For some patients it may be an alternative to surgery, or a way to put surgery off, though that can never be guaranteed.
 
-**Avoid surgery and its many complications and risks**
+### 2. Minimal recovery time
 
-Stem cell therapy is a minimally invasive, non-surgical procedure. The stem cells are harvested from the patient’s bone marrow from the iliac crest (pelvis).
+Most patients go home the same day and return to normal activities quickly. Your provider explains what to expect for your treatment area.
 
-**Minimal post-procedural recovery time**
+### 3. No general anesthesia
 
-One of the most time-consuming factors of any injury is not always the treatment itself, but actually the recovery time. With stem cell therapy, recovery time is minimal.
+The procedure does not require general anesthesia, which matters to patients who dislike how it feels or who carry higher anesthetic risk.
 
-**No use of general anesthesia**
+### 4. No stem cells taken from your own body
 
-Do you not like the way general anesthesia makes you feel? Or do you simply get anxious at the thought of being put under? Stem cell therapy may be just what you need as it does not require the use of general anesthesia.
+Because the stem cells come from donated tissue, there is no bone marrow or fat harvest for you to go through. The PRP, by contrast, is drawn from your own blood.
 
-**No risk of rejection**
+### 5. Care led by a physician
 
-Due to using biologics extracted from the patient, there is no risk of rejection.
+Every plan begins with an evaluation by a physician, [Dr. William Cimikoski](/about/), who will tell you honestly whether you are a good candidate, and when you are not.
 
-**No communicable disease transmission**
+## Frequently asked questions
 
-As the cells originate within your own body, there is no risk of spreading disease from or to another person.
+### Are the stem cells taken from my own body?
 
-If you feel you could benefit from stem cell therapy, [contact us](/contact/) and we would love to provide you with more information.
+No. The stem cells used at Utah Stem Cells come from ethically donated umbilical cord and amniotic tissue and are prepared in a laboratory. Only the PRP comes from your own blood.
+
+### Is stem cell therapy FDA-approved?
+
+No. Stem cell therapies like these are not FDA-approved for treating specific conditions, and individual results vary. That is why an honest evaluation of your own situation matters more than any general claim.
+
+### Does it carry risks?
+
+Yes. Like any medical procedure it has risks, and some temporary soreness or swelling at the injection site is possible. The physician reviews the risks with you before any decision to treat.
+
+### How do I know whether it is right for me?
+
+[Book a consultation](/contact/). The physician will review your history and goals and tell you whether it is an appropriate option.
+
+> This article is for general education. It is not medical advice or a promise of any particular result. Stem cell therapies are not FDA-approved for these uses. Treatment suitability is determined by the physician based on individual evaluation.

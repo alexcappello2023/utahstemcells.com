@@ -2,6 +2,7 @@
 title: "IV Ketamine for Chronic Pain: How This Treatment Can Help Manage Pain and Improve Quality of Life"
 description: "IV Ketamine is often used to treat patients with chronic pain. Still, no studies have determined the long-term impact of ketamine infusions. However, the therapy is a new approach"
 pubDate: 2023-04-21
+updated: 2026-10-20
 author: "Dr. William Cimikoski"
 hero: "/blog-images/iv-ketamine-for-chronic-pain-how-this-treatment-can-help-hero.webp"
 relatedTreatments:
@@ -16,7 +17,7 @@ If you have pain that lasts longer than three months, [ketamine therapy](/ketami
 
 **What is Ketamine?**
 
-Ketamine has been used for decades, and the FDA approved it for medical use in 1970. Ketamine acts on N-methyl-D aspartate (NMDA receptors) in our brains. These receptors operate in areas that act like switches. A neurotransmitter called glutamate switches the NMDA receptor to the on position, and glutamate helps you feel more alert and awake. However, Ketamine is an antagonist of the NMDA receptor. It keeps things like glutamate from activating the NMDA receptor. When Ketamine touches the receptor, you feel sleepy. This interaction with glutamate makes Ketamine a good option as an anesthetic.
+Ketamine has been used for decades, and the FDA approved it for medical use in 1970 as an anesthetic. Its use for chronic pain is off-label, which means the FDA has not approved it for that purpose. Ketamine acts on N-methyl-D aspartate (NMDA receptors) in our brains. These receptors operate in areas that act like switches. A neurotransmitter called glutamate switches the NMDA receptor to the on position, and glutamate helps you feel more alert and awake. However, Ketamine is an antagonist of the NMDA receptor. It keeps things like glutamate from activating the NMDA receptor. When Ketamine touches the receptor, you feel sleepy. This interaction with glutamate makes Ketamine a good option as an anesthetic.
 
 **How Can Ketamine Therapy Help with Pain?**
 
