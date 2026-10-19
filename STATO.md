@@ -6,7 +6,13 @@
 > Working dir: `/Users/alex/Desktop/Claude/utahstemcells`. Ultimo aggiornamento: 2026-09-04.
 
 ## ⚠️ REGOLE ASSOLUTE DI CONTENUTO (non violare mai)
-1. **MAI parlare di COSTI/PREZZI**: niente cifre, valuta, "how much", fasce, confronti economici/assicurativi.
+1. **PREZZI: vietati ovunque TRANNE dove autorizzato** (decisione di Alex con il via libera del cliente, 19 ottobre 2026).
+   - **Ammessi solo per le staminali**, e solo queste cifre: **6.000 USD il primo trattamento, 2.200 USD ogni trattamento successivo** (stessa zona o zona diversa; sull'IV senza il "per zona", perche e sistemica).
+   - **Dove**: pagine `stem-cell-joint-regeneration` e `iv-stem-cell-therapy` (sezione "Straightforward pricing" + FAQ), **blog automatico** (solo staminali) e `/progress/` (protetta da password).
+   - **Per ogni altro trattamento resta vietato**: niente cifre, valuta, "how much", fasce. Non inventare mai altre cifre.
+   - **Mai** confronti con i concorrenti o con la chirurgia (dichiarazione comparativa non documentata su un sito medico), assicurazioni in chiave di prezzo, o parole come cheap/affordable/discount.
+   - La landing `utahmedicalaesthetics.com` e un progetto separato e **non ha prezzi**.
+   - Il 10% sulla seconda zona della newsletter di settembre era un'offerta promozionale, non un prezzo di listino: non e sulle pagine.
 2. **Origine cellule staminali**: le staminali provengono da **cordone ombelicale + amniotico DONATI** (allogeniche, di laboratorio), **NON prelevate dal paziente**. Il **PRP è autologo** (sangue del paziente) — ok dirlo. Il **fat transfer** usa grasso autologo — ok. **MAI dire che la clinica usa staminali autologhe** (adipose/midollo).
 3. **MAI scrivere "free consultation"** (la consulenza non è gratuita). Usare "Book a consultation".
 4. Toni YMYL prudenti: niente promesse di guarigione, non FDA-approved dove pertinente, idoneità decisa dal medico.
@@ -34,7 +40,7 @@
 
 ## Automazione blog (FATTO — attiva)
 - Workflow `.github/workflows/genera-articolo.yml`: **4 articoli/mese**, cron `37 6 1,8,15,22 * *` (giorni **1, 8, 15, 22** ore 06:37 UTC = notte in Utah) + `workflow_dispatch`.
-- Pipeline: conta topic → rifornisci se <6 → genera (Claude Code CLI `--model claude-sonnet-5`) → `prepare-article` (hero Pexels + frontmatter atomico) → update-plan → build → commit → **FTP deploy** (SamKirkland action). Regole no-costi/sourcing/doppi apici nei prompt.
+- Pipeline: conta topic → rifornisci se <6 → genera (Claude Code CLI `--model claude-sonnet-5`) → `prepare-article` (hero Pexels + frontmatter atomico) → update-plan → build → commit → **FTP deploy** (SamKirkland action). Regole prezzi (solo staminali, solo 6.000/2.200)/sourcing/doppi apici nei prompt.
 - Deploy manuale: workflow **"Deploy sito (FTP)"** (`workflow_dispatch`). Lanciabile via `gh workflow run "Deploy sito (FTP)" --ref main` (gh già autenticato come `alexcappello2023`).
 - Script chiave in `scripts/`: `prepare-article.mjs`, `update-plan.mjs`, `remaining-topics.mjs`, `next-keyword.mjs`. Topic in `keywords/keyword-utahstemcells.csv`. Piano in `PIANO-EDITORIALE.md`. Istruzioni in `routine/genera-articolo.md`.
 - **Serve credito Anthropic** attivo (già esaurito 2 volte): tenere **Auto-reload** su console.anthropic.com → Billing.
@@ -55,3 +61,6 @@
 - `230d18a` Book a consultation → scroll al primo form
 - `bd4d911` Form lead (3 per pagina trattamento) con campi trattamento e problema
 - `fef8003` Articolo automatico del 2026-09-01
+
+## Landing Morpheus8 (progetto separato)
+- Handoff dedicato: `medspa-landing/STATO.md` — dominio **utahmedicalaesthetics.com**, campagna Google Ads, regole di compliance.

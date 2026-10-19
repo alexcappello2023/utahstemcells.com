@@ -17,6 +17,8 @@ faqs:
     a: "It is a regenerative infusion delivered intravenously, so regenerative components travel through your bloodstream rather than being placed at a single site. Because it circulates throughout the body, patients often explore it as part of a broader, whole-body wellness and recovery plan. It is administered in-office under physician supervision."
   - q: "How is IV stem cell therapy different from a joint injection?"
     a: "A joint injection targets one specific area, such as a knee or shoulder. IV therapy takes a systemic route: it is delivered through the bloodstream to support a whole-body approach. Whether the intravenous route or a localized injection is more appropriate for you is something the physician determines during your evaluation."
+  - q: "How much does IV stem cell therapy cost?"
+    a: "Your first treatment is $6,000. Every treatment after that is $2,200. Whether IV stem cell therapy is appropriate for you is decided by the physician at your consultation, so that is the first step before anything else."
   - q: "Is IV stem cell therapy FDA-approved?"
     a: "IV stem cell therapy is not an FDA-approved treatment for any specific disease. The information on this page is for general education and is not a promise of any particular outcome. Any decision to pursue treatment is made together with the physician after an individual evaluation."
   - q: "What can I realistically expect from the infusion?"
@@ -47,6 +49,12 @@ Localized injections are typically used for [joint and orthopedic concerns](/con
 - **Honest guidance.** We are evidence-informed and straight with you about what a systemic approach can and cannot offer.
 - **A real evaluation first.** Your goals and health history are reviewed before any decision to treat.
 - **One roof in Sandy.** Consultation, treatment and follow-up in a single, physician-owned clinic in the Salt Lake Valley.
+
+## Straightforward pricing
+
+Your first treatment is **$6,000**. Every treatment after that is **$2,200**.
+
+Whether IV stem cell therapy is right for you is decided by the physician after an evaluation, not by the price list. [Book a consultation](/contact/) and Dr. Cimikoski will tell you honestly whether it is appropriate for you.
 
 ## Who it's for and what to expect
 
