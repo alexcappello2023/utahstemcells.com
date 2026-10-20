@@ -577,7 +577,7 @@ resta senza prezzi finché Alex non decide diversamente.
 |---:|---:|---|---|
 | 03 | 19 | lun 26 ott | bozza riutilizzata |
 | 04 | 20 | lun 9 nov | bozza riutilizzata |
-| 05 | **40** | lun 23 nov | **ricreata**: la 21 era `suspended` e non torna a `draft` |
+| 05 | **41** | lun 23 nov | ricreata: la 21 era `suspended` e non torna a `draft`. La 40, creata per errore da una seconda esecuzione dello script, è stata sospesa |
 | 06 | 22 | lun 7 dic | bozza riutilizzata |
 
 Destinatari: Women+Men con **esclusione delle liste calde** (13, 12, 6, 7, 11), che ricevono già
@@ -598,3 +598,21 @@ click con 25 disiscrizioni e 5 segnalazioni spam, contro 0,50% e 8 disiscrizioni
 | 04/12 → 04/01 | 20.000 | 6.890 | 13.110 |
 
 19 campagne in coda in totale.
+
+
+## Scadenza offerta: 31 ottobre (comunicata il 20/10)
+
+Solo la **DEM 03 (26 ottobre)** parte prima della scadenza. Le altre tre — 9/11, 23/11, 7/12 —
+sarebbero uscite con un prezzo non più valido: **prezzi rimossi da testi e creatività**.
+La 03 riporta la scadenza sia nel riquadro email ("Through 31 October", "Offer ends 31 October")
+sia nella striscia della creatività ("Normally $1,400 · through 31 October").
+
+**Non è possibile aggiungere un secondo invio con l'offerta alle liste grandi**: nel ciclo che
+chiude il 4/11 restano 2.062 crediti e un invio a Women+Men ne costa 3.445. Stanno invece
+**17 invii alle liste calde** (120 ciascuno).
+
+### Trappola: `reprise-galleri.mjs` con `id: null` crea un duplicato a ogni esecuzione
+
+Eseguito due volte, ha generato le campagne 40 e 41, identiche e programmate per lo stesso giorno:
+due invii allo stesso pubblico. La 40 è stata sospesa e l'id 41 è ora fisso nello script.
+**Regola**: qualunque script che crea campagne deve registrare l'id, mai lasciarlo nullo.

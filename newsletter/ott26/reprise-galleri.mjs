@@ -1,6 +1,7 @@
 // Riprende la sequenza Galleri con l'offerta promozionale.
-// 19, 20, 22 sono bozze riutilizzabili; la 21 e' sospesa e Brevo non la riporta a draft:
-// va ricreata da zero.
+// 19, 20, 22 sono bozze riutilizzabili. La 21 era sospesa e Brevo non la riporta a draft:
+// e' stata ricreata come 41. ATTENZIONE: con id:null ogni esecuzione ne crea una nuova,
+// e due campagne identiche sulla stessa data significano doppio invio. Tenere l'id qui.
 import { readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -20,7 +21,7 @@ const at = (d) => `${d}T${new Date(`${d}T00:00:00Z`) < new Date('2026-11-01T00:0
 const PLAN = [
   { n: 3, id: 19, slug: '03-cancers-nobody-screens-for', subject: 'THE CANCERS NOBODY SCREENS FOR', cta: 'See what Galleri looks for', d: '2026-10-26' },
   { n: 4, id: 20, slug: '04-what-your-result-means', subject: 'WHAT YOUR RESULT ACTUALLY MEANS', cta: 'See what each result means', d: '2026-11-09' },
-  { n: 5, id: null, slug: '05-is-this-test-right-for-you', subject: 'IS THE GALLERI TEST RIGHT FOR YOU?', cta: 'See if it applies to you', d: '2026-11-23' },
+  { n: 5, id: 41, slug: '05-is-this-test-right-for-you', subject: 'IS THE GALLERI TEST RIGHT FOR YOU?', cta: 'See if it applies to you', d: '2026-11-23' },
   { n: 6, id: 22, slug: '06-how-it-works-here', subject: 'HOW THE GALLERI TEST WORKS HERE', cta: 'See how the test works here', d: '2026-12-07' },
 ];
 
