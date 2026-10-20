@@ -552,3 +552,49 @@ Consumo per ciclo dopo il raddoppio: 04/10→04/11 **7.490** su 12.997 residui;
 
 Raddoppiare non costa un invio in più: le stesse 12 email arrivano alle stesse 120 persone,
 solo in sei settimane invece di tredici.
+
+---
+
+# Galleri ripreso con offerta promozionale (20 ottobre 2026)
+
+Decisione del cliente: riprendere la sequenza Galleri aggiungendo un'offerta.
+
+**Offerta**: il test costa normalmente **$1.400**; **$1.000** se fatto insieme alla IV stem cell
+therapy, **$1.200** da solo. In ogni testo è esplicitato che *il prezzo non incide sull'idoneità,
+decisa dal medico a una valutazione*.
+
+> ⚠️ **Segnalato ad Alex il 20/10**: legare lo sconto su uno screening oncologico all'acquisto di un
+> altro trattamento crea un incentivo economico a sottoporsi alla terapia IV. In ambito sanitario
+> USA è una costruzione su cui serve un parere legale (inducement). Decisione del cliente, eseguita.
+
+**Nuova eccezione prezzi**: finora la regola 1 di `STATO.md` ammetteva cifre solo per le staminali.
+Queste tre cifre valgono **solo nelle email Galleri**, non sul sito: la pagina `/galleri-test/`
+resta senza prezzi finché Alex non decide diversamente.
+
+## Campagne
+
+| DEM | ID | Invio | Note |
+|---:|---:|---|---|
+| 03 | 19 | lun 26 ott | bozza riutilizzata |
+| 04 | 20 | lun 9 nov | bozza riutilizzata |
+| 05 | **40** | lun 23 nov | **ricreata**: la 21 era `suspended` e non torna a `draft` |
+| 06 | 22 | lun 7 dic | bozza riutilizzata |
+
+Destinatari: Women+Men con **esclusione delle liste calde** (13, 12, 6, 7, 11), che ricevono già
+due staminali a settimana. 3.445 per invio.
+
+## Alternanza, non parallelo
+
+Le Galleri occupano i lunedì liberi del flusso grande: il pubblico freddo riceve **una email a
+settimana** alternando i due temi, non due. Motivo: Galleri sul pubblico freddo ha reso 0,17% di
+click con 25 disiscrizioni e 5 segnalazioni spam, contro 0,50% e 8 disiscrizioni delle staminali.
+
+## Capacità dopo l'inserimento
+
+| Ciclo | Budget | Impegnato | Margine |
+|---|---:|---:|---:|
+| 04/10 → 04/11 | 9.432 residui | 7.370 | 2.062 |
+| 04/11 → 04/12 | 20.000 | 14.620 | 5.380 |
+| 04/12 → 04/01 | 20.000 | 6.890 | 13.110 |
+
+19 campagne in coda in totale.
