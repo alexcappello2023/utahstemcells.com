@@ -15,7 +15,7 @@ export const ISI = [
 
 export const OFFER = `What it costs
 
-The Galleri test is normally $1,400. Through 31 October it is $1,000 when you have it alongside IV stem cell therapy, or $1,200 on its own.
+The Galleri test is normally $1,400. It is $1,000 when you have it alongside IV stem cell therapy, or $1,200 on its own.
 
 The price has no bearing on whether the test is appropriate for you. That is decided by the physician at an evaluation, and it is decided the same way whichever option you choose.`;
 
@@ -90,6 +90,8 @@ Cancer Signal Detected is not a diagnosis. It calls for confirmatory evaluation 
 
 We would rather you knew all of this before the blood draw than after it.
 
+${OFFER}
+
 ${CTA('Book a consultation and the physician will walk you through both outcomes.')}`,
     creative: `Landscape 3:2. Muted photographic background: physician and patient seated in conversation, mid-shot, no equipment or instruments visible.
 Two cards over the image:
@@ -109,6 +111,8 @@ Galleri is recommended for adults at elevated risk of cancer, such as those age 
 Beyond age, the question is a clinical one: your personal and family history, your other risk factors, and one worth sitting with — what would you actually do with each possible result?
 
 Some people find the information valuable. Others find the uncertainty of a false positive, or the false reassurance of a negative, harder to live with than not knowing. Both responses are legitimate.
+
+${OFFER}
 
 ${CTA('Book a consultation. The physician will help you decide — including advising against the test if that is the honest answer.')}`,
     creative: `Landscape 3:2. Man and woman 55-65 outdoors in Utah autumn light, walking and talking, unhurried.
@@ -130,6 +134,8 @@ Avoid: anyone looking unwell, frail or frightened; clinical environments.`,
 4. The result returns to the ordering physician, who reviews it with you, explains what it means in your situation, and arranges appropriate follow-up if a signal is found.
 
 Our Medical Director, Dr. William Cimikoski, oversees this process personally. You will not be left with a result and no one to explain it.
+
+${OFFER}
 
 ${CTA('Book a consultation to get started.')}`,
     creative: `Landscape 3:2. Horizontal four-step strip over a warm, well-lit clinic interior (reception or consultation room, not a treatment bay).

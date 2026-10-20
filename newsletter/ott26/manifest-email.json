@@ -21,7 +21,7 @@
     "subject": "THE CANCERS NOBODY SCREENS FOR",
     "image": "03-cancers-nobody-screens-for.jpg",
     "cta": "See what Galleri looks for",
-    "bytes": 9059
+    "bytes": 8922
   },
   {
     "n": 4,
@@ -29,7 +29,7 @@
     "subject": "WHAT YOUR RESULT ACTUALLY MEANS",
     "image": "04-what-your-result-means.jpg",
     "cta": "See what each result means",
-    "bytes": 7824
+    "bytes": 8971
   },
   {
     "n": 5,
@@ -37,7 +37,7 @@
     "subject": "IS THE GALLERI TEST RIGHT FOR YOU?",
     "image": "05-is-this-test-right-for-you.jpg",
     "cta": "See if it applies to you",
-    "bytes": 7712
+    "bytes": 8859
   },
   {
     "n": 6,
@@ -45,6 +45,6 @@
     "subject": "HOW THE GALLERI TEST WORKS HERE",
     "image": "06-how-it-works-here.jpg",
     "cta": "See how the test works here",
-    "bytes": 7861
+    "bytes": 9008
   }
 ]
