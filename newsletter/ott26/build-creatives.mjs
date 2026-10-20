@@ -93,7 +93,7 @@ const logo = `<img class="logo" src="logo.svg">`;
 const prices = `<div class="prices">
       <div class="chip"><div class="v">$1,000</div><div class="c">With IV stem cell therapy</div></div>
       <div class="chip alt"><div class="v">$1,200</div><div class="c">On its own</div></div>
-      <div class="was">Normally $1,400</div>
+      <div class="was">Normally $1,400 &middot; through 31 October</div>
     </div>`;
 const ctaFor = (n) => `<a class="cta" href="#">${CTAS[n] || CTA}</a>`;
 const h1 = (a, b) => `<h1>${a}<span class="accent">${b}</span></h1>`;
@@ -142,7 +142,6 @@ const creatives = {
   }),
 
   '04': photoLayout({
-    withPrices: true,
     n: '04',
     bg: '04-bg.png', pos: '76% 45%',
     head: 'What your result', accent: 'actually means.',
@@ -160,7 +159,6 @@ const creatives = {
   }),
 
   '05': photoLayout({
-    withPrices: true,
     n: '05',
     bg: '05-bg.png', pos: '74% 50%',
     head: 'Is this test', accent: 'right for you?',
@@ -214,7 +212,6 @@ const creatives = {
       <div><div class="d1">Dr. William Cimikoski</div>
       <div class="d2">Medical Director. Oversees this process personally.</div></div>
     </div>
-    ${prices}
     ${ctaFor('06')}
   </div>`, `.logo{margin-bottom:26px}h1{font-size:54px}.steps li{margin-bottom:10px}
      .steps .txt{font-size:17px}.num{width:30px;height:30px;font-size:15px}

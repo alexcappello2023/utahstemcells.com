@@ -64,12 +64,13 @@ const keyPoints = () => `
 const offerBox = () => `
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:${C.boxBg};border:1px solid ${C.border};border-radius:8px;margin-top:14px;">
                 <tr><td style="padding:20px 24px;font-family:Arial,Helvetica,sans-serif;">
-                  <p style="margin:0 0 12px;font-size:13px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;color:${C.navy};">What it costs</p>
+                  <p style="margin:0 0 3px;font-size:13px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;color:${C.navy};">What it costs</p>
+                  <p style="margin:0 0 14px;font-size:14px;font-weight:bold;color:${C.blue};">Through 31 October</p>
                   <p style="margin:0 0 3px;font-size:14px;color:${C.text};">With IV stem cell therapy</p>
                   <p style="margin:0 0 12px;font-size:28px;font-weight:bold;line-height:1;color:${C.navy};">$1,000</p>
                   <p style="margin:0 0 3px;font-size:14px;color:${C.text};">On its own</p>
                   <p style="margin:0 0 12px;font-size:28px;font-weight:bold;line-height:1;color:${C.blue};">$1,200</p>
-                  <p style="margin:0;font-size:13px;line-height:1.5;color:${C.muted};">Normally $1,400. The price has no bearing on whether the test is appropriate for you &mdash; that is decided by the physician at an evaluation.</p>
+                  <p style="margin:0;font-size:13px;line-height:1.5;color:${C.muted};">Normally $1,400. Offer ends 31 October. The price has no bearing on whether the test is appropriate for you &mdash; that is decided by the physician at an evaluation.</p>
                 </td></tr>
               </table>`;
 
