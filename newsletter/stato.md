@@ -639,3 +639,22 @@ Staminali: flusso W due volte a settimana fino al 30/11, flusso B il 2/11, 16/11
 | 04/10 → 04/11 | 7.370 | 9.432 | 2.062 |
 | 04/11 → 04/12 | 14.620 | 20.000 | 5.380 |
 | 04/12 → 04/01 | 6.890 | 20.000 | 13.110 |
+
+
+## Allineamento del Google Sheet (20 ottobre 2026)
+
+Il tab **Oct26** aveva ancora i testi senza offerta: la colonna B è stata riallineata a
+`ott26/content.mjs` incollando solo B2:B12, per non toccare le formule `=IMAGE()` della colonna C.
+Verificato dopo l'operazione: 4 DEM su 6 con l'offerta (03-06), **6 formule IMAGE intatte**.
+
+**Le creatività nel Sheet non vanno ricaricate quando cambiano**: le formule puntano a URL fissi
+su `/dem-ott26/` e `/dem-nov26/`, quindi basta ripubblicare il file sul sito. Vanno invece
+ricaricati i testi, che nel Sheet sono una copia statica.
+
+Stato dei tre tab:
+
+| Tab | Copy | Creatività |
+|---|---|---|
+| Sep26 | allineato | **rotte**: formule `=IMAGE()` con URL OpenAI scaduti, mai sostituite |
+| Oct26 | allineato (con offerta) | 6 formule su `/dem-ott26/`, aggiornate |
+| Nov26 | allineato | 12 formule su `/dem-nov26/` |
