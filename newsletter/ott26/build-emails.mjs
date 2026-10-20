@@ -61,7 +61,19 @@ const keyPoints = () => `
                 </td></tr>
               </table>`;
 
-function render({ subject, paragraphs, image, isi, cta }) {
+const offerBox = () => `
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:${C.boxBg};border:1px solid ${C.border};border-radius:8px;margin-top:14px;">
+                <tr><td style="padding:20px 24px;font-family:Arial,Helvetica,sans-serif;">
+                  <p style="margin:0 0 12px;font-size:13px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;color:${C.navy};">What it costs</p>
+                  <p style="margin:0 0 3px;font-size:14px;color:${C.text};">With IV stem cell therapy</p>
+                  <p style="margin:0 0 12px;font-size:28px;font-weight:bold;line-height:1;color:${C.navy};">$1,000</p>
+                  <p style="margin:0 0 3px;font-size:14px;color:${C.text};">On its own</p>
+                  <p style="margin:0 0 12px;font-size:28px;font-weight:bold;line-height:1;color:${C.blue};">$1,200</p>
+                  <p style="margin:0;font-size:13px;line-height:1.5;color:${C.muted};">Normally $1,400. The price has no bearing on whether the test is appropriate for you &mdash; that is decided by the physician at an evaluation.</p>
+                </td></tr>
+              </table>`;
+
+function render({ subject, paragraphs, image, isi, cta, offer }) {
   const preheader = paragraphs[0].replace(/<[^>]+>/g, '').slice(0, 120);
   const body = paragraphs
     .map((p) => `<p style="margin:0 0 16px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;color:${C.text};">${p}</p>`)
@@ -103,6 +115,7 @@ function render({ subject, paragraphs, image, isi, cta }) {
       </td></tr>
       <tr><td class="px" style="padding:8px 40px 0;">
         ${keyPoints()}
+        ${offer ? offerBox() : ''}
       </td></tr>
       <tr><td class="px btn" align="center" style="padding:30px 40px 10px;">
         ${button(cta, LANDING)}
@@ -131,9 +144,11 @@ function render({ subject, paragraphs, image, isi, cta }) {
 const manifest = dems.map((d, i) => {
   // dal body: via le righe Phone/Web e la ISI, che hanno un posto dedicato nel template
   const lines = d.body.split('\n').map((l) => l.trim()).filter(Boolean)
-    .filter((l) => !/^(Phone|Web):/i.test(l) && !/^Important Safety Information:/i.test(l));
+    .filter((l) => !/^(Phone|Web):/i.test(l) && !/^Important Safety Information:/i.test(l))
+    .filter((l) => !/^What it costs$/.test(l) && !/^The Galleri test is normally \$1,400/.test(l)
+                && !/^The price has no bearing on whether/.test(l));
   const paragraphs = lines.map(hi);
-  const html = render({ subject: d.oggetto, paragraphs, image: `${slugs[i]}.jpg`, isi: ISI, cta: CTAS[i] });
+  const html = render({ subject: d.oggetto, paragraphs, image: `${slugs[i]}.jpg`, isi: ISI, cta: CTAS[i], offer: d.body.includes('$1,400') });
   writeFileSync(join(OUT, `${slugs[i]}.html`), html);
   return { n: i + 1, slug: slugs[i], subject: d.oggetto, image: `${slugs[i]}.jpg`, cta: CTAS[i], bytes: html.length };
 });

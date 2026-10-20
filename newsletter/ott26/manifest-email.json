@@ -5,9 +5,7 @@
     "subject": "ONE BLOOD DRAW. MORE THAN 50 CANCERS.",
     "image": "01-one-blood-draw.jpg",
     "cta": "Book a consultation",
-    "bytes": 7793,
-    "campaignId": 17,
-    "action": "saltata (già inviata)"
+    "bytes": 7802
   },
   {
     "n": 2,
@@ -15,9 +13,7 @@
     "subject": "IN ADDITION TO YOUR SCREENING. NEVER INSTEAD OF IT.",
     "image": "02-in-addition-never-instead.jpg",
     "cta": "See where each one fits",
-    "bytes": 7811,
-    "campaignId": 18,
-    "action": "aggiornata"
+    "bytes": 7820
   },
   {
     "n": 3,
@@ -25,9 +21,7 @@
     "subject": "THE CANCERS NOBODY SCREENS FOR",
     "image": "03-cancers-nobody-screens-for.jpg",
     "cta": "See what Galleri looks for",
-    "bytes": 7766,
-    "campaignId": 19,
-    "action": "aggiornata"
+    "bytes": 8922
   },
   {
     "n": 4,
@@ -35,9 +29,7 @@
     "subject": "WHAT YOUR RESULT ACTUALLY MEANS",
     "image": "04-what-your-result-means.jpg",
     "cta": "See what each result means",
-    "bytes": 7815,
-    "campaignId": 20,
-    "action": "aggiornata"
+    "bytes": 8971
   },
   {
     "n": 5,
@@ -45,9 +37,7 @@
     "subject": "IS THE GALLERI TEST RIGHT FOR YOU?",
     "image": "05-is-this-test-right-for-you.jpg",
     "cta": "See if it applies to you",
-    "bytes": 7703,
-    "campaignId": 21,
-    "action": "aggiornata"
+    "bytes": 8859
   },
   {
     "n": 6,
@@ -55,8 +45,6 @@
     "subject": "HOW THE GALLERI TEST WORKS HERE",
     "image": "06-how-it-works-here.jpg",
     "cta": "See how the test works here",
-    "bytes": 7852,
-    "campaignId": 22,
-    "action": "aggiornata"
+    "bytes": 9008
   }
 ]

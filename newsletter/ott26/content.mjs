@@ -12,6 +12,13 @@ export const ISI = [
   'The Galleri test was developed, and its performance characteristics determined, by GRAIL. It has not been cleared or approved by the Food and Drug Administration.',
 ].join(' ');
 
+
+export const OFFER = `What it costs
+
+The Galleri test is normally $1,400. Right now it is $1,000 when you have it alongside IV stem cell therapy, or $1,200 on its own.
+
+The price has no bearing on whether the test is appropriate for you. That is decided by the physician at an evaluation, and it is decided the same way whichever option you choose.`;
+
 const CTA = (line) => `${line}\n\nPhone: (801) 999-4860\n\nWeb: https://utahstemcells.com/galleri-test/\n\n${ISI}`;
 
 export const dems = [
@@ -62,6 +69,8 @@ The Galleri test looks for a signal shared by more than 50 types of cancer from 
 
 It does not detect all cancers, and it does not replace the screening you already do. But it looks where routine screening does not.
 
+${OFFER}
+
 ${CTA('Book a consultation to discuss whether it fits your situation.')}`,
     creative: `Landscape 3:2. Editorial data-visualisation style, no stock photography.
 Left: five solid teal dots labelled Breast, Colon, Cervical, Prostate, Lung.
@@ -80,6 +89,8 @@ No Cancer Signal Detected does not mean you are cancer-free. It means no recogni
 Cancer Signal Detected is not a diagnosis. It calls for confirmatory evaluation through established procedures such as imaging. GRAIL reports that around 62% of detected signals are confirmed as cancer — which also means a meaningful share are not, and that the wait for an answer can be an anxious one.
 
 We would rather you knew all of this before the blood draw than after it.
+
+${OFFER}
 
 ${CTA('Book a consultation and the physician will walk you through both outcomes.')}`,
     creative: `Landscape 3:2. Muted photographic background: physician and patient seated in conversation, mid-shot, no equipment or instruments visible.
@@ -101,6 +112,8 @@ Beyond age, the question is a clinical one: your personal and family history, yo
 
 Some people find the information valuable. Others find the uncertainty of a false positive, or the false reassurance of a negative, harder to live with than not knowing. Both responses are legitimate.
 
+${OFFER}
+
 ${CTA('Book a consultation. The physician will help you decide — including advising against the test if that is the honest answer.')}`,
     creative: `Landscape 3:2. Man and woman 55-65 outdoors in Utah autumn light, walking and talking, unhurried.
 Headline: IS THIS TEST RIGHT FOR YOU?
@@ -121,6 +134,8 @@ Avoid: anyone looking unwell, frail or frightened; clinical environments.`,
 4. The result returns to the ordering physician, who reviews it with you, explains what it means in your situation, and arranges appropriate follow-up if a signal is found.
 
 Our Medical Director, Dr. William Cimikoski, oversees this process personally. You will not be left with a result and no one to explain it.
+
+${OFFER}
 
 ${CTA('Book a consultation to get started.')}`,
     creative: `Landscape 3:2. Horizontal four-step strip over a warm, well-lit clinic interior (reception or consultation room, not a treatment bay).

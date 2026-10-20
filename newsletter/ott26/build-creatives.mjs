@@ -35,6 +35,12 @@ h1 .accent{color:var(--blue);display:block}
 .dot{flex:0 0 auto;width:28px;height:28px;border-radius:50%;background:rgba(79,168,232,.16);border:1.5px solid var(--blue);display:flex;align-items:center;justify-content:center;margin-top:1px}
 .dot svg{width:15px;height:15px}
 .cta{display:inline-block;margin-top:34px;background:var(--teal);color:#fff;font-size:22px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;padding:21px 46px;border-radius:7px;text-decoration:none}
+.prices{display:flex;align-items:center;gap:12px;margin-top:22px;max-width:650px;flex-wrap:wrap}
+.prices .chip{background:rgba(16,47,79,.9);border:1px solid rgba(79,168,232,.45);border-radius:9px;padding:11px 17px}
+.prices .chip .v{font-size:27px;font-weight:800;color:#fff;line-height:1}
+.prices .chip.alt .v{color:var(--blue)}
+.prices .chip .c{margin-top:5px;font-size:12px;letter-spacing:.9px;text-transform:uppercase;color:var(--ink)}
+.prices .was{font-size:13px;color:var(--dim);letter-spacing:.4px}
 .isi{position:absolute;left:0;right:0;bottom:0;padding:17px 84px;background:linear-gradient(to right,var(--navy-deep) 0%,var(--navy-deep) 62%,rgba(6,29,53,.88) 100%);font-size:14px;line-height:1.5;color:var(--dim);letter-spacing:.2px}
 /* coppia "in addition / never instead" */
 .pair{margin-top:6px}
@@ -84,11 +90,16 @@ ${body}
 
 const check = `<span class="dot"><svg viewBox="0 0 16 16" fill="none" stroke="#4fa8e8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>`;
 const logo = `<img class="logo" src="logo.svg">`;
+const prices = `<div class="prices">
+      <div class="chip"><div class="v">$1,000</div><div class="c">With IV stem cell therapy</div></div>
+      <div class="chip alt"><div class="v">$1,200</div><div class="c">On its own</div></div>
+      <div class="was">Normally $1,400</div>
+    </div>`;
 const ctaFor = (n) => `<a class="cta" href="#">${CTAS[n] || CTA}</a>`;
 const h1 = (a, b) => `<h1>${a}<span class="accent">${b}</span></h1>`;
 
 // ---- layout fotografico ----
-const photoLayout = ({ n, bg, pos, head, accent, sub, block, extra }) => page(head, `
+const photoLayout = ({ n, bg, pos, head, accent, sub, block, extra, withPrices }) => page(head, `
   <img class="photo" src="creative-src/${bg}" style="object-position:${pos}">
   <div class="scrim"></div>
   <div class="content">
@@ -97,6 +108,7 @@ const photoLayout = ({ n, bg, pos, head, accent, sub, block, extra }) => page(he
     <p class="sub">${sub}</p>
     <div class="rule"></div>
     ${block}
+    ${withPrices ? prices : ''}
     ${ctaFor(n)}
   </div>`, extra);
 
@@ -130,6 +142,7 @@ const creatives = {
   }),
 
   '04': photoLayout({
+    withPrices: true,
     n: '04',
     bg: '04-bg.png', pos: '76% 45%',
     head: 'What your result', accent: 'actually means.',
@@ -140,9 +153,14 @@ const creatives = {
       <div class="card"><div class="t">Cancer signal detected</div>
         <div class="b">Not a diagnosis. Requires confirmatory evaluation by established procedures, such as imaging.</div></div>
     </div>`,
+    extra: `.logo{margin-bottom:32px}h1{font-size:58px}.sub{margin-top:17px}.rule{margin:22px 0 18px}
+      .card{padding:14px 20px}.card .b{font-size:17px}.cards{gap:11px}
+      .prices{margin-top:16px}.prices .chip{padding:9px 15px}.prices .chip .v{font-size:24px}
+      .cta{margin-top:18px;padding:17px 38px}`,
   }),
 
   '05': photoLayout({
+    withPrices: true,
     n: '05',
     bg: '05-bg.png', pos: '74% 50%',
     head: 'Is this test', accent: 'right for you?',
@@ -160,6 +178,7 @@ const creatives = {
     ${logo}
     ${h1('The cancers', 'nobody<br>screens for.')}
     <p class="sub" style="max-width:540px;margin-top:30px;font-size:23px">Most cancers have no routine screening test at all. Galleri looks for a signal shared by more than 50 types &mdash; from a single blood sample.</p>
+    ${prices}
     ${ctaFor('03')}
   </div>
   <div class="viz" style="top:186px">
@@ -195,10 +214,13 @@ const creatives = {
       <div><div class="d1">Dr. William Cimikoski</div>
       <div class="d2">Medical Director. Oversees this process personally.</div></div>
     </div>
+    ${prices}
     ${ctaFor('06')}
-  </div>`, `.logo{margin-bottom:30px}h1{font-size:58px}.steps li{margin-bottom:13px}
-     .steps .txt{font-size:18px}.num{width:32px;height:32px;font-size:16px}
-     .doc{margin-top:22px}.cta{margin-top:22px;padding:19px 42px}`),
+  </div>`, `.logo{margin-bottom:26px}h1{font-size:54px}.steps li{margin-bottom:10px}
+     .steps .txt{font-size:17px}.num{width:30px;height:30px;font-size:15px}
+     .rule{margin:20px 0 18px}.doc{margin-top:16px}.doc img{width:76px;height:76px}
+     .prices{margin-top:14px}.prices .chip{padding:9px 15px}.prices .chip .v{font-size:24px}
+     .cta{margin-top:16px;padding:16px 36px}`),
 };
 
 for (const [n, html] of Object.entries(creatives)) {
