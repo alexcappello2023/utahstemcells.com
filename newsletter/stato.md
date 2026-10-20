@@ -600,19 +600,42 @@ click con 25 disiscrizioni e 5 segnalazioni spam, contro 0,50% e 8 disiscrizioni
 19 campagne in coda in totale.
 
 
-## Scadenza offerta: 31 ottobre (comunicata il 20/10)
+## Offerta Galleri: nessuna scadenza dichiarata (20/10, decisione finale)
 
-Solo la **DEM 03 (26 ottobre)** parte prima della scadenza. Le altre tre — 9/11, 23/11, 7/12 —
-sarebbero uscite con un prezzo non più valido: **prezzi rimossi da testi e creatività**.
-La 03 riporta la scadenza sia nel riquadro email ("Through 31 October", "Offer ends 31 October")
-sia nella striscia della creatività ("Normally $1,400 · through 31 October").
+Il cliente aveva indicato il **31 ottobre** come termine. Poiché solo la DEM 03 (26/10) parte
+prima di quella data, e il ciclo non ha crediti per un secondo invio alle liste grandi
+(2.062 residui contro 3.445 necessari), si è scelto di **non dichiarare alcun termine**,
+così l'offerta compare in tutte e quattro le DEM.
 
-**Non è possibile aggiungere un secondo invio con l'offerta alle liste grandi**: nel ciclo che
-chiude il 4/11 restano 2.062 crediti e un invio a Women+Men ne costa 3.445. Stanno invece
-**17 invii alle liste calde** (120 ciascuno).
+> ⚠️ **Segnalato ad Alex**: senza data l'offerta è a tempo indeterminato. Chi risponde alla email
+> del 7 dicembre si aspetterà $1.000. Se il 31 ottobre resta un limite interno reale, le email di
+> novembre e dicembre promettono un prezzo non più praticato. Decisione presa consapevolmente.
+
+Testo in tutte e quattro: *"The Galleri test is normally $1,400. It is $1,000 when you have it
+alongside IV stem cell therapy, or $1,200 on its own. The price has no bearing on whether the test
+is appropriate for you."* Riquadro prezzi nell'email, striscia prezzi nella creatività.
 
 ### Trappola: `reprise-galleri.mjs` con `id: null` crea un duplicato a ogni esecuzione
 
-Eseguito due volte, ha generato le campagne 40 e 41, identiche e programmate per lo stesso giorno:
-due invii allo stesso pubblico. La 40 è stata sospesa e l'id 41 è ora fisso nello script.
+Eseguito due volte, ha generato le campagne 40 e 41, identiche e sulla stessa data: due invii allo
+stesso pubblico. La 40 è stata sospesa e l'id 41 è ora fisso nello script.
 **Regola**: qualunque script che crea campagne deve registrare l'id, mai lasciarlo nullo.
+
+## Stato finale (20 ottobre 2026)
+
+19 campagne in coda, nessun duplicato.
+
+| | Invio | ID | Destinatari |
+|---|---|---:|---:|
+| Galleri 03 | lun 26 ott | 19 | 3.445 |
+| Galleri 04 | lun 9 nov | 20 | 3.445 |
+| Galleri 05 | lun 23 nov | 41 | 3.445 |
+| Galleri 06 | lun 7 dic | 22 | 3.445 |
+
+Staminali: flusso W due volte a settimana fino al 30/11, flusso B il 2/11, 16/11, 30/11, 14/12.
+
+| Ciclo | Impegnato | Budget | Margine |
+|---|---:|---:|---:|
+| 04/10 → 04/11 | 7.370 | 9.432 | 2.062 |
+| 04/11 → 04/12 | 14.620 | 20.000 | 5.380 |
+| 04/12 → 04/01 | 6.890 | 20.000 | 13.110 |
