@@ -2,6 +2,7 @@
 title: "Votiva Vaginal Rejuvenation A Patient’s Votiva Review"
 description: "Just have a glance at our Patient’s Votiva Vaginal Rejuvenation Review. Votiva is the latest FDA-approved non-invasive device for women’s health."
 pubDate: 2018-05-01
+updated: 2026-10-23
 author: "Dr. William Cimikoski"
 hero: "/blog-images/votiva-vaginal-rejuvenation-a-patients-votiva-review-hero.webp"
 relatedTreatments:
@@ -15,11 +16,11 @@ relatedTreatments:
 According to [American Family Physician](https://www.aafp.org/afp/2000/1201/p2433.html), 47% of women between the ages of 20 to 49 experience urinary incontinence. The percentage is even higher for post-menopausal women. Stress incontinence is a real issue.![](/blog-images/votiva-vaginal-rejuvenation-a-patients-votiva-review-1.webp)
 
 
-Here’s what Mrs. Lucy reported:
+Here’s what one patient reported:
 
 “I began experiencing issues after childbirth and I wasn’t expecting it. After the birth of my second child, it got worse and I thought I just had to live with it. After the birth of my 3rd child, I developed stress incontinence and had to be on high alert when I sneezed or coughed. In speaking with other women I am close to, a majority of my friends and family experience the same issue. When I brought up the issue to my ob-gyn, she said that most women live with this issue and simply won’t talk about it, and the only solution was surgery. So here I was, doing kegel exercises while going about my day… and saw very little improvement, considering the countless times I “worked out”.
 
-We called Mrs. Lucy in to try this device before bringing it into our practice. We had never heard of Votiva but I knew Dr. Cimikoski would never introduce anything into his practice that he doesn’t strongly believe in. After reviewing clinical studies and doing much-needed research, he was ready to have her try it.
+We invited a patient in to try this device before bringing it into our practice. We had never heard of Votiva but I knew Dr. Cimikoski would never introduce anything into his practice that he doesn’t strongly believe in. After reviewing clinical studies and doing much-needed research, he was ready to have her try it.
 
 But before I tell you about her experience, let’s start with the basics…
 

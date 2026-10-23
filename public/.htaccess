@@ -33,6 +33,16 @@
   </If>
 </IfModule>
 
+# Pagine rimosse per privacy dei pazienti (2026-10-23): 410 Gone invece di 404,
+# cosi i motori di ricerca le tolgono dall'indice piu in fretta. Niente redirect:
+# non esiste una pagina equivalente a cui mandare chi cercava un caso specifico.
+<IfModule mod_alias.c>
+  RedirectMatch 410 "^/a-stem-cell-journal-heart/?$"
+  RedirectMatch 410 "^/case-study-iv-stem-cell-therapy-for-neuropathy-patients/?$"
+  RedirectMatch 410 "^/vampire-facial-customer-review/?$"
+  RedirectMatch 410 "^/blog-images/(a-stem-cell-journal-heart|case-study-iv-stem-cell-therapy-for-neuropathy-patients|vampire-facial-customer-review)-.*\.webp$"
+</IfModule>
+
 # Utah Stem Cells — redirects & canonical (generated)
 <IfModule mod_rewrite.c>
   RewriteEngine On

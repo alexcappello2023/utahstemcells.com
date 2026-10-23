@@ -2,6 +2,7 @@
 title: "Vampire Facial Customer Review"
 description: "Just have a glance at our Vampire Facial Customer Review. If you have any issues with scarring, an uneven complexion you NEED to get a Vampire facial."
 pubDate: 2018-05-22
+draft: true
 author: "Dr. William Cimikoski"
 hero: "/blog-images/vampire-facial-customer-review-hero.webp"
 relatedTreatments:
