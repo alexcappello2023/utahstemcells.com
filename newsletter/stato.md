@@ -661,36 +661,41 @@ Stato dei tre tab:
 
 ---
 
-# Tab Dic26 — wellness intimo (5 novembre 2026)
+# Tab Dic26 — wellness, ormoni, BodyTite (5 novembre 2026)
 
-Richiesta del cliente: promuovere **wellness sessuale maschile e femminile, blefaroplastica,
-PRP seno e corpo con grasso autologo**.
-
-## Fatto: 2 DEM, una per genere
+Perimetro finale del cliente: **wellness maschile e femminile, staminali, ormoni, BodyTite**.
+Blefaroplastica e PRP seno sono state ritirate dalla richiesta (non esistevano pagine né fonti).
 
 Tab `Dic26` (gid `1451884601`), schema `Oggetto | Body | Creative`, immagini come formule
 `=IMAGE()` su `/dem-dic26/`. Sorgenti in `newsletter/dic26/`.
 
-| # | Oggetto | Lista | Trattamenti |
+| # | Oggetto | Lista | Fonte |
 |---:|---|---|---|
-| 1 | THE CONVERSATION MOST MEN NEVER HAVE | Men - july 26 (1.109) | P-Shot, GAINSWave |
-| 2 | WHAT NOBODY TELLS YOU TO EXPECT | Women - july 26 (2.310) | O-Shot, Votiva/FemTite |
+| 1 | THE CONVERSATION MOST MEN NEVER HAVE | Men (1.109) | p-shot, gainswave |
+| 2 | WHAT NOBODY TELLS YOU TO EXPECT | Women (2.310) | o-shot, votiva-femtite |
+| 3 | WHEN SLEEP DOES NOT FIX IT | Men + Women (3.419) | hormone-pellet-therapy |
+| 4 | FIRMER WITHOUT A SURGICAL LIFT | Men + Women (3.419) | facetite-bodytite |
 
-**Nessun prezzo**, verificato: la regola 1 ammette cifre solo per le staminali.
-Tono discreto, nessuna promessa, PRP sempre descritto come autologo, disclaimer in fondo.
-Creatività volutamente non allusive: soggetti vestiti, nessun riferimento a intimità.
+**Le staminali non sono in questo tab**: sono già una campagna da 12 email in corso (Nov26),
+diretta alle stesse liste fino al 14 dicembre. Aggiungerne un'altra qui sarebbe una duplicazione.
 
-## Non fatto: mancano le fonti
+## Tre disclaimer diversi, non uno
 
-- **Blefaroplastica**: nessuna pagina sul sito, `/blepharoplasty/`, `/eyelid-surgery/` e
-  `/eye-lift/` rispondono 404. Non risulta da nessuna parte che la clinica la esegua.
-- **PRP seno e corpo con grasso autologo**: esiste `fat-transfer` ma copre viso e corpo e
-  **non nomina mai il seno**. Nessuna pagina su PRP al seno.
+Il primo disclaimer condiviso diceva *"PRP is prepared from a small sample of your own blood"*
+anche sulle email di ormoni e BodyTite, dove il PRP non c'entra nulla. Ora:
 
-Servono dal cliente, prima di scrivere: se le prestazioni sono realmente erogate, chi le esegue,
-in cosa consistono, e con quali avvertenze. Senza, qualunque testo sarebbe inventato.
+- **PRP** (DEM 1, 2): non FDA-approved, PRP autologo, idoneità decisa dal medico.
+- **Ormoni** (DEM 3): terapia prescritta e monitorata dal medico sulla base degli esami; nessuna promessa.
+- **Dispositivi** (DEM 4): procedure eseguite dal medico; risultati variabili; nessuna promessa.
+  Non si afferma nulla sullo status FDA dei dispositivi, che non è stato verificato.
+
+**Nessun prezzo** in nessuna delle quattro, verificato sull'export: la regola 1 ammette cifre solo
+per le staminali.
 
 ## Capacità
 
-Ciclo 04/11 → 04/12: impegnati 14.620 su 20.000, **liberi 5.380**. Le due DEM costano
-insieme 3.419, quindi ci stanno. Oltre a queste non resta spazio in questo ciclo.
+Ciclo 04/11 → 04/12: liberi **5.380**. Le DEM 1+2 costano 3.419 e ci stanno; le DEM 3 e 4 ne
+costano 3.419 ciascuna e vanno nel ciclo successivo (04/12 → 04/01, dove è impegnata solo B12
+per 3.445, quindi restano 16.555).
+
+Campagne Brevo **non ancora create**: in attesa dell'approvazione del cliente sui testi.
