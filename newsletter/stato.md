@@ -661,12 +661,12 @@ Stato dei tre tab:
 
 ---
 
-# Tab Dic26 — wellness, ormoni, BodyTite (5 novembre 2026)
+# Tab Nov26 Wellness — wellness, ormoni, BodyTite (5 novembre 2026)
 
 Perimetro finale del cliente: **wellness maschile e femminile, staminali, ormoni, BodyTite**.
 Blefaroplastica e PRP seno sono state ritirate dalla richiesta (non esistevano pagine né fonti).
 
-Tab `Dic26` (gid `1451884601`), schema `Oggetto | Body | Creative`, immagini come formule
+Tab `Nov26 Wellness` (gid `1451884601`), schema `Oggetto | Body | Creative`, immagini come formule
 `=IMAGE()` su `/dem-dic26/`. Sorgenti in `newsletter/dic26/`.
 
 | # | Oggetto | Lista | Fonte |
@@ -699,3 +699,24 @@ costano 3.419 ciascuna e vanno nel ciclo successivo (04/12 → 04/01, dove è im
 per 3.445, quindi restano 16.555).
 
 Campagne Brevo **non ancora create**: in attesa dell'approvazione del cliente sui testi.
+
+
+## Rinomina dei tab e riparazione di Sep26 (5 novembre 2026)
+
+I tab erano `Sep26 / Oct26 / Nov26 / Dic26`, ma le due campagne di novembre convivono: quella
+sulle staminali è partita il 19 ottobre e corre fino al 14 dicembre, quella su wellness/ormoni/
+BodyTite parte a novembre. Chiamarla "Dic26" era fuorviante. Ora:
+
+| Tab | gid | Contenuto | Stato |
+|---|---|---|---|
+| Sep26 | 0 | dolore articolare | inviata |
+| Oct26 | 2077370776 | Galleri | in corso |
+| **Nov26 Staminali** | 286234867 | prezzo staminali, 12 DEM | in corso |
+| **Nov26 Wellness** | 1451884601 | wellness M/F, ormoni, BodyTite, 4 DEM | **da approvare** |
+
+**Sep26 riparato**: le 5 formule `=IMAGE()` con URL OpenAI scaduti sono state sostituite con
+`utahstemcells.com/dem/`. La C2 non è stata toccata: contiene un'immagine incorporata, non una
+formula, e funzionava già. Verificato su tutti e quattro i tab: **27 immagini, nessuna rotta**.
+
+Il file è leggibile da chiunque abbia il link (verificato scaricandone il contenuto senza
+credenziali). Per un accesso nominale va cambiato in "persone specifiche".
