@@ -1,0 +1,65 @@
+// Piano editoriale DEM Dic26 — wellness intimo maschile e femminile.
+// NESSUN PREZZO: la regola 1 di STATO.md ammette cifre solo per le staminali.
+// Fonti: pagine p-shot, o-shot, gainswave, votiva-femtite del sito.
+// Tono: discreto, medico, mai allusivo. Nessuna promessa di risultato.
+
+export const DISCLAIMER = [
+  'These treatments are not FDA-approved for any specific condition, and individual results vary.',
+  'PRP is prepared from a small sample of your own blood.',
+  'Whether a treatment is appropriate for you is decided by the physician after an individual evaluation.',
+].join(' ');
+
+const close = (line, url) => `${line}\n\nPhone: (801) 999-4860\n\nWeb: ${url}\n\n${DISCLAIMER}`;
+
+export const dems = [
+  {
+    oggetto: 'THE CONVERSATION MOST MEN NEVER HAVE',
+    lista: 'Men - july 26',
+    body: `Changes in performance, sensitivity or confidence are common as men get older. They are also, almost universally, not discussed — not with friends, often not even with a doctor.
+
+That silence is the problem we can actually do something about.
+
+At Utah Stem Cells there are two non-surgical options, both performed in-office by a physician:
+
+The P-Shot is an injection prepared from a small sample of your own blood. Your blood is drawn, the platelet-rich plasma is separated from it, and it is administered in a short appointment.
+
+GAINSWave uses acoustic waves. No needles, no downtime, delivered over a series of short sessions.
+
+Which one makes sense, or whether either does, is a clinical judgement. The physician reviews your history and tells you honestly what is and is not likely to help.
+
+The appointment is discreet. So is everything that follows.
+
+${close('Book a consultation and ask the questions you have not asked anyone else.', 'https://utahstemcells.com/p-shot/')}`,
+    creative: `Landscape 3:2. Navy panel left, photograph right: composed man in his mid fifties outdoors in morning light, fully clothed, calm and self-assured.
+Headline: THE CONVERSATION / MOST MEN NEVER HAVE.
+Subline: Two non-surgical options, both physician-performed, both discreet.
+Two cards: "P-SHOT — prepared from your own blood" and "GAINSWAVE — acoustic waves, no needles".
+CTA button: BOOK A CONSULTATION. Logo top left, navy/teal palette.
+Avoid: anything suggestive or allusive, bedrooms, couples in intimate poses, bare skin, innuendo, silhouettes, "before and after", needles.`,
+  },
+  {
+    oggetto: 'WHAT NOBODY TELLS YOU TO EXPECT',
+    lista: 'Women - july 26',
+    body: `Dryness. Reduced sensation. A sense that things are not quite what they were. After childbirth, through hormonal change, or simply over time.
+
+These are common, and they are rarely talked about. Many women live with them for years without ever being told what options exist, or who to ask.
+
+At Utah Stem Cells there are two non-surgical options, both performed in-office by a physician:
+
+The O-Shot is an injection prepared from a small sample of your own blood — the platelet-rich plasma is separated from it and administered in a short appointment.
+
+Votiva and FemTite use gentle radiofrequency energy. No surgery, minimal downtime, delivered in-office.
+
+Whether either is appropriate for you is decided after an evaluation, not from a web page. The physician will tell you plainly what these treatments can and cannot address.
+
+You are entitled to a straightforward conversation about this.
+
+${close('Book a consultation and get a direct answer.', 'https://utahstemcells.com/o-shot/')}`,
+    creative: `Landscape 3:2. Navy panel left, photograph right: composed woman in her early fifties seated by a window in soft daylight, fully clothed, serene and self-possessed.
+Headline: WHAT NOBODY / TELLS YOU TO EXPECT.
+Subline: Common, rarely discussed, and there are options worth knowing about.
+Two cards: "O-SHOT — prepared from your own blood" and "VOTIVA / FEMTITE — gentle radiofrequency".
+CTA button: BOOK A CONSULTATION. Logo top left, navy/teal palette.
+Avoid: anything suggestive or allusive, bedrooms, lingerie, bare skin, flowers used as euphemism, innuendo, "before and after".`,
+  },
+];
