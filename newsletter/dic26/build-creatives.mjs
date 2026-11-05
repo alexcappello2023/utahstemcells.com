@@ -4,7 +4,9 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const HERE = dirname(fileURLToPath(import.meta.url));
 
-const DISC = 'These treatments are not FDA-approved for any specific condition, and individual results vary. PRP is prepared from a small sample of your own blood. Whether a treatment is appropriate for you is decided by the physician after an individual evaluation.';
+const DISC_PRP = 'These treatments are not FDA-approved for any specific condition, and individual results vary. PRP is prepared from a small sample of your own blood. Whether a treatment is appropriate for you is decided by the physician after an individual evaluation.';
+const DISC_HORM = 'Hormone therapy is prescribed and monitored by the physician on the basis of your lab work and an individual evaluation. Individual results vary. This information is for general education and is not a promise of any particular outcome.';
+const DISC_DEV = 'FaceTite and BodyTite are physician-performed procedures. Individual results vary, and whether a procedure is appropriate for you is decided after an individual evaluation. This information is for general education and is not a promise of any particular outcome.';
 
 const CSS = `
 :root{--navy:#0a2a4a;--navy-deep:#061d35;--blue:#4fa8e8;--teal:#1f7e8c;--ink:#cfe0ee;--dim:#8ba7bf}
@@ -29,7 +31,7 @@ h1 .accent{color:var(--blue);display:block}
 
 const card = (t, b) => `<div class="opt"><div class="t">${t}</div><div class="b">${b}</div></div>`;
 
-const page = ({ bg, pos, head, accent, sub, opts }) => `<!doctype html>
+const page = ({ bg, pos, head, accent, sub, opts, disc = DISC_PRP }) => `<!doctype html>
 <html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <title>${head}</title><style>${CSS}</style></head>
@@ -44,7 +46,7 @@ const page = ({ bg, pos, head, accent, sub, opts }) => `<!doctype html>
     <div class="opts">${opts}</div>
     <a class="cta" href="#">Book a consultation</a>
   </div>
-  <div class="isi">${DISC}</div>
+  <div class="isi">${disc}</div>
 </body></html>`;
 
 writeFileSync(join(HERE, 'creative-01.html'), page({
@@ -62,4 +64,23 @@ writeFileSync(join(HERE, 'creative-02.html'), page({
   opts: card('O-Shot', 'An injection prepared from a small sample of your own blood.')
        + card('Votiva / FemTite', 'Gentle radiofrequency energy. No surgery, minimal downtime.'),
 }));
-console.log('generati 2 file HTML');
+
+writeFileSync(join(HERE, 'creative-03.html'), page({
+  bg: '03-bg.png', pos: '76% 50%',
+  head: 'When sleep', accent: 'does not fix it.',
+  sub: 'Fatigue, low mood, changes in drive. Hormones may be part of it &mdash; testing is how you find out.',
+  opts: card('Lab-guided', 'Your plan starts with testing, not with a guess.')
+       + card('Physician-managed', 'Overseen by Dr. Cimikoski and adjusted over time.'),
+  disc: DISC_HORM,
+}));
+
+writeFileSync(join(HERE, 'creative-04.html'), page({
+  bg: '04-bg.png', pos: '74% 45%',
+  head: 'Firmer without', accent: 'a surgical lift.',
+  sub: 'Radiofrequency energy delivered beneath the skin, through very small entry points.',
+  opts: card('FaceTite', 'Jawline, jowls and the area under the chin.')
+       + card('BodyTite', 'Abdomen, upper arms, thighs, flanks and back.'),
+  disc: DISC_DEV,
+}));
+
+console.log('generati 4 file HTML');
