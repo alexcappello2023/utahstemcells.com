@@ -658,3 +658,39 @@ Stato dei tre tab:
 | Sep26 | allineato | **rotte**: formule `=IMAGE()` con URL OpenAI scaduti, mai sostituite |
 | Oct26 | allineato (con offerta) | 6 formule su `/dem-ott26/`, aggiornate |
 | Nov26 | allineato | 12 formule su `/dem-nov26/` |
+
+---
+
+# Tab Dic26 — wellness intimo (5 novembre 2026)
+
+Richiesta del cliente: promuovere **wellness sessuale maschile e femminile, blefaroplastica,
+PRP seno e corpo con grasso autologo**.
+
+## Fatto: 2 DEM, una per genere
+
+Tab `Dic26` (gid `1451884601`), schema `Oggetto | Body | Creative`, immagini come formule
+`=IMAGE()` su `/dem-dic26/`. Sorgenti in `newsletter/dic26/`.
+
+| # | Oggetto | Lista | Trattamenti |
+|---:|---|---|---|
+| 1 | THE CONVERSATION MOST MEN NEVER HAVE | Men - july 26 (1.109) | P-Shot, GAINSWave |
+| 2 | WHAT NOBODY TELLS YOU TO EXPECT | Women - july 26 (2.310) | O-Shot, Votiva/FemTite |
+
+**Nessun prezzo**, verificato: la regola 1 ammette cifre solo per le staminali.
+Tono discreto, nessuna promessa, PRP sempre descritto come autologo, disclaimer in fondo.
+Creatività volutamente non allusive: soggetti vestiti, nessun riferimento a intimità.
+
+## Non fatto: mancano le fonti
+
+- **Blefaroplastica**: nessuna pagina sul sito, `/blepharoplasty/`, `/eyelid-surgery/` e
+  `/eye-lift/` rispondono 404. Non risulta da nessuna parte che la clinica la esegua.
+- **PRP seno e corpo con grasso autologo**: esiste `fat-transfer` ma copre viso e corpo e
+  **non nomina mai il seno**. Nessuna pagina su PRP al seno.
+
+Servono dal cliente, prima di scrivere: se le prestazioni sono realmente erogate, chi le esegue,
+in cosa consistono, e con quali avvertenze. Senza, qualunque testo sarebbe inventato.
+
+## Capacità
+
+Ciclo 04/11 → 04/12: impegnati 14.620 su 20.000, **liberi 5.380**. Le due DEM costano
+insieme 3.419, quindi ci stanno. Oltre a queste non resta spazio in questo ciclo.
