@@ -770,7 +770,11 @@ Domanda: si può usare il piano restando nei limiti giornalieri? **No, non in qu
 Prova: campagna di verifica a **1 destinatario** (lista 14, Test interni), `POST /sendNow`.
 Risultato: HTTP 204 (richiesta accettata) e la campagna è passata **subito a `suspended`, 0 inviate**,
 crediti ancora 0, piano ancora `Standard / cancelled`. Un limite giornaliero residuo non esiste:
-Brevo blocca qualunque campagna marketing, anche da una sola email. Campagna di prova eliminata.
+Brevo blocca qualunque campagna marketing, anche da una sola email.
+
+La campagna di prova (**id 46**, "VERIFICA PIANO - non rispondere") **non è stata eliminata**: `DELETE`
+risponde `403`. Resta `suspended`, destinata solo alla lista 14 (Test interni): innocua, da cancellare
+manualmente dal pannello quando il piano è attivo.
 
 `/v3/account` non espone alcun campo sul limite giornaliero. Il piano gratuito di Brevo, se
 l'account può tornarci dal pannello, è l'unico scenario con tetto giornaliero (storicamente 300/giorno:
