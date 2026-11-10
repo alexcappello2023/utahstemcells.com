@@ -720,3 +720,45 @@ formula, e funzionava già. Verificato su tutti e quattro i tab: **27 immagini, 
 
 Il file è leggibile da chiunque abbia il link (verificato scaricandone il contenuto senza
 credenziali). Per un accesso nominale va cambiato in "persone specifiche".
+
+---
+
+# ⚠️ Piano Brevo cancellato — invii fermi (10 novembre 2026)
+
+Scoperto controllando i crediti prima di preparare le campagne wellness.
+
+**Fatti verificati via API (`/v3/account`)**:
+- Unico piano: `Standard`, categoria Marketing, **`status: "cancelled"`**.
+- Periodo: iniziato **mer 4/11 22:07 UTC**, terminato **dom 8/11 22:09 UTC**.
+- `credits: 0` (`sendLimit`). Fino all'1/11 erano 20.000 al mese.
+- Le due campagne del **9/11 sono state sospese da Brevo con 0 invii**: Galleri 04 (id 20, ~3.400 dest.)
+  e staminali W07 (id 31, ~116 dest.). `modifiedAt` non è cambiato: la sospensione automatica non lo aggiorna.
+- Ultimo invio riuscito: W06, giovedì 5/11 (116 consegnate). Contatti (4.561) e mittente ID 1 intatti.
+
+**Non verificato**: chi ha cancellato e perché (mancato rinnovo, disdetta voluta, carta scaduta).
+**Non risolvibile da qui**: è una questione di fatturazione, dell'account owner.
+
+**Conseguenze sulla coda**: le 8 campagne ancora `queued` (W08–W12, B07, B10, B12, Galleri 05/06)
+seguiranno la stessa sorte alla loro data. **Una campagna sospesa non torna a `draft`**
+(`400 draft is an invalid status for suspended campaign`): se non è accettato nemmeno `queued`
+(da provare solo a piano riattivato), vanno **ricreate**.
+
+## Campagne Nov26 Wellness create come bozze
+
+Perimetro: wellness M/F, ormoni, BodyTite. Testi e creatività **identici** al Sheet (confrontati
+riga per riga: il cliente non ha modificato nulla). Nessuna cifra, un disclaimer per tipo.
+Script: `newsletter/dic26/build-emails.mjs` + `create-campaigns.mjs` (idempotente).
+
+| # | ID | Oggetto | Liste | Destinazione |
+|---:|---:|---|---|---|
+| 1 | 42 | THE CONVERSATION MOST MEN NEVER HAVE | Men | /p-shot/ |
+| 2 | 43 | WHAT NOBODY TELLS YOU TO EXPECT | Women | /o-shot/ |
+| 3 | 44 | WHEN SLEEP DOES NOT FIX IT | Men+Women | /hormone-pellet-therapy/ |
+| 4 | 45 | FIRMER WITHOUT A SURGICAL LIFT | Men+Women | /facetite-bodytite/ |
+
+Tutte `draft`, **senza data**, con le liste calde (13, 12, 6, 7, 11) escluse. Invio di prova a
+alex.cappello@gmail.com riuscito (HTTP 204 — non dimostra che le campagne partirebbero).
+
+Trappola trovata e corretta: il template ereditato da Nov26 Staminali conteneva la riga
+*"Questions about the price?"* sotto il bottone. Su email senza prezzi è fuori luogo: ora
+*"Prefer to talk it through?"*. Moral: dopo aver clonato un template, **guardarne il render**.

@@ -1,0 +1,46 @@
+[
+  {
+    "n": 1,
+    "slug": "01-mens-wellness",
+    "subject": "THE CONVERSATION MOST MEN NEVER HAVE",
+    "image": "01-mens-wellness.jpg",
+    "cta": "Book a consultation",
+    "landing": "https://utahstemcells.com/p-shot/",
+    "kind": "prp",
+    "bytes": 6625,
+    "campaignId": 42
+  },
+  {
+    "n": 2,
+    "slug": "02-womens-wellness",
+    "subject": "WHAT NOBODY TELLS YOU TO EXPECT",
+    "image": "02-womens-wellness.jpg",
+    "cta": "Book a consultation",
+    "landing": "https://utahstemcells.com/o-shot/",
+    "kind": "prp",
+    "bytes": 6619,
+    "campaignId": 43
+  },
+  {
+    "n": 3,
+    "slug": "03-hormone-therapy",
+    "subject": "WHEN SLEEP DOES NOT FIX IT",
+    "image": "03-hormone-therapy.jpg",
+    "cta": "Book a consultation",
+    "landing": "https://utahstemcells.com/hormone-pellet-therapy/",
+    "kind": "hormones",
+    "bytes": 6519,
+    "campaignId": 44
+  },
+  {
+    "n": 4,
+    "slug": "04-facetite-bodytite",
+    "subject": "FIRMER WITHOUT A SURGICAL LIFT",
+    "image": "04-facetite-bodytite.jpg",
+    "cta": "Book a consultation",
+    "landing": "https://utahstemcells.com/facetite-bodytite/",
+    "kind": "device",
+    "bytes": 6427,
+    "campaignId": 45
+  }
+]
