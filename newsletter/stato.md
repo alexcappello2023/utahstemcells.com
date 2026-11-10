@@ -780,3 +780,52 @@ manualmente dal pannello quando il piano è attivo.
 l'account può tornarci dal pannello, è l'unico scenario con tetto giornaliero (storicamente 300/giorno:
 **da verificare nel pannello**, non da API). Non instradare le DEM dal canale transazionale: è un uso
 non consentito e priverebbe le email della gestione delle disiscrizioni.
+
+---
+
+# Nov26 Wellness a blocchi giornalieri (10 novembre 2026)
+
+Su richiesta: niente invii a liste intere, ma **blocchi piccoli entro il limite giornaliero**.
+
+**Ipotesi non verificata**: limite di **300 email/giorno** (valore storico del piano gratuito Brevo, da
+confermare nel pannello). Si usa un tetto di **250/giorno** (margine 15%), e **134** nei giorni in cui
+parte già il flusso caldo delle staminali (116 destinatari): il tetto è dell'account, non della campagna.
+Cambiare valore: `DAILY_LIMIT=<n> node newsletter/dic26/chunks.mjs plan`.
+
+**Stato dell'account**: `Standard / cancelled`, 0 crediti. Verificato di nuovo il 10/11: **le campagne
+vengono sospese all'istante anche con 1 destinatario**. I blocchi sono quindi **bozze senza data**:
+programmarli adesso significherebbe farli sospendere uno a uno, e una campagna sospesa non torna a bozza.
+Quando l'invio è confermato funzionante: `node newsletter/dic26/chunks.mjs schedule`.
+
+## Piano (17 blocchi, 3.402 destinatari, solo giorni feriali, escluso il 26/11)
+
+Men 1.100 e Women 2.302 contattabili, **liste calde escluse**. Contatti distinti, nessun duplicato fra
+blocchi, nessun blacklisted, nessun contatto caldo (verificato leggendo ogni lista).
+
+| DEM | Blocchi | Date | Campagne |
+|---|---:|---|---|
+| 01 Men | 6 (250/134/250/134/250/82) | 11, 12, 13, 16, 17, 18 nov | 47–52 |
+| 02 Women | 11 (134/250/134/250/250/250/134/250/250/250/150) | 19, 20, 23, 24, 25, 27, 30 nov; 1, 2, 3, 4 dic | 53, 56–65 |
+
+Liste-blocco 15–31, nome `Wellness <Men|Women> NN · data`. Stato e id in `newsletter/dic26/chunks.json`.
+Le bozze intere 42 e 43 sono rinominate **"NON USARE"**: manderebbero migliaia di email in un giorno.
+
+**Non rientra nel mese**: il blocco Women 8–11 (1–4 dicembre). Ormoni (44) e BodyTite (45) non sono
+chunkate: a 250/giorno servono altri ~14 giorni feriali ciascuna.
+
+## Conflitti con quanto già in coda
+
+Queste campagne scrivono a **3.400 persone in un giorno** e sono incompatibili con un limite giornaliero:
+B07 (id 32, lun 16/11), Galleri 05 (id 41, lun 23/11), B10 (id 36, lun 30/11), Galleri 06 (id 22,
+7/12), B12 (id 39, 14/12). **Non toccate**: se il piano a pagamento torna, vanno bene così. Sono
+`queued` e verranno sospese da Brevo se l'invio resta bloccato.
+Le Galleri 04 e staminali W07, sospese il 9/11, vanno ricreate.
+
+## Trappole incontrate
+
+- Brevo rifiuta una bozza su una **lista appena popolata** (`no contacts associated with the given
+  recipients info`) per minuti, anche se `GET` mostra già i contatti. Con `exclusionListIds` la cosa
+  dura più a lungo. Soluzione: creare **prima tutte le liste**, poi le campagne con tentativi.
+  Campagne 56 e 57 sono nate **senza l'esclusione** delle liste calde (i blocchi ne sono già privi).
+- `DELETE` di una campagna: **204 su una bozza, 403 su una sospesa** (la 46 resta lì).
+- `exclusionListIds` si mette solo in `recipients` alla creazione/aggiornamento della campagna.
