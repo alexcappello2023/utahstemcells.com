@@ -762,3 +762,17 @@ alex.cappello@gmail.com riuscito (HTTP 204 — non dimostra che le campagne part
 Trappola trovata e corretta: il template ereditato da Nov26 Staminali conteneva la riga
 *"Questions about the price?"* sotto il bottone. Su email senza prezzi è fuori luogo: ora
 *"Prefer to talk it through?"*. Moral: dopo aver clonato un template, **guardarne il render**.
+
+## Prova di invio con il piano cancellato (10 novembre 2026)
+
+Domanda: si può usare il piano restando nei limiti giornalieri? **No, non in questo stato.**
+
+Prova: campagna di verifica a **1 destinatario** (lista 14, Test interni), `POST /sendNow`.
+Risultato: HTTP 204 (richiesta accettata) e la campagna è passata **subito a `suspended`, 0 inviate**,
+crediti ancora 0, piano ancora `Standard / cancelled`. Un limite giornaliero residuo non esiste:
+Brevo blocca qualunque campagna marketing, anche da una sola email. Campagna di prova eliminata.
+
+`/v3/account` non espone alcun campo sul limite giornaliero. Il piano gratuito di Brevo, se
+l'account può tornarci dal pannello, è l'unico scenario con tetto giornaliero (storicamente 300/giorno:
+**da verificare nel pannello**, non da API). Non instradare le DEM dal canale transazionale: è un uso
+non consentito e priverebbe le email della gestione delle disiscrizioni.
